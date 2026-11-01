@@ -22,14 +22,64 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "data" / "schema" / "entry.schema.json"
-SOURCES = {
-    "hidden": ROOT / "data" / "hidden.yaml",
-    "veterans-day": ROOT / "data" / "veterans-day-2026.yaml",
-    "travel": ROOT / "data" / "travel.yaml",
-    "free": ROOT / "data" / "free.yaml",
-    "discount": ROOT / "data" / "discounts.yaml",
-    "crawled": ROOT / "data" / "crawled.yaml",
-}
+SOURCES = [
+    ("hidden", ROOT / "data" / "hidden.yaml"),
+    ("veterans-day", ROOT / "data" / "veterans-day-2026.yaml"),
+    ("veterans-day", ROOT / "data" / "crawled-veterans-day.yaml"),
+    ("travel", ROOT / "data" / "travel.yaml"),
+    ("free", ROOT / "data" / "free.yaml"),
+    ("discount", ROOT / "data" / "discounts.yaml"),
+    ("crawled", ROOT / "data" / "crawled.yaml"),
+]
+GENERATED = {"crawled.yaml", "crawled-veterans-day.yaml"}
+# John, 2026-11-01: every discount or offer needs at least two independent, verifiable sources.
+TWO_SOURCE_KINDS = {"discount", "crawled", "veterans-day", "travel"}
+# Multi-offer list pages: links get a text fragment so they open at, and highlight, the entry.
+LIST_HOSTS = {"news.va.gov", "military.com", "calegion.org", "veteran.com", "usveteransmagazine.com",
+              "themilitarywallet.com", "veteransdaydeals.us", "combatfitness.co", "freshcalendars.com",
+              "cruisecritic.com", "travelmarketreport.com", "mymilitarybenefits.com", "militarycruisedeals.com",
+              "legion-aux.org", "vetrafi.com", "dinova.com", "operationmilitarykids.org", "dealhack.com",
+              "hip2save.com", "dealnews.com", "usmilitary.com", "wearethemighty.com", "sheerid.com",
+              "militaryfamilies.com", "honestmos.com", "barbend.com", "fedsmith.com"}
+
+
+def site(url: str) -> str:
+    """Registrable domain, so 365.military.com and military.com count as one source."""
+    host = re.sub(r"^www\.", "", url.split("/")[2].lower()) if "//" in url else url
+    return ".".join(host.split(".")[-2:])
+
+
+TRACKING = re.compile(r"([?&])(srsltid|utm_[a-z]+|gclid|fbclid|mc_[a-z]+)=[^&#]*", re.I)
+
+
+def clean_url(url: str) -> str:
+    """Drop tracking parameters so links are clean and stable."""
+    out = TRACKING.sub(r"\1", url)
+    out = re.sub(r"[?&]+(#|$)", r"\1", re.sub(r"([?&])&+", r"\1", out))
+    return out.replace("?&", "?")
+
+
+def with_fragment(url: str, anchor: str) -> str:
+    host = re.sub(r"^www\.", "", url.split("/")[2].lower()) if "//" in url else ""
+    if "#" in url or not anchor or (host not in LIST_HOSTS and site(url) not in LIST_HOSTS):
+        return url
+    from urllib.parse import quote
+    variants = [anchor] + ([anchor.replace("'", chr(0x2019))] if "'" in anchor else [])
+    return url + "#:~:" + "&".join("text=" + quote(v, safe="") for v in variants)
+
+
+def finalize_sources(entry: dict) -> None:
+    """source_url first, then sources; add text fragments; drop duplicates of the same page."""
+    anchor = entry.get("anchor") or re.sub(r"\(.*?\)", "", str(entry.get("name", ""))).strip()
+    out, pages = [], set()
+    for url in [entry.get("source_url", "")] + list(entry.get("sources") or []):
+        url = clean_url(url)
+        page = url.split("#")[0]
+        if url and page not in pages:
+            pages.add(page)
+            out.append(with_fragment(url, anchor))
+    if out:
+        entry["source_url"], entry["sources"] = out[0], out[:12]
 WATCH = ROOT / "data" / "watch.json"
 OUT = ROOT / "site" / "data.json"
 EM_DASH = chr(0x2014)
@@ -66,13 +116,13 @@ def derive_percent(entry: dict) -> None:
         entry["percent"] = 50
 
 
-def load_entries(sources: dict[str, Path]) -> tuple[list[dict], list[str]]:
+def load_entries(sources: list[tuple[str, Path]]) -> tuple[list[dict], list[str]]:
     errors: list[str] = []
     entries: list[dict] = []
     seen: set[str] = set()
-    for kind, path in sources.items():
+    for kind, path in sources:
         if not path.exists():
-            if kind != "crawled":
+            if path.name not in GENERATED:
                 errors.append(f"missing data file: {path.name}")
             continue
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -80,6 +130,7 @@ def load_entries(sources: dict[str, Path]) -> tuple[list[dict], list[str]]:
         for raw in doc.get("entries") or []:
             entry = {**defaults, **raw, "kind": kind}
             derive_percent(entry)
+            finalize_sources(entry)
             eid = str(entry.get("id", "<missing id>"))
             if eid in seen:
                 errors.append(f"duplicate id: {eid}")
@@ -109,15 +160,20 @@ def validate(entries: list[dict]) -> list[str]:
             errors.append(f"{eid}: event_end is before event_start")
         if EM_DASH in json.dumps(entry, ensure_ascii=False):
             errors.append(f"{eid}: em dash found (house convention forbids it)")
+        if entry.get("kind") in TWO_SOURCE_KINDS:
+            n = len({site(u) for u in entry.get("sources") or []})
+            if n < 2:
+                errors.append(f"{eid}: needs two independent sources ({n} found)")
     return errors
 
 
 def selftest() -> int:
     """R-007: the validator must reject a known-bad fixture, or it proves nothing."""
     bad = ROOT / "tests" / "fixtures" / "bad.yaml"
-    entries, errors = load_entries({"fixture": bad})
+    entries, errors = load_entries([("discount", bad)])
     errors += validate(entries)
-    expected = ["duplicate id", "is not one of", "does not match", "event_end is before", "em dash"]
+    expected = ["duplicate id", "is not one of", "does not match", "event_end is before", "em dash",
+                "needs two independent sources"]
     missing = [e for e in expected if not any(e in msg for msg in errors)]
     print(f"selftest: {len(errors)} errors raised by the bad fixture")
     for message in errors:

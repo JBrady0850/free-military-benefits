@@ -114,7 +114,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   </section>
 
   <section id="sec-near">
-   <div class="legend">Enter a ZIP code to see participating Veterans Day locations, discount brands with stores nearby, the closest commissaries and exchanges, VA facilities, and offers only in your state. The ZIP is converted on this device; only its center point is sent to the free OpenStreetMap Overpass service when you press Find.</div>
+   <div class="legend">Enter a ZIP code to see participating Veterans Day locations, discount brands with stores nearby, the closest commissaries and exchanges, VA facilities, and offers only in your state. Everything runs on this device from location files the site refreshes every week, so your ZIP code is never sent anywhere.</div>
    <div class="row">
     <span><label for="zip">ZIP code</label><input id="zip" inputmode="numeric" maxlength="5" size="8" placeholder="for example 20001"></span>
     <span><label for="radius">Distance</label><select id="radius"><option value="10">10 miles</option><option value="25" selected>25 miles</option><option value="50">50 miles</option></select></span>
@@ -126,7 +126,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   <section id="sec-travel"><div id="travelOut"></div></section>
 
   <section id="sec-dir">
-   <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>more than 20 percent</strong>, refreshed automatically each week. A gold badge such as <span class="b20" style="margin-left:0">25% OFF</span> beside a name marks every company offering more than 20 percent, here and on every other tab. Auto-found entries are community-reported; confirm at the brand.</div>
+   <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>more than 20 percent</strong>, refreshed automatically each week. A gold badge such as <span class="b20" style="margin-left:0">25% OFF</span> beside a name marks every company offering more than 20 percent, here and on every other tab. <strong>Every discount needs two independent sources</strong> (two different sites, or one site plus the brand's own page), and every link opens at the offer. <span id="heldLine"></span></div>
    <div class="row">
     <span style="flex:1;min-width:200px"><label for="q">Search</label><input id="q" type="search" style="width:100%;box-sizing:border-box" placeholder="Brand, category, PX, BX, commissary, cruise"></span>
     <span><label for="sort">Sort</label><select id="sort"><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
@@ -214,6 +214,9 @@ const dateRange = (e) => !e.event_start ? "" : (e.event_start === (e.event_end |
 function pills(e) {
  const p = [];
  if (e.auto) p.push(["p-auto", "AUTO-FOUND"]);
+ if (e.verified_by === "brand page") p.push(["p-off", "BRAND CONFIRMED"]);
+ const nsrc = new Set((e.sources || []).map((u) => host(u).split(".").slice(-2).join("."))).size;
+ if (nsrc >= 2) p.push(["p-off", nsrc + " SOURCES"]);
  p.push(e.confidence === "official" ? ["p-off", "OFFICIAL SOURCE"] : e.confidence === "community" ? ["p-com", "COMMUNITY REPORTED"] : ["p-warm", "UNCONFIRMED"]);
  if (e.percent && e.percent < BADGE_MIN) p.push(["p-cool", (e.percent_up ? "UP TO " : "") + e.percent + "% OFF"]);
  if (e.kind === "free") p.push(["p-free", "FREE"]);
@@ -246,8 +249,12 @@ function steps(e) {
   '" data-i="' + i + '"' + (done[i] ? " checked" : "") + ">" + esc(s) + "</label></li>").join("") + "</ol>";
 }
 
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (x) { return "source"; } };
+function sourceLinks(e) {
+ const list = (e.sources && e.sources.length ? e.sources : [e.source_url]);
+ return list.map((u) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(host(u)) + "</a>").join(" | ");
+}
 function item(e, extra) {
- const more = (e.sources || []).length > 1 ? " (+" + (e.sources.length - 1) + " more sources)" : "";
  return '<div class="it" id="e-' + esc(e.id) + '">' +
   '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" + badge(e) +
   '<div class="meta">' + pills(e) + "</div>" +
@@ -257,8 +264,8 @@ function item(e, extra) {
   (e.steps ? steps(e) : "") +
   (e.notes ? '<div class="sum note">' + esc(e.notes) + "</div>" : "") +
   '<div class="src">Who: ' + esc((e.eligibility || []).map((x) => ELIG[x] || x).join(", ")) +
-  " | Proof: " + esc((e.verification || []).map((x) => VER[x] || x).join(", ")) +
-  ' | <a href="' + esc(e.source_url) + '" target="_blank" rel="noopener">Source</a>' + esc(more) + "</div></div>";
+  " | Proof: " + esc((e.verification || []).map((x) => VER[x] || x).join(", ")) + "</div>" +
+  '<div class="src">Sources (' + (e.sources || [e.source_url]).length + "): " + sourceLinks(e) + "</div></div>";
 }
 
 function card(title, tag, color, mix, inner) {
@@ -394,8 +401,12 @@ function renderVD() {
  const inner = Object.keys(groups).map((k) => '<div class="dgrp">' + esc(k) + "</div>" + groups[k].map((e) => item(e)).join("")).join("");
  $("#vdOut").innerHTML = card("Veterans Day 2026 offers", "NOV 11", "#d4a017", list.length + " shown", inner);
  const w = META.watch || {};
- $("#watchBox").innerHTML = (w.new_names && w.new_names.length) ? '<div class="gap"><strong>Just announced on VA News, not yet reviewed here:</strong> ' +
-  esc(w.new_names.join(", ")) + '. <a href="' + esc(w.source) + '" target="_blank" rel="noopener">See VA News</a> (checked ' + esc(w.checked) + ").</div>" : "";
+ $("#watchBox").innerHTML = (w.new_names && w.new_names.length) ? '<div class="gap"><strong>On VA News, waiting for a second source:</strong> ' +
+  esc(w.new_names.join(", ")) + '. <a href="' + esc(w.source) + '" target="_blank" rel="noopener">See VA News</a> (checked ' + esc(w.checked) +
+  "). They are added automatically once a second list confirms them.</div>" : "";
+ const held = (w.held_single_source || []).length;
+ const hl = document.getElementById("heldLine");
+ if (hl) hl.textContent = held ? held + " more brands were reported by only one source and are held back until a second source confirms them." : "";
 }
 const icsEsc = (s) => String(s).replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\r?\n/g, " ");
 const ymd = (d) => d.replace(/-/g, "");
@@ -475,16 +486,9 @@ function renderDir() {
   list.length + " shown, " + auto + " auto-found", list.map((e) => item(e)).join(""));
 }
 
-/* ---------- near me ---------- */
-let ZIPS = null;
-const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
- "https://overpass.private.coffee/api/interpreter"];
+/* ---------- near me (runs on this device; no location leaves it) ---------- */
+let ZIPS = null, PLACES = null;
 const lowName = (s) => String(s || "").toLowerCase().split(RSQ).join("'").replace(/\s+/g, " ").trim();
-const SAFE = /^[a-z0-9 &'.+!\/-]+$/;
-const rx = (s) => s.replace(/[.+]/g, (c) => "[" + c + "]").split("'").join("['" + RSQ + "]");
-const RE_COMM = /commissary/i;
-const RE_EXCH = /(^the exchange|main exchange|base exchange|post exchange|navy exchange|marine corps exchange|coast guard exchange|aafes|^px\b|^bx\b|^nex\b|^mcx\b)/i;
-const RE_VA = /(va medical center|va clinic|vet center|veterans affairs|va outpatient|va health care|va community based|veterans administration)/i;
 function miles(a, b, c, d) {
  const R = 3958.8, t = Math.PI / 180;
  const x = Math.sin((c - a) * t / 2) ** 2 + Math.cos(a * t) * Math.cos(c * t) * Math.sin((d - b) * t / 2) ** 2;
@@ -495,100 +499,65 @@ function brandTargets() {
  DATA.forEach((e) => {
   if (ended(e)) return;
   if (e.osm_brand) { e.osm_brand.forEach((b) => out.push([lowName(b), e])); return; }
-  if (e.kind === "crawled" && ["retail", "apparel", "outdoor", "health", "home-improvement", "attractions", "food"].includes(e.category)) {
-   const n = lowName(e.name.replace(/\(.*?\)/g, ""));
-   if (n.length >= 3 && n.length <= 40) out.push([n, e]);
-  }
+  if (e.kind === "crawled") out.push([lowName(e.name.replace(/\(.*?\)/g, "")), e]);
  });
  return out;
 }
+function within(points, lat, lon, maxMi, withName) {
+ const dLat = maxMi / 69, dLon = maxMi / (69 * Math.max(0.2, Math.cos(lat * Math.PI / 180))), hits = [];
+ for (const p of points || []) {
+  const la = p[0] / 1000, lo = p[1] / 1000;
+  if (Math.abs(la - lat) > dLat || Math.abs(lo - lon) > dLon) continue;
+  const d = miles(lat, lon, la, lo);
+  if (d <= maxMi) hits.push({lat: la, lon: lo, d: d, name: withName ? p[2] : ""});
+ }
+ return hits.sort((a, b) => a.d - b.d);
+}
 function placeLine(p) {
- const t = p.tags, addr = [[t["addr:housenumber"], t["addr:street"]].filter(Boolean).join(" "), t["addr:city"]].filter(Boolean).join(", ");
- return '<div class="src">' + p.d.toFixed(1) + " mi" + (addr ? " | " + esc(addr) : "") +
+ return '<div class="src">' + p.d.toFixed(1) + " mi" +
   ' | <a href="https://www.openstreetmap.org/?mlat=' + p.lat + "&amp;mlon=" + p.lon + "#map=17/" + p.lat + "/" + p.lon +
   '" target="_blank" rel="noopener">Map</a> | <a href="https://www.google.com/maps/dir/?api=1&amp;destination=' + p.lat + "," + p.lon +
   '" target="_blank" rel="noopener">Directions</a></div>';
 }
-function buildQuery(lat, lon, mi) {
- const r1 = Math.round(mi * 1609), r2 = Math.max(r1, 80467);
- const targets = brandTargets().filter((t) => SAFE.test(t[0]));
- const alt = [...new Set(targets.map((t) => t[0]))].map(rx).join("|");
- const A = "(around:" + r1 + "," + lat + "," + lon + ");", B = "(around:" + r2 + "," + lat + "," + lon + ");";
- const VAQ = '"(VA Medical Center|VA Clinic|Vet Center|Veterans Affairs|VA Outpatient|VA Health Care|VA Community Based)",i]';
- const q = "[out:json][timeout:45];(" +
-  'nwr["brand"~"^(' + alt + ')$",i]' + A +
-  'nwr["shop"~"^(supermarket|department_store|general|convenience|mall|wholesale)$"]["name"~"(commissary|exchange)",i]' + B +
-  'nwr["amenity"~"^(hospital|clinic|doctors)$"]["name"~' + VAQ + B +
-  'nwr["healthcare"]["name"~' + VAQ + B +
-  ");out center tags 1500;is_in(" + lat + "," + lon + ')->.a;area.a["admin_level"="4"]["ISO3166-2"];out tags;';
- return {q: q, targets: targets, r1: r1, r2: r2};
-}
 async function findNear() {
- const z = $("#zip").value.trim();
- const out = $("#nearOut");
+ const z = $("#zip").value.trim(), out = $("#nearOut");
  if (!/^[0-9]{5}$/.test(z)) { out.innerHTML = '<div class="gap">Enter a 5-digit ZIP code.</div>'; return; }
  store.set("eb_zip", z);
- out.innerHTML = '<div class="legend">Looking up ZIP ' + esc(z) + " and searching nearby. This takes a few seconds.</div>";
- try { if (!ZIPS) ZIPS = await (await fetch("zip.json")).json(); }
- catch (e) { out.innerHTML = '<div class="gap">Could not load the ZIP table. Reload the page and try again.</div>'; return; }
+ out.innerHTML = '<div class="legend">Searching around ZIP ' + esc(z) + "...</div>";
+ try {
+  if (!ZIPS) ZIPS = await (await fetch("zip.json")).json();
+  if (!PLACES) PLACES = await (await fetch("places.json", {cache: "no-cache"})).json();
+ } catch (e) { out.innerHTML = '<div class="gap">Could not load the location files. Reload the page and try again.</div>'; return; }
  const ll = ZIPS[z];
  if (!ll) { out.innerHTML = '<div class="gap">ZIP ' + esc(z) + " is not in the Census ZIP area list (PO box only ZIPs have no area). Try a nearby ZIP.</div>"; return; }
- const lat = ll[0], lon = ll[1], mi = Number($("#radius").value);
- const Q = buildQuery(lat, lon, mi), targets = Q.targets, r2 = Q.r2;
- let j = null;
- const tried = [];
- for (let i = 0; i < OVERPASS.length && !j; i++) {
-  out.innerHTML = '<div class="legend">Searching OpenStreetMap server ' + (i + 1) + " of " + OVERPASS.length + " around ZIP " + esc(z) + "...</div>";
-  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 25000);
-  try {
-   const res = await fetch(OVERPASS[i], {method: "POST", signal: ctl.signal,
-    headers: {"Content-Type": "application/x-www-form-urlencoded"}, body: "data=" + encodeURIComponent(Q.q)});
-   if (!res.ok) throw new Error("HTTP " + res.status);
-   j = await res.json();
-  } catch (e) {
-   tried.push(new URL(OVERPASS[i]).host + " " + (e.name === "AbortError" ? "timed out" : e.message));
-  } finally { clearTimeout(timer); }
+ const lat = ll[0], lon = ll[1], state = ll[2] || "", mi = Number($("#radius").value), far = Math.max(mi, 50);
+ const vdRows = [], dirRows = [], seen = new Set();
+ for (const pair of brandTargets()) {
+  const e = pair[1];
+  if (seen.has(e.id)) continue;
+  const hits = within(PLACES.brands[pair[0]], lat, lon, mi, false);
+  if (!hits.length) continue;
+  seen.add(e.id);
+  (e.kind === "veterans-day" ? vdRows : dirRows).push({e: e, p: hits[0], n: hits.length});
  }
- if (!j) {
-  out.innerHTML = '<div class="gap">The free OpenStreetMap servers are busy right now (' + esc(tried.join("; ")) +
-   "). Nothing is wrong with your ZIP. Try a smaller distance or press Find again in a few minutes.</div>";
-  return;
- }
- let state = "";
- const comm = [], va = [], hit = new Map();
- for (const el of j.elements || []) {
-  const t = el.tags || {};
-  if (el.type === "area") { const c = t["ISO3166-2"] || ""; if (c.indexOf("US-") === 0) state = c.slice(3); continue; }
-  const la = el.lat != null ? el.lat : (el.center || {}).lat, lo = el.lon != null ? el.lon : (el.center || {}).lon;
-  if (la == null) continue;
-  const p = {lat: Number(la.toFixed(5)), lon: Number(lo.toFixed(5)), tags: t, d: miles(lat, lon, la, lo), name: t.name || t.brand || "Unnamed"};
-  const nm = lowName(t.name), br = lowName(t.brand);
-  if (t.shop && (RE_COMM.test(t.name || "") || RE_EXCH.test(t.name || "") || /exchange/i.test(t.name || ""))) { comm.push(p); continue; }
-  if (RE_VA.test(t.name || "")) { va.push(p); continue; }
-  if (p.d > mi + 0.5) continue;
-  for (const pair of targets) {
-   const b = pair[0];
-   if (br === b || nm === b || nm.indexOf(b + " ") === 0 || nm.indexOf(b + "-") === 0 || br.indexOf(b + " ") === 0) {
-    const arr = hit.get(pair[1]) || []; arr.push(p); hit.set(pair[1], arr); break;
-   }
-  }
- }
- const byD = (a, b) => a.d - b.d, vdRows = [], dirRows = [];
- hit.forEach((arr, e) => { arr.sort(byD); (e.kind === "veterans-day" ? vdRows : dirRows).push({e: e, p: arr[0], n: arr.length}); });
  vdRows.sort((a, b) => a.p.d - b.p.d); dirRows.sort((a, b) => a.p.d - b.p.d);
- const rowHtml = (r) => item(r.e, '<div class="sum"><strong>Nearest: ' + esc(r.p.name) + "</strong>" + (r.n > 1 ? " (" + r.n + " locations nearby)" : "") + "</div>" + placeLine(r.p));
- const places = (arr) => arr.sort(byD).slice(0, 8).map((p) => '<div class="it"><span class="hl">' + esc(p.name) + "</span>" + placeLine(p) + "</div>").join("");
+ const bases = within(PLACES.bases, lat, lon, far, true).slice(0, 8);
+ const va = within(PLACES.va, lat, lon, far, true).slice(0, 8);
+ const rowHtml = (r) => item(r.e, '<div class="sum"><strong>Nearest location</strong>' + (r.n > 1 ? " (" + r.n + " within " + mi + " miles)" : "") + "</div>" + placeLine(r.p));
+ const places = (arr) => arr.map((p) => '<div class="it"><span class="hl">' + esc(p.name) + "</span>" + placeLine(p) + "</div>").join("");
  const stateRows = state ? DATA.filter((e) => (e.states || []).includes(state) && !ended(e)) : [];
- const r2mi = Math.round(r2 / 1609);
- out.innerHTML = '<div class="legend">Around ZIP ' + esc(z) + (state ? " (" + esc(state) + ")" : "") + ": stores within " + mi + " miles; bases and VA facilities within " + r2mi + " miles.</div>" +
+ const baseTitle = PLACES.bases_kind === "stores" ? "Commissaries and exchanges (where your VHIC or VA letter works)" : "Nearest military installations";
+ const baseNote = PLACES.bases_kind === "stores" ? "" :
+  '<div class="none">Store-level commissary and exchange data is refreshing. These are installations from Wikidata; most larger installations have a commissary and exchange, so confirm with the installation.</div>';
+ out.innerHTML = '<div class="legend">Around ZIP ' + esc(z) + (state ? " (" + esc(state) + ")" : "") + ": stores within " + mi +
+  " miles; bases and VA facilities within " + far + " miles. Store locations updated " + esc(PLACES.generated) + ".</div>" +
   card("Veterans Day offers near you", "NOV 11", "#d4a017", vdRows.length + " chains", vdRows.map(rowHtml).join("")) +
-  card("Where your VHIC or VA letter works", "BASE", "#0f2744", comm.length + " stores",
-   (comm.length ? places(comm) : '<div class="none">No commissary or exchange is mapped within ' + r2mi + " miles.</div>") +
+  card(baseTitle, "BASE", "#0f2744", bases.length + " found", baseNote + places(bases) +
    '<div class="none">Who qualifies and what to bring at the gate: <a href="#unlocks" data-go="unlocks">What you unlock</a>.</div>') +
   card("VA facilities", "VA", "#117a65", va.length + " found", places(va)) +
   card("Only in your state", state || "STATE", "#6c3d9e", stateRows.length + " offers", stateRows.map((e) => item(e)).join("")) +
   card("Discount brands with a location near you", "BRANDS", "#c0392b", dirRows.length + " brands", dirRows.map(rowHtml).join("")) +
-  '<div class="src">Locations come from OpenStreetMap; a missing store may simply be unmapped. Participation varies by location, so call ahead.</div>';
+  '<div class="src">Store and VA locations: All the Places weekly data (CC0), from official store locators and VA. Participation varies by location, so call ahead.</div>';
 }
 $("#find").addEventListener("click", findNear);
 $("#zip").addEventListener("keydown", (ev) => { if (ev.key === "Enter") findNear(); });

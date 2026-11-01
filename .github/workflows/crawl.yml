@@ -1,8 +1,8 @@
-name: Weekly discount harvest and Veterans Day watch
+name: Weekly harvest, Veterans Day lists and store locations
 
 on:
   schedule:
-    - cron: "17 9 * * 1"      # Mondays 09:17 UTC
+    - cron: "17 9 * * 1"      # Mondays 09:17 UTC (All the Places publishes its weekly run on Fridays)
     - cron: "17 13 1-14 11 *" # daily in early November, when Veterans Day offers are announced
   workflow_dispatch:
 
@@ -17,6 +17,7 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,21 +25,28 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install pyyaml jsonschema requests beautifulsoup4
-      - name: Harvest 20 percent plus discounts and watch VA News
+      - name: Harvest discounts (two-source rule) and Veterans Day lists
         run: python scripts/crawl.py
+      - name: Refresh store, VA and base locations (All the Places, OpenStreetMap, Wikidata)
+        run: python scripts/snapshot_places.py
+        continue-on-error: true
       - name: Rebuild and validate data.json
-        run: python scripts/build_data.py --check
+        run: |
+          python scripts/build_data.py --selftest
+          python tests/test_crawl.py
+          python tests/test_percent.py
+          python scripts/build_data.py --check
       - name: Commit if anything changed, then redeploy
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "free-military-benefits-bot"
           git config user.email "free-military-benefits-bot@users.noreply.github.com"
-          git add data/crawled.yaml data/watch.json site/data.json
+          git add data/crawled.yaml data/crawled-veterans-day.yaml data/watch.json site/data.json site/places.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "Weekly harvest: refresh auto-listed discounts and Veterans Day watch"
+            git commit -m "Weekly refresh: discounts, Veterans Day lists, store locations"
             git push
             gh workflow run pages.yml --ref main
           fi

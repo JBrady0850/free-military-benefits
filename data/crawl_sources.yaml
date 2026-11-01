@@ -1,7 +1,14 @@
-# Public military-discount directory pages read by scripts/crawl.py.
-# Only pages whose robots.txt allows crawling are read. Only facts are kept
-# (brand, percentage, source link); no text is copied.
-threshold: 21  # more than 20 percent, per John 2026-11-01
+# Pages read by scripts/crawl.py. Only pages whose robots.txt allows crawling are read.
+# Only facts are kept (brand, percentage, link); no text is copied.
+#
+# Listing rules (John, 2026-11-01):
+#   - more than 20 percent, so threshold 21
+#   - every listed offer needs at least two independent sources: two different sites,
+#     or one site plus the brand's own page confirming the percentage
+#   - every link opens directly at the offer (brand page, or the source with the line highlighted)
+threshold: 21
+
+# Year-round military discount directories (feed the Discount directory).
 directories:
   - https://dealhack.com/blog/military-discounts-guide
   - https://hip2save.com/deals/military-discounts/
@@ -13,5 +20,18 @@ directories:
   - https://barbend.com/?p=218235
   - https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel
   - https://www.sheerid.com/?p=71432
+
+# Upstream Veterans Day lists that Reddit freebie threads draw from (2026 pages only).
+# An offer named on two or more of these is auto-listed; one list alone goes to the watch box.
+veterans_day_lists:
+  - https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html
+  - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/
+  - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/
+  - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/
+  - https://veteransdaydeals.us/free-meals/
+
 watch:
   veterans_day: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/

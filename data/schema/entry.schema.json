@@ -36,6 +36,8 @@
     "percent": { "type": "integer", "minimum": 1, "maximum": 99 },
     "percent_up": { "type": "boolean" },
     "auto": { "type": "boolean" },
+    "anchor": { "type": "string", "minLength": 2, "maxLength": 80 },
+    "verified_by": { "type": "string", "enum": ["brand page", "two directories"] },
     "sources": { "type": "array", "items": { "type": "string", "pattern": "^https://" }, "maxItems": 12 }
   }
 }

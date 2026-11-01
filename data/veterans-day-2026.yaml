@@ -15,30 +15,36 @@ defaults:
   slot: anytime
 entries:
   - id: applebees-vd26
+    sources: ["https://www.applebees.com/en/veterans-day-free-meals", "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/"]
     name: Applebee's
     offer: Free dine-in entree from a special Veterans Day menu. Beverages and gratuity not included.
     osm_brand: [Applebee's]
   - id: aspen-creek-vd26
+    sources: ["https://aspencreekgrill.com/veterans/"]
     name: Aspen Creek Grill
     offer: Free $15 meal voucher handed out 11 a.m. to 6 p.m. on Nov. 11, redeemable through Dec. 24, 2026. Dine-in only, ID required.
     slot: lunch
     redeem_by: "2026-12-24"
     osm_brand: [Aspen Creek Grill]
   - id: bar-louie-vd26
+    sources: ["https://www.dinova.com/dining-guide/veterans-day-guide"]
     name: Bar Louie
     offer: Free burger (Big Louie excluded) on Nov. 10 or 11. Dine-in only, ID required.
     event_start: "2026-11-10"
     osm_brand: [Bar Louie]
   - id: biscuit-belly-vd26
+    sources: ["https://www.dinova.com/dining-guide/veterans-day-guide"]
     name: Biscuit Belly
     offer: Free breakfast biscuit sandwich plus coffee or fountain drink. Dine-in only, all locations.
     slot: breakfast
     osm_brand: [Biscuit Belly]
   - id: bob-evans-vd26
+    sources: ["https://www.bobevans.com/veterans-day"]
     name: Bob Evans
     offer: Free meal from a special Veterans Day menu. Dine-in only, valid service ID required.
     osm_brand: [Bob Evans]
   - id: bonefish-vd26
+    sources: ["https://www.military.com/discounts/bonefish-grill-veterans-day-military-discount"]
     name: Bonefish Grill
     offer: Free Bang Bang Shrimp entree plus a nonalcoholic beverage, for veterans, active duty and their families, with ID.
     eligibility: [veteran, active-duty, spouse, dependent]
@@ -46,54 +52,66 @@ entries:
     slot: dinner
     osm_brand: [Bonefish Grill]
   - id: chilis-vd26
+    sources: ["https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html"]
     name: Chili's
     offer: Free entree from a select Veterans Day menu at participating locations. Dine-in only, ID required.
     osm_brand: [Chili's]
   - id: chipotle-vd26
+    sources: ["https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html"]
     name: Chipotle
     offer: Free chips with guacamole, queso blanco or salsa with a $5 purchase at participating locations, with ID.
     osm_brand: [Chipotle]
   - id: cotton-patch-vd26
+    sources: ["https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html"]
     name: Cotton Patch Cafe
     offer: Free Chicken Fried Steak or Chicken Fried Chicken entree. Dine-in only with military ID.
     osm_brand: [Cotton Patch Cafe]
   - id: dennys-vd26
+    sources: ["https://themilitarywallet.com/dennys-military-discount/"]
     name: Denny's
     offer: Free Original Grand Slam from 5 a.m. to 12 p.m. Dine-in only, ID required.
     slot: breakfast
     osm_brand: [Denny's]
   - id: freddys-vd26
+    sources: ["https://www.freddys.com/veterans-day"]
     name: Freddy's Frozen Custard & Steakburgers
     offer: Visit on Nov. 11 for a free combo-meal card, redeemable through Nov. 25, 2026.
     redeem_by: "2026-11-25"
     osm_brand: [Freddy's]
   - id: golden-corral-vd26
+    sources: ["https://veteransdaydeals.us/free-meals/"]
     name: Golden Corral
     offer: Military Appreciation Night with a free buffet for veterans. Dine-in only.
     slot: dinner
     osm_brand: [Golden Corral]
   - id: hosss-vd26
+    sources: ["https://www.military.com/discounts/hosss-steak-and-sea-house-veterans-day-military-discount"]
     name: Hoss's Steak and Sea House
     offer: Free soup, salad, bread, nacho and dessert bar with iced tea, plus a $10 off $40 voucher for a later visit (expires Nov. 25, 2026). Dine-in only, while supplies last.
     eligibility: [veteran]
     redeem_by: "2026-11-25"
     osm_brand: [Hoss's]
   - id: in-n-out-vd26
+    sources: ["https://www.military.com/discounts/n-out-burger-veterans-day-military-discount"]
     name: In-N-Out Burger
     offer: Free burger, fries and beverage, plus a Veterans Day decal, for veterans, active duty, Reserve and National Guard with proof of service.
     eligibility: [veteran, active-duty, guard-reserve]
     osm_brand: [In-N-Out Burger]
   - id: margaritas-vd26
+    sources: ["https://www.military.com/discounts/margaritas-mexican-restaurant-veterans-day-military-discount"]
     name: Margaritas Mexican Restaurant
     offer: 50 percent off an entree when dining in at Northeast locations.
     eligibility: [veteran]
     osm_brand: [Margaritas]
   - id: marzonis-vd26
+    sources: ["https://www.military.com/discounts/marzonis-brick-oven-brewing-co-veterans-day-military-discount"]
     name: Marzoni's Brick Oven & Brewing Co.
     offer: One free 12 oz. draft beer or nonalcoholic drink per veteran. Dine-in only.
     eligibility: [veteran]
     osm_brand: [Marzoni's]
   - id: mccormick-vd26
+    sources: ["https://www.mccormickandschmicks.com/event/veterans-day/"]
+    anchor: "McCormick and Schmick's"
     name: McCormick & Schmick's
     offer: Half-price entree on Sunday, Nov. 8, 2026 for veterans, Gold Star families and active duty.
     eligibility: [veteran, active-duty, gold-star-family]
@@ -102,63 +120,65 @@ entries:
     slot: dinner
     osm_brand: [McCormick & Schmick's]
   - id: red-lobster-vd26
+    sources: ["https://themilitarywallet.com/red-lobster-military-discount/"]
     name: Red Lobster
     offer: Free Shrimp & Chips meal for veterans, active duty and reservists. Dine-in only, ID required.
     eligibility: [veteran, active-duty, guard-reserve]
     osm_brand: [Red Lobster]
   - id: red-robin-vd26
+    sources: ["https://veteransdaydeals.us/free-meals/"]
     name: Red Robin
     offer: Free Red's Big Tavern Burger with bottomless fries. Dine-in only, ID required.
     osm_brand: [Red Robin]
   - id: rubios-vd26
+    sources: ["https://www.military.com/discounts/rubios-coastal-grill-veterans-day-military-discount"]
     name: Rubio's Coastal Grill
     offer: Buy one entree, get one free for veterans with code VETS26. In-store only with military ID.
     eligibility: [veteran]
     verification: [promo-code, military-id]
     osm_brand: [Rubio's]
   - id: ruby-tuesday-vd26
+    sources: ["https://www.rubytuesday.com/veterans-day/"]
     name: Ruby Tuesday
     offer: Free Everyday Fresh Meal (one of 13 entrees, worth up to $17.99) with The Garden Bar and a bottomless drink, for veterans, active duty, Reserve and National Guard. Dine-in at participating locations.
     eligibility: [veteran, active-duty, guard-reserve]
     osm_brand: [Ruby Tuesday]
   - id: sizzler-vd26
+    sources: ["https://www.military.com/discounts/sizzler-veterans-day-military-discount"]
     name: Sizzler
     offer: Free lunch and nonalcoholic beverage from open until 4 p.m. Choose 6 oz. tri-tip sirloin, Malibu Chicken or half a dozen crispy shrimp.
     slot: lunch
     osm_brand: [Sizzler]
   - id: smashburger-vd26
+    sources: ["https://smashburger.com/veterans-day-locations"]
     name: Smashburger
     offer: Free All-American Smashburger at participating locations. ID required.
     eligibility: [veteran]
     osm_brand: [Smashburger]
   - id: starbucks-vd26
+    sources: ["https://themilitarywallet.com/starbucks-military-discount/"]
     name: Starbucks
     offer: Free 12 oz. hot or iced brewed coffee for veterans, service members and military spouses at participating stores.
     eligibility: [veteran, active-duty, spouse]
     slot: coffee
     osm_brand: [Starbucks]
   - id: torchys-vd26
+    sources: ["https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/"]
     name: Torchy's Tacos
     offer: Free taco and drink. In-store only, proof of service required.
     osm_brand: [Torchy's Tacos]
-  - id: vcs-breakfast-vd26
-    name: Veterans Canteen Service (inside VA medical centers)
-    offer: Free breakfast combo meal at VCS PatriotCafe and free brewed value coffee at PatriotBrew, the morning of Tuesday, Nov. 10. No purchase necessary.
-    eligibility: [veteran]
-    verification: [none]
-    event_start: "2026-11-10"
-    event_end: "2026-11-10"
-    slot: breakfast
-    notes: Located inside VA medical centers. Use Near Me to find the closest VA facility.
   - id: wob-vd26
+    sources: ["https://worldofbeer.com/"]
     name: WOB Bar & Kitchen (World of Beer)
     offer: Free Smash Burger and fries at participating locations.
     osm_brand: [World of Beer, WOB]
   - id: yard-house-vd26
+    sources: ["https://www.yardhouse.com/events/veterans-day-deals"]
     name: Yard House
     offer: Free appetizer. Ask your server for details.
     osm_brand: [Yard House]
   - id: krispy-kreme-vd26
+    sources: ["https://www.combatfitness.co/post/veterans-day"]
     name: Krispy Kreme
     offer: Free doughnut and small coffee.
     eligibility: [veteran]
@@ -167,21 +187,15 @@ entries:
     confidence: community
     osm_brand: [Krispy Kreme]
   - id: dave-busters-vd26
+    sources: ["https://www.combatfitness.co/post/veterans-day"]
     name: Dave & Buster's
     offer: Free entree worth up to $20 and a free $10 Power Card with veteran ID.
     eligibility: [veteran]
     source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/
     confidence: community
     osm_brand: [Dave & Buster's]
-  - id: circle-k-vd26
-    name: Circle K
-    offer: Free medium hot or iced coffee with valid military ID.
-    eligibility: [veteran]
-    slot: coffee
-    source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/
-    confidence: community
-    osm_brand: [Circle K]
   - id: ihop-vd26
+    sources: ["https://themilitarywallet.com/veterans-day-free-meals-and-discounts/"]
     name: IHOP
     offer: Free Red, White & Blueberry Pancake Combo. (Not on the VA News list; reported by Military.com and The Military Wallet.)
     slot: breakfast
@@ -189,31 +203,22 @@ entries:
     confidence: community
     osm_brand: [IHOP]
   - id: mission-bbq-vd26
+    sources: ["https://www.combatfitness.co/post/veterans-day"]
     name: Mission BBQ
     offer: Free sandwich for veterans.
     eligibility: [veteran]
     source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html
     confidence: community
     osm_brand: [Mission BBQ]
-  - id: hooters-vd26
-    name: Hooters
-    offer: Military eat free from a special Veterans Day menu with a beverage purchase.
-    source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html
-    confidence: community
-    osm_brand: [Hooters]
-  - id: twin-peaks-vd26
-    name: Twin Peaks
-    offer: Free entree from a select menu.
-    source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html
-    confidence: community
-    osm_brand: [Twin Peaks]
   - id: outback-vd26
+    sources: ["https://freshcalendars.com/news/veterans-day-free-meals-discounts/"]
     name: Outback Steakhouse
     offer: Free Bloomin' Onion and a drink.
     source_url: https://veteransdaydeals.us/free-meals/
     confidence: community
     osm_brand: [Outback Steakhouse]
   - id: pilot-vd26
+    sources: ["https://veteransdaydeals.us/free-meals/"]
     name: Pilot Flying J
     offer: Free sandwich plus coffee or fountain drink for veterans and active duty verified through ID.me.
     verification: [id.me]
@@ -221,6 +226,8 @@ entries:
     confidence: community
     osm_brand: [Pilot, Flying J]
   - id: exchange-sale-vd26
+    sources: ["https://publicaffairs-sme.com/Community/veterans"]
+    anchor: "AAFES"
     name: AAFES Military Exchange Veterans Day savings
     category: retail
     offer: Exchange deals on electronics, clothing and shoes Nov. 6 through 12. MILITARY STAR cardmembers get an extra 10 percent off select items. Online shopping is open to all honorably discharged veterans.
@@ -231,6 +238,7 @@ entries:
     event_start: "2026-11-06"
     event_end: "2026-11-12"
   - id: kohls-vd26
+    sources: ["https://www.military.com/discounts/kohls-veterans-day-military-discount"]
     name: Kohl's
     category: retail
     offer: 30 percent off in-store for military, veterans and families on Nov. 10 and 11 with valid ID. Exclusions apply.
@@ -239,6 +247,7 @@ entries:
     event_start: "2026-11-10"
     osm_brand: [Kohl's]
   - id: publix-vd26
+    sources: ["https://themilitarywallet.com/military-grocery-discounts/"]
     name: Publix
     category: retail
     offer: 10 percent off groceries for veterans, active duty and families with proof of service. Standard exclusions apply.
@@ -246,39 +255,28 @@ entries:
     family: true
     osm_brand: [Publix]
   - id: food-lion-vd26
+    sources: ["https://themilitarywallet.com/military-grocery-discounts/"]
     name: Food Lion
     category: retail
     offer: 10 percent off in-store with military ID and an MVP card. Exclusions apply.
     osm_brand: [Food Lion]
   - id: rack-room-vd26
+    sources: ["https://www.rackroomshoes.com/military-discount"]
     name: Rack Room Shoes
     category: retail
     offer: 20 percent off in-store for veterans, active duty and dependents with ID.
     eligibility: [veteran, active-duty, dependent]
     family: true
     osm_brand: [Rack Room Shoes]
-  - id: walgreens-vd26
-    name: Walgreens
-    category: retail
-    offer: 20 percent off eligible regular-priced items in-store for veterans, active duty and immediate families. VA News lists no specific date; confirm in store.
-    eligibility: [veteran, active-duty, spouse, dependent]
-    family: true
-    osm_brand: [Walgreens]
   - id: tractor-supply-vd26
+    sources: ["https://www.tractorsupply.com/tsc/myaccount/herobenefits"]
     name: Tractor Supply Company
     category: retail
     offer: 10 percent off on Veterans Day for military verified through the Hometown Heroes program, plus year-round quarterly coupons.
     verification: [store-program]
     osm_brand: [Tractor Supply]
-  - id: vcs-ipad-vd26
-    name: Veterans Canteen Service iPad price
-    category: retail
-    offer: 11-inch iPad for $399 (regular $450) in-store at VCS on Nov. 9, 10 and 12 only (not Nov. 11).
-    eligibility: [veteran]
-    verification: [in-person]
-    event_start: "2026-11-09"
-    event_end: "2026-11-12"
   - id: great-clips-vd26
+    sources: ["https://www.greatclips.com/about-us/news-room/vets-day-free-haircuts-2026"]
     name: Great Clips
     category: services
     offer: Free haircut on Nov. 11. Anyone getting a haircut that day can ask for a free haircut card to give a veteran; cards are reported redeemable through Dec. 4, 2026.
@@ -286,22 +284,28 @@ entries:
     osm_brand: [Great Clips]
     notes: Card expiry per The Military Wallet and U.S. Veterans Magazine.
   - id: sport-clips-vd26
+    sources: ["https://www.military.com/discounts/sport-clips-veterans-day-military-discount"]
     name: Sport Clips
     category: services
     offer: Free or discounted haircuts at participating locations with valid ID.
     osm_brand: [Sport Clips]
   - id: grace-for-vets-vd26
+    sources: ["https://graceforvets.com/"]
+    anchor: "Grace for Vets"
     name: Grace for Vets car washes
     category: services
     offer: Free car washes for veterans and active duty at participating locations nationwide.
     verification: [none]
   - id: autonation-vd26
+    sources: ["https://www.autonation.com/offers/military-discounts"]
+    anchor: "AutoNation"
     name: AutoNation service centers
     category: services
     offer: 15 percent off service, parts and accessories on Veterans Day and year-round at AutoNation-branded locations; also 15 percent off AutoNation Mobile Service in November.
     event_end: "2026-11-30"
     osm_brand: [AutoNation]
   - id: legoland-vd26
+    sources: ["https://www.legoland.com/florida/deals/military-offers/"]
     name: Legoland Florida and New York
     category: attractions
     offer: Free admission for military personnel and veterans (and first responders) Oct. 1 through Nov. 30, 2026, with discounted tickets for guests.
@@ -310,6 +314,7 @@ entries:
     event_end: "2026-11-30"
     states: [FL, NY]
   - id: colonial-williamsburg-vd26
+    sources: ["https://www.colonialwilliamsburg.org/visit/through-the-seasons/veterans-day-weekend/"]
     name: Colonial Williamsburg
     category: attractions
     offer: Free admission Nov. 6 through 11 for active duty, retirees, veterans, Guard and Reserve, and dependents. ID required.
@@ -318,17 +323,21 @@ entries:
     event_start: "2026-11-06"
     states: [VA]
   - id: jyf-museums-vd26
+    sources: ["https://www.jyfmuseums.org/events/programs-activities/veterans-day"]
+    anchor: "American Revolution Museum at Yorktown"
     name: Yorktown and Jamestown Settlement museums
     category: attractions
     offer: Free admission for military, veterans and up to three direct family members, with ceremonies and an artillery salute.
     family: true
     states: [VA]
   - id: aquarium-pacific-vd26
+    sources: ["https://www.aquariumofpacific.org/events/info/veterans_day"]
     name: Aquarium of the Pacific (Long Beach)
     category: attractions
     offer: Free admission for veterans and active duty. Advance reservations required; capacity is limited.
     states: [CA]
   - id: eisenhower-library-vd26
+    sources: ["https://www.archives.gov/calendar/event/veterans-day-free-museum-admission-0"]
     name: Eisenhower Presidential Library (Abilene)
     category: attractions
     offer: Free museum admission 9 a.m. to 4:30 p.m. CT. VA News does not limit it to veterans; confirm.
@@ -336,17 +345,21 @@ entries:
     verification: [none]
     states: [KS]
   - id: harley-museum-vd26
+    sources: ["https://www.harley-davidson.com/us/en/experiences/events/veteransday.html"]
+    anchor: "Davidson Museum"
     name: Harley-Davidson Museum (Milwaukee)
     category: attractions
     offer: Free admission for veterans and active duty plus one adult guest and up to four children, plus 10 percent off at the shop and restaurant.
     family: true
     states: [WI]
   - id: mount-vernon-vd26
+    sources: ["https://www.mountvernon.org/plan-your-visit/calendar/events/mount-vernon-salutes-veterans"]
     name: Mount Vernon (George Washington's estate)
     category: attractions
     offer: Free admission for active duty and veterans with special programming.
     states: [VA]
   - id: amrev-museum-vd26
+    sources: ["https://www.amrevmuseum.org/events/veterans-day-2026-at-the-museum"]
     name: Museum of the American Revolution (Philadelphia)
     category: attractions
     offer: Free admission Nov. 8 through 11 for active duty, veterans and Blue Star families.
@@ -355,22 +368,28 @@ entries:
     event_start: "2026-11-08"
     states: [PA]
   - id: wwi-museum-vd26
+    sources: ["https://www.theworldwar.org/veteransday"]
     name: National WWI Museum and Memorial (Kansas City)
     category: attractions
     offer: Free admission for veterans and active duty Nov. 6 through 9 and Nov. 11; the public pays half price.
     event_start: "2026-11-06"
     states: [MO]
   - id: trolley-savannah-vd26
+    sources: ["https://www.trolleytours.com/savannah/coupons-promotions"]
+    anchor: "Old Town Trolley – Savannah"
     name: Old Town Trolley Savannah
     category: attractions
     offer: Free admission to listed attractions for veterans, active duty and first responders with valid ID.
     states: [GA]
   - id: trolley-staugustine-vd26
+    sources: ["https://www.trolleytours.com/st-augustine/coupons-promotions"]
+    anchor: "Old Town Trolley – St. Augustine"
     name: Old Town Trolley St. Augustine
     category: attractions
     offer: Free admission to select attractions for veterans, active duty and first responders with valid ID.
     states: [FL]
   - id: san-antonio-zoo-vd26
+    sources: ["https://sazoo.org/sitewrench-calendar/san-antonio-zoo/?swwpc_calendar_id=839&swwpc_event_id=6132937&swwpc_event_date=2026-11-01"]
     name: San Antonio Zoo
     category: attractions
     offer: Free admission all November for veterans and active duty; up to four family members get 50 percent off. ID required.
@@ -378,20 +397,3 @@ entries:
     event_start: "2026-11-01"
     event_end: "2026-11-30"
     states: [TX]
-  - id: wwii-museum-vd26
-    name: The National WWII Museum (New Orleans)
-    category: attractions
-    offer: Free admission for veterans of all conflicts, plus a public commemoration ceremony 11 a.m. to noon.
-    eligibility: [veteran]
-    source_url: https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/
-    confidence: community
-    states: [LA]
-  - id: hogle-zoo-vd26
-    name: Utah's Hogle Zoo (Salt Lake City)
-    category: attractions
-    offer: Free general admission 10 a.m. to 5 p.m. for active service members, veterans, military benefitted family members and immediate family.
-    eligibility: [veteran, active-duty, spouse, dependent]
-    family: true
-    source_url: https://themilitarywallet.com/veterans-day-retail-discounts/
-    confidence: community
-    states: [UT]
