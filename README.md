@@ -2,7 +2,7 @@
 
 Free, open-source military benefits toolkit. Every military and veteran discount, free benefit, and planning tool in one place, at no cost, with no account and no tracking. Others charge up to $59.99 a year to aggregate public data; this project keeps the data open.
 
-**Planned live site:** https://jbrady0850.github.io/earned-benefits/
+**Live site:** https://jbrady0850.github.io/earned-benefits/
 
 ## What works in this v0 scaffold
 
