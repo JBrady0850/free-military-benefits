@@ -1,4 +1,4 @@
-# Earned Benefits discount dataset. Rules: README.md "Data rules".
+# Free Military Benefits discount dataset. Rules: README.md "Data rules".
 entries:
   - id: govx-marketplace
     name: GovX
@@ -7,6 +7,8 @@ entries:
     eligibility: [active-duty, veteran, retiree, guard-reserve, spouse]
     verification: [govx, dd214, military-id]
     scope: online
+    percent: 50
+    percent_up: true
     source_url: https://www.govx.com
     last_verified: "2026-11-01"
     confidence: official
@@ -29,6 +31,8 @@ entries:
     eligibility: [active-duty, veteran, spouse]
     verification: [sheerid]
     scope: online
+    percent: 60
+    percent_up: true
     source_url: https://get.expertvoice.com/military-community/
     last_verified: "2026-11-01"
     confidence: official

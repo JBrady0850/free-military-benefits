@@ -19,5 +19,7 @@ jobs:
         run: python scripts/build_data.py --selftest
       - name: Crawler parsing checks (offline)
         run: python tests/test_crawl.py
+      - name: Discount badge percentage checks
+        run: python tests/test_percent.py
       - name: Validate dataset against schema and build data.json
         run: python scripts/build_data.py --check

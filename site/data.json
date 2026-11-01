@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 21:11 UTC",
+ "generated": "2026-11-01 21:21 UTC",
  "data_version": "2026-11-01",
  "counts": {
   "hidden": 10,
@@ -7,9 +7,9 @@
   "travel": 4,
   "free": 13,
   "discount": 8,
-  "crawled": 133
+  "crawled": 70
  },
- "total": 231,
+ "total": 168,
  "watch": {
   "checked": "2026-11-01",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
@@ -647,7 +647,8 @@
    "osm_brand": [
     "Margaritas"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 50
   },
   {
    "category": "food",
@@ -695,7 +696,8 @@
    "osm_brand": [
     "McCormick & Schmick's"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 50
   },
   {
    "category": "food",
@@ -1196,7 +1198,8 @@
    "name": "AAFES Military Exchange Veterans Day savings",
    "offer": "Exchange deals on electronics, clothing and shoes Nov. 6 through 12. MILITARY STAR cardmembers get an extra 10 percent off select items. Online shopping is open to all honorably discharged veterans.",
    "online": true,
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "category": "retail",
@@ -1223,7 +1226,8 @@
    "osm_brand": [
     "Kohl's"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 30
   },
   {
    "category": "retail",
@@ -1250,7 +1254,8 @@
    "osm_brand": [
     "Publix"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "category": "retail",
@@ -1274,7 +1279,8 @@
    "osm_brand": [
     "Food Lion"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "category": "retail",
@@ -1300,7 +1306,8 @@
    "osm_brand": [
     "Rack Room Shoes"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 20
   },
   {
    "category": "retail",
@@ -1327,7 +1334,8 @@
    "osm_brand": [
     "Walgreens"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 20
   },
   {
    "category": "retail",
@@ -1351,7 +1359,8 @@
    "osm_brand": [
     "Tractor Supply"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "category": "retail",
@@ -1466,7 +1475,8 @@
    "osm_brand": [
     "AutoNation"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 15
   },
   {
    "category": "attractions",
@@ -1837,7 +1847,9 @@
    ],
    "source_url": "https://www.cruisecritic.com/articles/military-cruise-deals-what-they-are-and-how-to-get-one",
    "notes": "Military.com and Travel Market Report describe the same program; confirm the discount applies to your sailing before booking.",
-   "kind": "travel"
+   "kind": "travel",
+   "percent": 10,
+   "percent_up": true
   },
   {
    "category": "cruise",
@@ -2155,6 +2167,8 @@
     "military-id"
    ],
    "scope": "online",
+   "percent": 50,
+   "percent_up": true,
    "source_url": "https://www.govx.com",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -2197,6 +2211,8 @@
     "sheerid"
    ],
    "scope": "online",
+   "percent": 60,
+   "percent_up": true,
    "source_url": "https://get.expertvoice.com/military-community/",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -2297,7 +2313,9 @@
    "last_verified": "2026-11-01",
    "confidence": "community",
    "notes": "Reported consistently on r/VeteransBenefits; confirm the rate at booking.",
-   "kind": "discount"
+   "kind": "discount",
+   "percent": 25,
+   "percent_up": true
   },
   {
    "id": "wesalute-membership",
@@ -2385,7 +2403,8 @@
    "sources": [
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2561,7 +2580,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2649,7 +2669,8 @@
    "sources": [
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2771,7 +2792,8 @@
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2817,7 +2839,8 @@
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "https://usmilitary.com/top-25-military-discounts/"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2861,7 +2884,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -2993,7 +3017,8 @@
    "sources": [
     "https://usmilitary.com/top-25-military-discounts/"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3015,7 +3040,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3247,7 +3273,8 @@
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "https://usmilitary.com/top-25-military-discounts/"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3359,7 +3386,8 @@
    "sources": [
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3381,7 +3409,8 @@
    "sources": [
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3580,7 +3609,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3602,7 +3632,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3624,7 +3655,8 @@
    "sources": [
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3668,7 +3700,8 @@
    "sources": [
     "https://www.sheerid.com/?p=71432"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3758,7 +3791,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3824,7 +3858,8 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
    ],
-   "kind": "crawled"
+   "kind": "crawled",
+   "percent_up": true
   },
   {
    "eligibility": [
@@ -3889,1408 +3924,6 @@
    "source_url": "https://dealhack.com/blog/military-discounts-guide",
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-american-giant",
-   "name": "American Giant",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-auto-accessories-garage",
-   "name": "Auto Accessories Garage",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-backcountry",
-   "name": "Backcountry",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by hip2save.com, wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://hip2save.com/deals/military-discounts/",
-   "sources": [
-    "https://hip2save.com/deals/military-discounts/",
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-bn3th",
-   "name": "BN3TH",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-boden",
-   "name": "Boden",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-bonobos",
-   "name": "Bonobos",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, dealnews.com, sheerid.com, wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-budget-truck-rental",
-   "name": "Budget Truck Rental",
-   "category": "travel",
-   "offer": "Reported up to 20 percent military discount (listed by dealhack.com, hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://hip2save.com/deals/military-discounts/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-burton-snowboards",
-   "name": "Burton Snowboards",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-charles-colvard",
-   "name": "Charles & Colvard",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-clinique",
-   "name": "Clinique",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-cole-haan",
-   "name": "Cole Haan",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-coral-tusk",
-   "name": "Coral & Tusk",
-   "category": "health",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-corepower-yoga",
-   "name": "CorePower Yoga",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-cracker-barrel",
-   "name": "Cracker Barrel",
-   "category": "food",
-   "offer": "Reported 20 percent military discount (listed by wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
-   "sources": [
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-curvd-earplugs",
-   "name": "Curvd Earplugs",
-   "category": "technology",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-cvs",
-   "name": "CVS",
-   "category": "health",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com, hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://hip2save.com/deals/military-discounts/",
-   "sources": [
-    "https://hip2save.com/deals/military-discounts/",
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-dagne-dover",
-   "name": "Dagne Dover",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-dickies",
-   "name": "Dickies",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-e-z-up",
-   "name": "E-Z UP",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-ergobaby",
-   "name": "Ergobaby",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-eyemart-express",
-   "name": "Eyemart Express",
-   "category": "health",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://hip2save.com/deals/military-discounts/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-finish-line",
-   "name": "Finish Line",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by militaryfamilies.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://militaryfamilies.com/?p=32765",
-   "sources": [
-    "https://militaryfamilies.com/?p=32765"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-from-you-flowers",
-   "name": "From You Flowers",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-gold-s-gym",
-   "name": "Gold's Gym",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-golfnow",
-   "name": "GolfNow",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
-   "sources": [
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-goodwill-southern-new-england",
-   "name": "Goodwill Southern New England",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-hey-dude-shoes",
-   "name": "Hey Dude Shoes",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://hip2save.com/deals/military-discounts/",
-   "sources": [
-    "https://hip2save.com/deals/military-discounts/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-hydro-flask",
-   "name": "Hydro Flask",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-jd-sports",
-   "name": "JD Sports",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by militaryfamilies.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://militaryfamilies.com/?p=32765",
-   "sources": [
-    "https://militaryfamilies.com/?p=32765"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-karen-kane",
-   "name": "Karen Kane",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-lasik-plus",
-   "name": "Lasik Plus",
-   "category": "health",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-layla-sleep",
-   "name": "Layla Sleep",
-   "category": "home-improvement",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-lovehoney",
-   "name": "Lovehoney",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-man-crates",
-   "name": "Man Crates",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-manscaped",
-   "name": "Manscaped",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-merrell",
-   "name": "Merrell",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-moody-gardens",
-   "name": "Moody Gardens",
-   "category": "attractions",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-osprey",
-   "name": "Osprey",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-oxo",
-   "name": "OXO",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-petmate",
-   "name": "Petmate",
-   "category": "home-improvement",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-pinmart-inc",
-   "name": "PinMart Inc",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-puma",
-   "name": "Puma",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-pvolve",
-   "name": "Pvolve",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-pxg",
-   "name": "PXG",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://hip2save.com/deals/military-discounts/",
-   "sources": [
-    "https://hip2save.com/deals/military-discounts/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-qardio",
-   "name": "Qardio",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-red-kap",
-   "name": "Red Kap",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-ring",
-   "name": "Ring",
-   "category": "technology",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, hip2save.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://hip2save.com/deals/military-discounts/"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-rothy-s",
-   "name": "Rothy's",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-saucony",
-   "name": "Saucony",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by hip2save.com, militaryfamilies.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://hip2save.com/deals/military-discounts/",
-   "sources": [
-    "https://hip2save.com/deals/military-discounts/",
-    "https://militaryfamilies.com/?p=32765"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-six-flags",
-   "name": "Six Flags",
-   "category": "attractions",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-southern-tide",
-   "name": "Southern Tide",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-sword-plough",
-   "name": "Sword & Plough",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-the-linz-shop",
-   "name": "The Linz Shop",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-therafit",
-   "name": "Therafit",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-thule",
-   "name": "Thule",
-   "category": "outdoor",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-tommy-john",
-   "name": "Tommy John",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by dealnews.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-   "sources": [
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-tread-labs",
-   "name": "Tread Labs",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-true-classic",
-   "name": "True Classic",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-under-armour",
-   "name": "Under Armour",
-   "category": "retail",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com, dealnews.com, hip2save.com, militaryfamilies.com, usmilitary.com, wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide",
-    "https://hip2save.com/deals/military-discounts/",
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
-    "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
-    "https://usmilitary.com/top-25-military-discounts/",
-    "https://militaryfamilies.com/?p=32765"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-university-of-antelope-valley",
-   "name": "University of Antelope Valley",
-   "category": "education",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-virtualpbx",
-   "name": "VirtualPBX",
-   "category": "technology",
-   "offer": "Reported 20 percent military discount (listed by dealhack.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://dealhack.com/blog/military-discounts-guide",
-   "sources": [
-    "https://dealhack.com/blog/military-discounts-guide"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-vivaia",
-   "name": "VIVAIA",
-   "category": "apparel",
-   "offer": "Reported 20 percent military discount (listed by sheerid.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.sheerid.com/?p=71432",
-   "sources": [
-    "https://www.sheerid.com/?p=71432"
-   ],
-   "kind": "crawled"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "online",
-   "last_verified": "2026-11-01",
-   "confidence": "community",
-   "auto": true,
-   "id": "auto-yeti",
-   "name": "YETI",
-   "category": "attractions",
-   "offer": "Reported 20 percent military discount (listed by wearethemighty.com). Confirm current terms and who qualifies at the brand before buying.",
-   "percent": 20,
-   "source_url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
-   "sources": [
-    "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/"
    ],
    "kind": "crawled"
   }

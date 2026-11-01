@@ -1,8 +1,8 @@
-# Earned Benefits (working name)
+# Free Military Benefits (working name)
 
 A free military and veteran benefits brief. It leads with what most people do not know, applies it to your own status and ZIP code, and keeps every entry sourced and dated. No account, no tracking, no fees.
 
-**Live site:** https://jbrady0850.github.io/earned-benefits/
+**Live site:** https://jbrady0850.github.io/free-military-benefits/
 
 ## What it does
 

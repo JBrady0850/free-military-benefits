@@ -1,4 +1,4 @@
-"""Validate the Earned Benefits dataset and build site/data.json.
+"""Validate the Free Military Benefits dataset and build site/data.json.
 
 Usage:
     python scripts/build_data.py            # validate and write site/data.json
@@ -13,6 +13,7 @@ No em dashes in any generated output (house convention).
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -32,6 +33,37 @@ SOURCES = {
 WATCH = ROOT / "data" / "watch.json"
 OUT = ROOT / "site" / "data.json"
 EM_DASH = chr(0x2014)
+PCT_RANGE = re.compile(r"(?<!\d)(\d{1,2})\s*(?:to|-)\s*(\d{1,2})\s*(?:percent|%)\s+(?:off|discount)", re.I)
+PCT_ONE = re.compile(r"(up to\s+)?(?<!\d)(\d{1,2})\s*(?:percent|%)\s+(?:off|discount)", re.I)
+HALF = re.compile(r"\bhalf[- ]price", re.I)
+
+
+def derive_percent(entry: dict) -> None:
+    """Fill `percent` (and `percent_up` for "up to" offers) from the offer text.
+
+    Skipped for free items and for offers that lead with "Free", so a free
+    admission with a family discount is not badged as a percentage deal.
+    """
+    offer = str(entry.get("offer", ""))
+    if entry.get("percent"):
+        if "percent_up" not in entry and re.search(r"up to\s+%d\s*(?:percent|%%)" % entry["percent"], offer, re.I):
+            entry["percent_up"] = True
+        return
+    if entry.get("kind") == "free" or re.match(r"\s*free\b", offer, re.I):
+        return
+    m = PCT_RANGE.search(offer)
+    if m:
+        entry["percent"] = max(int(m.group(1)), int(m.group(2)))
+        entry["percent_up"] = True
+        return
+    m = PCT_ONE.search(offer)
+    if m:
+        entry["percent"] = int(m.group(2))
+        if m.group(1):
+            entry["percent_up"] = True
+        return
+    if HALF.search(offer):
+        entry["percent"] = 50
 
 
 def load_entries(sources: dict[str, Path]) -> tuple[list[dict], list[str]]:
@@ -47,6 +79,7 @@ def load_entries(sources: dict[str, Path]) -> tuple[list[dict], list[str]]:
         defaults = doc.get("defaults") or {}
         for raw in doc.get("entries") or []:
             entry = {**defaults, **raw, "kind": kind}
+            derive_percent(entry)
             eid = str(entry.get("id", "<missing id>"))
             if eid in seen:
                 errors.append(f"duplicate id: {eid}")

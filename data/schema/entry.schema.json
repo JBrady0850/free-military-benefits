@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://jbrady0850.github.io/earned-benefits/data/schema/entry.schema.json",
-  "title": "Earned Benefits entry",
+  "$id": "https://jbrady0850.github.io/free-military-benefits/data/schema/entry.schema.json",
+  "title": "Free Military Benefits entry",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "name", "category", "offer", "eligibility", "verification", "scope", "source_url", "last_verified", "confidence"],
@@ -34,6 +34,7 @@
     "family": { "type": "boolean" },
     "online": { "type": "boolean" },
     "percent": { "type": "integer", "minimum": 1, "maximum": 99 },
+    "percent_up": { "type": "boolean" },
     "auto": { "type": "boolean" },
     "sources": { "type": "array", "items": { "type": "string", "pattern": "^https://" }, "maxItems": 12 }
   }

@@ -32,7 +32,7 @@ CONFIG = ROOT / "data" / "crawl_sources.yaml"
 OUT = ROOT / "data" / "crawled.yaml"
 WATCH_OUT = ROOT / "data" / "watch.json"
 CURATED = ["discounts.yaml", "hidden.yaml", "travel.yaml", "free.yaml", "veterans-day-2026.yaml"]
-UA = "EarnedBenefitsBot/0.2 (+https://github.com/JBrady0850/earned-benefits)"
+UA = "FreeMilitaryBenefitsBot/0.2 (+https://github.com/JBrady0850/free-military-benefits)"
 HEADERS = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"}
 
 DASHES = chr(0x2013) + chr(0x2014)

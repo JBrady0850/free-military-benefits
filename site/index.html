@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Earned Benefits</title>
+<title>Free Military Benefits</title>
 <meta name="description" content="Free military and veteran benefits brief: what your service unlocks, Veterans Day 2026 offers, what is near your ZIP code, travel, and 20 percent plus discounts. No account, no tracking.">
 <link rel="icon" href="data:,">
 <style>
@@ -52,6 +52,7 @@ section.on{display:block}
 .p-off{background:#1e8449}.p-com{background:#6c3d9e}.p-auto{background:#8a5a00}.p-free{background:#117a65}
 .p-hot{background:#c0392b}.p-warm{background:#a14f00}.p-cool{background:#34495e}.p-old{background:#6d5530}
 .p-mark{background:#d4a017;color:#0f2744}
+.b20{display:inline-block;margin-left:8px;vertical-align:middle;font-size:11px;font-weight:bold;letter-spacing:.05em;color:#0f2744;background:#d4a017;border:1px solid #0f2744;border-radius:3px;padding:1px 7px;white-space:nowrap}
 .chips{margin:4px 0 10px}
 .chip{font:inherit;font-size:12px;padding:4px 10px;border:1px solid #cfd6df;border-radius:999px;background:#fff;color:#0f2744;cursor:pointer;margin:0 6px 6px 0}
 .chip.on{background:#d4a017;border-color:#d4a017;color:#0f2744;font-weight:bold}
@@ -75,7 +76,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 <div class="wrap">
  <div class="mast">
   <div class="kick">Free military and veteran benefits brief</div>
-  <div class="ttl">Earned Benefits</div>
+  <div class="ttl">Free Military Benefits</div>
   <div class="dl" id="dek">No account. No tracking. Every entry links its source.</div>
  </div>
  <div class="rule"></div>
@@ -123,7 +124,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   <section id="sec-travel"><div id="travelOut"></div></section>
 
   <section id="sec-dir">
-   <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>20 percent or more</strong>, refreshed automatically each week. Auto-found entries are community-reported; confirm at the brand.</div>
+   <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>more than 20 percent</strong>, refreshed automatically each week. A gold badge such as <span class="b20" style="margin-left:0">25% OFF</span> beside a name marks every company offering more than 20 percent, here and on every other tab. Auto-found entries are community-reported; confirm at the brand.</div>
    <div class="row">
     <span style="flex:1;min-width:200px"><label for="q">Search</label><input id="q" type="search" style="width:100%;box-sizing:border-box" placeholder="Brand, category, PX, BX, commissary, cruise"></span>
     <span><label for="sort">Sort</label><select id="sort"><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
@@ -154,8 +155,8 @@ ol.steps input{margin-right:6px;vertical-align:middle}
  <div class="foot" id="foot">
   Veterans Day offers: VA News 2026 list (verified by VA Oct. 22, updated Oct. 30) plus named community sources. Auto-listed brands are community-reported by public directories and refreshed weekly. Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap contributors</a> (ODbL). ZIP centers: U.S. Census Bureau Gazetteer. Free-experience entries draw on the veteran-opportunities directory by Tech with Victoria.<br>
   Not affiliated with DoD, VA or any brand. Nothing here is legal or financial advice; confirm every offer at its source. Code MIT, data CC BY-SA 4.0.
-  <a href="https://github.com/JBrady0850/earned-benefits" rel="noopener" target="_blank">Source on GitHub</a> |
-  <a href="https://github.com/JBrady0850/earned-benefits/issues/new" rel="noopener" target="_blank">Report a correction</a><br>
+  <a href="https://github.com/JBrady0850/free-military-benefits" rel="noopener" target="_blank">Source on GitHub</a> |
+  <a href="https://github.com/JBrady0850/free-military-benefits/issues/new" rel="noopener" target="_blank">Report a correction</a><br>
   <span id="verline"></span>
  </div>
 </div>
@@ -212,7 +213,7 @@ function pills(e) {
  const p = [];
  if (e.auto) p.push(["p-auto", "AUTO-FOUND"]);
  p.push(e.confidence === "official" ? ["p-off", "OFFICIAL SOURCE"] : e.confidence === "community" ? ["p-com", "COMMUNITY REPORTED"] : ["p-warm", "UNCONFIRMED"]);
- if (e.percent) p.push([e.percent >= 20 ? "p-hot" : "p-cool", e.percent + "% OFF"]);
+ if (e.percent && e.percent < BADGE_MIN) p.push(["p-cool", (e.percent_up ? "UP TO " : "") + e.percent + "% OFF"]);
  if (e.kind === "free") p.push(["p-free", "FREE"]);
  if (e.kind === "veterans-day") p.push(["p-mark", dateRange(e).toUpperCase()]);
  if (e.redeem_by) p.push(["p-free", "REDEEM BY " + md(e.redeem_by).toUpperCase()]);
@@ -221,6 +222,13 @@ function pills(e) {
  if (ended(e)) p.push(["p-old", "ENDED"]);
  p.push(["p-cool", "CHECKED " + e.last_verified]);
  return p.map((x) => '<span class="pill ' + x[0] + '">' + esc(x[1]) + "</span>").join("");
+}
+
+const BADGE_MIN = 21; // more than 20 percent, per John 2026-11-01
+function badge(e) {
+ if (!(e.percent >= BADGE_MIN)) return "";
+ const label = (e.percent_up ? "UP TO " : "") + e.percent + "% OFF";
+ return '<span class="b20" title="Offers ' + (e.percent_up ? "up to " : "") + e.percent + ' percent off; confirm terms at the source">' + esc(label) + "</span>";
 }
 
 function steps(e) {
@@ -234,7 +242,7 @@ function steps(e) {
 function item(e, extra) {
  const more = (e.sources || []).length > 1 ? " (+" + (e.sources.length - 1) + " more sources)" : "";
  return '<div class="it" id="e-' + esc(e.id) + '">' +
-  '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" +
+  '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" + badge(e) +
   '<div class="meta">' + pills(e) + "</div>" +
   (extra || "") +
   '<div class="sum">' + esc(e.offer) + "</div>" +
@@ -286,9 +294,9 @@ function countdown() {
 function tiles() {
  const unlock = DATA.filter((e) => e.kind === "hidden" && fits(e)).length;
  const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e)).length;
- const big = DATA.filter((e) => e.percent >= 20).length;
+ const big = DATA.filter((e) => e.percent >= BADGE_MIN).length;
  $("#tiles").innerHTML = [[unlock, picked.length ? "unlocked for you" : "hidden benefits"], [vdLive, "Veterans Day offers"],
-  [big, "brands at 20%+ off"], [DATA.length, "entries, all free"]].map((t) =>
+  [big, "companies over 20% off"], [DATA.length, "entries, all free"]].map((t) =>
   '<div class="tile"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
 }
 
@@ -378,8 +386,8 @@ function nextDay(d) { const x = new Date(d + "T12:00:00Z"); x.setUTCDate(x.getUT
 function fold(line) { const out = []; while (line.length > 72) { out.push(line.slice(0, 72)); line = " " + line.slice(72); } out.push(line); return out.join("\r\n"); }
 function makeIcs(list) {
  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
- const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Earned Benefits//Veterans Day//EN", "CALSCALE:GREGORIAN"];
- const ev = (uid, start, end, title, desc) => L.push("BEGIN:VEVENT", "UID:" + uid + "@earned-benefits", "DTSTAMP:" + stamp,
+ const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Free Military Benefits//Veterans Day//EN", "CALSCALE:GREGORIAN"];
+ const ev = (uid, start, end, title, desc) => L.push("BEGIN:VEVENT", "UID:" + uid + "@free-military-benefits", "DTSTAMP:" + stamp,
   "DTSTART;VALUE=DATE:" + ymd(start), "DTEND;VALUE=DATE:" + ymd(nextDay(end)), fold("SUMMARY:" + icsEsc(title)),
   fold("DESCRIPTION:" + icsEsc(desc)), "END:VEVENT");
  list.forEach((e) => {
@@ -421,7 +429,7 @@ let dirCat = "all", dir20 = false;
 function dirEntries() { return DATA.filter((e) => e.kind === "discount" || e.kind === "crawled"); }
 function dirChips() {
  const cats = ["all"].concat([...new Set(dirEntries().map((e) => e.category))].sort());
- $("#dirChips").innerHTML = '<button type="button" class="chip' + (dir20 ? " on" : "") + '" data-d20="1">20%+ only</button>' +
+ $("#dirChips").innerHTML = '<button type="button" class="chip' + (dir20 ? " on" : "") + '" data-d20="1">Over 20% only</button>' +
   cats.map((c) => '<button type="button" class="chip' + (c === dirCat ? " on" : "") + '" data-dc="' + esc(c) + '">' +
   esc(c === "all" ? "All categories" : c.replace(/-/g, " ")) + "</button>").join("");
 }
@@ -437,7 +445,7 @@ function renderDir() {
  const toks = $("#q").value.toLowerCase().split(/\s+/).filter(Boolean).map((t) => SYN[t] || t);
  let list = dirEntries().filter((e) => {
   if (dirCat !== "all" && e.category !== dirCat) return false;
-  if (dir20 && !(e.percent >= 20)) return false;
+  if (dir20 && !(e.percent >= BADGE_MIN)) return false;
   const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category).toLowerCase();
   return toks.every((t) => hay.includes(t));
  });
@@ -639,7 +647,7 @@ $("#ask").addEventListener("click", async () => {
  if (!q) { out.textContent = "Type a question first."; return; }
  if (provider !== "ollama" && !key) { out.textContent = "Add your own API key for " + provider + ", or pick Ollama for a free local model."; return; }
  const who = STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1]).join("; ") || "not given";
- const prompt = "You answer questions for Earned Benefits, a free military and veteran benefits site. Use ONLY the entries below. " +
+ const prompt = "You answer questions for Free Military Benefits, a free military and veteran benefits site. Use ONLY the entries below. " +
   "Cite entry ids in square brackets after each claim. If the entries do not cover the question, say so and suggest VA.gov or an accredited VSO. " +
   "Never invent an offer, percentage, date or eligibility rule. Mention when an entry is community reported. No em dashes.\n\n" +
   "USER STATUS: " + who + "\n\nENTRIES:\n" + aiContext(q) + "\n\nQUESTION: " + q;

@@ -1,7 +1,7 @@
 # Public military-discount directory pages read by scripts/crawl.py.
 # Only pages whose robots.txt allows crawling are read. Only facts are kept
 # (brand, percentage, source link); no text is copied.
-threshold: 20
+threshold: 21  # more than 20 percent, per John 2026-11-01
 directories:
   - https://dealhack.com/blog/military-discounts-guide
   - https://hip2save.com/deals/military-discounts/
