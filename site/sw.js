@@ -1,9 +1,11 @@
-/* Free Military Benefits service worker.
+/* Free Military Benefits service worker. Standalone: it reads, writes and deletes only its own caches
+   (names starting with "fmb-"), never another app's, even though other sites share this github.io address.
    Network first for the page and data.json, so updates show on the next visit and the app still opens offline.
    zip.json and places.json are cached on first use and refreshed in the background.
-   Only same-origin GET requests are handled; AI provider calls and map links are never cached.
+   Only same-origin GET requests under this app's scope are handled; AI provider calls and map links are never cached.
    Bump VERSION whenever the SHELL list changes. */
-const VERSION = "fmb-v0.7.1";
+const PREFIX = "fmb-";
+const VERSION = PREFIX + "v0.7.2";
 const SHELL = ["./", "index.html", "data.json", "manifest.webmanifest", "icon-192.png", "icon-512.png",
   "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png"];
 const BIG = ["zip.json", "places.json"];
@@ -14,9 +16,11 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(caches.keys()
-    .then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k))))
+    .then((keys) => Promise.all(keys.filter((k) => k.startsWith(PREFIX) && k !== VERSION).map((k) => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
+
+const mine = (req) => caches.open(VERSION).then((c) => c.match(req, {ignoreSearch: true}));
 
 function put(req, res) {
   if (res && res.ok && res.type === "basic") {
@@ -27,7 +31,7 @@ function put(req, res) {
 }
 
 async function networkFirst(req, waitMs) {
-  const cached = caches.match(req, {ignoreSearch: true});
+  const cached = mine(req);
   const net = fetch(req).then((res) => put(req, res));
   const timer = new Promise((resolve) => setTimeout(resolve, waitMs, null));
   const first = await Promise.race([net.catch(() => null), timer]);
@@ -38,7 +42,7 @@ async function networkFirst(req, waitMs) {
 }
 
 async function staleWhileRevalidate(req) {
-  const hit = await caches.match(req, {ignoreSearch: true});
+  const hit = await mine(req);
   const net = fetch(req).then((res) => put(req, res)).catch(() => null);
   return hit || (await net) || Response.error();
 }
@@ -47,7 +51,7 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (url.origin !== self.location.origin) return;
+  if (url.origin !== self.location.origin || !url.href.startsWith(self.registration.scope)) return;
   const name = url.pathname.split("/").pop();
   if (req.mode === "navigate" || name === "" || name === "index.html") {
     event.respondWith(networkFirst(new Request(new URL("index.html", self.registration.scope)), 4000)); // one cached copy of the page
@@ -56,6 +60,6 @@ self.addEventListener("fetch", (event) => {
   } else if (BIG.includes(name)) {
     event.respondWith(staleWhileRevalidate(req));
   } else {
-    event.respondWith(caches.match(req).then((hit) => hit || fetch(req).then((res) => put(req, res))));
+    event.respondWith(mine(req).then((hit) => hit || fetch(req).then((res) => put(req, res))));
   }
 });
