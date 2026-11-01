@@ -1,39 +1,50 @@
 # Earned Benefits (working name)
 
-Free, open-source military benefits toolkit. Every military and veteran discount, free benefit, and planning tool in one place, at no cost, with no account and no tracking. Others charge up to $59.99 a year to aggregate public data; this project keeps the data open.
+A free military and veteran benefits brief. It leads with what most people do not know, applies it to your own status and ZIP code, and keeps every entry sourced and dated. No account, no tracking, no fees.
 
 **Live site:** https://jbrady0850.github.io/earned-benefits/
 
-## What works in this v0 scaffold
+## What it does
 
-- `site/index.html`: a zero-build HTML front end in the navy house theme. Search, category chips, kind and verification filters, provenance badges (verified date, confidence), and source links on every card.
-- `data/discounts.yaml` and `data/free.yaml`: the open dataset. Every entry carries `source_url`, `last_verified`, and `confidence`.
-- `data/schema/entry.schema.json`: the contract every entry must meet.
-- `scripts/build_data.py`: validates the dataset and generates `site/data.json` for the page.
-- Assistant panel (optional): bring your own AI key (Anthropic, Gemini, OpenAI, or local Ollama). The key stays in your browser's localStorage and is sent only to the provider you chose. The app is fully usable without it.
+- **What you unlock.** Pick your status (any VA rating including 0 percent, 100 percent P&T, Purple Heart, caregiver, retiree, spouse and more) and see the high-value benefits people miss: base commissary and exchange shopping, military resorts, the DoD travel booking site, Space-A, CHAMPVA and Chapter 35, each with why it is missed and a step checklist saved on your device.
+- **Veterans Day 2026 planner.** Every sourced offer grouped by date, filtered by meal, shopping, services or attractions, with redeem-later and family-included filters and one-tap calendar export (.ics).
+- **Near me.** Enter a ZIP code to find participating Veterans Day locations, discount brands with stores nearby, the closest commissaries and exchanges, VA facilities and offers only in your state. The ZIP is converted on your device; only its center point goes to OpenStreetMap's Overpass service when you press Find.
+- **Travel and cruises.** DoD-only travel options plus cruise line military programs with the fine print, and free retreats and support programs.
+- **Discount directory.** Hand-checked discounts plus every brand that public military-discount directories report at **20 percent or more**, harvested automatically each week.
+- **Assistant (optional).** Bring your own AI key (Anthropic, Gemini, OpenAI or local Ollama). The key stays in your browser and goes only to the provider you choose. Answers come only from this site's entries.
 
-## Design principles
+## How the data stays fresh
 
-1. Free forever. No tier, no trial, no account.
-2. Privacy first: location and profile math happen in the browser and never leave the device.
-3. Data as code: every entry is reviewable, sourced, and dated; CI validates the schema.
-4. One-stop shop: discounts, free items, parks passes, state benefits, and calculators together.
+- `scripts/crawl.py` runs weekly in GitHub Actions (daily in early November). It checks robots.txt, reads the directory pages in `data/crawl_sources.yaml`, keeps only facts (brand, percentage, source link) at or above the threshold, skips brands curated by hand, and watches the VA News Veterans Day list for newly announced names.
+- `scripts/build_data.py` validates every entry against `data/schema/entry.schema.json` and writes `site/data.json`. The page re-downloads it on every visit.
+- CI proves its own checks: `build_data.py --selftest` must reject `tests/fixtures/bad.yaml`, and `tests/test_crawl.py` covers the parser.
 
-## Roadmap (from the design document)
+## Files
 
-- v0.1: 200+ sourced discounts, 50+ free benefits, VA disability math calculator, verification helper (GOVX, ID.me, SheerID, WeSalute, ExpertVoice), first ten state pages, PWA offline support, map view (MapLibre + OpenStreetMap).
-- v0.2: net pay calculator, TSP modeler, SCRA/MLA card tracker with calendar export, Veterans Day seasonal page.
-- Freshness engine: GitHub Actions crawlers refresh and verify the data on schedule; the page re-fetches fresh JSON on every visit.
+| Path | Purpose |
+|---|---|
+| `data/hidden.yaml` | Lesser-known, high-value benefits with steps |
+| `data/veterans-day-2026.yaml` | Veterans Day 2026 offers (VA News list plus named community sources) |
+| `data/travel.yaml` | Cruise line military programs |
+| `data/free.yaml` | Free passes, facilities, retreats and support |
+| `data/discounts.yaml` | Hand-checked year-round discounts |
+| `data/crawled.yaml` | Generated weekly; auto-listed 20 percent plus brands |
+| `site/zip.json` | ZIP code centers from the U.S. Census Bureau Gazetteer (public domain), built by `scripts/build_zip.py` |
 
 ## Data rules
 
-- Only add an entry with an official `source_url`; never state terms the source does not.
-- Set `last_verified` to the date you personally confirmed the page.
-- `confidence`: `official` (verified on the brand's own page), `community` (reported by the community, source noted), `unconfirmed`.
+- Every entry needs a `source_url` and a `last_verified` date. Never state terms the source does not.
+- `confidence`: `official` (the organization's own page or a government list), `community` (reported by a named third party), `unconfirmed`.
+- Auto-found entries are always labeled community-reported; a hand-curated entry for the same brand replaces the auto one.
+- No em dashes in data or generated text.
+
+## Credits
+
+Veterans Day list: VA News. Map data: OpenStreetMap contributors (ODbL). ZIP centers: U.S. Census Bureau. Free-experience entries draw on the [veteran-opportunities](https://github.com/techwithvictoria/veteran-opportunities) directory by Tech with Victoria; descriptions here are our own.
 
 ## Not affiliated
 
-This project is not affiliated with the Department of Defense, the Department of Veterans Affairs, or any brand listed. Always confirm terms at the linked source before relying on them.
+Not affiliated with the Department of Defense, the Department of Veterans Affairs or any brand listed. Nothing here is legal or financial advice. Confirm every offer at its source.
 
 ## License
 

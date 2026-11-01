@@ -4,314 +4,664 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Earned Benefits</title>
-<meta name="description" content="Free, open-source military and veteran discounts, free benefits, and tools. No account, no tracking, every entry sourced.">
+<meta name="description" content="Free military and veteran benefits brief: what your service unlocks, Veterans Day 2026 offers, what is near your ZIP code, travel, and 20 percent plus discounts. No account, no tracking.">
 <link rel="icon" href="data:,">
 <style>
-:root{--navy:#003366;--hdr:#003366;--ink:#1a1a1a;--bg:#ffffff;--muted:#555555;
- --chipbg:#eef3f8;--line:#d7dee6;--card:#ffffff;
- --new:#1e7e34;--info:#0b6ea8;--warn:#e67e22;--neg:#c0392b;--pos:#1e8449;--ref:#6c3d9e;--gray:#6c757d}
-@media (prefers-color-scheme:dark){
- :root{--hdr:#7fa8d0;--ink:#e6e9ec;--bg:#11151a;--muted:#9aa4ad;
-  --chipbg:#1a2634;--line:#2a3542;--card:#161c23}}
-*{box-sizing:border-box}
-body{font-family:-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;font-size:15px;
- line-height:1.5;color:var(--ink);background:var(--bg);max-width:980px;margin:auto;padding:16px}
-header h1{font-size:22px;margin:0 0 4px;color:var(--hdr);border-bottom:3px solid var(--hdr);padding-bottom:8px}
-p.sub{font-size:13px;color:var(--muted);margin:6px 0 12px}
-.legend{background:var(--chipbg);border-left:4px solid var(--navy);padding:10px 12px;
- font-size:13px;margin:12px 0;border-radius:0 6px 6px 0}
-.controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
-input[type=search],select,input[type=text],input[type=password],textarea{
- font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);
- border-radius:6px;padding:8px 10px}
-input[type=search]{flex:1;min-width:180px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
-.chips button{font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;
- background:var(--card);color:var(--ink);cursor:pointer}
-.chips button.on{background:var(--navy);border-color:var(--navy);color:#fff}
-#count{font-size:12.5px;color:var(--muted);margin:0 0 10px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-.card h3{margin:0 0 6px;font-size:16px;color:var(--hdr)}
-.card p{margin:4px 0;font-size:13.5px}
-.card .meta{font-size:12px;color:var(--muted)}
-.badge{display:inline-block;font-size:11px;font-weight:600;color:#fff;border-radius:4px;
- padding:2px 7px;margin:2px 4px 2px 0;letter-spacing:.2px}
-.b-new{background:var(--new)}.b-info{background:var(--info)}.b-warn{background:var(--warn)}
-.b-ref{background:var(--ref)}.b-pos{background:var(--pos)}.b-gray{background:var(--gray)}
-.card a{color:var(--info);text-decoration:none;font-weight:600;font-size:13px}
-.card a:hover{text-decoration:underline}
-details.ai{margin:20px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
-details.ai summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--hdr)}
-details.ai .inner{padding:0 14px 14px}
-.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
-.row label{font-size:12.5px;color:var(--muted);display:block}
-button.primary{font:inherit;background:var(--navy);color:#fff;border:0;border-radius:6px;
- padding:8px 16px;cursor:pointer;font-weight:600}
-button.quiet{font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);
- border-radius:6px;padding:8px 12px;cursor:pointer}
-#answer{white-space:pre-wrap;background:var(--chipbg);border-left:4px solid var(--navy);
- padding:10px 12px;border-radius:0 6px 6px 0;font-size:13.5px;margin-top:10px;display:none}
-footer{margin:24px 0 8px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+body{margin:0;padding:0;background:#eef1f5;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a1a1a}
+a{color:#0b6ea8}
+.wrap{max-width:680px;margin:0 auto}
+.mast{background:#0f2744;padding:22px 24px 16px}
+.kick{font-size:11px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:#d4a017}
+.ttl{font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;font-weight:bold;color:#fff;margin:6px 0 4px}
+.dl{font-size:13px;color:#c9d3e0}
+.rule{background:#d4a017;height:4px}
+.body{background:#fff;padding:18px 22px 8px}
+.crisis{font-size:12px;background:#f4f6f9;border-left:4px solid #c0392b;padding:8px 12px;margin:0 0 14px;color:#333}
+.cd{display:flex;background:#fff8e1;border-left:5px solid #d4a017;margin:0 0 16px;cursor:pointer}
+.cdn{padding:14px 10px 14px 16px;font-family:Georgia,serif;font-size:44px;line-height:1;font-weight:bold;color:#0f2744;white-space:nowrap}
+.cdt{padding:14px 16px 10px 6px}
+.cdk{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase}
+.cds{font-size:13px;color:#4a4a4a;margin:2px 0 4px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 14px}
+.tile{background:#f4f6f9;border-top:3px solid #0f2744;padding:10px 6px;text-align:center}
+.tn{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:#0f2744;line-height:1.1}
+.tl{font-size:11px;color:#555;margin-top:2px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;border-bottom:2px solid #e3e8ee;padding-bottom:10px}
+.tabs button{font:inherit;font-size:12.5px;font-weight:bold;color:#0f2744;background:#f4f6f9;border:1px solid #e3e8ee;border-radius:4px;padding:6px 10px;cursor:pointer}
+.tabs button.on{background:#0f2744;color:#fff;border-color:#0f2744}
+section{display:none}
+section.on{display:block}
+.card{border:1px solid #e3e8ee;margin:0 0 16px;background:#fff}
+.ch{padding:10px 14px;border-bottom:1px solid #e3e8ee;background:#f8f9fb}
+.tag{display:inline-block;font-size:11px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:3px;margin-right:8px;vertical-align:middle;letter-spacing:.04em}
+.cn{font-family:Georgia,serif;font-size:17px;font-weight:bold;color:#0f2744;vertical-align:middle}
+.mix{float:right;font-size:11px;color:#555;margin-top:3px}
+.it{padding:11px 14px;border-bottom:1px solid #f0f2f5}
+.it:last-child{border-bottom:0}
+.hl{font-size:15px;font-weight:bold;line-height:1.35;color:#0f2744;text-decoration:none}
+.hl:hover{text-decoration:underline}
+.meta{margin:5px 0 4px}
+.sum{font-size:13px;line-height:1.55;color:#3d3d3d;margin:2px 0}
+.why{background:#fff8e1;border-left:3px solid #d4a017;padding:4px 8px;margin:6px 0}
+.note{color:#555}
+.src{font-size:11px;color:#5f5f5f;margin-top:4px}
+.none{font-size:13px;color:#555;font-style:italic;padding:11px 14px}
+.gap{background:#fdecea;border-left:4px solid #c0392b;padding:10px 12px;font-size:12.5px;color:#7b241c;margin:0 0 16px}
+.legend{background:#f4f6f9;border-left:4px solid #0f2744;padding:10px 12px;font-size:12.5px;line-height:1.55;color:#333;margin:8px 0 14px}
+.pill{display:inline-block;font-size:10px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:10px;letter-spacing:.03em;vertical-align:middle;margin:0 5px 3px 0}
+.p-off{background:#1e8449}.p-com{background:#6c3d9e}.p-auto{background:#8a5a00}.p-free{background:#117a65}
+.p-hot{background:#c0392b}.p-warm{background:#a14f00}.p-cool{background:#34495e}.p-old{background:#6d5530}
+.p-mark{background:#d4a017;color:#0f2744}
+.chips{margin:4px 0 10px}
+.chip{font:inherit;font-size:12px;padding:4px 10px;border:1px solid #cfd6df;border-radius:999px;background:#fff;color:#0f2744;cursor:pointer;margin:0 6px 6px 0}
+.chip.on{background:#d4a017;border-color:#d4a017;color:#0f2744;font-weight:bold}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin:6px 0 12px}
+.row label{display:block;font-size:11px;color:#555;font-weight:bold;letter-spacing:.05em;text-transform:uppercase}
+input,select,textarea{font:inherit;font-size:14px;color:#1a1a1a;background:#fff;border:1px solid #cfd6df;border-radius:4px;padding:7px 9px}
+.btn{font:inherit;font-size:13px;background:#0f2744;color:#fff;border:0;border-radius:4px;padding:8px 14px;font-weight:bold;cursor:pointer}
+.btn2{font:inherit;font-size:13px;background:#f4f6f9;color:#0f2744;border:1px solid #cfd6df;border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
+ol.steps{margin:6px 0 4px;padding-left:20px;font-size:13px;color:#3d3d3d}
+ol.steps li{margin:3px 0}
+ol.steps input{margin-right:6px;vertical-align:middle}
+.prog{font-size:11px;font-weight:bold;color:#117a65}
+.dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase;padding:9px 14px 3px;background:#fffdf5;border-bottom:1px solid #efe6c7}
+#answer{white-space:pre-wrap;display:none}
+.foot{background:#0f2744;padding:14px 22px;font-size:11px;line-height:1.6;color:#aab6c6}
+.foot a{color:#d4a017}
+@media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}}
 </style>
 </head>
 <body>
-<header>
- <h1>Earned Benefits</h1>
- <p class="sub">Free, open-source military and veteran discounts, free benefits, and tools. No account. No tracking. Every entry carries its official source and a verified date.</p>
-</header>
-<div class="legend"><strong>One-stop and always free.</strong> Others charge up to $59.99 a year to aggregate public data. This project keeps the data open. Not affiliated with DoD, VA, or any listed brand; always confirm terms at the linked source.</div>
-<div class="controls">
- <input id="q" type="search" placeholder="Search discounts and free benefits" aria-label="Search">
- <select id="kind" aria-label="Kind">
-  <option value="all">All entries</option>
-  <option value="discount">Discounts</option>
-  <option value="free">Free benefits</option>
- </select>
- <select id="ver" aria-label="Verification">
-  <option value="all">Any verification</option>
-  <option value="id.me">ID.me</option>
-  <option value="govx">GovX</option>
-  <option value="sheerid">SheerID</option>
-  <option value="vetverify">VetVerify</option>
-  <option value="va-letter">VA letter</option>
-  <option value="military-id">Military ID</option>
-  <option value="dd214">DD-214</option>
-  <option value="none">No verification needed</option>
- </select>
-</div>
-<div id="cats" class="chips" aria-label="Categories"></div>
-<p id="count"></p>
-<main id="cards" class="cards"><p class="meta">Loading data...</p></main>
-<details class="ai" id="ai">
- <summary>Assistant (optional): bring your own AI key for advanced answers</summary>
- <div class="inner">
-  <p class="meta">Works like the Road Trip Planner: the app is fully usable without AI. Add your own key to ask questions answered only from this dataset. The key is saved in this browser's localStorage and is sent only to the provider you pick, never to this site or GitHub. A local Ollama server needs no key at all.</p>
-  <div class="row">
-   <span><label for="prov">Provider</label>
-    <select id="prov">
-     <option value="anthropic">Anthropic Claude</option>
-     <option value="gemini">Google Gemini</option>
-     <option value="openai">OpenAI</option>
-     <option value="ollama">Ollama (local, no key)</option>
-    </select></span>
-   <span><label for="model">Model</label><input id="model" type="text" size="22"></span>
-   <span><label for="key">API key</label><input id="key" type="password" size="26" autocomplete="off"></span>
-  </div>
-  <div class="row">
-   <button class="quiet" id="saveKey" type="button">Save settings</button>
-   <button class="quiet" id="clearKey" type="button">Clear key</button>
-   <span class="meta" id="aiStatus"></span>
-  </div>
-  <div class="row">
-   <textarea id="question" rows="2" style="flex:1;min-width:220px" placeholder="Example: I am a Florida veteran with a 70 percent rating. What is free for me at national parks?"></textarea>
-   <button class="primary" id="ask" type="button">Ask</button>
-  </div>
-  <div id="answer"></div>
+<div class="wrap">
+ <div class="mast">
+  <div class="kick">Free military and veteran benefits brief</div>
+  <div class="ttl">Earned Benefits</div>
+  <div class="dl" id="dek">No account. No tracking. Every entry links its source.</div>
  </div>
-</details>
-<footer>
- <span id="verline">Data: local scaffold.</span>
- Code MIT, data CC BY-SA 4.0. Source and contributions: GitHub (JBrady0850/earned-benefits).
- Nothing here is legal or financial advice; confirm every offer at its source.
-</footer>
+ <div class="rule"></div>
+ <div class="body">
+  <div class="crisis"><strong>Veterans Crisis Line:</strong> dial 988 then press 1, text 838255, or chat at <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">VeteransCrisisLine.net</a>.</div>
+  <div id="countdown"></div>
+  <div class="tiles" id="tiles"></div>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+   <button type="button" data-tab="unlocks">What you unlock</button>
+   <button type="button" data-tab="vd">Veterans Day 2026</button>
+   <button type="button" data-tab="near">Near me</button>
+   <button type="button" data-tab="travel">Travel and cruises</button>
+   <button type="button" data-tab="dir">Discount directory</button>
+   <button type="button" data-tab="ai">Assistant</button>
+  </nav>
+
+  <section id="sec-unlocks">
+   <div class="gap"><strong>Most people miss this:</strong> any VA service-connected rating, even 0 percent, unlocks in-person commissary and exchange shopping and three military resorts, and every honorably discharged veteran can use the Defense Department's own travel booking site.</div>
+   <div class="legend">Pick everything that describes you. The list filters instantly. Your picks and checklist progress stay in this browser only.</div>
+   <div class="chips" id="status"></div>
+   <div id="unlockOut"></div>
+  </section>
+
+  <section id="sec-vd">
+   <div id="watchBox"></div>
+   <div class="legend">Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. Offers vary by location; confirm before you go.</div>
+   <div class="chips" id="vdChips"></div>
+   <div class="row">
+    <button class="btn2" type="button" id="vdIcs">Add these to my calendar (.ics)</button>
+    <button class="btn2" type="button" id="vdNear">Find these near my ZIP</button>
+   </div>
+   <div id="vdOut"></div>
+  </section>
+
+  <section id="sec-near">
+   <div class="legend">Enter a ZIP code to see participating Veterans Day locations, discount brands with stores nearby, the closest commissaries and exchanges, VA facilities, and offers only in your state. The ZIP is converted on this device; only its center point is sent to the free OpenStreetMap Overpass service when you press Find.</div>
+   <div class="row">
+    <span><label for="zip">ZIP code</label><input id="zip" inputmode="numeric" maxlength="5" size="8" placeholder="for example 20001"></span>
+    <span><label for="radius">Distance</label><select id="radius"><option value="10">10 miles</option><option value="25" selected>25 miles</option><option value="50">50 miles</option></select></span>
+    <button class="btn" type="button" id="find">Find near me</button>
+   </div>
+   <div id="nearOut"></div>
+  </section>
+
+  <section id="sec-travel"><div id="travelOut"></div></section>
+
+  <section id="sec-dir">
+   <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>20 percent or more</strong>, refreshed automatically each week. Auto-found entries are community-reported; confirm at the brand.</div>
+   <div class="row">
+    <span style="flex:1;min-width:200px"><label for="q">Search</label><input id="q" type="search" style="width:100%;box-sizing:border-box" placeholder="Brand, category, PX, BX, commissary, cruise"></span>
+    <span><label for="sort">Sort</label><select id="sort"><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
+   </div>
+   <div class="chips" id="dirChips"></div>
+   <div id="dirOut"></div>
+  </section>
+
+  <section id="sec-ai">
+   <div class="legend">Optional, like the Road Trip Planner: bring your own AI key for plain-English answers drawn only from this site's entries and your status picks. The key is saved in this browser's localStorage and sent only to the provider you choose. A local Ollama server needs no key. Everything else on this site works without AI.</div>
+   <div class="row">
+    <span><label for="prov">Provider</label><select id="prov"><option value="anthropic">Anthropic Claude</option><option value="gemini">Google Gemini</option><option value="openai">OpenAI</option><option value="ollama">Ollama (local, no key)</option></select></span>
+    <span><label for="model">Model</label><input id="model" type="text" size="20"></span>
+    <span><label for="key">API key</label><input id="key" type="password" size="22" autocomplete="off"></span>
+   </div>
+   <div class="row">
+    <button class="btn2" type="button" id="saveKey">Save settings</button>
+    <button class="btn2" type="button" id="clearKey">Clear key</button>
+    <span class="src" id="aiStatus"></span>
+   </div>
+   <div class="row">
+    <textarea id="question" rows="3" style="flex:1;min-width:220px" placeholder="Example: I have a 30 percent rating. Can I shop on base, and what do I need at the gate?"></textarea>
+    <button class="btn" type="button" id="ask">Ask</button>
+   </div>
+   <div class="legend" id="answer"></div>
+  </section>
+ </div>
+ <div class="foot" id="foot">
+  Veterans Day offers: VA News 2026 list (verified by VA Oct. 22, updated Oct. 30) plus named community sources. Auto-listed brands are community-reported by public directories and refreshed weekly. Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap contributors</a> (ODbL). ZIP centers: U.S. Census Bureau Gazetteer. Free-experience entries draw on the veteran-opportunities directory by Tech with Victoria.<br>
+  Not affiliated with DoD, VA or any brand. Nothing here is legal or financial advice; confirm every offer at its source. Code MIT, data CC BY-SA 4.0.
+  <a href="https://github.com/JBrady0850/earned-benefits" rel="noopener" target="_blank">Source on GitHub</a> |
+  <a href="https://github.com/JBrady0850/earned-benefits/issues/new" rel="noopener" target="_blank">Report a correction</a><br>
+  <span id="verline"></span>
+ </div>
+</div>
 <script>
 "use strict";
 const $ = (s) => document.querySelector(s);
 const esc = (t) => String(t == null ? "" : t).replace(/[&<>"']/g,
- (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const state = { q: "", kind: "all", ver: "all", cat: "all" };
-let DATA = [];
+ (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const store = {
+ get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+ set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } }
+};
+const NOW = new Date();
+const TODAY = NOW.getFullYear() + "-" + String(NOW.getMonth() + 1).padStart(2, "0") + "-" + String(NOW.getDate()).padStart(2, "0");
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const md = (d) => { const p = String(d).split("-").map(Number); return MON[p[1] - 1] + " " + p[2]; };
+const RSQ = String.fromCharCode(8217);
+let DATA = [], META = {};
 
-const BADGE = { official: ["b-info", "OFFICIAL"], community: ["b-ref", "COMMUNITY"],
- unconfirmed: ["b-warn", "UNCONFIRMED"] };
+const ELIG = {"active-duty": "active duty", "veteran": "veterans", "retiree": "retirees",
+ "disabled-veteran": "any VA service-connected rating", "pt-100": "100 percent P&T", "purple-heart": "Purple Heart",
+ "former-pow": "former POWs", "caregiver": "VA caregivers", "gold-star-family": "Gold Star families",
+ "spouse": "spouses", "dependent": "dependents", "guard-reserve": "Guard and Reserve",
+ "military": "military community (confirm who qualifies)", "everyone": "everyone"};
+const VER = {"id.me": "ID.me", "sheerid": "SheerID", "govx": "GovX", "vetverify": "VetVerify", "dd214": "DD214",
+ "va-letter": "VA letter", "vhic": "VHIC", "dod-id": "DoD ID card", "deers": "DEERS", "military-id": "military ID",
+ "proof-of-service": "proof of service", "promo-code": "promo code", "store-program": "store sign-up",
+ "in-person": "in person", "see-source": "see source", "none": "none needed"};
+const STATUSES = [
+ ["veteran", "Honorably discharged veteran", ["veteran", "military"]],
+ ["sc", "Any VA service-connected rating (0 to 90 percent)", ["disabled-veteran", "veteran", "military"]],
+ ["pt", "100 percent or permanent and total", ["pt-100", "disabled-veteran", "veteran", "military"]],
+ ["ph", "Purple Heart", ["purple-heart", "veteran", "military"]],
+ ["pow", "Former POW", ["former-pow", "veteran", "military"]],
+ ["cg", "VA primary family caregiver", ["caregiver"]],
+ ["ret", "Military retiree", ["retiree", "veteran", "military"]],
+ ["ad", "Active duty, Guard or Reserve", ["active-duty", "guard-reserve", "military"]],
+ ["fam", "Spouse or dependent", ["spouse", "dependent"]],
+ ["gs", "Gold Star family", ["gold-star-family"]]
+];
+let picked = store.get("eb_status", []);
 
-function badges(e) {
- let h = "";
- const conf = BADGE[e.confidence] || BADGE.unconfirmed;
- h += '<span class="badge ' + conf[0] + '">' + conf[1] + "</span>";
- h += '<span class="badge b-pos">VERIFIED ' + esc(e.last_verified) + "</span>";
- if (e.kind === "free") h += '<span class="badge b-new">FREE</span>';
- return h;
+function eligSet() {
+ const s = new Set(["everyone"]);
+ for (const st of STATUSES) if (picked.includes(st[0])) st[2].forEach((x) => s.add(x));
+ return s;
+}
+const fits = (e) => { if (!picked.length) return true; const s = eligSet(); return (e.eligibility || []).some((x) => s.has(x)); };
+const lastDay = (e) => e.redeem_by || e.event_end || null;
+const ended = (e) => { const d = lastDay(e); return !!d && d < TODAY; };
+const dateRange = (e) => !e.event_start ? "" : (e.event_start === (e.event_end || e.event_start) ? md(e.event_start) : md(e.event_start) + " to " + md(e.event_end));
+
+function pills(e) {
+ const p = [];
+ if (e.auto) p.push(["p-auto", "AUTO-FOUND"]);
+ p.push(e.confidence === "official" ? ["p-off", "OFFICIAL SOURCE"] : e.confidence === "community" ? ["p-com", "COMMUNITY REPORTED"] : ["p-warm", "UNCONFIRMED"]);
+ if (e.percent) p.push([e.percent >= 20 ? "p-hot" : "p-cool", e.percent + "% OFF"]);
+ if (e.kind === "free") p.push(["p-free", "FREE"]);
+ if (e.kind === "veterans-day") p.push(["p-mark", dateRange(e).toUpperCase()]);
+ if (e.redeem_by) p.push(["p-free", "REDEEM BY " + md(e.redeem_by).toUpperCase()]);
+ if (e.family) p.push(["p-free", "FAMILY"]);
+ if (e.online) p.push(["p-cool", "ONLINE"]);
+ if (ended(e)) p.push(["p-old", "ENDED"]);
+ p.push(["p-cool", "CHECKED " + e.last_verified]);
+ return p.map((x) => '<span class="pill ' + x[0] + '">' + esc(x[1]) + "</span>").join("");
 }
 
-function matches(e) {
- if (state.kind !== "all" && e.kind !== state.kind) return false;
- if (state.cat !== "all" && e.category !== state.cat) return false;
- if (state.ver !== "all" && !(e.verification || []).includes(state.ver)) return false;
- if (state.q) {
-  const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category + " " +
-   (e.eligibility || []).join(" ")).toLowerCase();
-  for (const tok of state.q.toLowerCase().split(/\s+/)) {
-   if (tok && !hay.includes(tok)) return false;
+function steps(e) {
+ const done = store.get("eb_steps", {})[e.id] || [];
+ const n = done.filter(Boolean).length;
+ return '<div class="prog" id="prog-' + esc(e.id) + '">' + n + " of " + e.steps.length + " steps done</div><ol class=\"steps\">" +
+  e.steps.map((s, i) => '<li><label><input type="checkbox" data-step="' + esc(e.id) + '" data-i="' + i + '"' +
+  (done[i] ? " checked" : "") + ">" + esc(s) + "</label></li>").join("") + "</ol>";
+}
+
+function item(e, extra) {
+ const more = (e.sources || []).length > 1 ? " (+" + (e.sources.length - 1) + " more sources)" : "";
+ return '<div class="it" id="e-' + esc(e.id) + '">' +
+  '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" +
+  '<div class="meta">' + pills(e) + "</div>" +
+  (extra || "") +
+  '<div class="sum">' + esc(e.offer) + "</div>" +
+  (e.why_missed ? '<div class="sum why"><strong>Why people miss it:</strong> ' + esc(e.why_missed) + "</div>" : "") +
+  (e.steps ? steps(e) : "") +
+  (e.notes ? '<div class="sum note">' + esc(e.notes) + "</div>" : "") +
+  '<div class="src">Who: ' + esc((e.eligibility || []).map((x) => ELIG[x] || x).join(", ")) +
+  " | Proof: " + esc((e.verification || []).map((x) => VER[x] || x).join(", ")) +
+  ' | <a href="' + esc(e.source_url) + '" target="_blank" rel="noopener">Source</a>' + esc(more) + "</div></div>";
+}
+
+function card(title, tag, color, mix, inner) {
+ return '<div class="card" style="border-left:5px solid ' + color + '"><div class="ch">' +
+  (tag ? '<span class="tag" style="background:' + color + '">' + esc(tag) + "</span>" : "") +
+  '<span class="cn">' + esc(title) + "</span>" + (mix ? '<span class="mix">' + esc(mix) + "</span>" : "") +
+  "</div>" + (inner || '<div class="none">Nothing matches yet.</div>') + "</div>";
+}
+
+/* ---------- tabs, countdown, tiles ---------- */
+function show(tab) {
+ document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
+ document.querySelectorAll("section").forEach((s) => s.classList.toggle("on", s.id === "sec-" + tab));
+ try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file:// */ }
+}
+$("#tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-tab]"); if (b) show(b.dataset.tab); });
+
+const VD = NOW.getFullYear() + "-11-11";
+function countdown() {
+ const days = Math.round((new Date(VD + "T00:00:00") - new Date(TODAY + "T00:00:00")) / 86400000);
+ const vd = DATA.filter((e) => e.kind === "veterans-day");
+ const later = vd.filter((e) => e.redeem_by && !ended(e));
+ let big = "", head = "", sub = "";
+ if (days > 0 && days <= 45) {
+  big = String(days); head = days === 1 ? "day to Veterans Day" : "days to Veterans Day";
+  sub = "Wednesday, November 11. " + vd.length + " offers listed; " + later.length + " can be redeemed after the day.";
+ } else if (days === 0) {
+  big = "Today"; head = "Veterans Day"; sub = vd.filter((e) => !ended(e)).length + " offers are live today. Thank you for your service.";
+ } else if (days < 0 && later.length) {
+  big = String(later.length); head = "Veterans Day offers still open";
+  sub = "The day has passed, but these vouchers, cards and month-long offers can still be used.";
+ }
+ $("#countdown").innerHTML = big ? '<div class="cd" id="cdBox" role="button" tabindex="0"><div class="cdn">' + esc(big) +
+  '</div><div class="cdt"><div class="cdk">' + esc(head) + '</div><div class="cds">' + esc(sub) +
+  '</div><div class="cds"><strong>Open the Veterans Day planner</strong></div></div></div>' : "";
+ const box = $("#cdBox");
+ if (box) box.addEventListener("click", () => show("vd"));
+}
+
+function tiles() {
+ const unlock = DATA.filter((e) => e.kind === "hidden" && fits(e)).length;
+ const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e)).length;
+ const big = DATA.filter((e) => e.percent >= 20).length;
+ $("#tiles").innerHTML = [[unlock, picked.length ? "unlocked for you" : "hidden benefits"], [vdLive, "Veterans Day offers"],
+  [big, "brands at 20%+ off"], [DATA.length, "entries, all free"]].map((t) =>
+  '<div class="tile"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
+}
+
+/* ---------- what you unlock ---------- */
+function statusChips() {
+ $("#status").innerHTML = STATUSES.map((s) => '<button type="button" class="chip' + (picked.includes(s[0]) ? " on" : "") +
+  '" data-st="' + s[0] + '">' + esc(s[1]) + "</button>").join("");
+}
+$("#status").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button[data-st]");
+ if (!b) return;
+ const k = b.dataset.st;
+ picked = picked.includes(k) ? picked.filter((x) => x !== k) : picked.concat(k);
+ store.set("eb_status", picked);
+ statusChips(); renderUnlocks(); tiles(); renderTravel();
+});
+document.addEventListener("change", (ev) => {
+ const cb = ev.target.closest("input[data-step]");
+ if (!cb) return;
+ const all = store.get("eb_steps", {});
+ const arr = all[cb.dataset.step] || [];
+ arr[Number(cb.dataset.i)] = cb.checked;
+ all[cb.dataset.step] = arr;
+ store.set("eb_steps", all);
+ const e = DATA.find((x) => x.id === cb.dataset.step);
+ const p = document.getElementById("prog-" + cb.dataset.step);
+ if (e && p) p.textContent = arr.filter(Boolean).length + " of " + e.steps.length + " steps done";
+});
+
+function renderUnlocks() {
+ const hidden = DATA.filter((e) => e.kind === "hidden");
+ const mine = hidden.filter(fits);
+ const rest = hidden.filter((e) => !fits(e));
+ const free = DATA.filter((e) => e.kind === "free" && fits(e));
+ let h = card(picked.length ? "What your service unlocks" : "High-value benefits most people miss", "UNLOCK", "#0f2744",
+  mine.length + " benefits", mine.map((e) => item(e)).join(""));
+ h += card("Free for you, no purchase needed", "FREE", "#117a65", free.length + " items", free.map((e) => item(e)).join(""));
+ if (picked.length && rest.length) {
+  h += card("Not matched to your picks", "OTHER", "#6d5530", rest.length + " benefits",
+   '<div class="none">These need a different status: ' + esc(rest.map((e) => e.name).join("; ")) + ".</div>");
+ }
+ $("#unlockOut").innerHTML = h;
+}
+
+/* ---------- Veterans Day planner ---------- */
+const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
+ ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
+ ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
+let vdf = {type: "all", later: false, family: false, ended: false};
+function vdChips() {
+ $("#vdChips").innerHTML = VD_FILTERS.map((f) => {
+  const on = ["later", "family", "ended"].includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
+  return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + f[0] + '">' + esc(f[1]) + "</button>";
+ }).join("");
+}
+$("#vdChips").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button[data-vf]");
+ if (!b) return;
+ const k = b.dataset.vf;
+ if (["later", "family", "ended"].includes(k)) vdf[k] = !vdf[k]; else vdf.type = k;
+ vdChips(); renderVD();
+});
+function vdList() {
+ return DATA.filter((e) => e.kind === "veterans-day").filter((e) => {
+  if (!vdf.ended && ended(e)) return false;
+  if (vdf.later && !e.redeem_by && !(e.event_end && e.event_end > VD)) return false;
+  if (vdf.family && !e.family) return false;
+  const t = vdf.type;
+  if (t === "all") return true;
+  if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return e.slot === t;
+  return e.category === t;
+ }).sort((a, b) => (a.event_start + a.name).localeCompare(b.event_start + b.name));
+}
+function renderVD() {
+ const list = vdList();
+ const groups = {};
+ list.forEach((e) => { const k = dateRange(e) || "Date varies"; (groups[k] = groups[k] || []).push(e); });
+ const inner = Object.keys(groups).map((k) => '<div class="dgrp">' + esc(k) + "</div>" + groups[k].map((e) => item(e)).join("")).join("");
+ $("#vdOut").innerHTML = card("Veterans Day 2026 offers", "NOV 11", "#d4a017", list.length + " shown", inner);
+ const w = META.watch || {};
+ $("#watchBox").innerHTML = (w.new_names && w.new_names.length) ? '<div class="gap"><strong>Just announced on VA News, not yet reviewed here:</strong> ' +
+  esc(w.new_names.join(", ")) + '. <a href="' + esc(w.source) + '" target="_blank" rel="noopener">See VA News</a> (checked ' + esc(w.checked) + ").</div>" : "";
+}
+const icsEsc = (s) => String(s).replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\r?\n/g, " ");
+const ymd = (d) => d.replace(/-/g, "");
+function nextDay(d) { const x = new Date(d + "T12:00:00Z"); x.setUTCDate(x.getUTCDate() + 1); return x.toISOString().slice(0, 10); }
+function fold(line) { const out = []; while (line.length > 72) { out.push(line.slice(0, 72)); line = " " + line.slice(72); } out.push(line); return out.join("\r\n"); }
+function makeIcs(list) {
+ const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+ const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Earned Benefits//Veterans Day//EN", "CALSCALE:GREGORIAN"];
+ const ev = (uid, start, end, title, desc) => L.push("BEGIN:VEVENT", "UID:" + uid + "@earned-benefits", "DTSTAMP:" + stamp,
+  "DTSTART;VALUE=DATE:" + ymd(start), "DTEND;VALUE=DATE:" + ymd(nextDay(end)), fold("SUMMARY:" + icsEsc(title)),
+  fold("DESCRIPTION:" + icsEsc(desc)), "END:VEVENT");
+ list.forEach((e) => {
+  if (e.event_start) ev(e.id, e.event_start, e.event_end || e.event_start, e.name + " (veteran offer)", e.offer + " Source: " + e.source_url);
+  if (e.redeem_by) ev(e.id + "-redeem", e.redeem_by, e.redeem_by, "Last day to redeem: " + e.name, e.offer);
+ });
+ L.push("END:VCALENDAR");
+ return L.join("\r\n") + "\r\n";
+}
+$("#vdIcs").addEventListener("click", () => {
+ const blob = new Blob([makeIcs(vdList())], {type: "text/calendar"});
+ const a = document.createElement("a");
+ a.href = URL.createObjectURL(blob); a.download = "veterans-day-2026-offers.ics";
+ document.body.appendChild(a); a.click(); a.remove();
+});
+$("#vdNear").addEventListener("click", () => { show("near"); $("#zip").focus(); });
+
+/* ---------- travel and cruises ---------- */
+function renderTravel() {
+ const dod = DATA.filter((e) => e.kind === "hidden" && ["travel", "vacation"].includes(e.category) && fits(e));
+ const cruise = DATA.filter((e) => e.kind === "travel");
+ const exp = DATA.filter((e) => e.kind === "free" && ["retreats", "attractions", "support"].includes(e.category));
+ const rental = DATA.filter((e) => e.kind === "discount" && e.category === "travel");
+ $("#travelOut").innerHTML =
+  card("Military-only travel most people never use", "DOD", "#0f2744", dod.length + " options", dod.map((e) => item(e)).join("")) +
+  card("Cruise line military programs, with the fine print", "CRUISE", "#0b6ea8", cruise.length + " lines", cruise.map((e) => item(e)).join("")) +
+  card("Rental cars and travel memberships", "TRAVEL", "#34495e", rental.length + " items", rental.map((e) => item(e)).join("")) +
+  card("Free experiences, retreats and support", "FREE", "#117a65", exp.length + " programs",
+   '<div class="none">Cost key: if an entry says travel is covered, the provider says so; otherwise confirm travel, lodging and meals with the organizer.</div>' +
+   exp.map((e) => item(e)).join(""));
+}
+
+/* ---------- discount directory ---------- */
+const SYN = {px: "exchange", bx: "exchange", nex: "exchange", mcx: "exchange", cgx: "exchange", aafes: "exchange",
+ deca: "commissary", groceries: "commissary", pt: "permanent", "p&t": "permanent", tdy: "travel", resort: "vacation",
+ hotel: "travel", flight: "travel", flights: "travel", cruises: "cruise", clothes: "apparel", clothing: "apparel",
+ shoes: "apparel", phone: "technology", streaming: "technology", eyeglasses: "health", vision: "health"};
+let dirCat = "all", dir20 = false;
+function dirEntries() { return DATA.filter((e) => e.kind === "discount" || e.kind === "crawled"); }
+function dirChips() {
+ const cats = ["all"].concat([...new Set(dirEntries().map((e) => e.category))].sort());
+ $("#dirChips").innerHTML = '<button type="button" class="chip' + (dir20 ? " on" : "") + '" data-d20="1">20%+ only</button>' +
+  cats.map((c) => '<button type="button" class="chip' + (c === dirCat ? " on" : "") + '" data-dc="' + esc(c) + '">' +
+  esc(c === "all" ? "All categories" : c.replace(/-/g, " ")) + "</button>").join("");
+}
+$("#dirChips").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button");
+ if (!b) return;
+ if (b.dataset.d20) dir20 = !dir20; else if (b.dataset.dc) dirCat = b.dataset.dc;
+ dirChips(); renderDir();
+});
+$("#q").addEventListener("input", renderDir);
+$("#sort").addEventListener("change", renderDir);
+function renderDir() {
+ const toks = $("#q").value.toLowerCase().split(/\s+/).filter(Boolean).map((t) => SYN[t] || t);
+ let list = dirEntries().filter((e) => {
+  if (dirCat !== "all" && e.category !== dirCat) return false;
+  if (dir20 && !(e.percent >= 20)) return false;
+  const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category).toLowerCase();
+  return toks.every((t) => hay.includes(t));
+ });
+ const s = $("#sort").value;
+ list.sort(s === "az" ? (a, b) => a.name.localeCompare(b.name) :
+  s === "new" ? (a, b) => b.last_verified.localeCompare(a.last_verified) || a.name.localeCompare(b.name) :
+  (a, b) => (b.percent || 0) - (a.percent || 0) || a.name.localeCompare(b.name));
+ const auto = list.filter((e) => e.auto).length;
+ $("#dirOut").innerHTML = card("Military discount directory", "BRANDS", "#c0392b",
+  list.length + " shown, " + auto + " auto-found", list.map((e) => item(e)).join(""));
+}
+
+/* ---------- near me ---------- */
+let ZIPS = null;
+const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
+ "https://overpass.private.coffee/api/interpreter"];
+const lowName = (s) => String(s || "").toLowerCase().split(RSQ).join("'").replace(/\s+/g, " ").trim();
+const SAFE = /^[a-z0-9 &'.+!\/-]+$/;
+const rx = (s) => s.replace(/[.+]/g, (c) => "[" + c + "]").split("'").join("['" + RSQ + "]");
+const RE_COMM = /commissary/i;
+const RE_EXCH = /(^the exchange|main exchange|base exchange|post exchange|navy exchange|marine corps exchange|coast guard exchange|aafes|^px\b|^bx\b|^nex\b|^mcx\b)/i;
+const RE_VA = /(va medical center|va clinic|vet center|veterans affairs|va outpatient|va health care|va community based|veterans administration)/i;
+function miles(a, b, c, d) {
+ const R = 3958.8, t = Math.PI / 180;
+ const x = Math.sin((c - a) * t / 2) ** 2 + Math.cos(a * t) * Math.cos(c * t) * Math.sin((d - b) * t / 2) ** 2;
+ return 2 * R * Math.asin(Math.sqrt(x));
+}
+function brandTargets() {
+ const out = [];
+ DATA.forEach((e) => {
+  if (ended(e)) return;
+  if (e.osm_brand) { e.osm_brand.forEach((b) => out.push([lowName(b), e])); return; }
+  if (e.kind === "crawled" && ["retail", "apparel", "outdoor", "health", "home-improvement", "attractions", "food"].includes(e.category)) {
+   const n = lowName(e.name.replace(/\(.*?\)/g, ""));
+   if (n.length >= 3 && n.length <= 40) out.push([n, e]);
+  }
+ });
+ return out;
+}
+function placeLine(p) {
+ const t = p.tags, addr = [[t["addr:housenumber"], t["addr:street"]].filter(Boolean).join(" "), t["addr:city"]].filter(Boolean).join(", ");
+ return '<div class="src">' + p.d.toFixed(1) + " mi" + (addr ? " | " + esc(addr) : "") +
+  ' | <a href="https://www.openstreetmap.org/?mlat=' + p.lat + "&amp;mlon=" + p.lon + "#map=17/" + p.lat + "/" + p.lon +
+  '" target="_blank" rel="noopener">Map</a> | <a href="https://www.google.com/maps/dir/?api=1&amp;destination=' + p.lat + "," + p.lon +
+  '" target="_blank" rel="noopener">Directions</a></div>';
+}
+function buildQuery(lat, lon, mi) {
+ const r1 = Math.round(mi * 1609), r2 = Math.max(r1, 80467);
+ const targets = brandTargets().filter((t) => SAFE.test(t[0]));
+ const alt = [...new Set(targets.map((t) => t[0]))].map(rx).join("|");
+ const A = "(around:" + r1 + "," + lat + "," + lon + ");", B = "(around:" + r2 + "," + lat + "," + lon + ");";
+ const VAQ = '"(VA Medical Center|VA Clinic|Vet Center|Veterans Affairs|VA Outpatient|VA Health Care|VA Community Based)",i]';
+ const q = "[out:json][timeout:45];(" +
+  'nwr["brand"~"^(' + alt + ')$",i]' + A +
+  'nwr["shop"~"^(supermarket|department_store|general|convenience|mall|wholesale)$"]["name"~"(commissary|exchange)",i]' + B +
+  'nwr["amenity"~"^(hospital|clinic|doctors)$"]["name"~' + VAQ + B +
+  'nwr["healthcare"]["name"~' + VAQ + B +
+  ");out center tags 1500;is_in(" + lat + "," + lon + ')->.a;area.a["admin_level"="4"]["ISO3166-2"];out tags;';
+ return {q: q, targets: targets, r1: r1, r2: r2};
+}
+async function findNear() {
+ const z = $("#zip").value.trim();
+ const out = $("#nearOut");
+ if (!/^[0-9]{5}$/.test(z)) { out.innerHTML = '<div class="gap">Enter a 5-digit ZIP code.</div>'; return; }
+ store.set("eb_zip", z);
+ out.innerHTML = '<div class="legend">Looking up ZIP ' + esc(z) + " and searching nearby. This takes a few seconds.</div>";
+ try { if (!ZIPS) ZIPS = await (await fetch("zip.json")).json(); }
+ catch (e) { out.innerHTML = '<div class="gap">Could not load the ZIP table. Reload the page and try again.</div>'; return; }
+ const ll = ZIPS[z];
+ if (!ll) { out.innerHTML = '<div class="gap">ZIP ' + esc(z) + " is not in the Census ZIP area list (PO box only ZIPs have no area). Try a nearby ZIP.</div>"; return; }
+ const lat = ll[0], lon = ll[1], mi = Number($("#radius").value);
+ const Q = buildQuery(lat, lon, mi), targets = Q.targets, r2 = Q.r2;
+ let j = null;
+ const tried = [];
+ for (let i = 0; i < OVERPASS.length && !j; i++) {
+  out.innerHTML = '<div class="legend">Searching OpenStreetMap server ' + (i + 1) + " of " + OVERPASS.length + " around ZIP " + esc(z) + "...</div>";
+  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 25000);
+  try {
+   const res = await fetch(OVERPASS[i], {method: "POST", signal: ctl.signal,
+    headers: {"Content-Type": "application/x-www-form-urlencoded"}, body: "data=" + encodeURIComponent(Q.q)});
+   if (!res.ok) throw new Error("HTTP " + res.status);
+   j = await res.json();
+  } catch (e) {
+   tried.push(new URL(OVERPASS[i]).host + " " + (e.name === "AbortError" ? "timed out" : e.message));
+  } finally { clearTimeout(timer); }
+ }
+ if (!j) {
+  out.innerHTML = '<div class="gap">The free OpenStreetMap servers are busy right now (' + esc(tried.join("; ")) +
+   "). Nothing is wrong with your ZIP. Try a smaller distance or press Find again in a few minutes.</div>";
+  return;
+ }
+ let state = "";
+ const comm = [], va = [], hit = new Map();
+ for (const el of j.elements || []) {
+  const t = el.tags || {};
+  if (el.type === "area") { const c = t["ISO3166-2"] || ""; if (c.indexOf("US-") === 0) state = c.slice(3); continue; }
+  const la = el.lat != null ? el.lat : (el.center || {}).lat, lo = el.lon != null ? el.lon : (el.center || {}).lon;
+  if (la == null) continue;
+  const p = {lat: Number(la.toFixed(5)), lon: Number(lo.toFixed(5)), tags: t, d: miles(lat, lon, la, lo), name: t.name || t.brand || "Unnamed"};
+  const nm = lowName(t.name), br = lowName(t.brand);
+  if (t.shop && (RE_COMM.test(t.name || "") || RE_EXCH.test(t.name || "") || /exchange/i.test(t.name || ""))) { comm.push(p); continue; }
+  if (RE_VA.test(t.name || "")) { va.push(p); continue; }
+  if (p.d > mi + 0.5) continue;
+  for (const pair of targets) {
+   const b = pair[0];
+   if (br === b || nm === b || nm.indexOf(b + " ") === 0 || nm.indexOf(b + "-") === 0 || br.indexOf(b + " ") === 0) {
+    const arr = hit.get(pair[1]) || []; arr.push(p); hit.set(pair[1], arr); break;
+   }
   }
  }
- return true;
+ const byD = (a, b) => a.d - b.d, vdRows = [], dirRows = [];
+ hit.forEach((arr, e) => { arr.sort(byD); (e.kind === "veterans-day" ? vdRows : dirRows).push({e: e, p: arr[0], n: arr.length}); });
+ vdRows.sort((a, b) => a.p.d - b.p.d); dirRows.sort((a, b) => a.p.d - b.p.d);
+ const rowHtml = (r) => item(r.e, '<div class="sum"><strong>Nearest: ' + esc(r.p.name) + "</strong>" + (r.n > 1 ? " (" + r.n + " locations nearby)" : "") + "</div>" + placeLine(r.p));
+ const places = (arr) => arr.sort(byD).slice(0, 8).map((p) => '<div class="it"><span class="hl">' + esc(p.name) + "</span>" + placeLine(p) + "</div>").join("");
+ const stateRows = state ? DATA.filter((e) => (e.states || []).includes(state) && !ended(e)) : [];
+ const r2mi = Math.round(r2 / 1609);
+ out.innerHTML = '<div class="legend">Around ZIP ' + esc(z) + (state ? " (" + esc(state) + ")" : "") + ": stores within " + mi + " miles; bases and VA facilities within " + r2mi + " miles.</div>" +
+  card("Veterans Day offers near you", "NOV 11", "#d4a017", vdRows.length + " chains", vdRows.map(rowHtml).join("")) +
+  card("Where your VHIC or VA letter works", "BASE", "#0f2744", comm.length + " stores",
+   (comm.length ? places(comm) : '<div class="none">No commissary or exchange is mapped within ' + r2mi + " miles.</div>") +
+   '<div class="none">Who qualifies and what to bring at the gate: <a href="#unlocks" data-go="unlocks">What you unlock</a>.</div>') +
+  card("VA facilities", "VA", "#117a65", va.length + " found", places(va)) +
+  card("Only in your state", state || "STATE", "#6c3d9e", stateRows.length + " offers", stateRows.map((e) => item(e)).join("")) +
+  card("Discount brands with a location near you", "BRANDS", "#c0392b", dirRows.length + " brands", dirRows.map(rowHtml).join("")) +
+  '<div class="src">Locations come from OpenStreetMap; a missing store may simply be unmapped. Participation varies by location, so call ahead.</div>';
 }
+$("#find").addEventListener("click", findNear);
+$("#zip").addEventListener("keydown", (ev) => { if (ev.key === "Enter") findNear(); });
+document.addEventListener("click", (ev) => { const a = ev.target.closest("a[data-go]"); if (a) { ev.preventDefault(); show(a.dataset.go); } });
 
-function card(e) {
- return '<article class="card" id="e-' + esc(e.id) + '">' +
-  "<h3>" + esc(e.name) + "</h3>" +
-  "<div>" + badges(e) + "</div>" +
-  "<p>" + esc(e.offer) + "</p>" +
-  '<p class="meta">Who: ' + esc((e.eligibility || []).join(", ")) +
-  " | Verify with: " + esc((e.verification || []).join(", ")) + "</p>" +
-  (e.notes ? '<p class="meta">' + esc(e.notes) + "</p>" : "") +
-  '<a href="' + esc(e.source_url) + '" rel="noopener" target="_blank">Official source</a>' +
-  "</article>";
-}
-
-function render() {
- const hits = DATA.filter(matches);
- $("#count").textContent = hits.length + " of " + DATA.length +
-  " entries shown. Every entry is free to claim; bring the listed verification.";
- $("#cards").innerHTML = hits.map(card).join("") ||
-  '<p class="meta">No entries match. Clear a filter or broaden the search.</p>';
-}
-
-function buildChips() {
- const cats = ["all"].concat([...new Set(DATA.map((e) => e.category))].sort());
- $("#cats").innerHTML = cats.map((c) =>
-  '<button type="button" data-cat="' + esc(c) + '"' + (c === state.cat ? ' class="on"' : "") +
-  ">" + (c === "all" ? "All categories" : esc(c)) + "</button>").join("");
-}
-
-$("#cats").addEventListener("click", (ev) => {
- const b = ev.target.closest("button[data-cat]");
- if (!b) return;
- state.cat = b.dataset.cat;
- buildChips();
- render();
-});
-$("#q").addEventListener("input", (ev) => { state.q = ev.target.value; render(); });
-$("#kind").addEventListener("change", (ev) => { state.kind = ev.target.value; render(); });
-$("#ver").addEventListener("change", (ev) => { state.ver = ev.target.value; render(); });
-
-fetch("data.json").then((r) => {
- if (!r.ok) throw new Error("HTTP " + r.status);
- return r.json();
-}).then((j) => {
- DATA = j.entries || [];
- $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated +
-  ", " + j.counts.discount + " discounts and " + j.counts.free + " free benefits.";
- buildChips();
- render();
-}).catch(() => {
- $("#cards").innerHTML = '<p class="legend">Could not load data.json. ' +
-  "Run <code>python scripts/build_data.py</code> and reload, or serve the site folder over HTTP.</p>";
-});
-
-/* ---------------- Assistant: bring your own AI key ---------------- */
-const STORE = "eb_ai_settings";
-const DEFAULT_MODEL = { anthropic: "claude-sonnet-5-5", gemini: "gemini-2.0-flash",
- openai: "gpt-4o-mini", ollama: "llama3.2" };
-
+/* ---------- assistant: bring your own AI key ---------- */
+const AI_STORE = "eb_ai_settings";
+const DEFAULT_MODEL = {anthropic: "claude-sonnet-5-5", gemini: "gemini-2.0-flash", openai: "gpt-4o-mini", ollama: "llama3.2"};
 function loadAI() {
- let s = {};
- try { s = JSON.parse(localStorage.getItem(STORE) || "{}"); } catch (e) { s = {}; }
+ const s = store.get(AI_STORE, {});
  if (s.provider) $("#prov").value = s.provider;
  $("#model").value = s.model || DEFAULT_MODEL[$("#prov").value];
  $("#key").value = s.key || "";
- $("#aiStatus").textContent = s.key ? "Key saved in this browser only." : "No key saved.";
+ $("#aiStatus").textContent = s.key ? "Key saved in this browser only." : "No key saved. Model names change; use your provider's current name.";
 }
 $("#prov").addEventListener("change", () => { $("#model").value = DEFAULT_MODEL[$("#prov").value]; });
 $("#saveKey").addEventListener("click", () => {
- try {
-  localStorage.setItem(STORE, JSON.stringify({ provider: $("#prov").value,
-   model: $("#model").value.trim(), key: $("#key").value.trim() }));
-  $("#aiStatus").textContent = "Saved in this browser only.";
- } catch (e) { $("#aiStatus").textContent = "Could not save (storage blocked)."; }
+ store.set(AI_STORE, {provider: $("#prov").value, model: $("#model").value.trim(), key: $("#key").value.trim()});
+ $("#aiStatus").textContent = "Saved in this browser only.";
 });
 $("#clearKey").addEventListener("click", () => {
- try { localStorage.removeItem(STORE); } catch (e) { /* ignore */ }
- $("#key").value = "";
- $("#aiStatus").textContent = "Key cleared.";
+ try { localStorage.removeItem(AI_STORE); } catch (e) { /* storage blocked */ }
+ $("#key").value = ""; $("#aiStatus").textContent = "Key cleared.";
 });
-
-function context(q) {
- const toks = q.toLowerCase().split(/\W+/).filter((t) => t.length > 2);
+function aiContext(q) {
+ const toks = q.toLowerCase().split(/[^a-z0-9%]+/).filter((t) => t.length > 2).map((t) => SYN[t] || t);
  const scored = DATA.map((e) => {
-  const hay = JSON.stringify(e).toLowerCase();
-  let s = 0;
-  for (const t of toks) if (hay.includes(t)) s += 1;
+  const hay = (e.name + " " + e.offer + " " + (e.why_missed || "") + " " + (e.steps || []).join(" ") + " " + e.category).toLowerCase();
+  let s = e.kind === "hidden" ? 1 : 0;
+  toks.forEach((t) => { if (hay.includes(t)) s += 2; });
+  if (picked.length && fits(e)) s += 1;
   return [s, e];
- }).sort((a, b) => b[0] - a[0]).slice(0, 8).map((p) => p[1]);
- return scored.map((e) => "[" + e.id + "] " + e.name + " | " + e.offer +
-  " | eligibility: " + (e.eligibility || []).join(", ") + " | source: " + e.source_url).join("\n");
+ }).sort((a, b) => b[0] - a[0]).slice(0, 14).map((p) => p[1]);
+ return scored.map((e) => "[" + e.id + "] " + e.name + " | " + e.offer + (e.why_missed ? " | why missed: " + e.why_missed : "") +
+  (e.steps ? " | steps: " + e.steps.join(" / ") : "") + " | who: " + (e.eligibility || []).join(", ") +
+  " | confidence: " + e.confidence + " | source: " + e.source_url).join("\n");
 }
-
 async function callModel(provider, model, key, prompt) {
  if (provider === "anthropic") {
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-   method: "POST",
-   headers: { "content-type": "application/json", "x-api-key": key,
-    "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
-   body: JSON.stringify({ model: model, max_tokens: 700,
-    messages: [{ role: "user", content: prompt }] })
-  });
+  const r = await fetch("https://api.anthropic.com/v1/messages", {method: "POST",
+   headers: {"content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true"},
+   body: JSON.stringify({model: model, max_tokens: 900, messages: [{role: "user", content: prompt}]})});
   const j = await r.json();
-  if (!r.ok) throw new Error(j.error && j.error.message || "Anthropic HTTP " + r.status);
+  if (!r.ok) throw new Error((j.error && j.error.message) || "Anthropic HTTP " + r.status);
   return j.content.map((c) => c.text || "").join("");
  }
  if (provider === "openai") {
-  const r = await fetch("https://api.openai.com/v1/chat/completions", {
-   method: "POST",
-   headers: { "content-type": "application/json", "authorization": "Bearer " + key },
-   body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }] })
-  });
+  const r = await fetch("https://api.openai.com/v1/chat/completions", {method: "POST",
+   headers: {"content-type": "application/json", "authorization": "Bearer " + key},
+   body: JSON.stringify({model: model, messages: [{role: "user", content: prompt}]})});
   const j = await r.json();
-  if (!r.ok) throw new Error(j.error && j.error.message || "OpenAI HTTP " + r.status);
+  if (!r.ok) throw new Error((j.error && j.error.message) || "OpenAI HTTP " + r.status);
   return j.choices[0].message.content;
  }
  if (provider === "gemini") {
-  const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" +
-   encodeURIComponent(model) + ":generateContent?key=" + encodeURIComponent(key), {
-   method: "POST",
-   headers: { "content-type": "application/json" },
-   body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
-  });
+  const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + encodeURIComponent(model) +
+   ":generateContent?key=" + encodeURIComponent(key), {method: "POST", headers: {"content-type": "application/json"},
+   body: JSON.stringify({contents: [{parts: [{text: prompt}]}]})});
   const j = await r.json();
-  if (!r.ok) throw new Error(j.error && j.error.message || "Gemini HTTP " + r.status);
+  if (!r.ok) throw new Error((j.error && j.error.message) || "Gemini HTTP " + r.status);
   return j.candidates[0].content.parts.map((p) => p.text || "").join("");
  }
- // ollama: local server, no key. Start it with OLLAMA_ORIGINS set to this page's origin.
- const r = await fetch("http://localhost:11434/api/generate", {
-  method: "POST",
-  headers: { "content-type": "application/json" },
-  body: JSON.stringify({ model: model, prompt: prompt, stream: false })
- });
+ const r = await fetch("http://localhost:11434/api/generate", {method: "POST", headers: {"content-type": "application/json"},
+  body: JSON.stringify({model: model, prompt: prompt, stream: false})});
  const j = await r.json();
  if (!r.ok) throw new Error("Ollama HTTP " + r.status);
  return j.response;
 }
-
 $("#ask").addEventListener("click", async () => {
- const q = $("#question").value.trim();
- const provider = $("#prov").value;
- const model = $("#model").value.trim() || DEFAULT_MODEL[provider];
- const key = $("#key").value.trim();
- const out = $("#answer");
+ const q = $("#question").value.trim(), provider = $("#prov").value;
+ const model = $("#model").value.trim() || DEFAULT_MODEL[provider], key = $("#key").value.trim(), out = $("#answer");
  out.style.display = "block";
  if (!q) { out.textContent = "Type a question first."; return; }
- if (provider !== "ollama" && !key) {
-  out.textContent = "Add your own API key for " + provider +
-   " (or pick Ollama for a free local model). The rest of the app works without AI.";
-  return;
- }
- const prompt = "You answer questions for Earned Benefits, a free military benefits site. " +
-  "Use ONLY the dataset entries below. Cite entry ids in square brackets after each claim. " +
-  "If the entries do not cover the question, say the dataset does not cover it yet and " +
-  "suggest checking VA.gov. Never invent an offer, a percentage, or an eligibility rule. " +
-  "No em dashes.\n\nDATASET ENTRIES:\n" + context(q) + "\n\nQUESTION: " + q;
+ if (provider !== "ollama" && !key) { out.textContent = "Add your own API key for " + provider + ", or pick Ollama for a free local model."; return; }
+ const who = STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1]).join("; ") || "not given";
+ const prompt = "You answer questions for Earned Benefits, a free military and veteran benefits site. Use ONLY the entries below. " +
+  "Cite entry ids in square brackets after each claim. If the entries do not cover the question, say so and suggest VA.gov or an accredited VSO. " +
+  "Never invent an offer, percentage, date or eligibility rule. Mention when an entry is community reported. No em dashes.\n\n" +
+  "USER STATUS: " + who + "\n\nENTRIES:\n" + aiContext(q) + "\n\nQUESTION: " + q;
  out.textContent = "Asking " + provider + " (" + model + ")...";
- try {
-  out.textContent = await callModel(provider, model, key, prompt);
- } catch (err) {
-  out.textContent = "The " + provider + " call failed: " + err.message +
-   "\nCheck the key, the model name, and (for Ollama) that the local server allows this origin.";
- }
+ try { out.textContent = await callModel(provider, model, key, prompt); }
+ catch (err) { out.textContent = "The " + provider + " call failed: " + err.message + ". Check the key and model name; for Ollama, allow this site's origin."; }
 });
 
+/* ---------- start: fetch fresh data on every visit ---------- */
+fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then((j) => {
+ META = j; DATA = j.entries || [];
+ $("#dek").textContent = "Updated " + j.data_version + ". " + DATA.length + " entries, all free. No account. No tracking. Every entry links its source.";
+ $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated + ".";
+ statusChips(); vdChips(); dirChips(); countdown(); tiles(); renderUnlocks(); renderVD(); renderTravel(); renderDir();
+ const z = store.get("eb_zip", "");
+ if (z) $("#zip").value = z;
+ const tab = (location.hash || "").slice(1);
+ show(["unlocks", "vd", "near", "travel", "dir", "ai"].includes(tab) ? tab : "unlocks");
+}).catch(() => {
+ $("#unlockOut").innerHTML = '<div class="gap">Could not load data.json. Serve the site folder over HTTP and reload.</div>';
+ show("unlocks");
+});
 loadAI();
 </script>
 </body>

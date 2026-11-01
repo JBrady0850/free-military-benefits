@@ -72,3 +72,66 @@ entries:
     source_url: https://www.va.gov/records/get-veteran-id-cards/vic/
     last_verified: "2026-11-01"
     confidence: official
+  # Free experiences and support. Descriptions are written for this project; the
+  # provider pages were reviewed on 2026-09-06 by the techwithvictoria/veteran-opportunities
+  # directory, credited in the README. Confirm current terms with each provider.
+  - id: saratoga-warhorse
+    name: Saratoga WarHorse equine retreat
+    category: retreats
+    offer: Three-day equine program for veterans and service members dealing with trauma. Program, lodging, meals and travel are covered; no combat service or diagnosis required.
+    eligibility: [veteran, active-duty]
+    verification: [see-source]
+    scope: nationwide
+    source_url: https://www.saratogawarhorse.org/enroll
+    last_verified: "2026-09-06"
+    confidence: community
+  - id: wwp-project-odyssey
+    name: Wounded Warrior Project, Project Odyssey
+    category: retreats
+    offer: A 12-week program that includes a five-day retreat, with individual, family and couples formats. Program, food, lodging and travel are covered for eligible post-9/11 participants.
+    eligibility: [veteran, active-duty, spouse]
+    verification: [see-source]
+    scope: nationwide
+    source_url: https://www.woundedwarriorproject.org/programs/project-odyssey
+    last_verified: "2026-09-06"
+    confidence: community
+  - id: honor-flight
+    name: Honor Flight
+    category: retreats
+    offer: Sponsored trips to see the war memorials in Washington, D.C.; honored veterans travel free. Apply through a local hub; service-era priorities vary.
+    eligibility: [veteran]
+    verification: [see-source]
+    scope: nationwide
+    source_url: https://www.honorflight.org/
+    last_verified: "2026-09-06"
+    confidence: community
+  - id: vet-tix
+    name: Vet Tix donated event tickets
+    category: attractions
+    offer: Donated tickets to concerts, sports and other events for verified service members, veterans and qualifying family of those killed in action. A delivery fee applies.
+    eligibility: [veteran, active-duty, gold-star-family]
+    verification: [see-source]
+    scope: nationwide
+    source_url: https://www.vettix.org/
+    last_verified: "2026-09-06"
+    confidence: community
+  - id: dav-rides
+    name: DAV rides to VA medical appointments
+    category: support
+    offer: Free volunteer transportation to and from VA medical facilities for ill and injured veterans where the service is available. Book ahead with the local coordinator.
+    eligibility: [veteran]
+    verification: [none]
+    scope: locations
+    source_url: https://www.dav.org/get-help-now/medical-transportation/
+    last_verified: "2026-09-06"
+    confidence: community
+  - id: vita-tax-prep
+    name: Free tax preparation (IRS VITA and TCE)
+    category: support
+    offer: Free basic tax-return preparation for qualifying taxpayers, including veterans who meet the income, disability or age criteria.
+    eligibility: [everyone]
+    verification: [none]
+    scope: locations
+    source_url: https://www.irs.gov/individuals/irs-free-tax-return-preparation-programs
+    last_verified: "2026-09-06"
+    confidence: community

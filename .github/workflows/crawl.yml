@@ -1,0 +1,44 @@
+name: Weekly discount harvest and Veterans Day watch
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"      # Mondays 09:17 UTC
+    - cron: "17 13 1-14 11 *" # daily in early November, when Veterans Day offers are announced
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema requests beautifulsoup4
+      - name: Harvest 20 percent plus discounts and watch VA News
+        run: python scripts/crawl.py
+      - name: Rebuild and validate data.json
+        run: python scripts/build_data.py --check
+      - name: Commit if anything changed, then redeploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "earned-benefits-bot"
+          git config user.email "earned-benefits-bot@users.noreply.github.com"
+          git add data/crawled.yaml data/watch.json site/data.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Weekly harvest: refresh auto-listed discounts and Veterans Day watch"
+            git push
+            gh workflow run pages.yml --ref main
+          fi

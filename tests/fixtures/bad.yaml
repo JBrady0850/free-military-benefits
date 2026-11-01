@@ -1,0 +1,33 @@
+# Known-bad fixture for build_data.py --selftest (RIP R-007).
+# Every entry plants at least one defect the validator must catch.
+defaults:
+  category: food
+  eligibility: [veteran]
+  verification: [military-id]
+  scope: nationwide
+  source_url: https://example.org/source
+  last_verified: "2026-11-01"
+  confidence: official
+entries:
+  - id: dup-entry
+    name: Duplicate one
+    offer: First copy of a duplicated id.
+  - id: dup-entry
+    name: Duplicate two
+    offer: Second copy of a duplicated id.
+  - id: bad-category
+    name: Bad category
+    category: spaceships
+    offer: Category value outside the enum.
+  - id: bad-url
+    name: Insecure source
+    offer: Source URL is not https.
+    source_url: http://example.org/insecure
+  - id: bad-dates
+    name: Reversed dates
+    offer: Event ends before it starts.
+    event_start: "2026-11-11"
+    event_end: "2026-11-01"
+  - id: em-dash-entry
+    name: Em dash offer
+    offer: "Free coffee — dash is forbidden."

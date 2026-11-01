@@ -1,0 +1,17 @@
+# Public military-discount directory pages read by scripts/crawl.py.
+# Only pages whose robots.txt allows crawling are read. Only facts are kept
+# (brand, percentage, source link); no text is copied.
+threshold: 20
+directories:
+  - https://dealhack.com/blog/military-discounts-guide
+  - https://hip2save.com/deals/military-discounts/
+  - https://365.military.com/discounts/best-military-discounts-clothes.html
+  - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/
+  - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html
+  - https://usmilitary.com/top-25-military-discounts/
+  - https://militaryfamilies.com/?p=32765
+  - https://barbend.com/?p=218235
+  - https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel
+  - https://www.sheerid.com/?p=71432
+watch:
+  veterans_day: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/

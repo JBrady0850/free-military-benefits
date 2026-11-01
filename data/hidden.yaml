@@ -1,0 +1,132 @@
+# High-value benefits most people miss. Shown in "What your service unlocks".
+# Rules: README.md "Data rules". Keep "why_missed" factual and sourced.
+defaults:
+  scope: nationwide
+  last_verified: "2026-11-01"
+  confidence: official
+entries:
+  - id: base-retail-access
+    name: Commissary, exchange and MWR shopping on base
+    category: base-access
+    offer: "Shop in person at military commissaries (groceries), exchanges (PX, BX, NEX) and MWR retail, the same as retirees. Since Jan. 1, 2020 this covers any VA service-connected rating, Purple Heart recipients, former POWs and VA primary family caregivers."
+    why_missed: "Most veterans assume base shopping needs retirement or a 100 percent rating. Per VA.gov, any service-connected rating with an honorable discharge qualifies, including 0 percent, and no application is required."
+    eligibility: [disabled-veteran, pt-100, purple-heart, former-pow, caregiver, retiree, active-duty, guard-reserve]
+    verification: [vhic, va-letter, dod-id]
+    steps:
+      - "Confirm you have a VA service-connected rating (any percent), a Purple Heart, former POW status, or a VA caregiver eligibility letter."
+      - "Get ID that shows it. VA.gov accepts a Veteran Health Identification Card (VHIC) or a letter from VA, shown with a passport or driver's license."
+      - "Enroll in VA health care if you want a VHIC; the card is issued to enrollees and should read SERVICE CONNECTED, PURPLE HEART or FORMER POW."
+      - "On your first visit, stop at the installation Visitor Center with that ID and a REAL ID-compliant license or passport. Rules vary by installation; call ahead."
+      - "Use Near Me on this page to find the closest commissary and exchange."
+    source_url: https://www.va.gov/resources/commissary-and-exchange-privileges-for-veterans/
+    notes: "Military gyms and libraries are not included in the expansion (Hawaii Tribune-Herald, 2020). Overseas access varies by country."
+  - id: afrc-resorts
+    name: Military resorts (Armed Forces Recreation Centers)
+    category: vacation
+    offer: "Book DoD resort hotels at military rates: Shades of Green at Walt Disney World (Florida), Hale Koa on Waikiki Beach (Hawaii) and Dragon Hill Lodge (Seoul). Edelweiss Lodge in Germany is limited to 100 percent disabled veterans under these rules."
+    why_missed: "The 2020 expansion that opened base shopping also opened three of the four resorts to every veteran with a VA service-connected rating, Purple Heart recipients, former POWs and primary caregivers."
+    eligibility: [disabled-veteran, pt-100, purple-heart, former-pow, caregiver, retiree, active-duty, guard-reserve]
+    verification: [vhic, va-letter, dod-id]
+    steps:
+      - "Have a VHIC that shows PURPLE HEART, FORMER POW or SERVICE CONNECTED, or a VA letter stating the service-connected disability."
+      - "Pair it with a REAL ID-compliant license or a U.S. passport at check-in."
+      - "Book directly with the resort; pricing categories differ by eligibility group."
+    source_url: https://www.shadesofgreen.org/vhic-eligible
+  - id: shades-salute-veterans
+    name: Shades of Green "Salute to Our Veterans"
+    category: vacation
+    offer: "Every honorably discharged veteran, with or without a disability rating, may stay at the Shades of Green military resort at Walt Disney World during January and September, subject to availability."
+    why_missed: "Most veterans believe military resorts require retirement or a rating. This program needs only a DD214 showing an honorable discharge."
+    eligibility: [veteran]
+    verification: [dd214]
+    steps:
+      - "Have a DD214 showing an honorable discharge."
+      - "Request a January or September stay through the Salute to Our Veterans program on the Shades of Green site."
+    source_url: https://www.shadesofgreen.org/about-shades-green/eligibility
+  - id: american-forces-travel
+    name: American Forces Travel (DoD travel booking site)
+    category: travel
+    offer: "The Defense Department's own leisure travel site, run with Priceline, for flights, hotels, rental cars, cruises and event tickets at member rates. Open to every veteran with an honorable or general (under honorable conditions) discharge since July 16, 2021."
+    why_missed: "It launched in 2019 for active duty and opened to about 16 million more veterans in 2021, so most veterans have never heard of it."
+    eligibility: [veteran, retiree, active-duty, guard-reserve, disabled-veteran, purple-heart, former-pow]
+    verification: [deers, vetverify]
+    steps:
+      - "Open americanforcestravel.com and choose to verify eligibility; the site checks DEERS."
+      - "If DEERS cannot find you, complete the VetVerify prompts the site shows."
+      - "Compare against public prices before booking; the site advertises a price match policy."
+    source_url: https://www.militarytimes.com/pay-benefits/mil-money/2021/07/16/another-16-million-veterans-can-get-these-dod-travel-deals/
+  - id: armed-forces-vacation-club
+    name: Armed Forces Vacation Club
+    category: vacation
+    offer: "Free membership for weeklong resort condo stays from unused timeshare inventory, priced per unit (published starting prices have ranged from $349 to $409 a week, sleeping 2 to 8)."
+    why_missed: "It is space-available inventory, so it rarely gets advertised; the best value is flexible, off-season or short-notice travel."
+    eligibility: [veteran, retiree, active-duty, guard-reserve, gold-star-family]
+    verification: [see-source]
+    steps:
+      - "Create a free membership at afvclub.com and verify eligibility."
+      - "Search weeks with flexible dates; inventory changes daily."
+    source_url: https://member.legion-aux.org/Armed-Forces-Vacation-Club
+    confidence: community
+    notes: "Eligibility for all veterans is quoted from AFVC by the American Legion Auxiliary and Veterans Press (2023); confirm at afvclub.com."
+  - id: space-a-pt
+    name: Free Space-A flights on military aircraft (100 percent P&T)
+    category: travel
+    offer: "Veterans with a permanent and total service-connected rating may fly free on space-available seats (Category VI) within the continental U.S. and directly to and from U.S. locations such as Alaska, Hawaii, Puerto Rico and the U.S. Virgin Islands."
+    why_missed: "Added quietly by the 2019 National Defense Authorization Act; one veterans newsletter at the time said the perk had gone virtually unnoticed."
+    eligibility: [pt-100, retiree, active-duty]
+    verification: [dod-id]
+    steps:
+      - "Get a DoD ID card (DD Form 2765) at a DEERS/RAPIDS ID card office; a VHIC does not work for Space-A."
+      - "Sign up through the AMC Travel Self-Signup Tool (live at all AMC locations since March 26, 2026) or email AMC Form 140 to the departure terminal."
+      - "Stay flexible; seats are usually announced 3 to 4 hours, and as late as 30 minutes, before departure."
+    source_url: https://myairforcebenefits.us.af.mil/Benefit-Library/Federal-Benefits/Space-Available-Travel-(Space-A-Travel)?serv=26
+    notes: "Sources disagree on dependents. Military Living quotes DoDI 4515.13 Change 5 (Oct. 23, 2020) as allowing accompanying dependents; several older guides say dependents cannot fly. Confirm with the terminal."
+  - id: dod-id-100
+    name: DoD ID card for 100 percent disabled veterans
+    category: identity
+    offer: "Veterans rated 100 percent service-connected can get a DoD ID card (DD Form 2765). It unlocks Space-A and full base privileges, and unlike the VHIC it can extend privileges to eligible family members."
+    why_missed: "Reddit threads show newly rated 100 percent veterans asking what they are missing; the standing advice is to go to a DEERS office for the DoD ID."
+    eligibility: [pt-100]
+    verification: [dod-id]
+    steps:
+      - "Bring the VA rating letter showing 100 percent (and P&T if rated) plus a DD214."
+      - "Book an appointment at a DEERS/RAPIDS ID card office."
+    source_url: https://www.shadesofgreen.org/about-shades-green/eligibility-vhic
+    confidence: community
+    notes: "The source confirms DD Form 2765 as the ID for 100 percent veterans; family-privilege details come from veteran community guides. Confirm with the ID office."
+  - id: champva-dea
+    name: CHAMPVA health coverage and Chapter 35 education for P&T families
+    category: health
+    offer: "If VA rates a veteran permanently and totally disabled from service-connected conditions, the spouse and children may get CHAMPVA health coverage (when not TRICARE-eligible) and Chapter 35 Dependents' Educational Assistance for school or training."
+    why_missed: "Both benefits go to the family, not the veteran, and neither starts automatically; each needs its own application."
+    eligibility: [pt-100, spouse, dependent]
+    verification: [va-letter]
+    steps:
+      - "Check the rating decision letter for the words permanent and total."
+      - "CHAMPVA: apply with VA Form 10-10d."
+      - "Chapter 35: the dependent applies for VA education benefits at VA.gov."
+    source_url: https://www.va.gov/communitycare/programs/dependents/champva/
+  - id: free-claims-help
+    name: Free help filing a VA disability claim
+    category: support
+    offer: "VA-accredited representatives at veterans service organizations help prepare and file VA claims at no cost. A rating of any percent, even 0, is what unlocks the base shopping and resort benefits above."
+    why_missed: "Reddit threads in 2026 are full of veterans who waited 20 to 30 years to file because they did not know what was available or felt others deserved it more."
+    eligibility: [veteran]
+    verification: [none]
+    steps:
+      - "Find an accredited representative or VSO on VA.gov."
+      - "Bring your DD214 and any service and medical records."
+    source_url: https://www.va.gov/get-help-from-accredited-representative/
+  - id: exchange-online-veterans
+    name: Lifetime online exchange shopping for all veterans
+    category: retail
+    offer: "Every honorably discharged veteran can shop the military exchanges online, tax free: shopmyexchange.com, mynavyexchange.com and shopcgx.com."
+    why_missed: "Reddit veterans list it among the best-kept savings; most veterans think exchange shopping ended at separation."
+    eligibility: [veteran, retiree, active-duty, guard-reserve]
+    verification: [vetverify]
+    scope: online
+    online: true
+    steps:
+      - "Verify once at VetVerify."
+      - "Shop online at any of the three exchanges."
+    source_url: https://www.vetverify.org

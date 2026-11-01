@@ -1,0 +1,32 @@
+# Cruise line military programs. Terms vary by sailing; every entry says what to check.
+defaults:
+  category: cruise
+  scope: nationwide
+  last_verified: "2026-11-01"
+  confidence: community
+  verification: [see-source]
+entries:
+  - id: ncl-military
+    name: Norwegian Cruise Line Military Appreciation Program
+    offer: Up to 10 percent off cruise fares on select sailings, subject to availability, for U.S. and Canadian service members, veterans and their dependents after online verification.
+    eligibility: [active-duty, guard-reserve, veteran, retiree, spouse, dependent]
+    source_url: https://www.cruisecritic.com/articles/military-cruise-deals-what-they-are-and-how-to-get-one
+    notes: Military.com and Travel Market Report describe the same program; confirm the discount applies to your sailing before booking.
+  - id: royal-caribbean-military
+    name: Royal Caribbean military rate
+    offer: Special rates on select sailings for active duty, retirees, honorably discharged veterans, Guard and Reserve; everyone in the same cabin gets the rate.
+    eligibility: [active-duty, guard-reserve, veteran, retiree]
+    source_url: https://www.travelmarketreport.com/cruises/articles/cruise-line-military-discounts
+    notes: One military-focused travel agency reports the military rate is often the same as the public fare, so compare both before booking.
+  - id: carnival-military
+    name: Carnival Cruise Line military rates
+    offer: Reduced military rates on many sailings with proof of service.
+    eligibility: [active-duty, retiree]
+    source_url: https://365.military.com/discounts/cruise-line-military-discounts.html
+    notes: Sources disagree on non-retired veterans. Military.com lists active duty and retirees; other guides include veterans. Ask Carnival or your agent at booking.
+  - id: disney-cruise-military
+    name: Disney Cruise Line military offers (eligibility warning)
+    offer: Military pricing and onboard credit on select sailings for active duty, retirees and 100 percent P&T veterans. Other veterans generally do not qualify.
+    eligibility: [active-duty, retiree, pt-100]
+    source_url: https://www.militarycruisedeals.com/?p=13560
+    notes: Listed so non-retired veterans do not plan around a discount they cannot use.

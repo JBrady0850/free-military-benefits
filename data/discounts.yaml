@@ -32,17 +32,19 @@ entries:
     source_url: https://get.expertvoice.com/military-community/
     last_verified: "2026-11-01"
     confidence: official
-  - id: exchange-online-veterans
-    name: Exchange online shopping (AAFES, NEX, CGX)
-    category: retail
-    offer: Lifetime online military exchange shopping, tax free, for honorably discharged veterans.
-    eligibility: [veteran, retiree, active-duty, guard-reserve]
-    verification: [vetverify]
-    scope: online
-    source_url: https://www.vetverify.org
+  - id: the-north-face-military
+    name: The North Face
+    category: apparel
+    offer: 10 percent off for active, reservist, veteran and retired U.S. military personnel, and for spouses and dependents of active personnel, online and in full-price and outlet stores.
+    eligibility: [active-duty, guard-reserve, veteran, retiree, spouse, dependent]
+    verification: [sheerid, military-id]
+    scope: nationwide
+    percent: 10
+    osm_brand: [The North Face]
+    source_url: https://www.thenorthface.com/help/the-north-face-military-discount-program.html
     last_verified: "2026-11-01"
     confidence: official
-    notes: Verify once at VetVerify; covers shopmyexchange.com, mynavyexchange.com, and shopcgx.com.
+    notes: Online verification is through SheerID and is reported to be reusable once every 30 days; show military ID in store.
   - id: home-depot-military
     name: The Home Depot military discount
     category: home-improvement
@@ -50,6 +52,8 @@ entries:
     eligibility: [active-duty, veteran, retiree, spouse]
     verification: [id.me]
     scope: nationwide
+    percent: 10
+    osm_brand: [The Home Depot]
     source_url: https://www.homedepot.com/c/military-discount
     last_verified: "2026-11-01"
     confidence: official
@@ -60,6 +64,8 @@ entries:
     eligibility: [active-duty, veteran, retiree, spouse]
     verification: [id.me]
     scope: nationwide
+    percent: 10
+    osm_brand: [Lowe's]
     source_url: https://www.lowes.com/l/military-discount
     last_verified: "2026-11-01"
     confidence: official
