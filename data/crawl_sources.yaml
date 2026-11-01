@@ -15,7 +15,7 @@ veterans_day_year: 2026
 directories:
   - https://dealhack.com/blog/military-discounts-guide
   - https://hip2save.com/deals/military-discounts/
-  - https://365.military.com/discounts/best-military-discounts-clothes.html
+  - https://www.military.com/discounts/best-military-discounts-clothes.html  # was 365.military.com: its certificate fails verification
   - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html
   - https://usmilitary.com/top-25-military-discounts/
@@ -56,13 +56,13 @@ veterans_day_lists:
   - https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026
   - https://veteransdmv.com/veterans-day-discounts/
   - https://www.combatfitness.co/post/veterans-day
-  - https://bluestarfam.org/resources-perspectives/finance-benefits/veterans-day-free-meals-restaurant-deals/
+  - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/  # replaces bluestarfam.org (blocks automated readers); this page is the 2026 list despite its address
   - https://themilitarywallet.com/veterans-day-retail-discounts/
   - https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html
   - https://valoannetwork.com/veterans-day-deals-2026/
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert
   - https://www.hotdeals.com/blog/veterans-day-deals/
-  - https://www.tacticalgear.com/blog/veterans-day-2026-deals
+  - https://fedratecalc.com/veterans-day-free-meals-2026/  # replaces tacticalgear.com (its article returns a server error); lists first-party 2026 offers only
 
 watch:
   veterans_day: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/

@@ -87,9 +87,13 @@ HEADER_NAMES = {"store", "brand", "company", "retailer", "restaurant", "discount
 WATCH_IGNORE = {"veteransday", "discounts", "nationalparksservice", "nationalparkservice"}
 
 
+SYMBOLS = re.compile("[\u2600-\u27BF\U0001F000-\U0001FAFF\uFE0F\u200D]")  # emoji and pictographs some lists put in headings
+
+
 def clean(text: str) -> str:
     for bad, good in QUOTES.items():
         text = text.replace(bad, good)
+    text = SYMBOLS.sub(" ", text)  # "☕ Scooter's Coffee" -> "Scooter's Coffee"
     return " ".join(text.split())
 
 
@@ -271,7 +275,10 @@ VD_STOP = {"veterans day", "free meals", "restaurants", "restaurant", "retail", 
            "key takeaway", "key takeaways", "federal holiday", "oil changes", "car washes", "haircuts", "zoos", "museums",
            "banks", "hotels", "theme parks", "dd214", "dd 214", "dependents", "spouses", "national guard", "reserves",
            "gold star families", "active duty", "retirees", "id.me", "sheerid", "govx", "military id", "proof of service",
-           "dine-in only", "dine in only", "in-store only", "nov", "november 11", "wednesday", "tuesday", "thank you"}
+           "dine-in only", "dine in only", "in-store only", "nov", "november 11", "wednesday", "tuesday", "thank you",
+           "question", "questions", "answer", "last verified", "next update", "updated", "breakfast", "lunch", "dinner",
+           "coffee", "dessert", "desserts", "snacks", "drinks", "date", "dates", "who qualifies", "proof of service required",
+           "methodology", "sources", "source", "details", "how to claim", "what to bring"}
 US_STATES = {"alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida",
              "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine",
              "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska",
@@ -688,9 +695,21 @@ def main() -> int:
                         "event_start": "2026-11-11", "event_end": "2026-11-11", "slot": "anytime"}, vd_entries,
                "Veterans Day 2026 offers named on two or more independent lists and not yet curated by hand.")
     url = (cfg.get("watch") or {}).get("veterans_day", "")
-    sources = [{"url": u, "kind": "directory", "rows": SOURCE_STATS.get(u)} for u in cfg.get("directories") or []] + \
-              [{"url": u, "kind": "veterans-day", "rows": SOURCE_STATS.get(u)} for u in cfg.get("veterans_day_lists") or []]
-    WATCH_OUT.write_text(json.dumps({"checked": today, "source": url, "new_names": va_only[:40],
+    # When each source was last tried and last read; a failed source keeps its last good read from earlier runs
+    from datetime import datetime as _dt, timezone as _tz
+    run_utc = _dt.now(_tz.utc).strftime("%Y-%m-%dT%H:%MZ")
+    try:
+        prev = {s["url"]: s for s in json.loads(WATCH_OUT.read_text(encoding="utf-8")).get("sources") or []}
+    except (OSError, ValueError):
+        prev = {}
+
+    def status(u: str, kind: str) -> dict:
+        rows = SOURCE_STATS.get(u)
+        last_ok = run_utc if rows is not None else (prev.get(u) or {}).get("last_ok")
+        return {"url": u, "kind": kind, "rows": rows, "last_try": run_utc, "last_ok": last_ok}
+    sources = [status(u, "directory") for u in cfg.get("directories") or []] + \
+              [status(u, "veterans-day") for u in cfg.get("veterans_day_lists") or []]
+    WATCH_OUT.write_text(json.dumps({"checked": today, "run_utc": run_utc, "source": url, "new_names": va_only[:40],
                                      "held_single_source": held, "sources": sources, "failed": FAILED,
                                      "counts": {"directory_listed": len(dir_entries), "veterans_day_listed": len(vd_entries),
                                                 "held": len(held), "sources_read": sum(1 for s in sources if s["rows"] is not None),

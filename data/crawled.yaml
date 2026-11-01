@@ -297,9 +297,9 @@ entries:
   percent_up: true
   verified_by: brand page
   confidence: official
-  source_url: https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  source_url: https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
   sources:
-  - https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  - https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Budget%20Car%20Rental
 - id: auto-helly-hansen
   name: Helly Hansen
@@ -675,7 +675,7 @@ entries:
 - id: auto-untuckit
   name: UNTUCKit
   category: retail
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, military.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -684,4 +684,5 @@ entries:
   sources:
   - https://www.untuckit.com/pages/military
   - https://dealhack.com/blog/military-discounts-guide#:~:text=UNTUCKit
+  - https://www.military.com/discounts/best-military-discounts-clothes.html#:~:text=UNTUCKit
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Untuck%20It

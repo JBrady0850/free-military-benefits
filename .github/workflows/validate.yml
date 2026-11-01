@@ -18,7 +18,7 @@ jobs:
       - name: Prove the validator rejects a known-bad fixture
         run: python scripts/build_data.py --selftest
       - name: Source configuration checks
-        run: python tests/test_sources.py
+        run: python tests/test_sources.py && python tests/test_manifest.py
       - name: Crawler parsing checks (offline)
         run: python tests/test_crawl.py
       - name: Discount badge percentage checks

@@ -31,7 +31,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --ink:#13294a;--link:#0a5f93;--accent:#0f2744;--gold:#d4a017;--onGold:#0f2744;
 --warm:#f6efd9;--warm2:#f4efe2;--warmline:#e2d6b4;--brown:#6e5326;
 --gapbg:#f6e3e0;--gaptext:#7b241c;--inbg:#f9fafb;--inline:#c5cdd8;--chipbg:#f6f7f9;
---picked:#e4ecf8;--haveon:#e3f0e7;--prog:#0f6b58;--bad:#b0362a;
+--picked:#e4ecf8;--ithbg:#13294a;--ithtext:#ffffff;--haveon:#e3f0e7;--prog:#0f6b58;--bad:#b0362a;
 --mast:#0f2744;--masttext:#fff;--dek:#c9d3e0;--foot:#0f2744;--foottext:#aab6c6;
 --tabon:#0f2744;--tabontext:#fff;--btn:#0f2744;--btntext:#fff}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
@@ -40,7 +40,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
 --warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
 --gapbg:#3b1e1e;--gaptext:#ffb3a6;--inbg:#0d1117;--inline:#3d4652;--chipbg:#161b22;
---picked:#16243b;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
+--picked:#16243b;--ithbg:#26395a;--ithtext:#ffffff;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
 --mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
 --tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}}
 :root[data-theme="dark"]{color-scheme:dark;
@@ -49,7 +49,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
 --warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
 --gapbg:#3b1e1e;--gaptext:#ffb3a6;--inbg:#0d1117;--inline:#3d4652;--chipbg:#161b22;
---picked:#16243b;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
+--picked:#16243b;--ithbg:#26395a;--ithtext:#ffffff;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
 --mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
 --tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}
 body{margin:0;padding:0;background:var(--bg);font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:var(--text)}
@@ -86,7 +86,11 @@ section.on{display:block}
 .tag{display:inline-block;font-size:12.5px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:3px;margin-right:8px;vertical-align:middle;letter-spacing:.04em}
 .cn{font-family:Georgia,serif;font-size:19.5px;font-weight:bold;color:var(--ink);vertical-align:middle}
 .mix{float:right;font-size:12.5px;color:var(--muted);margin-top:3px}
-.it{padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 10px;box-shadow:0 1px 3px rgba(15,39,68,.10)}
+.fresh{font-size:13.5px;color:#c9d6e8;margin-top:6px;line-height:1.5}
+.fresh b{color:#fff}
+.fresh button{font:inherit;font-size:13px;margin-left:6px;padding:3px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.45);background:transparent;color:#fff;cursor:pointer}
+@media (max-width:640px){.fresh button{min-height:44px;padding:6px 12px}}
+.it{overflow:hidden;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 10px;box-shadow:0 1px 3px rgba(15,39,68,.10)}
 .it:last-child{margin-bottom:0}
 .hl{font-size:17px;font-weight:bold;line-height:1.35;color:var(--ink);text-decoration:none}
 .hl:hover{text-decoration:underline}
@@ -139,7 +143,12 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 .srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:var(--ink)}
 .srcrow .bad{color:var(--bad);font-weight:bold}
 .it:target{background:var(--warm);outline:2px solid #d4a017}
-.offer{font-size:16px;font-weight:bold;line-height:1.45;color:var(--text);margin:4px 0 4px}
+.offer{font-size:16px;font-weight:normal;line-height:1.5;color:var(--text);margin:2px 0 6px}
+.ith{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;background:var(--ithbg);color:var(--ithtext);margin:-14px -16px 12px;padding:10px 16px;border-bottom:3px solid #d4a017}
+.ith .hl{flex:1 1 220px;color:var(--ithtext);font-family:Georgia,'Times New Roman',serif;font-size:19px;font-weight:bold;line-height:1.3}
+.ith .b20{margin-left:0}
+.ith .pick{float:none;margin:0 0 0 auto;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+.it.picked .ith .pick{background:#d4a017;border-color:#d4a017;color:#0f2744}
 .pick{float:right;font-size:13px;font-weight:bold;color:var(--ink);cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:var(--soft);border:1px solid var(--inline);border-radius:999px;padding:3px 9px}
 .pick input{vertical-align:middle;margin:0 5px 0 0}
 .it.picked{background:var(--picked);border-color:#d4a017}
@@ -182,6 +191,7 @@ ol.steps li label,.have{display:flex;align-items:center;min-height:44px}
    <div class="kick">Free military and veteran benefits brief</div>
    <div class="ttl">Free Military Benefits</div>
    <div class="dl" id="dek">No account. No tracking. Every entry links its source.</div>
+  <div class="fresh" id="fresh" aria-live="polite"></div>
   </div>
   <div class="mtools">
    <select id="theme" aria-label="Color theme"><option value="auto">Theme: Auto</option><option value="light">Theme: Light</option><option value="dark">Theme: Dark</option></select>
@@ -430,8 +440,8 @@ function sourceLinks(e) {
 function item(e, extra) {
  const on = isPicked(e.id);
  return '<div class="it' + (on ? " picked" : "") + '" id="e-' + esc(e.id) + '">' +
-  '<label class="pick"><input type="checkbox" data-pick="' + esc(e.id) + '"' + (on ? " checked" : "") + ">" + (on ? "On my list" : "Add to my list") + "</label>" +
-  '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" + badge(e) +
+  '<div class="ith"><a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" + badge(e) +
+  '<label class="pick"><input type="checkbox" data-pick="' + esc(e.id) + '"' + (on ? " checked" : "") + ">" + (on ? "On my list" : "Add to my list") + "</label></div>" +
   '<div class="offer">' + esc(e.offer) + "</div>" +
   '<div class="meta">' + pills(e) + "</div>" +
   (extra || "") +
@@ -952,7 +962,7 @@ async function findNear() {
  const bases = within(PLACES.bases, lat, lon, far, true).slice(0, 8);
  const va = within(PLACES.va, lat, lon, far, true).slice(0, 8);
  const rowHtml = (r) => item(r.e, '<div class="sum"><strong>Nearest location</strong>' + (r.n > 1 ? " (" + r.n + " within " + mi + " miles)" : "") + "</div>" + placeLine(r.p));
- const places = (arr) => arr.map((p) => '<div class="it"><span class="hl">' + esc(p.name) + "</span>" + placeLine(p) + "</div>").join("");
+ const places = (arr) => arr.map((p) => '<div class="it"><div class="ith"><span class="hl">' + esc(p.name) + "</span></div>" + placeLine(p) + "</div>").join("");
  const stateRows = state ? DATA.filter((e) => (e.states || []).includes(state) && !ended(e)) : [];
  const baseTitle = PLACES.bases_kind === "stores" ? "Commissaries and exchanges (where your VHIC or VA letter works)" : "Nearest military installations";
  const baseNote = PLACES.bases_kind === "stores" ? "" :
@@ -1190,17 +1200,18 @@ function renderSources() {
  const w = META.watch || {}, s = META.stats || {}, src = w.sources || [], failed = w.failed || [];
  const bad = {}; failed.forEach((f) => { bad[f.url] = f.reason; });
  const row = (x) => '<div class="srcrow"><span class="n">' + (x.rows == null ? '<span class="bad">failed</span>' : esc(x.rows)) + '</span><span><a href="' +
-  esc(x.url) + '" target="_blank" rel="noopener">' + esc(host(x.url)) + "</a>" + (bad[x.url] ? ' <span class="bad">' + esc(bad[x.url]) + "</span>" : "") + "</span></div>";
+  esc(x.url) + '" target="_blank" rel="noopener">' + esc(host(x.url)) + "</a>" + (bad[x.url] ? ' <span class="bad">' + esc(bad[x.url]) + "</span>" : "") +
+  ' <span class="src">' + (x.rows == null ? (x.last_ok ? "last good read " + esc(when(parseUTC(x.last_ok))) : "not read in this run") : "read " + esc(when(parseUTC(x.last_ok)))) + "</span></span></div>";
  const dirs = src.filter((x) => x.kind === "directory"), vds = src.filter((x) => x.kind === "veterans-day");
  const counts = META.counts || {};
  $("#sourcesOut").innerHTML =
-  card("Data health", "STATUS", "#0f2744", "refreshed " + esc(w.checked || META.data_version),
+  card("Data health", "STATUS", "#0f2744", "checked " + esc(when(parseUTC(w.run_utc) || parseUTC(META.generated))),
    '<div class="it"><div class="sum">' + esc(META.total) + " entries: " + esc(Object.keys(counts).map((k) => counts[k] + " " + k.replace("-", " ")).join(", ")) + ".</div>" +
    '<div class="sum">' + esc(s.source_pages_read) + " of " + esc(s.source_pages) + " source pages read in the last refresh; " + esc(failed.length) + " failed. " +
    esc(s.distinct_sites) + " distinct sites back the entries. " + esc(s.brand_confirmed) + " discounts confirmed on the brand's own page; " +
    esc(s.over_20) + " companies over 20 percent; " + esc((w.held_single_source || []).length) + " brands held back with one source" +
    (s.stale ? "; " + esc(s.stale) + " curated entries not rechecked in 90 days" : "") + ".</div></div>") +
-  card("Year-round discount directories read weekly", "DIRECTORIES", "#c0392b", dirs.length + " pages",
+  card("Year-round discount directories read daily", "DIRECTORIES", "#c0392b", dirs.length + " pages",
    '<div class="none">Number = rows at 21 percent or more found on that page in the last run.</div>' + dirs.map(row).join("")) +
   card("Veterans Day 2026 lists read daily in November", "LISTS", "#d4a017", vds.length + " pages",
    '<div class="none">Number = business names found on that page. An offer is listed once two lists name it.</div>' + vds.map(row).join("")) +
@@ -1337,19 +1348,72 @@ if ("serviceWorker" in navigator && (location.protocol === "https:" || location.
  window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => { /* still works online without it */ }); });
 }
 
-/* ---------- start: fetch fresh data on every visit ---------- */
-fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then((j) => {
+/* ---------- start: fetch fresh data on every visit, then recheck every 30 minutes while the page is open ----------
+   The harvest itself runs on GitHub's servers on a schedule (browsers cannot read other sites directly);
+   every visit and every check loads the newest result. Schedule (UTC), matching .github/workflows/crawl.yml:
+   daily 11:17; Mondays 09:17 (also store locations); every 6 hours at :17 from November 1 to 14. */
+const RUNS_UTC = {daily: [[11, 17]], monday: [[9, 17]], early_nov: [[0, 17], [6, 17], [12, 17], [18, 17]]};
+const LOADED_AT = Date.now();
+let lastCheck = 0;
+function parseUTC(s) {
+ if (!s) return null;
+ const m = String(s).match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
+ return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5])) : null;
+}
+const when = (d) => d ? d.toLocaleString([], {month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) : "unknown";
+function nextRun(now) {
+ let best = null;
+ for (let k = 0; k < 4; k++) {
+  const day = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + k));
+  const slots = RUNS_UTC.daily.slice();
+  if (day.getUTCDay() === 1) slots.push(...RUNS_UTC.monday);
+  if (day.getUTCMonth() === 10 && day.getUTCDate() <= 14) slots.push(...RUNS_UTC.early_nov);
+  for (const s of slots) {
+   const d = new Date(day.getTime() + (s[0] * 60 + s[1]) * 60000);
+   if (d > now && (!best || d < best)) best = d;
+  }
+ }
+ return best;
+}
+function renderFresh(note) {
+ const w = META.watch || {}, s = META.stats || {};
+ const page = new Date(document.lastModified);
+ const pageOK = !isNaN(page) && Math.abs(page.getTime() - LOADED_AT) > 5000; // a server that sends no date reports "now"
+ $("#fresh").innerHTML = "Sources checked <b>" + esc(when(parseUTC(w.run_utc) || parseUTC(META.generated))) + "</b> (" + esc(s.source_pages_read) + " of " +
+  esc(s.source_pages) + " read). Data rebuilt <b>" + esc(when(parseUTC(META.generated))) + "</b>." +
+  (pageOK ? " Page updated <b>" + esc(when(page)) + "</b>." : "") + " Next automatic check about <b>" + esc(when(nextRun(new Date()))) + "</b>." +
+  '<button type="button" id="checkNow">Check for updates</button>' + (note ? " <span>" + esc(note) + "</span>" : "");
+}
+function applyData(j) {
  META = j; DATA = j.entries || [];
- $("#dek").textContent = "Updated " + j.data_version + ". " + DATA.length + " entries, all free. No account. No tracking. Every entry links its source.";
+ $("#dek").textContent = DATA.length + " entries, all free. No account. No tracking. Every entry links its source.";
  $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated + ".";
- countdown(); applyProfile(); renderTray();
- const tab = (location.hash || "").slice(1);
- if (tab.startsWith("e-") && openEntry(tab.slice(2))) return;
- show(TABS.includes(tab) ? tab : (P.done || picked.length ? "unlocks" : "start"));
-}).catch(() => {
- $("#unlockOut").innerHTML = '<div class="gap">Could not load data.json. Serve the site folder over HTTP and reload.</div>';
- show("unlocks");
-});
+}
+function loadData(first, manual) {
+ lastCheck = Date.now();
+ return fetch("data.json?t=" + Date.now(), {cache: "no-store"}).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then((j) => {
+  if (first) {
+   applyData(j); renderFresh();
+   countdown(); applyProfile(); renderTray();
+   const tab = (location.hash || "").slice(1);
+   if (tab.startsWith("e-") && openEntry(tab.slice(2))) return;
+   show(TABS.includes(tab) ? tab : (P.done || picked.length ? "unlocks" : "start"));
+   return;
+  }
+  if (j.generated === META.generated) { renderFresh(manual ? "You have the newest data (checked " + when(new Date()) + ")." : ""); return; }
+  const before = DATA.length;
+  const cur = (document.querySelector("#tabs button.on") || {dataset: {}}).dataset.tab || "unlocks";
+  applyData(j); countdown(); applyProfile(); renderTray(); show(cur);
+  renderFresh("New data loaded: " + DATA.length + " entries (was " + before + ").");
+ }).catch(() => {
+  if (first) { $("#unlockOut").innerHTML = '<div class="gap">Could not load data.json. Serve the site folder over HTTP and reload.</div>'; show("unlocks"); }
+  else renderFresh(manual ? "Could not reach the server; showing the data already loaded." : "");
+ });
+}
+document.addEventListener("click", (ev) => { if (ev.target && ev.target.id === "checkNow") loadData(false, true); });
+setInterval(() => { if (document.visibilityState === "visible") loadData(false, false); }, 30 * 60000);
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - lastCheck > 30 * 60000) loadData(false, false); });
+loadData(true, false);
 loadAI();
 </script>
 </body>

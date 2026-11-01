@@ -65,4 +65,6 @@ if failures:
     print("CRAWL TESTS FAILED")
     print("\n".join(failures))
     sys.exit(1)
-print("CRAWL TESTS PASSED (43 checks)")
+check("emoji stripped from a heading name", crawl.clean("\u2615 Scooter's Coffee"), "Scooter's Coffee")
+check("pictograph stripped", crawl.clean("\U0001F6D2 Kroger \U0001F1FA\U0001F1F8"), "Kroger")
+print("CRAWL TESTS PASSED (45 checks)")

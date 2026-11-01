@@ -1,9 +1,11 @@
-name: Weekly harvest, Veterans Day lists and store locations
+name: Daily harvest, Veterans Day lists, weekly store locations
 
+# The page shows the next run from these times (RUNS_UTC in site/index.html); keep the two in step.
 on:
   schedule:
-    - cron: "17 9 * * 1"      # Mondays 09:17 UTC (All the Places publishes its weekly run on Fridays)
-    - cron: "17 13 1-14 11 *" # daily in early November, when Veterans Day offers are announced
+    - cron: "17 11 * * *"        # every day 11:17 UTC: discounts and Veterans Day lists
+    - cron: "17 9 * * 1"         # Mondays 09:17 UTC: also store, VA and base locations (All the Places publishes Fridays)
+    - cron: "17 0,6,12,18 1-14 11 *" # every 6 hours November 1 to 14, while Veterans Day offers are announced
   workflow_dispatch:
 
 permissions:
@@ -27,13 +29,15 @@ jobs:
         run: pip install -r requirements.txt
       - name: Harvest discounts (two-source rule) and Veterans Day lists
         run: python scripts/crawl.py
-      - name: Refresh store, VA and base locations (All the Places, OpenStreetMap, Wikidata)
+      - name: Refresh store, VA and base locations (All the Places, OpenStreetMap, Wikidata), weekly
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 9 * * 1'
         run: python scripts/snapshot_places.py
         continue-on-error: true
       - name: Rebuild and validate data.json
         run: |
           python scripts/build_data.py --selftest
           python tests/test_sources.py
+          python tests/test_manifest.py
           python tests/test_crawl.py
           python tests/test_percent.py
           python scripts/build_data.py --check
@@ -47,7 +51,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "Weekly refresh: discounts, Veterans Day lists, store locations"
+            git commit -m "Scheduled refresh: discounts, Veterans Day lists, source check times"
             git push
             gh workflow run pages.yml --ref main
           fi
