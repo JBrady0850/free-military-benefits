@@ -287,6 +287,134 @@ SLOT_WORDS = (("coffee", ("coffee", "cafe", "donut", "doughnut", "bagel", "dunki
               ("breakfast", ("breakfast", "pancake", "waffle", "ihop", "bob evans", "cracker barrel", "denny", "shoney", "eggs")))
 
 
+# ---------- offer facts from list text (facts only, written in our own words) ----------
+STOP_AFTER = {"for", "to", "with", "on", "at", "when", "from", "through", "in", "during", "by", "if", "until", "while",
+              "per", "valid", "dine-in", "dine", "available", "nov", "nov.", "november", "veterans", "veteran", "military",
+              "active", "active-duty", "service", "members", "is", "are", "will", "plus", "who", "that", "you", "their",
+              "all", "any", "every", "this", "as", "they", "we", "it", "be", "can", "get", "receive", "today"}
+TRAIL_DROP = {"and", "or", "a", "an", "the", "&", "+", "of", "with", "your", "their"}
+PCT_OFF = re.compile(r"(up to\s+)?(\d{1,2})\s?(?:%|percent)\s*(?:off|discount)", re.I)
+DOLLAR = re.compile(r"\$(\d{1,3}(?:\.\d\d)?)\s+(off|tickets?|admission|entrees?|meals?|burgers?|pizzas?|haircuts?|oil changes?)", re.I)
+BOGO = re.compile(r"\bbuy one,?\s+(?:entr[ée]e,?\s+)?get one\b|\bbogo\b", re.I)
+EAT_FREE = re.compile(r"\b(eat|eats|dine|dines)\s+(for\s+)?free\b|\bfree (meal|entr[ée]e|lunch|dinner|breakfast)\b", re.I)
+QUALIFIERS = [
+    (re.compile(r"dine[- ]in only|dine[- ]in guests", re.I), "Dine-in only"),
+    (re.compile(r"in[- ]store only|in[- ]store purchases? only", re.I), "In-store only"),
+    (re.compile(r"participating (locations|restaurants|stores|shops|franchises)", re.I), "At participating locations"),
+    (re.compile(r"while supplies last", re.I), "While supplies last"),
+    (re.compile(r"voucher|redeem(able)? (later|on a future|for a future|through|by|until)|future visit|bounce[- ]?back", re.I), "Includes something to use later"),
+    (re.compile(r"proof of service|military id|valid id|veteran id|dd[- ]?214|id required|with id\b|show (your )?id", re.I), "Bring proof of service"),
+]
+WHO_WORDS = [("veteran", r"\bveteran"), ("active-duty", r"active[- ]duty|active military|service ?members|active service"),
+             ("retiree", r"\bretir"), ("guard-reserve", r"reserv|national guard"), ("spouse", r"spouse|military famil|dependents")]
+PROOF_WORDS = [("id.me", r"id\.me"), ("sheerid", r"sheerid"), ("govx", r"govx"), ("promo-code", r"\b(promo )?code\b"),
+               ("store-program", r"rewards (member|account|app)|loyalty|sign up|app\b"), ("military-id", r"military id|valid id|veteran id"),
+               ("proof-of-service", r"proof of service|dd[- ]?214|id required")]
+MONTHS = {"oct": 10, "nov": 11, "dec": 12, "jan": 1}
+RANGE = re.compile(r"\b(oct|nov|dec)(?:ember|ober|\.)?\s+(\d{1,2})\s*(?:-|" + chr(0x2013) + r"|through|thru|to|and)\s*(?:(oct|nov|dec)(?:ember|ober|\.)?\s+)?(\d{1,2})\b", re.I)
+REDEEM = re.compile(r"(?:redeem(?:able)?|valid|use(?:d)?|good|expires?|through)\s+(?:it\s+|them\s+)?(?:through|by|until|before|thru)?\s*"
+                    r"(nov|dec|jan)(?:ember|uary|\.)?\s+(\d{1,2})", re.I)
+
+
+def free_phrase(text: str) -> str | None:
+    """'Free one-topping pizza', '10 free boneless wings and fries'. Stops at prepositions and punctuation."""
+    for m in re.finditer(r"\bfree\b", text, re.I):
+        before = text[max(0, m.start() - 6):m.start()].strip().split(" ")[-1]
+        words = re.findall(r"[\w$'&+/.\-]+|[,;:()!?]", text[m.end():m.end() + 140])  # \w keeps accented letters (entrée)
+        out = []
+        for w in words:
+            lw = w.lower().rstrip(".")
+            if w in ",;:()!?" or lw in STOP_AFTER or (w.endswith(".") and lw not in {"oz", "lb", "pc"}):
+                if w.endswith(".") and lw and lw not in STOP_AFTER and w not in ",;:()!?":
+                    out.append(w.rstrip("."))
+                break
+            out.append(w)
+            if len(out) >= 8:
+                break
+        out = [w for w in out if w.strip(".-")]
+        while out and out[-1].lower() in TRAIL_DROP:
+            out.pop()
+        if not out or out[0].lower() in {"of", "charge", "shipping", "and", "or"}:
+            continue
+        lead = (before + " ") if before.isdigit() else ""
+        phrase = (lead + "free " + " ".join(out)) if lead else "Free " + " ".join(out)
+        return phrase[0].upper() + phrase[1:]
+    return None
+
+
+def offer_facts(text: str) -> dict:
+    t = clean(text)
+    facts: dict = {"primary": None, "quals": [], "range": None, "redeem": None, "who": set(), "proof": set(), "family": False}
+    fp = free_phrase(t)
+    m = PCT_OFF.search(t)
+    d = DOLLAR.search(t)
+    if BOGO.search(t):
+        facts["primary"] = "Buy one, get one free" + (" (" + fp[5:] + ")" if fp and len(fp) > 5 and "get one" not in fp.lower() else "")
+    elif fp:
+        facts["primary"] = fp
+    elif m:
+        facts["primary"] = ("Up to " if m.group(1) else "") + m.group(2) + "% off"
+    elif d:
+        facts["primary"] = "$" + d.group(1) + " " + d.group(2).lower()
+    elif EAT_FREE.search(t):
+        facts["primary"] = "Free meal"
+    if facts["primary"] and m and not facts["primary"].endswith("% off") and "%" not in facts["primary"]:
+        facts["quals"].append("also mentions " + ("up to " if m.group(1) else "") + m.group(2) + "% off; see a source for what it covers")
+    for rx, label in QUALIFIERS:
+        if rx.search(t):
+            facts["quals"].append(label)
+    r = RANGE.search(t)
+    if r:
+        m1 = MONTHS[r.group(1).lower()[:3]]
+        m2 = MONTHS[(r.group(3) or r.group(1)).lower()[:3]]
+        a, b = int(r.group(2)), int(r.group(4))
+        if 1 <= a <= 31 and 1 <= b <= 31 and (m2, b) > (m1, a):
+            facts["range"] = (f"2026-{m1:02d}-{a:02d}", f"2026-{m2:02d}-{b:02d}")
+    rd = REDEEM.search(t)
+    if rd:
+        mo = MONTHS[rd.group(1).lower()[:3]]
+        day = int(rd.group(2))
+        if 1 <= day <= 31 and (mo, day) > (11, 11) or mo == 1:
+            facts["redeem"] = f"{2027 if mo == 1 else 2026}-{mo:02d}-{day:02d}"
+    low = t.lower()
+    for key, rx in WHO_WORDS:
+        if re.search(rx, low):
+            facts["who"].add(key)
+    for key, rx in PROOF_WORDS:
+        if re.search(rx, low):
+            facts["proof"].add(key)
+    facts["family"] = bool(re.search(r"\b(families|family members|spouses? and|kids eat|children|guests?)\b", low))
+    return facts
+
+
+def summarize_offer(texts: list[str]) -> dict:
+    """Combine what several lists say about one offer. The primary offer most lists agree on wins;
+    dates count only when two lists agree; qualifiers are kept when any list states them."""
+    facts = [offer_facts(t) for t in texts if t]
+    votes: dict[str, list[str]] = {}
+    for f in facts:
+        if f["primary"]:
+            key = re.sub(r"[^a-z0-9%$]+", "", f["primary"].lower())
+            votes.setdefault(key, []).append(f["primary"])
+    primary = None
+    if votes:
+        best = max(votes.values(), key=lambda v: (len(v), -min(len(x) for x in v)))
+        primary = min(best, key=len)
+    quals: list[str] = []
+    for f in facts:
+        for q in f["quals"]:
+            if q not in quals and not (primary and q.startswith("also mentions") and "%" in primary):
+                quals.append(q)
+    ranges = [f["range"] for f in facts if f["range"]]
+    rng = max(set(ranges), key=ranges.count) if ranges and ranges.count(max(set(ranges), key=ranges.count)) >= 2 else None
+    redeems = sorted(f["redeem"] for f in facts if f["redeem"])
+    who = sorted(set().union(*[f["who"] for f in facts])) if facts else []
+    proof = sorted(set().union(*[f["proof"] for f in facts])) if facts else []
+    family = sum(1 for f in facts if f["family"]) >= 2
+    return {"primary": primary, "quals": quals, "range": rng, "redeem": redeems[-1] if redeems else None,
+            "who": who, "proof": proof, "family": family, "agree": len(best) if votes else 0}
+
+
 def guess_slot(name: str) -> str:
     low = name.lower()
     for slot, words in SLOT_WORDS:
@@ -398,11 +526,11 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
             continue
         dir_links = [frag(h["url"], h["text"]) for h in hits]
         sources = ([bp["url"]] if bp else []) + dir_links
-        amount = ("up to " if up else "") + f"{pct} percent"
+        amount = ("Up to " if up else "") + f"{pct}% off"
         names = ", ".join(domain(h["url"]) for h in hits)
-        offer = (f"{amount.capitalize()} military discount, confirmed on the brand's own page and listed by {names}."
+        offer = (f"{amount} with the military discount. Confirmed on the brand's own page; also listed by {names}."
                  if verified == "brand page" else
-                 f"{amount.capitalize()} military discount reported by {len(hits)} independent directories ({names}).")
+                 f"{amount} with the military discount, as reported by {len(hits)} independent directories ({names}).")
         entries.append({"id": "auto-" + slug(row["name"]), "name": row["name"], "category": row["category"],
                         "offer": offer + " Confirm current terms and who qualifies before buying.",
                         "percent": pct, "percent_up": bool(up), "verified_by": verified, "confidence": conf,
@@ -413,8 +541,18 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
     return entries, sorted(held)
 
 
-def vd_names_on(soup: BeautifulSoup) -> list[str]:
-    """Business names that lead a list item, paragraph, table row or short heading on a 2026 list page."""
+def offer_text_after(el, text: str, lead: str) -> str:
+    """The words that describe the offer: the rest of the block, plus the next paragraph when the name is a heading."""
+    rest = text[len(lead):] if lead and text.startswith(lead[:15]) else text
+    if el.name in ("h3", "h4") or len(rest.split()) < 4:
+        sib = el.find_next_sibling(["p", "ul", "div"])
+        if sib is not None:
+            rest += " " + clean(sib.get_text(" "))
+    return rest.strip(" :-" + DASHES)[:400]
+
+
+def vd_names_on(soup: BeautifulSoup) -> list[tuple[str, str]]:
+    """(business name, offer text) for each list item, paragraph, table row or short heading on a 2026 list page."""
     names = []
     body = soup  # use the article or main element only when it actually holds the list
     for cand_body in (soup.find("article"), soup.find("main")):
@@ -449,7 +587,7 @@ def vd_names_on(soup: BeautifulSoup) -> list[str]:
             continue
         if re.fullmatch(r"[a-z]+s", low) and low not in {"hooters", "wendys", "dennys", "arbys", "chilis", "culvers"}:
             continue  # a bare plural noun ("Zoos", "Banks") is a heading, not a business
-        names.append(brand)
+        names.append((brand, offer_text_after(el, text, cand)))
     return names
 
 
@@ -464,20 +602,26 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
             report.append(f"SKIP not a {year} list by its title: {url}")
             FAILED.append({"url": url, "reason": f"title is not a {year} list"})
             continue
-        names = vd_names_on(soup)
-        for name in names:
+        pairs = vd_names_on(soup)
+        for name, said in pairs:
             key = norm(name)
-            row = seen.setdefault(key, {"name": name, "lists": {}})
+            row = seen.setdefault(key, {"name": name, "lists": {}, "texts": {}})
             if chr(0xFFFD) in row["name"] and chr(0xFFFD) not in name:
                 row["name"] = name  # prefer a clean spelling over a garbled one
-            row["lists"].setdefault(domain(url), frag(url, name))
-        report.append(f"VD LIST {len(set(names))} names: {url}")
-        SOURCE_STATS[url] = len(set(names))
+            d = domain(url)
+            row["lists"].setdefault(d, frag(url, name))
+            if said and len(said) > len(row["texts"].get(d, "")):
+                row["texts"][d] = said
+        names = {p[0] for p in pairs}
+        report.append(f"VD LIST {len(names)} names: {url}")
+        SOURCE_STATS[url] = len(names)
     # Merge the same business listed under a longer name ("Cracker Barrel Old Country Store").
     for key in sorted(seen, key=len):
         for other in [k for k in seen if k != key and k.startswith(key) and len(key) >= 6]:
             for d, link in seen[other]["lists"].items():
                 seen[key]["lists"].setdefault(d, link)
+            for d, said in seen[other]["texts"].items():
+                seen[key]["texts"].setdefault(d, said)
             seen[other]["lists"] = {}
     entries, single = [], []
     for key, row in seen.items():
@@ -485,14 +629,34 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
             continue  # curated by hand, or already in the year-round directory
         links = list(row["lists"].values())
         if len(links) >= 2:
-            doms = ", ".join(row["lists"])
             cat = guess_category(row["name"])
-            entries.append({"id": "auto-vd-" + slug(row["name"]), "name": row["name"],
-                            "category": cat if cat != "retail" else "food", "slot": guess_slot(row["name"]),
-                            "scope": "locations" if cat == "attractions" else "nationwide",
-                            "offer": f"Veterans Day {year} offer named on {len(links)} independent lists ({doms}). "
-                                     "Open a source for the exact terms and confirm with your local location.",
-                            "osm_brand": [row["name"]], "source_url": links[0], "sources": links[:12]})
+            facts = summarize_offer(list(row["texts"].values()))
+            if facts["primary"]:
+                lead = facts["primary"].rstrip(".") + "."
+                agree = f" Named on {len(links)} independent lists" + (f", {facts['agree']} of them with this offer" if 1 < facts["agree"] < len(links) else "") + "."
+            else:
+                lead = "Veterans Day offer; the lists word the terms differently."
+                agree = f" Named on {len(links)} independent lists."
+            quals = "".join(" " + q[0].upper() + q[1:] + "." for q in facts["quals"][:4])
+            entry = {"id": "auto-vd-" + slug(row["name"]), "name": row["name"],
+                     "category": cat if cat != "retail" else "food", "slot": guess_slot(row["name"] + " " + (facts["primary"] or "")),
+                     "scope": "locations" if cat == "attractions" else "nationwide",
+                     "offer": (lead + quals + agree + " Confirm with your location.")[:500],
+                     "osm_brand": [row["name"]], "source_url": links[0], "sources": links[:12]}
+            if facts["who"]:
+                entry["eligibility"] = facts["who"]
+            if facts["proof"]:
+                entry["verification"] = facts["proof"]
+            vd_day = f"{year}-11-11"
+            if facts["range"] and facts["range"][0] <= vd_day <= facts["range"][1]:
+                entry["event_start"], entry["event_end"] = facts["range"]  # a window that includes Veterans Day
+            elif facts["range"] and facts["range"][0] > vd_day:
+                facts["redeem"] = max(facts["redeem"] or "", facts["range"][1])  # a later window is when you redeem
+            if facts["redeem"] and facts["redeem"] > entry.get("event_end", vd_day):
+                entry["redeem_by"] = facts["redeem"]
+            if facts["family"]:
+                entry["family"] = True
+            entries.append(entry)
         elif "news.va.gov" in row["lists"]:
             single.append(row["name"])
     entries.sort(key=lambda e: e["name"].lower())

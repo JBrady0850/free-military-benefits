@@ -95,8 +95,20 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 .srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:#0f2744}
 .srcrow .bad{color:#c0392b;font-weight:bold}
 .it:target{background:#fff8e1;outline:2px solid #d4a017}
+.offer{font-size:14px;font-weight:bold;line-height:1.45;color:#1a1a1a;margin:4px 0 4px}
+.pick{float:right;font-size:11.5px;font-weight:bold;color:#0f2744;cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:#f4f6f9;border:1px solid #cfd6df;border-radius:999px;padding:3px 9px}
+.pick input{vertical-align:middle;margin:0 5px 0 0}
+.it.picked{background:#f3f8ff}
+.it.picked .pick{background:#d4a017;border-color:#d4a017}
+.tray{position:fixed;left:0;right:0;bottom:0;background:#0f2744;color:#fff;font-size:13px;padding:8px 12px;display:none;z-index:20;box-shadow:0 -2px 6px rgba(0,0,0,.25)}
+.tray .in{max-width:680px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tray .cnt{font-weight:bold;margin-right:auto}
+.tray button{font:inherit;font-size:12.5px;font-weight:bold;border:0;border-radius:4px;padding:7px 11px;cursor:pointer;background:#d4a017;color:#0f2744}
+.tray button.ghost{background:transparent;color:#fff;border:1px solid #6d7f99}
+body.has-tray{padding-bottom:70px}
+body.on-picks .tray{display:none !important}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}}
-@media print{.tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.foot a[href*=github]{display:none !important}section{display:block !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
+@media print{.tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.tray,.pick,.foot a[href*=github]{display:none !important}section{display:block !important}body.print-picks section:not(#sec-picks){display:none !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
 </style>
 </head>
 <body>
@@ -118,6 +130,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
    <button type="button" role="tab" data-tab="near">Near me</button>
    <button type="button" role="tab" data-tab="travel">Travel and cruises</button>
    <button type="button" role="tab" data-tab="dir">Discount directory</button>
+   <button type="button" role="tab" data-tab="picks">My list<span id="pickCount"></span></button>
    <button type="button" role="tab" data-tab="ai">Assistant</button>
    <button type="button" role="tab" data-tab="sources">Sources and data</button>
   </nav>
@@ -144,7 +157,8 @@ ol.steps input{margin-right:6px;vertical-align:middle}
    <div class="chips" id="vdChips"></div>
    <div class="row">
     <span style="flex:1;min-width:180px"><label for="vdQ">Find a place</label><input id="vdQ" type="search" style="width:100%;box-sizing:border-box" placeholder="Chili's, coffee, car wash"></span>
-    <button class="btn2" type="button" id="vdIcs">Add these to my calendar (.ics)</button>
+    <button class="btn2" type="button" id="vdPickAll">Add all shown to my list</button>
+    <button class="btn2" type="button" id="vdIcs">Add all shown to calendar (.ics)</button>
     <button class="btn2" type="button" id="vdNear">Map these near my ZIP</button>
    </div>
    <div id="vdOut" aria-live="polite"></div>
@@ -167,9 +181,28 @@ ol.steps input{margin-right:6px;vertical-align:middle}
    <div class="row">
     <span style="flex:1;min-width:200px"><label for="q">Search</label><input id="q" type="search" style="width:100%;box-sizing:border-box" placeholder="Brand, category, PX, BX, commissary, cruise"></span>
     <span><label for="sort">Sort</label><select id="sort"><option value="near">Nearest to me first</option><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
+    <button class="btn2" type="button" id="dirPickAll">Add all shown to my list</button>
    </div>
    <div class="chips" id="dirChips"></div>
    <div id="dirOut"></div>
+  </section>
+
+  <section id="sec-picks" data-title="My list" role="tabpanel">
+   <div class="legend">Tick <strong>Add to my list</strong> on any benefit, discount or Veterans Day offer, on any tab. The list stays in this browser. From here, put it on your calendar, email it, share it, copy it or print it. Dated offers become calendar events with a reminder at 9 a.m. the day before; benefits with no date become a reminder on the date you pick below.</div>
+   <div class="row">
+    <span><label for="remDate">Reminder date for items with no date</label><input id="remDate" type="date"></span>
+    <span style="flex:1;min-width:200px"><label for="mailTo">Email to (optional)</label><input id="mailTo" type="email" inputmode="email" autocomplete="email" style="width:100%;box-sizing:border-box" placeholder="you@example.com"></span>
+   </div>
+   <div class="row">
+    <button class="btn" type="button" id="pkIcs">Add to my calendar (.ics)</button>
+    <button class="btn2" type="button" id="pkMail">Email my list</button>
+    <button class="btn2" type="button" id="pkShare" hidden>Share with calendar file</button>
+    <button class="btn2" type="button" id="pkCopy">Copy list</button>
+    <button class="btn2" type="button" id="pkPrint">Print</button>
+    <button class="btn2" type="button" id="pkClear">Clear list</button>
+   </div>
+   <div class="src" id="pkMsg" aria-live="polite"></div>
+   <div id="picksOut"></div>
   </section>
 
   <section id="sec-ai" data-title="Assistant" role="tabpanel">
@@ -205,6 +238,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   <span id="verline"></span>
  </div>
 </div>
+<div class="tray" id="tray" role="region" aria-label="My list"><div class="in"></div></div>
 <script>
 "use strict";
 const $ = (s) => document.querySelector(s);
@@ -322,11 +356,13 @@ function sourceLinks(e) {
  return list.map((u) => '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(host(u)) + "</a>").join(" | ");
 }
 function item(e, extra) {
- return '<div class="it" id="e-' + esc(e.id) + '">' +
+ const on = isPicked(e.id);
+ return '<div class="it' + (on ? " picked" : "") + '" id="e-' + esc(e.id) + '">' +
+  '<label class="pick"><input type="checkbox" data-pick="' + esc(e.id) + '"' + (on ? " checked" : "") + ">" + (on ? "On my list" : "Add to my list") + "</label>" +
   '<a class="hl" href="' + esc(e.source_url) + '" target="_blank" rel="noopener">' + esc(e.name) + "</a>" + badge(e) +
+  '<div class="offer">' + esc(e.offer) + "</div>" +
   '<div class="meta">' + pills(e) + "</div>" +
   (extra || "") +
-  '<div class="sum">' + esc(e.offer) + "</div>" +
   (e.why_missed ? '<div class="sum why"><strong>Why people miss it:</strong> ' + esc(e.why_missed) + "</div>" : "") +
   (e.steps ? steps(e) : "") +
   (e.notes ? '<div class="sum note">' + esc(e.notes) + "</div>" : "") +
@@ -343,12 +379,14 @@ function card(title, tag, color, mix, inner) {
 }
 
 /* ---------- tabs, countdown, tiles ---------- */
-const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "ai", "sources"];
+const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "picks", "ai", "sources"];
 function show(tab, keepHash) {
  document.querySelectorAll("#tabs button").forEach((b) => { const on = b.dataset.tab === tab; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
  document.querySelectorAll("section").forEach((s) => s.classList.toggle("on", s.id === "sec-" + tab));
  $("#pbar").style.display = tab === "start" ? "none" : "";
+ document.body.classList.toggle("on-picks", tab === "picks");
  if (tab === "start") renderIV();
+ if (tab === "picks") renderPicks();
  if (tab === "near" && /^[0-9]{5}$/.test(P.zip) && nearKey !== P.zip + "|" + P.radius) findNear();
  if (tab === "sources") renderSources();
  if (!keepHash) { try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file:// */ } }
@@ -703,12 +741,8 @@ function makeIcs(list) {
  L.push("END:VCALENDAR");
  return L.join("\r\n") + "\r\n";
 }
-$("#vdIcs").addEventListener("click", () => {
- const blob = new Blob([makeIcs(vdList())], {type: "text/calendar"});
- const a = document.createElement("a");
- a.href = URL.createObjectURL(blob); a.download = "veterans-day-2026-offers.ics";
- document.body.appendChild(a); a.click(); a.remove();
-});
+$("#vdIcs").addEventListener("click", () => downloadFile("veterans-day-2026-offers.ics", icsFor(vdList(), null), "text/calendar"));
+$("#vdPickAll").addEventListener("click", () => addPicks(vdList().map((e) => e.id)));
 $("#vdNear").addEventListener("click", () => { show("near"); if (!P.zip) $("#zip").focus(); });
 
 /* ---------- travel and cruises ---------- */
@@ -753,6 +787,8 @@ $("#dirChips").addEventListener("click", (ev) => {
 });
 $("#q").addEventListener("input", renderDir);
 $("#sort").addEventListener("change", renderDir);
+let lastDir = [];
+$("#dirPickAll").addEventListener("click", () => addPicks(lastDir.map((e) => e.id)));
 function renderDir() {
  const toks = $("#q").value.toLowerCase().split(/\s+/).filter(Boolean).map((t) => SYN[t] || t);
  let list = dirEntries().filter((e) => {
@@ -767,6 +803,7 @@ function renderDir() {
  list.sort(s === "az" ? (a, b) => a.name.localeCompare(b.name) :
   s === "new" ? (a, b) => b.last_verified.localeCompare(a.last_verified) || a.name.localeCompare(b.name) :
   s === "near" ? (a, b) => byLocal(a, b) || byPct(a, b) : byPct);
+ lastDir = list;
  const auto = list.filter((e) => e.auto).length;
  $("#dirOut").innerHTML = card("Military discount directory", "BRANDS", "#c0392b",
   list.length + " shown, " + auto + " auto-found" + (s === "near" && LOCAL ? ", nearest to " + LOCAL.zip + " first" : ""), list.map((e) => item(e, nearLine(e))).join(""));
@@ -861,6 +898,210 @@ document.addEventListener("click", (ev) => {
  show(a.dataset.go);
  if (a.dataset.go === "start") window.scrollTo(0, 0);
 });
+
+/* ---------- my list: pick entries on any tab, then calendar, email, share, copy, print ---------- */
+const NL = String.fromCharCode(10), CRLF = String.fromCharCode(13, 10), BSL = String.fromCharCode(92);
+const SITE_URL = "https://jbrady0850.github.io/free-military-benefits/";
+let PICKS = store.get("fmb_picks", []);
+function isPicked(id) { return PICKS.includes(id); }
+function syncPickBoxes(id, on) {
+ document.querySelectorAll('input[data-pick="' + id + '"]').forEach((x) => {
+  x.checked = on;
+  const it = x.closest(".it"); if (it) it.classList.toggle("picked", on);
+  const lab = x.closest("label"); if (lab && lab.lastChild && lab.lastChild.nodeType === 3) lab.lastChild.nodeValue = on ? "On my list" : "Add to my list";
+ });
+}
+function savePicks() { store.set("fmb_picks", PICKS); renderTray(); if ($("#sec-picks").classList.contains("on")) renderPicks(); }
+function setPick(id, on) {
+ PICKS = on ? (PICKS.includes(id) ? PICKS : PICKS.concat(id)) : PICKS.filter((x) => x !== id);
+ syncPickBoxes(id, on); savePicks();
+}
+function addPicks(ids) {
+ const before = PICKS.length;
+ ids.forEach((id) => { if (!PICKS.includes(id)) { PICKS.push(id); syncPickBoxes(id, true); } });
+ savePicks();
+ flash((PICKS.length - before) + " added to My list (" + PICKS.length + " in all).");
+}
+function flash(text) { const m = $("#pkMsg"); if (m) m.textContent = text; const t = $("#tray .cnt"); if (t) { t.textContent = text; setTimeout(renderTray, 2500); } }
+document.addEventListener("change", (ev) => { const cb = ev.target.closest("input[data-pick]"); if (cb) setPick(cb.dataset.pick, cb.checked); });
+const firstDate = (e) => e.event_start || e.redeem_by || "";
+function pickedEntries() {
+ const order = {"veterans-day": 0, hidden: 1, free: 2, travel: 3, discount: 4, crawled: 5};
+ return PICKS.map((id) => DATA.find((e) => e.id === id)).filter(Boolean)
+  .sort((a, b) => (firstDate(a) ? 0 : 1) - (firstDate(b) ? 0 : 1) || firstDate(a).localeCompare(firstDate(b)) ||
+   (order[a.kind] || 9) - (order[b.kind] || 9) || a.name.localeCompare(b.name));
+}
+function renderTray() {
+ const n = pickedEntries().length;
+ const pc = $("#pickCount"); if (pc) pc.textContent = n ? " (" + n + ")" : "";
+ const t = $("#tray");
+ t.style.display = n ? "block" : "none";
+ document.body.classList.toggle("has-tray", n > 0);
+ if (!n) return;
+ t.querySelector(".in").innerHTML = '<span class="cnt">' + n + (n === 1 ? " item" : " items") + " on My list</span>" +
+  '<button type="button" class="ghost" data-tray="view">View</button><button type="button" data-tray="ics">Calendar</button><button type="button" data-tray="mail">Email</button>';
+}
+$("#tray").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button[data-tray]");
+ if (!b) return;
+ if (b.dataset.tray === "view") { show("picks"); window.scrollTo(0, 0); }
+ if (b.dataset.tray === "ics") downloadPicksIcs();
+ if (b.dataset.tray === "mail") emailPicks();
+});
+function localDate(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+function remindDate() { const v = $("#remDate").value; return /^20[0-9]{2}-[0-9]{2}-[0-9]{2}$/.test(v) ? v : localDate(new Date(Date.now() + 86400000)); }
+function whenText(e) {
+ const parts = [];
+ if (e.event_start) parts.push(dateRange(e) + ", " + e.event_start.slice(0, 4));
+ if (e.redeem_by) parts.push("redeem by " + md(e.redeem_by));
+ return parts.join("; ");
+}
+function describeLines(e) {
+ const L = [e.offer];
+ const when = whenText(e); if (when) L.push("When: " + when);
+ L.push("Who: " + (e.eligibility || []).map((x) => ELIG[x] || x).join(", "));
+ L.push("Bring or verify with: " + (e.verification || []).map((x) => VER[x] || x).join(", "));
+ if (e.why_missed) L.push("Why people miss it: " + e.why_missed);
+ if (e.steps) { const done = doneArr(e.id); e.steps.forEach((s, i) => L.push("Step " + (i + 1) + (done[i] ? " (done)" : "") + ": " + s)); }
+ if (e.notes) L.push(e.notes);
+ const p = nearest(e); if (p) L.push("Nearest location: " + p.d.toFixed(1) + " miles from ZIP " + LOCAL.zip + ", https://www.google.com/maps/dir/?api=1&destination=" + p.lat + "," + p.lon);
+ (e.sources && e.sources.length ? e.sources : [e.source_url]).forEach((u, i) => L.push("Source " + (i + 1) + ": " + u));
+ L.push("Confirm terms at the source before you go. From Free Military Benefits, " + SITE_URL);
+ return L;
+}
+/* iCalendar (RFC 5545): CRLF lines, folded at 75 octets, text escaped; all-day events; reminders. */
+function fold(line) {
+ const enc = new TextEncoder(), out = [];
+ let cur = "", n = 0;
+ for (const ch of line) {
+  const b = enc.encode(ch).length;
+  if (n + b > 75) { out.push(cur); cur = " "; n = 1; }
+  cur += ch; n += b;
+ }
+ out.push(cur);
+ return out.join(CRLF);
+}
+const icsLines = (lines) => lines.map(icsEsc).join(BSL + "n");
+function icsFor(list, remind) {
+ const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+ const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Free Military Benefits//My list//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Free Military Benefits"];
+ const ev = (o) => {
+  L.push("BEGIN:VEVENT", "UID:" + o.uid + "@free-military-benefits", "DTSTAMP:" + stamp,
+   "DTSTART;VALUE=DATE:" + ymd(o.start), "DTEND;VALUE=DATE:" + ymd(nextDay(o.end)), fold("SUMMARY:" + icsEsc(o.title)),
+   fold("DESCRIPTION:" + icsLines(o.lines)), fold("URL:" + o.url), "TRANSP:TRANSPARENT");
+  if (o.geo) L.push("GEO:" + o.geo[0].toFixed(5) + ";" + o.geo[1].toFixed(5), fold("LOCATION:" + icsEsc(o.where)));
+  if (o.alarm) L.push("BEGIN:VALARM", "ACTION:DISPLAY", fold("DESCRIPTION:" + icsEsc(o.title)), "TRIGGER:" + o.alarm, "END:VALARM");
+  L.push("END:VEVENT");
+ };
+ list.forEach((e) => {
+  const p = nearest(e);
+  const base = {url: e.source_url, lines: describeLines(e), geo: p ? [p.lat, p.lon] : null,
+   where: p ? "Nearest location, " + p.d.toFixed(1) + " miles from ZIP " + LOCAL.zip : ""};
+  let dated = false;
+  if (e.event_start) { ev(Object.assign({}, base, {uid: e.id, start: e.event_start, end: e.event_end || e.event_start, title: e.name + " (military offer)", alarm: "-PT15H"})); dated = true; }
+  if (e.redeem_by) { ev(Object.assign({}, base, {uid: e.id + "-redeem", start: e.redeem_by, end: e.redeem_by, title: "Last day to redeem: " + e.name, alarm: "-PT15H"})); dated = true; }
+  if (!dated && remind) ev(Object.assign({}, base, {uid: e.id + "-todo-" + ymd(remind), start: remind, end: remind,
+   title: (e.kind === "hidden" ? "Claim: " : e.kind === "free" ? "Get: " : "Use: ") + e.name, alarm: "PT9H"}));
+ });
+ L.push("END:VCALENDAR");
+ return L.join(CRLF) + CRLF;
+}
+function downloadFile(name, text, type) {
+ const blob = new Blob([text], {type: type});
+ const a = document.createElement("a");
+ a.href = URL.createObjectURL(blob); a.download = name;
+ document.body.appendChild(a); a.click(); a.remove();
+ setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+function downloadPicksIcs() {
+ const list = pickedEntries();
+ if (!list.length) { flash("Your list is empty. Tick Add to my list on any card first."); return; }
+ const undated = list.filter((e) => !firstDate(e)).length;
+ downloadFile("my-military-benefits.ics", icsFor(list, remindDate()), "text/calendar");
+ flash("Calendar file saved with " + list.length + " items" + (undated ? "; " + undated + " without a date are reminders on " + md(remindDate()) : "") + ". Open it to add them to your calendar.");
+}
+function picksText(list, compact) {
+ return list.map((e, i) => {
+  const L = [(i + 1) + ". " + e.name + (e.percent ? " (" + (e.percent_up ? "up to " : "") + e.percent + "% off)" : "")];
+  const when = whenText(e); if (when) L.push("   When: " + when);
+  if (!compact) {
+   L.push("   " + e.offer);
+   if (e.steps) e.steps.forEach((s, k) => L.push("   Step " + (k + 1) + ": " + s));
+  }
+  const p = nearest(e); if (p) L.push("   Nearest: " + p.d.toFixed(1) + " mi, https://www.google.com/maps/dir/?api=1&destination=" + p.lat + "," + p.lon);
+  L.push("   Source: " + e.source_url);
+  return L.join(NL);
+ }).join(NL + NL);
+}
+const MAIL_FOOT = NL + NL + "From Free Military Benefits (free, no account): " + SITE_URL + NL + "Confirm every offer at its source before you go.";
+const MAIL_MAX = 1900; // many mail apps cut longer mailto links
+function mailtoFor(list) {
+ const to = $("#mailTo").value.trim();
+ const subject = "My military benefits list (" + list.length + (list.length === 1 ? " item)" : " items)");
+ const url = (body) => "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body.split(NL).join(CRLF));
+ let u = url(picksText(list, false) + MAIL_FOOT);
+ if (u.length <= MAIL_MAX) return {url: u, cut: 0, compact: false};
+ u = url(picksText(list, true) + MAIL_FOOT);
+ if (u.length <= MAIL_MAX) return {url: u, cut: 0, compact: true};
+ for (let k = list.length - 1; k >= 1; k--) {
+  u = url(picksText(list.slice(0, k), true) + NL + NL + "...and " + (list.length - k) + " more. Use Copy list on the site for the full list." + MAIL_FOOT);
+  if (u.length <= MAIL_MAX) return {url: u, cut: list.length - k, compact: true};
+ }
+ return {url: url("My list has " + list.length + " items. Use Copy list on the site for the details." + MAIL_FOOT), cut: list.length, compact: true};
+}
+function emailPicks() {
+ const list = pickedEntries();
+ if (!list.length) { flash("Your list is empty. Tick Add to my list on any card first."); return; }
+ const m = mailtoFor(list);
+ window.location.href = m.url;
+ flash("Opening your email app" + (m.cut ? "; " + m.cut + " items did not fit in an email link, so use Copy list for those" : m.compact ? " with a short version; Copy list has every step" : "") +
+  ". Email links cannot attach files: add the calendar file separately, or use Share on a phone.");
+}
+async function copyPicks() {
+ const list = pickedEntries();
+ if (!list.length) { flash("Your list is empty."); return; }
+ const text = "My military benefits list" + NL + NL + picksText(list, false) + MAIL_FOOT;
+ try { await navigator.clipboard.writeText(text); flash("Copied " + list.length + " items. Paste them into an email, text or note."); }
+ catch (err) {
+  const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); flash("Copied " + list.length + " items."); } catch (e2) { flash("Copy is blocked in this browser; use Email or Print."); }
+  ta.remove();
+ }
+}
+function canShareFiles() {
+ try { return !!(navigator.canShare && navigator.canShare({files: [new File(["x"], "x.ics", {type: "text/calendar"})]})); } catch (e) { return false; }
+}
+async function sharePicks() {
+ const list = pickedEntries();
+ if (!list.length) { flash("Your list is empty."); return; }
+ const file = new File([icsFor(list, remindDate())], "my-military-benefits.ics", {type: "text/calendar"});
+ try { await navigator.share({title: "My military benefits list", text: picksText(list, true) + MAIL_FOOT, files: [file]}); flash("Shared."); }
+ catch (err) { if (!err || err.name !== "AbortError") flash("Sharing failed here; use Email plus the calendar file."); }
+}
+function renderPicks() {
+ const list = pickedEntries();
+ const dated = list.filter((e) => firstDate(e)), rest = list.filter((e) => !firstDate(e));
+ $("#picksOut").innerHTML = !list.length ? card("My list", "LIST", "#0f2744", "empty",
+  '<div class="none">Nothing yet. Tick <strong>Add to my list</strong> on any card, or use <strong>Add all shown to my list</strong> on Veterans Day or the directory.</div>') :
+  (dated.length ? card("Dated offers", "DATES", "#d4a017", dated.length + " items", dated.map((e) => item(e, nearLine(e))).join("")) : "") +
+  (rest.length ? card("Benefits and discounts to act on", "TO DO", "#0f2744", rest.length + " items, reminder " + md(remindDate()),
+   rest.map((e) => item(e, nearLine(e))).join("")) : "");
+}
+$("#pkIcs").addEventListener("click", downloadPicksIcs);
+$("#pkMail").addEventListener("click", emailPicks);
+$("#pkCopy").addEventListener("click", copyPicks);
+$("#pkShare").addEventListener("click", sharePicks);
+$("#pkPrint").addEventListener("click", () => { document.body.classList.add("print-picks"); window.print(); });
+window.addEventListener("afterprint", () => document.body.classList.remove("print-picks"));
+$("#pkClear").addEventListener("click", () => {
+ const ids = PICKS.slice(); PICKS = []; ids.forEach((id) => syncPickBoxes(id, false)); savePicks(); flash("List cleared.");
+});
+$("#remDate").addEventListener("change", () => renderPicks());
+$("#mailTo").addEventListener("input", () => store.set("fmb_mail_to", $("#mailTo").value.trim()));
+$("#remDate").value = localDate(new Date(Date.now() + 86400000));
+$("#remDate").min = localDate(new Date());
+$("#mailTo").value = store.get("fmb_mail_to", "");
+$("#pkShare").hidden = !canShareFiles();
 
 /* ---------- sources and data health ---------- */
 function renderSources() {
@@ -978,7 +1219,7 @@ fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error
  META = j; DATA = j.entries || [];
  $("#dek").textContent = "Updated " + j.data_version + ". " + DATA.length + " entries, all free. No account. No tracking. Every entry links its source.";
  $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated + ".";
- countdown(); applyProfile();
+ countdown(); applyProfile(); renderTray();
  const tab = (location.hash || "").slice(1);
  if (tab.startsWith("e-") && openEntry(tab.slice(2))) return;
  show(TABS.includes(tab) ? tab : (P.done || picked.length ? "unlocks" : "start"));

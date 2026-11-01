@@ -12,7 +12,7 @@ entries:
 - id: auto-sam-s-club
   name: Sam's Club
   category: retail
-  offer: 60 percent military discount reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 60% off with the military discount, as reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 60
   percent_up: false
   verified_by: two directories
@@ -24,7 +24,7 @@ entries:
 - id: auto-hellofresh
   name: HelloFresh
   category: food
-  offer: 55 percent military discount, confirmed on the brand's own page and listed by wearethemighty.com. Confirm current terms and who qualifies before buying.
+  offer: 55% off with the military discount. Confirmed on the brand's own page; also listed by wearethemighty.com. Confirm current terms and who qualifies before buying.
   percent: 55
   percent_up: false
   verified_by: brand page
@@ -36,7 +36,7 @@ entries:
 - id: auto-butchart-gardens
   name: Butchart Gardens
   category: attractions
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -48,7 +48,7 @@ entries:
 - id: auto-codecademy
   name: Codecademy
   category: education
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by sheerid.com. Confirm current terms and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by sheerid.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -60,7 +60,7 @@ entries:
 - id: auto-flying-squirrel-trampoline-park
   name: Flying Squirrel Trampoline Park
   category: attractions
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -72,7 +72,7 @@ entries:
 - id: auto-ford-s-theatre
   name: Ford's Theatre
   category: attractions
-  offer: Up to 50 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: true
   verified_by: brand page
@@ -84,7 +84,7 @@ entries:
 - id: auto-houston-zoo
   name: Houston Zoo
   category: attractions
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -96,7 +96,7 @@ entries:
 - id: auto-jungle-island
   name: Jungle Island
   category: attractions
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -108,8 +108,8 @@ entries:
 - id: auto-oakley
   name: Oakley
   category: services
-  offer: Up to 50 percent military discount reported by 4 independent directories (dealnews.com, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms and who qualifies
-    before buying.
+  offer: Up to 50% off with the military discount, as reported by 4 independent directories (dealnews.com, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms and who
+    qualifies before buying.
   percent: 50
   percent_up: true
   verified_by: two directories
@@ -123,7 +123,7 @@ entries:
 - id: auto-oakley-standard-issue
   name: Oakley Standard Issue
   category: apparel
-  offer: Up to 50 percent military discount reported by 2 independent directories (wearethemighty.com, storepolicies.com). Confirm current terms and who qualifies before buying.
+  offer: Up to 50% off with the military discount, as reported by 2 independent directories (wearethemighty.com, storepolicies.com). Confirm current terms and who qualifies before buying.
   percent: 50
   percent_up: true
   verified_by: two directories
@@ -135,8 +135,8 @@ entries:
 - id: auto-paramount
   name: Paramount+
   category: technology
-  offer: 50 percent military discount reported by 6 independent directories (hip2save.com, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm current terms and
-    who qualifies before buying.
+  offer: 50% off with the military discount, as reported by 6 independent directories (hip2save.com, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm current
+    terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: two directories
@@ -152,8 +152,8 @@ entries:
 - id: auto-reebok
   name: Reebok
   category: apparel
-  offer: 50 percent military discount, confirmed on the brand's own page and listed by wearethemighty.com, dealnews.com, militaryfamilies.com, honestmos.com, veteransbenefitskb.com. Confirm current terms
-    and who qualifies before buying.
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by wearethemighty.com, dealnews.com, militaryfamilies.com, honestmos.com, veteransbenefitskb.com. Confirm current
+    terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: brand page
@@ -169,8 +169,8 @@ entries:
 - id: auto-asics
   name: ASICS
   category: apparel
-  offer: 40 percent military discount reported by 6 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, veteransbenefitskb.com). Confirm current
-    terms and who qualifies before buying.
+  offer: 40% off with the military discount, as reported by 6 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, veteransbenefitskb.com). Confirm
+    current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: two directories
@@ -187,7 +187,7 @@ entries:
 - id: auto-bear-mattress
   name: Bear Mattress
   category: home-improvement
-  offer: 40 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 40% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: brand page
@@ -199,8 +199,8 @@ entries:
 - id: auto-great-wolf-lodge
   name: Great Wolf Lodge
   category: services
-  offer: Up to 40 percent military discount, confirmed on the brand's own page and listed by hip2save.com, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com. Confirm
-    current terms and who qualifies before buying.
+  offer: Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com.
+    Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: true
   verified_by: brand page
@@ -217,7 +217,7 @@ entries:
 - id: auto-helm-audio
   name: HELM Audio
   category: technology
-  offer: 40 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 40% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: brand page
@@ -229,7 +229,7 @@ entries:
 - id: auto-hp-hewlett-packard
   name: HP (Hewlett Packard)
   category: technology
-  offer: Up to 40 percent military discount reported by 3 independent directories (wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.
+  offer: Up to 40% off with the military discount, as reported by 3 independent directories (wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: true
   verified_by: two directories
@@ -242,7 +242,7 @@ entries:
 - id: auto-mountain-khakis
   name: Mountain Khakis
   category: apparel
-  offer: 40 percent military discount reported by 2 independent directories (dealhack.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 40% off with the military discount, as reported by 2 independent directories (dealhack.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: two directories
@@ -254,7 +254,7 @@ entries:
 - id: auto-tarte-cosmetics
   name: Tarte Cosmetics
   category: retail
-  offer: 40 percent military discount, confirmed on the brand's own page and listed by sheerid.com. Confirm current terms and who qualifies before buying.
+  offer: 40% off with the military discount. Confirmed on the brand's own page; also listed by sheerid.com. Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: brand page
@@ -266,7 +266,7 @@ entries:
 - id: auto-avis
   name: Avis
   category: services
-  offer: 35 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com, dealnews.com. Confirm current terms and who qualifies before buying.
+  offer: 35% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com, dealnews.com. Confirm current terms and who qualifies before buying.
   percent: 35
   percent_up: false
   verified_by: brand page
@@ -279,7 +279,7 @@ entries:
 - id: auto-budget
   name: Budget
   category: services
-  offer: Up to 35 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com, dealnews.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 35% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com, dealnews.com. Confirm current terms and who qualifies before buying.
   percent: 35
   percent_up: true
   verified_by: brand page
@@ -292,7 +292,7 @@ entries:
 - id: auto-budget-car-rental
   name: Budget Car Rental
   category: travel
-  offer: Up to 35 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 35% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 35
   percent_up: true
   verified_by: brand page
@@ -304,7 +304,7 @@ entries:
 - id: auto-helly-hansen
   name: Helly Hansen
   category: services
-  offer: 35 percent military discount reported by 3 independent directories (dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.
+  offer: 35% off with the military discount, as reported by 3 independent directories (dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.
   percent: 35
   percent_up: false
   verified_by: two directories
@@ -317,7 +317,7 @@ entries:
 - id: auto-1-800-flowers-com
   name: 1-800-Flowers.com
   category: retail
-  offer: Up to 30 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: true
   verified_by: brand page
@@ -329,7 +329,7 @@ entries:
 - id: auto-adidas
   name: Adidas
   category: retail
-  offer: 30 percent military discount reported by 12 independent directories (dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org,
+  offer: 30% off with the military discount, as reported by 12 independent directories (dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org,
     vetunlock.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com, storepolicies.com). Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
@@ -352,7 +352,7 @@ entries:
 - id: auto-alpha-industries
   name: Alpha Industries
   category: retail
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by hip2save.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -365,7 +365,7 @@ entries:
 - id: auto-alpine-rings
   name: Alpine Rings
   category: apparel
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -378,7 +378,7 @@ entries:
 - id: auto-berklee-online
   name: Berklee Online
   category: education
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -390,7 +390,7 @@ entries:
 - id: auto-bioionic
   name: Bioionic
   category: health
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by sheerid.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by sheerid.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -402,7 +402,7 @@ entries:
 - id: auto-birch
   name: Birch
   category: retail
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -414,7 +414,7 @@ entries:
 - id: auto-leatherman
   name: Leatherman
   category: outdoor
-  offer: 30 percent military discount reported by 3 independent directories (dealhack.com, sheerid.com, couponfollow.com). Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount, as reported by 3 independent directories (dealhack.com, sheerid.com, couponfollow.com). Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: two directories
@@ -428,7 +428,7 @@ entries:
 - id: auto-nba-league-pass
   name: NBA League Pass
   category: technology
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -440,7 +440,7 @@ entries:
 - id: auto-nutrex
   name: Nutrex
   category: health
-  offer: 30 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -452,7 +452,7 @@ entries:
 - id: auto-samsung
   name: Samsung
   category: technology
-  offer: Up to 30 percent military discount, confirmed on the brand's own page and listed by dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com, savingsgrove.com,
+  offer: Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com, savingsgrove.com,
     veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: true
@@ -472,8 +472,8 @@ entries:
 - id: auto-at-t
   name: AT&T
   category: technology
-  offer: 25 percent military discount reported by 5 independent directories (wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and who qualifies before
-    buying.
+  offer: 25% off with the military discount, as reported by 5 independent directories (wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and who qualifies
+    before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -489,7 +489,7 @@ entries:
 - id: auto-avis-budget
   name: Avis/Budget
   category: travel
-  offer: Up to 25 percent military discount reported by 2 independent directories (usmilitary.com, vetunlock.com). Confirm current terms and who qualifies before buying.
+  offer: Up to 25% off with the military discount, as reported by 2 independent directories (usmilitary.com, vetunlock.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: true
   verified_by: two directories
@@ -501,7 +501,7 @@ entries:
 - id: auto-beard-sorcery
   name: Beard Sorcery
   category: health
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -513,7 +513,7 @@ entries:
 - id: auto-carhartt
   name: Carhartt
   category: apparel
-  offer: 25 percent military discount reported by 2 independent directories (dealnews.com, vetunlock.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 2 independent directories (dealnews.com, vetunlock.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -525,7 +525,7 @@ entries:
 - id: auto-disney
   name: Disney+
   category: technology
-  offer: 25 percent military discount reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -538,7 +538,7 @@ entries:
 - id: auto-eset
   name: ESET
   category: technology
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -550,7 +550,7 @@ entries:
 - id: auto-florence-marine-x
   name: Florence Marine X
   category: health
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by sheerid.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by sheerid.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -562,7 +562,7 @@ entries:
 - id: auto-gelpro
   name: GelPro
   category: services
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by dealhack.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -576,7 +576,7 @@ entries:
 - id: auto-harry-david
   name: Harry & David
   category: food
-  offer: Up to 25 percent military discount, confirmed on the brand's own page and listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: true
   verified_by: brand page
@@ -588,7 +588,7 @@ entries:
 - id: auto-hulu
   name: Hulu
   category: technology
-  offer: 25 percent military discount reported by 2 independent directories (hip2save.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 2 independent directories (hip2save.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -600,7 +600,7 @@ entries:
 - id: auto-kawaii-stop
   name: Kawaii Stop
   category: apparel
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -612,7 +612,7 @@ entries:
 - id: auto-new-balance
   name: New Balance
   category: apparel
-  offer: 25 percent military discount reported by 2 independent directories (dealnews.com, militaryfamilies.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 2 independent directories (dealnews.com, militaryfamilies.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -624,7 +624,7 @@ entries:
 - id: auto-siriusxm
   name: SiriusXM
   category: services
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -638,7 +638,7 @@ entries:
 - id: auto-steve-madden
   name: Steve Madden
   category: apparel
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -650,7 +650,7 @@ entries:
 - id: auto-take-5-oil-change
   name: Take 5 Oil Change
   category: services
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -662,7 +662,7 @@ entries:
 - id: auto-tough-mudder
   name: Tough Mudder
   category: services
-  offer: Up to 25 percent military discount, confirmed on the brand's own page and listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: true
   verified_by: brand page
@@ -675,7 +675,7 @@ entries:
 - id: auto-untuckit
   name: UNTUCKit
   category: retail
-  offer: 25 percent military discount, confirmed on the brand's own page and listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
