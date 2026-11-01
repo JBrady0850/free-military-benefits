@@ -1,0 +1,310 @@
+{
+ "generated": "2026-11-01 20:20 UTC",
+ "data_version": "2026-11-01",
+ "counts": {
+  "discount": 8,
+  "free": 7
+ },
+ "entries": [
+  {
+   "id": "govx-marketplace",
+   "name": "GovX",
+   "category": "marketplace",
+   "offer": "Free account unlocks 10 to 50 percent off at 400+ brands (gear, apparel, travel, electronics, tickets). The community calls it the master key.",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree",
+    "guard-reserve",
+    "spouse"
+   ],
+   "verification": [
+    "govx",
+    "dd214",
+    "military-id"
+   ],
+   "scope": "online",
+   "source_url": "https://www.govx.com",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Register once with a .mil email, military or veteran ID, or DD-214.",
+   "kind": "discount"
+  },
+  {
+   "id": "idme-shop",
+   "name": "ID.me Shop",
+   "category": "marketplace",
+   "offer": "Military discounts across thousands of brands, plus recurring bill discounts (for example Verizon). One verified account works at many stores.",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree",
+    "guard-reserve",
+    "spouse"
+   ],
+   "verification": [
+    "id.me"
+   ],
+   "scope": "online",
+   "source_url": "https://shop.id.me",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Verification is the most friction-heavy of the services; keep the account active year-round so it does not lapse.",
+   "kind": "discount"
+  },
+  {
+   "id": "expertvoice",
+   "name": "ExpertVoice",
+   "category": "outdoor",
+   "offer": "Free membership for the military community with brand discounts and flash deals up to 60 percent.",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "spouse"
+   ],
+   "verification": [
+    "sheerid"
+   ],
+   "scope": "online",
+   "source_url": "https://get.expertvoice.com/military-community/",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "discount"
+  },
+  {
+   "id": "exchange-online-veterans",
+   "name": "Exchange online shopping (AAFES, NEX, CGX)",
+   "category": "retail",
+   "offer": "Lifetime online military exchange shopping, tax free, for honorably discharged veterans.",
+   "eligibility": [
+    "veteran",
+    "retiree",
+    "active-duty",
+    "guard-reserve"
+   ],
+   "verification": [
+    "vetverify"
+   ],
+   "scope": "online",
+   "source_url": "https://www.vetverify.org",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Verify once at VetVerify; covers shopmyexchange.com, mynavyexchange.com, and shopcgx.com.",
+   "kind": "discount"
+  },
+  {
+   "id": "home-depot-military",
+   "name": "The Home Depot military discount",
+   "category": "home-improvement",
+   "offer": "10 percent off eligible purchases year-round for military and veterans (annual cap applies).",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree",
+    "spouse"
+   ],
+   "verification": [
+    "id.me"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.homedepot.com/c/military-discount",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "discount"
+  },
+  {
+   "id": "lowes-military",
+   "name": "Lowe's military discount",
+   "category": "home-improvement",
+   "offer": "10 percent off eligible purchases every day for military and veterans (program limits apply).",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree",
+    "spouse"
+   ],
+   "verification": [
+    "id.me"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.lowes.com/l/military-discount",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "discount"
+  },
+  {
+   "id": "rental-car-military",
+   "name": "Rental car military rates (Enterprise, Hertz, National)",
+   "category": "travel",
+   "offer": "20 to 25 percent off on request with military or veteran ID, per community reports.",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree"
+   ],
+   "verification": [
+    "military-id",
+    "in-person"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.enterprise.com/en/deals/partnerships/veterans-advantage.html",
+   "last_verified": "2026-11-01",
+   "confidence": "community",
+   "notes": "Reported consistently on r/VeteransBenefits; confirm the rate at booking.",
+   "kind": "discount"
+  },
+  {
+   "id": "wesalute-membership",
+   "name": "WeSalute (Veterans Advantage)",
+   "category": "travel",
+   "offer": "Paid membership (about $29 per year) with airline, hotel, and travel discounts. The community verdict is that it pays off only for frequent travelers.",
+   "eligibility": [
+    "active-duty",
+    "veteran",
+    "retiree",
+    "spouse"
+   ],
+   "verification": [
+    "dd214",
+    "military-id"
+   ],
+   "scope": "online",
+   "source_url": "https://www.wesalute.com",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Listed for completeness because it is widely advertised; the free services above cover most people.",
+   "kind": "discount"
+  },
+  {
+   "id": "military-lifetime-pass",
+   "name": "America the Beautiful Military Lifetime Pass",
+   "category": "parks",
+   "offer": "Free lifetime entrance to 2,000+ federal recreation sites (national parks, wildlife refuges, forests) for the passholder and vehicle passengers.",
+   "eligibility": [
+    "veteran",
+    "gold-star-family"
+   ],
+   "verification": [
+    "va-letter",
+    "military-id",
+    "dd214"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.nps.gov/planyourvisit/passes.htm",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Authorized by the Alexander Lofgren Veterans in Parks Act; issued free at participating sites or online.",
+   "kind": "free"
+  },
+  {
+   "id": "military-annual-pass",
+   "name": "America the Beautiful Military Annual Pass",
+   "category": "parks",
+   "offer": "Free annual pass to the same federal recreation sites for current service members and their dependents.",
+   "eligibility": [
+    "active-duty",
+    "guard-reserve",
+    "dependent"
+   ],
+   "verification": [
+    "military-id"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.nps.gov/planyourvisit/passes.htm",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "free"
+  },
+  {
+   "id": "access-pass",
+   "name": "Access Pass (free lifetime, permanent disability)",
+   "category": "parks",
+   "offer": "Free lifetime pass to federal recreation sites for citizens with a permanent disability, including service-connected ratings; VA award letter or summary of benefits accepted.",
+   "eligibility": [
+    "disabled-veteran",
+    "everyone"
+   ],
+   "verification": [
+    "va-letter"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.nps.gov/planyourvisit/passes.htm",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "free"
+  },
+  {
+   "id": "nps-fee-free-days",
+   "name": "National Park fee-free entrance days",
+   "category": "parks",
+   "offer": "All National Park Service sites that charge entrance fees are free to everyone on designated days, including Veterans Day (November 11).",
+   "eligibility": [
+    "everyone"
+   ],
+   "verification": [
+    "none"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.nps.gov/planyourvisit/fee-free-parks.htm",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "free"
+  },
+  {
+   "id": "va-facility-finder",
+   "name": "VA facility finder (medical centers, clinics, Vet Centers)",
+   "category": "facilities",
+   "offer": "Free locator for every VA medical center, outpatient clinic, Vet Center, and benefits office, with services and hours.",
+   "eligibility": [
+    "veteran",
+    "active-duty",
+    "dependent"
+   ],
+   "verification": [
+    "none"
+   ],
+   "scope": "nationwide",
+   "source_url": "https://www.va.gov/find-locations",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "notes": "Backed by the public VA Lighthouse Facilities API (CC0), which this project will snapshot for its map.",
+   "kind": "free"
+  },
+  {
+   "id": "uso-centers",
+   "name": "USO centers and airport lounges",
+   "category": "facilities",
+   "offer": "Free USO center access for service members and their families, including airport locations.",
+   "eligibility": [
+    "active-duty",
+    "guard-reserve",
+    "dependent"
+   ],
+   "verification": [
+    "military-id"
+   ],
+   "scope": "locations",
+   "source_url": "https://www.uso.org/locations",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "free"
+  },
+  {
+   "id": "veteran-id-card",
+   "name": "VA Veteran ID Card",
+   "category": "identity",
+   "offer": "Free VA-issued photo ID that proves veteran status for discounts without carrying a DD-214.",
+   "eligibility": [
+    "veteran"
+   ],
+   "verification": [
+    "none"
+   ],
+   "scope": "online",
+   "source_url": "https://www.va.gov/records/get-veteran-id-cards/vic/",
+   "last_verified": "2026-11-01",
+   "confidence": "official",
+   "kind": "free"
+  }
+ ]
+}

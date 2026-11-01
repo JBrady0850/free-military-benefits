@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earned Benefits</title>
+<meta name="description" content="Free, open-source military and veteran discounts, free benefits, and tools. No account, no tracking, every entry sourced.">
+<link rel="icon" href="data:,">
+<style>
+:root{--navy:#003366;--hdr:#003366;--ink:#1a1a1a;--bg:#ffffff;--muted:#555555;
+ --chipbg:#eef3f8;--line:#d7dee6;--card:#ffffff;
+ --new:#1e7e34;--info:#0b6ea8;--warn:#e67e22;--neg:#c0392b;--pos:#1e8449;--ref:#6c3d9e;--gray:#6c757d}
+@media (prefers-color-scheme:dark){
+ :root{--hdr:#7fa8d0;--ink:#e6e9ec;--bg:#11151a;--muted:#9aa4ad;
+  --chipbg:#1a2634;--line:#2a3542;--card:#161c23}}
+*{box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;font-size:15px;
+ line-height:1.5;color:var(--ink);background:var(--bg);max-width:980px;margin:auto;padding:16px}
+header h1{font-size:22px;margin:0 0 4px;color:var(--hdr);border-bottom:3px solid var(--hdr);padding-bottom:8px}
+p.sub{font-size:13px;color:var(--muted);margin:6px 0 12px}
+.legend{background:var(--chipbg);border-left:4px solid var(--navy);padding:10px 12px;
+ font-size:13px;margin:12px 0;border-radius:0 6px 6px 0}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+input[type=search],select,input[type=text],input[type=password],textarea{
+ font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);
+ border-radius:6px;padding:8px 10px}
+input[type=search]{flex:1;min-width:180px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.chips button{font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;
+ background:var(--card);color:var(--ink);cursor:pointer}
+.chips button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+#count{font-size:12.5px;color:var(--muted);margin:0 0 10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card h3{margin:0 0 6px;font-size:16px;color:var(--hdr)}
+.card p{margin:4px 0;font-size:13.5px}
+.card .meta{font-size:12px;color:var(--muted)}
+.badge{display:inline-block;font-size:11px;font-weight:600;color:#fff;border-radius:4px;
+ padding:2px 7px;margin:2px 4px 2px 0;letter-spacing:.2px}
+.b-new{background:var(--new)}.b-info{background:var(--info)}.b-warn{background:var(--warn)}
+.b-ref{background:var(--ref)}.b-pos{background:var(--pos)}.b-gray{background:var(--gray)}
+.card a{color:var(--info);text-decoration:none;font-weight:600;font-size:13px}
+.card a:hover{text-decoration:underline}
+details.ai{margin:20px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+details.ai summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--hdr)}
+details.ai .inner{padding:0 14px 14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.row label{font-size:12.5px;color:var(--muted);display:block}
+button.primary{font:inherit;background:var(--navy);color:#fff;border:0;border-radius:6px;
+ padding:8px 16px;cursor:pointer;font-weight:600}
+button.quiet{font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);
+ border-radius:6px;padding:8px 12px;cursor:pointer}
+#answer{white-space:pre-wrap;background:var(--chipbg);border-left:4px solid var(--navy);
+ padding:10px 12px;border-radius:0 6px 6px 0;font-size:13.5px;margin-top:10px;display:none}
+footer{margin:24px 0 8px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body>
+<header>
+ <h1>Earned Benefits</h1>
+ <p class="sub">Free, open-source military and veteran discounts, free benefits, and tools. No account. No tracking. Every entry carries its official source and a verified date.</p>
+</header>
+<div class="legend"><strong>One-stop and always free.</strong> Others charge up to $59.99 a year to aggregate public data. This project keeps the data open. Not affiliated with DoD, VA, or any listed brand; always confirm terms at the linked source.</div>
+<div class="controls">
+ <input id="q" type="search" placeholder="Search discounts and free benefits" aria-label="Search">
+ <select id="kind" aria-label="Kind">
+  <option value="all">All entries</option>
+  <option value="discount">Discounts</option>
+  <option value="free">Free benefits</option>
+ </select>
+ <select id="ver" aria-label="Verification">
+  <option value="all">Any verification</option>
+  <option value="id.me">ID.me</option>
+  <option value="govx">GovX</option>
+  <option value="sheerid">SheerID</option>
+  <option value="vetverify">VetVerify</option>
+  <option value="va-letter">VA letter</option>
+  <option value="military-id">Military ID</option>
+  <option value="dd214">DD-214</option>
+  <option value="none">No verification needed</option>
+ </select>
+</div>
+<div id="cats" class="chips" aria-label="Categories"></div>
+<p id="count"></p>
+<main id="cards" class="cards"><p class="meta">Loading data...</p></main>
+<details class="ai" id="ai">
+ <summary>Assistant (optional): bring your own AI key for advanced answers</summary>
+ <div class="inner">
+  <p class="meta">Works like the Road Trip Planner: the app is fully usable without AI. Add your own key to ask questions answered only from this dataset. The key is saved in this browser's localStorage and is sent only to the provider you pick, never to this site or GitHub. A local Ollama server needs no key at all.</p>
+  <div class="row">
+   <span><label for="prov">Provider</label>
+    <select id="prov">
+     <option value="anthropic">Anthropic Claude</option>
+     <option value="gemini">Google Gemini</option>
+     <option value="openai">OpenAI</option>
+     <option value="ollama">Ollama (local, no key)</option>
+    </select></span>
+   <span><label for="model">Model</label><input id="model" type="text" size="22"></span>
+   <span><label for="key">API key</label><input id="key" type="password" size="26" autocomplete="off"></span>
+  </div>
+  <div class="row">
+   <button class="quiet" id="saveKey" type="button">Save settings</button>
+   <button class="quiet" id="clearKey" type="button">Clear key</button>
+   <span class="meta" id="aiStatus"></span>
+  </div>
+  <div class="row">
+   <textarea id="question" rows="2" style="flex:1;min-width:220px" placeholder="Example: I am a Florida veteran with a 70 percent rating. What is free for me at national parks?"></textarea>
+   <button class="primary" id="ask" type="button">Ask</button>
+  </div>
+  <div id="answer"></div>
+ </div>
+</details>
+<footer>
+ <span id="verline">Data: local scaffold.</span>
+ Code MIT, data CC BY-SA 4.0. Source and contributions: GitHub (JBrady0850/earned-benefits).
+ Nothing here is legal or financial advice; confirm every offer at its source.
+</footer>
+<script>
+"use strict";
+const $ = (s) => document.querySelector(s);
+const esc = (t) => String(t == null ? "" : t).replace(/[&<>"']/g,
+ (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const state = { q: "", kind: "all", ver: "all", cat: "all" };
+let DATA = [];
+
+const BADGE = { official: ["b-info", "OFFICIAL"], community: ["b-ref", "COMMUNITY"],
+ unconfirmed: ["b-warn", "UNCONFIRMED"] };
+
+function badges(e) {
+ let h = "";
+ const conf = BADGE[e.confidence] || BADGE.unconfirmed;
+ h += '<span class="badge ' + conf[0] + '">' + conf[1] + "</span>";
+ h += '<span class="badge b-pos">VERIFIED ' + esc(e.last_verified) + "</span>";
+ if (e.kind === "free") h += '<span class="badge b-new">FREE</span>';
+ return h;
+}
+
+function matches(e) {
+ if (state.kind !== "all" && e.kind !== state.kind) return false;
+ if (state.cat !== "all" && e.category !== state.cat) return false;
+ if (state.ver !== "all" && !(e.verification || []).includes(state.ver)) return false;
+ if (state.q) {
+  const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category + " " +
+   (e.eligibility || []).join(" ")).toLowerCase();
+  for (const tok of state.q.toLowerCase().split(/\s+/)) {
+   if (tok && !hay.includes(tok)) return false;
+  }
+ }
+ return true;
+}
+
+function card(e) {
+ return '<article class="card" id="e-' + esc(e.id) + '">' +
+  "<h3>" + esc(e.name) + "</h3>" +
+  "<div>" + badges(e) + "</div>" +
+  "<p>" + esc(e.offer) + "</p>" +
+  '<p class="meta">Who: ' + esc((e.eligibility || []).join(", ")) +
+  " | Verify with: " + esc((e.verification || []).join(", ")) + "</p>" +
+  (e.notes ? '<p class="meta">' + esc(e.notes) + "</p>" : "") +
+  '<a href="' + esc(e.source_url) + '" rel="noopener" target="_blank">Official source</a>' +
+  "</article>";
+}
+
+function render() {
+ const hits = DATA.filter(matches);
+ $("#count").textContent = hits.length + " of " + DATA.length +
+  " entries shown. Every entry is free to claim; bring the listed verification.";
+ $("#cards").innerHTML = hits.map(card).join("") ||
+  '<p class="meta">No entries match. Clear a filter or broaden the search.</p>';
+}
+
+function buildChips() {
+ const cats = ["all"].concat([...new Set(DATA.map((e) => e.category))].sort());
+ $("#cats").innerHTML = cats.map((c) =>
+  '<button type="button" data-cat="' + esc(c) + '"' + (c === state.cat ? ' class="on"' : "") +
+  ">" + (c === "all" ? "All categories" : esc(c)) + "</button>").join("");
+}
+
+$("#cats").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button[data-cat]");
+ if (!b) return;
+ state.cat = b.dataset.cat;
+ buildChips();
+ render();
+});
+$("#q").addEventListener("input", (ev) => { state.q = ev.target.value; render(); });
+$("#kind").addEventListener("change", (ev) => { state.kind = ev.target.value; render(); });
+$("#ver").addEventListener("change", (ev) => { state.ver = ev.target.value; render(); });
+
+fetch("data.json").then((r) => {
+ if (!r.ok) throw new Error("HTTP " + r.status);
+ return r.json();
+}).then((j) => {
+ DATA = j.entries || [];
+ $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated +
+  ", " + j.counts.discount + " discounts and " + j.counts.free + " free benefits.";
+ buildChips();
+ render();
+}).catch(() => {
+ $("#cards").innerHTML = '<p class="legend">Could not load data.json. ' +
+  "Run <code>python scripts/build_data.py</code> and reload, or serve the site folder over HTTP.</p>";
+});
+
+/* ---------------- Assistant: bring your own AI key ---------------- */
+const STORE = "eb_ai_settings";
+const DEFAULT_MODEL = { anthropic: "claude-sonnet-5-5", gemini: "gemini-2.0-flash",
+ openai: "gpt-4o-mini", ollama: "llama3.2" };
+
+function loadAI() {
+ let s = {};
+ try { s = JSON.parse(localStorage.getItem(STORE) || "{}"); } catch (e) { s = {}; }
+ if (s.provider) $("#prov").value = s.provider;
+ $("#model").value = s.model || DEFAULT_MODEL[$("#prov").value];
+ $("#key").value = s.key || "";
+ $("#aiStatus").textContent = s.key ? "Key saved in this browser only." : "No key saved.";
+}
+$("#prov").addEventListener("change", () => { $("#model").value = DEFAULT_MODEL[$("#prov").value]; });
+$("#saveKey").addEventListener("click", () => {
+ try {
+  localStorage.setItem(STORE, JSON.stringify({ provider: $("#prov").value,
+   model: $("#model").value.trim(), key: $("#key").value.trim() }));
+  $("#aiStatus").textContent = "Saved in this browser only.";
+ } catch (e) { $("#aiStatus").textContent = "Could not save (storage blocked)."; }
+});
+$("#clearKey").addEventListener("click", () => {
+ try { localStorage.removeItem(STORE); } catch (e) { /* ignore */ }
+ $("#key").value = "";
+ $("#aiStatus").textContent = "Key cleared.";
+});
+
+function context(q) {
+ const toks = q.toLowerCase().split(/\W+/).filter((t) => t.length > 2);
+ const scored = DATA.map((e) => {
+  const hay = JSON.stringify(e).toLowerCase();
+  let s = 0;
+  for (const t of toks) if (hay.includes(t)) s += 1;
+  return [s, e];
+ }).sort((a, b) => b[0] - a[0]).slice(0, 8).map((p) => p[1]);
+ return scored.map((e) => "[" + e.id + "] " + e.name + " | " + e.offer +
+  " | eligibility: " + (e.eligibility || []).join(", ") + " | source: " + e.source_url).join("\n");
+}
+
+async function callModel(provider, model, key, prompt) {
+ if (provider === "anthropic") {
+  const r = await fetch("https://api.anthropic.com/v1/messages", {
+   method: "POST",
+   headers: { "content-type": "application/json", "x-api-key": key,
+    "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
+   body: JSON.stringify({ model: model, max_tokens: 700,
+    messages: [{ role: "user", content: prompt }] })
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error && j.error.message || "Anthropic HTTP " + r.status);
+  return j.content.map((c) => c.text || "").join("");
+ }
+ if (provider === "openai") {
+  const r = await fetch("https://api.openai.com/v1/chat/completions", {
+   method: "POST",
+   headers: { "content-type": "application/json", "authorization": "Bearer " + key },
+   body: JSON.stringify({ model: model, messages: [{ role: "user", content: prompt }] })
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error && j.error.message || "OpenAI HTTP " + r.status);
+  return j.choices[0].message.content;
+ }
+ if (provider === "gemini") {
+  const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" +
+   encodeURIComponent(model) + ":generateContent?key=" + encodeURIComponent(key), {
+   method: "POST",
+   headers: { "content-type": "application/json" },
+   body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error && j.error.message || "Gemini HTTP " + r.status);
+  return j.candidates[0].content.parts.map((p) => p.text || "").join("");
+ }
+ // ollama: local server, no key. Start it with OLLAMA_ORIGINS set to this page's origin.
+ const r = await fetch("http://localhost:11434/api/generate", {
+  method: "POST",
+  headers: { "content-type": "application/json" },
+  body: JSON.stringify({ model: model, prompt: prompt, stream: false })
+ });
+ const j = await r.json();
+ if (!r.ok) throw new Error("Ollama HTTP " + r.status);
+ return j.response;
+}
+
+$("#ask").addEventListener("click", async () => {
+ const q = $("#question").value.trim();
+ const provider = $("#prov").value;
+ const model = $("#model").value.trim() || DEFAULT_MODEL[provider];
+ const key = $("#key").value.trim();
+ const out = $("#answer");
+ out.style.display = "block";
+ if (!q) { out.textContent = "Type a question first."; return; }
+ if (provider !== "ollama" && !key) {
+  out.textContent = "Add your own API key for " + provider +
+   " (or pick Ollama for a free local model). The rest of the app works without AI.";
+  return;
+ }
+ const prompt = "You answer questions for Earned Benefits, a free military benefits site. " +
+  "Use ONLY the dataset entries below. Cite entry ids in square brackets after each claim. " +
+  "If the entries do not cover the question, say the dataset does not cover it yet and " +
+  "suggest checking VA.gov. Never invent an offer, a percentage, or an eligibility rule. " +
+  "No em dashes.\n\nDATASET ENTRIES:\n" + context(q) + "\n\nQUESTION: " + q;
+ out.textContent = "Asking " + provider + " (" + model + ")...";
+ try {
+  out.textContent = await callModel(provider, model, key, prompt);
+ } catch (err) {
+  out.textContent = "The " + provider + " call failed: " + err.message +
+   "\nCheck the key, the model name, and (for Ollama) that the local server allows this origin.";
+ }
+});
+
+loadAI();
+</script>
+</body>
+</html>
