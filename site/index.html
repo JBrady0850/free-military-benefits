@@ -63,6 +63,8 @@ input,select,textarea{font:inherit;font-size:14px;color:#1a1a1a;background:#fff;
 .btn2{font:inherit;font-size:13px;background:#f4f6f9;color:#0f2744;border:1px solid #cfd6df;border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
 ol.steps{margin:6px 0 4px;padding-left:20px;font-size:13px;color:#3d3d3d}
 ol.steps li{margin:3px 0}
+ol.steps li.done label{color:#6b6b6b;text-decoration:line-through}
+.prog.all{display:inline-block;color:#fff;background:#1e8449;border-radius:10px;padding:1px 8px}
 ol.steps input{margin-right:6px;vertical-align:middle}
 .prog{font-size:11px;font-weight:bold;color:#117a65}
 .dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase;padding:9px 14px 3px;background:#fffdf5;border-bottom:1px solid #efe6c7}
@@ -231,12 +233,17 @@ function badge(e) {
  return '<span class="b20" title="Offers ' + (e.percent_up ? "up to " : "") + e.percent + ' percent off; confirm terms at the source">' + esc(label) + "</span>";
 }
 
+function stepsLabel(e, done) {
+ const n = done.filter(Boolean).length, t = e.steps.length;
+ return n === t ? "All " + t + " steps done" : n + " of " + t + " steps done";
+}
 function steps(e) {
  const done = store.get("eb_steps", {})[e.id] || [];
- const n = done.filter(Boolean).length;
- return '<div class="prog" id="prog-' + esc(e.id) + '">' + n + " of " + e.steps.length + " steps done</div><ol class=\"steps\">" +
-  e.steps.map((s, i) => '<li><label><input type="checkbox" data-step="' + esc(e.id) + '" data-i="' + i + '"' +
-  (done[i] ? " checked" : "") + ">" + esc(s) + "</label></li>").join("") + "</ol>";
+ const all = done.filter(Boolean).length === e.steps.length;
+ // data-prog, not an id: the same entry can render on two tabs at once.
+ return '<div class="prog' + (all ? " all" : "") + '" data-prog="' + esc(e.id) + '">' + esc(stepsLabel(e, done)) + '</div><ol class="steps">' +
+  e.steps.map((s, i) => "<li" + (done[i] ? ' class="done"' : "") + '><label><input type="checkbox" data-step="' + esc(e.id) +
+  '" data-i="' + i + '"' + (done[i] ? " checked" : "") + ">" + esc(s) + "</label></li>").join("") + "</ol>";
 }
 
 function item(e, extra) {
@@ -316,14 +323,24 @@ $("#status").addEventListener("click", (ev) => {
 document.addEventListener("change", (ev) => {
  const cb = ev.target.closest("input[data-step]");
  if (!cb) return;
+ const id = cb.dataset.step, i = Number(cb.dataset.i);
  const all = store.get("eb_steps", {});
- const arr = all[cb.dataset.step] || [];
- arr[Number(cb.dataset.i)] = cb.checked;
- all[cb.dataset.step] = arr;
+ const arr = all[id] || [];
+ arr[i] = cb.checked;
+ all[id] = arr;
  store.set("eb_steps", all);
- const e = DATA.find((x) => x.id === cb.dataset.step);
- const p = document.getElementById("prog-" + cb.dataset.step);
- if (e && p) p.textContent = arr.filter(Boolean).length + " of " + e.steps.length + " steps done";
+ // Keep every rendered copy of this checklist in step (Unlocks and Travel can both show it).
+ document.querySelectorAll('input[data-step="' + id + '"][data-i="' + i + '"]').forEach((x) => {
+  x.checked = cb.checked;
+  x.closest("li").classList.toggle("done", cb.checked);
+ });
+ const e = DATA.find((x) => x.id === id);
+ if (!e) return;
+ const complete = arr.filter(Boolean).length === e.steps.length;
+ document.querySelectorAll('[data-prog="' + id + '"]').forEach((p) => {
+  p.textContent = stepsLabel(e, arr);
+  p.classList.toggle("all", complete);
+ });
 });
 
 function renderUnlocks() {

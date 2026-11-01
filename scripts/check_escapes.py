@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BS = chr(92)
 EXPECT = {
     "site/index.html": [BS + "r" + BS + "n", BS + "n" + BS + "n", "/" + BS + "s+/", "(/" + BS + BS + "/g",
-                        BS + "$1", "/" + BS + "r?" + BS + "n/g", "class=" + BS + '"steps' + BS + '"', "^px" + BS + "b"],
+                        BS + "$1", "/" + BS + "r?" + BS + "n/g", "^px" + BS + "b"],
     "scripts/crawl.py": ["up to" + BS + "s+", BS + "d{1,2}", BS + "(.*?" + BS + ")", BS + "s+(military"],
     "scripts/build_data.py": ['"' + BS + 'n"'],
 }
