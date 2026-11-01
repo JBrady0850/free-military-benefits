@@ -69,6 +69,19 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 .prog{font-size:11px;font-weight:bold;color:#117a65}
 .dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase;padding:9px 14px 3px;background:#fffdf5;border-bottom:1px solid #efe6c7}
 #answer{white-space:pre-wrap;display:none}
+.pbar{font-size:12.5px;line-height:1.5;background:#fff8e1;border-left:4px solid #d4a017;padding:8px 12px;margin:0 0 14px;color:#3d3d3d}
+.pbar a{font-weight:bold;white-space:nowrap}
+.ivdots{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.ivdots button{font:inherit;font-size:11.5px;font-weight:bold;color:#0f2744;background:#f4f6f9;border:1px solid #e3e8ee;border-radius:999px;padding:4px 10px;cursor:pointer}
+.ivdots button.on{background:#0f2744;color:#fff;border-color:#0f2744}
+.ivq{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:bold;color:#0f2744;margin:2px 0 2px}
+.ivh{font-size:13px;color:#4a4a4a;margin:0 0 12px}
+.have{display:block;padding:9px 10px;border:1px solid #e3e8ee;border-radius:4px;margin:0 0 6px;font-size:13.5px;font-weight:bold;color:#0f2744;cursor:pointer}
+.have input{margin-right:8px;vertical-align:middle}
+.have.on{background:#eef8f1;border-color:#1e8449}
+.have small{display:block;font-weight:normal;color:#555;margin:2px 0 0 24px}
+.sumlist{margin:0 0 12px;padding-left:20px;font-size:13.5px;color:#3d3d3d}
+.sumlist li{margin:4px 0}
 .foot{background:#0f2744;padding:14px 22px;font-size:11px;line-height:1.6;color:#aab6c6}
 .foot a{color:#d4a017}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}}
@@ -87,6 +100,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   <div id="countdown"></div>
   <div class="tiles" id="tiles"></div>
   <nav class="tabs" id="tabs" aria-label="Sections">
+   <button type="button" data-tab="start">Start here</button>
    <button type="button" data-tab="unlocks">What you unlock</button>
    <button type="button" data-tab="vd">Veterans Day 2026</button>
    <button type="button" data-tab="near">Near me</button>
@@ -94,11 +108,20 @@ ol.steps input{margin-right:6px;vertical-align:middle}
    <button type="button" data-tab="dir">Discount directory</button>
    <button type="button" data-tab="ai">Assistant</button>
   </nav>
+  <div class="pbar" id="pbar"></div>
+
+  <section id="sec-start">
+   <div class="legend">Five quick questions, asked once. Your answers save as you go, stay in this browser only, and shape every tab: what you unlock, Veterans Day offers, what is near you, travel and the discount directory. Skip any question to see everything.</div>
+   <div class="ivdots" id="ivDots"></div>
+   <div id="ivBody"></div>
+   <div class="row">
+    <button class="btn2" type="button" id="ivBack">Back</button>
+    <button class="btn" type="button" id="ivNext">Next</button>
+   </div>
+  </section>
 
   <section id="sec-unlocks">
    <div class="gap"><strong>Most people miss this:</strong> any VA service-connected rating, even 0 percent, unlocks in-person commissary and exchange shopping and three military resorts, and every honorably discharged veteran can use the Defense Department's own travel booking site.</div>
-   <div class="legend">Pick everything that describes you. The list filters instantly. Your picks and checklist progress stay in this browser only.</div>
-   <div class="chips" id="status"></div>
    <div id="unlockOut"></div>
   </section>
 
@@ -199,7 +222,30 @@ const STATUSES = [
  ["fam", "Spouse or dependent", ["spouse", "dependent"]],
  ["gs", "Gold Star family", ["gold-star-family"]]
 ];
-let picked = store.get("eb_status", []);
+/* ---------- profile: the Start here answers, applied on every tab ---------- */
+const P_KEY = "fmb_profile";
+const P = Object.assign({v: 1, status: [], zip: "", radius: 25, interests: [], family: false, over20: false, done: false},
+ store.get(P_KEY, {status: store.get("eb_status", []), zip: store.get("eb_zip", "")})); // first load migrates v0.3 picks
+let picked = P.status;
+function saveP() { P.status = picked; store.set(P_KEY, P); }
+const INTERESTS = [
+ ["food", "Free meals and coffee", ["food"]],
+ ["shop", "Shopping and the exchange", ["retail", "apparel", "marketplace", "base-access"]],
+ ["travel", "Travel, resorts and cruises", ["travel", "vacation", "cruise"]],
+ ["outings", "Parks, attractions and outings", ["attractions", "parks", "outdoor"]],
+ ["home", "Home, auto and services", ["home-improvement", "services"]],
+ ["tech", "Tech, phones and learning", ["technology", "education"]],
+ ["care", "Health, care and support", ["health", "support", "retreats", "identity", "facilities"]]
+];
+const likes = (e) => P.interests.some((k) => { const i = INTERESTS.find((x) => x[0] === k); return !!i && i[2].includes(e.category); });
+const byLikes = (a, b) => (likes(b) ? 1 : 0) - (likes(a) ? 1 : 0);
+const doneArr = (id) => store.get("eb_steps", {})[id] || [];
+const hasIt = (e) => !!(e.steps && e.steps.length) && doneArr(e.id).filter(Boolean).length === e.steps.length;
+function setHave(e, on) {
+ const all = store.get("eb_steps", {});
+ if (on) all[e.id] = e.steps.map(() => true); else delete all[e.id];
+ store.set("eb_steps", all);
+}
 
 function eligSet() {
  const s = new Set(["everyone"]);
@@ -276,9 +322,13 @@ function card(title, tag, color, mix, inner) {
 }
 
 /* ---------- tabs, countdown, tiles ---------- */
+const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "ai"];
 function show(tab) {
  document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
  document.querySelectorAll("section").forEach((s) => s.classList.toggle("on", s.id === "sec-" + tab));
+ $("#pbar").style.display = tab === "start" ? "none" : "";
+ if (tab === "start") renderIV();
+ if (tab === "near" && /^[0-9]{5}$/.test(P.zip) && nearKey !== P.zip + "|" + P.radius) findNear();
  try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file:// */ }
 }
 $("#tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-tab]"); if (b) show(b.dataset.tab); });
@@ -306,33 +356,144 @@ function countdown() {
 }
 
 function tiles() {
- const unlock = DATA.filter((e) => e.kind === "hidden" && fits(e)).length;
- const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e)).length;
- const big = DATA.filter((e) => e.percent >= BADGE_MIN).length;
- $("#tiles").innerHTML = [[unlock, picked.length ? "unlocked for you" : "hidden benefits"], [vdLive, "Veterans Day offers"],
+ const mine = DATA.filter((e) => e.kind === "hidden" && fits(e));
+ const todo = mine.filter((e) => !hasIt(e)).length;
+ const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e)).length;
+ const big = DATA.filter((e) => e.percent >= BADGE_MIN && fits(e)).length;
+ const custom = picked.length > 0;
+ $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits"], [vdLive, custom ? "Veterans Day offers for you" : "Veterans Day offers"],
   [big, "companies over 20% off"], [DATA.length, "entries, all free"]].map((t) =>
   '<div class="tile"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
 }
 
-/* ---------- what you unlock ---------- */
-function statusChips() {
- $("#status").innerHTML = STATUSES.map((s) => '<button type="button" class="chip' + (picked.includes(s[0]) ? " on" : "") +
-  '" data-st="' + s[0] + '">' + esc(s[1]) + "</button>").join("");
+/* ---------- start here: the interview ---------- */
+const IV = [
+ ["Status", "Who are you?", "Pick everything that applies. Each status unlocks different benefits. Pick none to see everything."],
+ ["ZIP", "Where are you?", "Your ZIP code finds the nearest bases, VA facilities and participating restaurants. It stays in this browser and is never sent anywhere."],
+ ["Interests", "What matters most to you?", "Your picks go to the top of every list and set the starting filters on Veterans Day and the directory. Pick none for plain order."],
+ ["Already have", "What do you already have?", "Tick what you already use. Every step for it is marked done and it moves out of your to-do list. Untick it any time."],
+ ["Summary", "Your brief is ready", "Every tab now follows these answers. Come back to Start here any time to change them."]
+];
+let ivStep = P.done ? 4 : 0;
+const ivHave = () => DATA.filter((e) => e.kind === "hidden" && e.steps && fits(e));
+const firstSentence = (s) => { const t = String(s || ""); const k = t.indexOf(". "); return k > 0 ? t.slice(0, k + 1) : t; };
+function renderIV() {
+ $("#ivDots").innerHTML = IV.map((s, i) => '<button type="button" data-ivs="' + i + '" class="' + (i === ivStep ? "on" : "") +
+  '">' + (i + 1) + ". " + esc(s[0]) + "</button>").join("");
+ let h = '<div class="ivq">' + esc(IV[ivStep][1]) + '</div><div class="ivh">' + esc(IV[ivStep][2]) + "</div>";
+ if (ivStep === 0) {
+  h += '<div class="chips">' + STATUSES.map((s) => '<button type="button" class="chip' + (picked.includes(s[0]) ? " on" : "") +
+   '" data-st="' + s[0] + '">' + esc(s[1]) + "</button>").join("") + "</div>";
+ } else if (ivStep === 1) {
+  h += '<div class="row"><span><label for="ivZip">ZIP code</label><input id="ivZip" inputmode="numeric" maxlength="5" size="8" value="' +
+   esc(P.zip) + '" placeholder="for example 32444"></span><span><label for="ivRad">Distance</label><select id="ivRad">' +
+   [10, 25, 50].map((n) => '<option value="' + n + '"' + (P.radius === n ? " selected" : "") + ">" + n + " miles</option>").join("") +
+   '</select></span></div><div class="src" id="ivZipMsg"></div>';
+ } else if (ivStep === 2) {
+  h += '<div class="chips">' + INTERESTS.map((i) => '<button type="button" class="chip' + (P.interests.includes(i[0]) ? " on" : "") +
+   '" data-int="' + i[0] + '">' + esc(i[1]) + "</button>").join("") + "</div>" +
+   '<div class="chips"><button type="button" class="chip' + (P.family ? " on" : "") + '" data-tog="family">Family usually comes with me</button>' +
+   '<button type="button" class="chip' + (P.over20 ? " on" : "") + '" data-tog="over20">Only show discounts over 20%</button></div>';
+ } else if (ivStep === 3) {
+  const list = ivHave();
+  h += (picked.length ? "" : '<div class="none">Showing all of them. Answer question 1 to narrow this list.</div>') +
+   list.map((e) => '<label class="have' + (hasIt(e) ? " on" : "") + '"><input type="checkbox" data-have="' + esc(e.id) + '"' +
+   (hasIt(e) ? " checked" : "") + ">" + esc(e.name) + "<small>" + esc(firstSentence(e.offer)) + "</small></label>").join("");
+ } else {
+  const mine = ivHave(), have = mine.filter(hasIt);
+  const who = STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1]);
+  const ints = INTERESTS.filter((i) => P.interests.includes(i[0])).map((i) => i[1]);
+  const vd = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e));
+  h += '<ul class="sumlist">' +
+   "<li><strong>You:</strong> " + esc(who.length ? who.join("; ") : "not answered, so every tab shows everything") + "</li>" +
+   "<li><strong>Near:</strong> " + esc(P.zip ? "ZIP " + P.zip + ", within " + P.radius + " miles" : "no ZIP, so Near me will ask") + "</li>" +
+   "<li><strong>First on every list:</strong> " + esc(ints.length ? ints.join("; ") : "nothing picked, plain order") +
+   (P.family ? "; family-included offers first" : "") + (P.over20 ? "; discounts over 20% only" : "") + "</li>" +
+   "<li><strong>To claim:</strong> " + (mine.length - have.length) + " benefits; <strong>already have:</strong> " + have.length + "</li>" +
+   "<li><strong>Veterans Day offers for you:</strong> " + vd.length + "</li></ul>" +
+   '<div class="row"><button class="btn2" type="button" id="ivReset">Clear my answers</button>' +
+   '<button class="btn2" type="button" id="ivClearSteps">Clear checklist progress</button></div>';
+ }
+ $("#ivBody").innerHTML = h;
+ $("#ivBack").style.visibility = ivStep === 0 ? "hidden" : "";
+ $("#ivNext").textContent = ivStep === IV.length - 1 ? "Show my brief" : "Next";
 }
-$("#status").addEventListener("click", (ev) => {
- const b = ev.target.closest("button[data-st]");
+function ivRefresh() { saveP(); applyProfile(); renderIV(); }
+$("#sec-start").addEventListener("click", (ev) => {
+ const b = ev.target.closest("button");
  if (!b) return;
- const k = b.dataset.st;
- picked = picked.includes(k) ? picked.filter((x) => x !== k) : picked.concat(k);
- store.set("eb_status", picked);
- statusChips(); renderUnlocks(); tiles(); renderTravel();
+ if (b.dataset.ivs) { ivStep = Number(b.dataset.ivs); renderIV(); return; }
+ if (b.dataset.st) { const k = b.dataset.st; picked = picked.includes(k) ? picked.filter((x) => x !== k) : picked.concat(k); ivRefresh(); return; }
+ if (b.dataset.int) {
+  const k = b.dataset.int;
+  P.interests = P.interests.includes(k) ? P.interests.filter((x) => x !== k) : P.interests.concat(k);
+  vdf.type = P.interests.length ? "mine" : "all"; dirCat = P.interests.length ? "mine" : "all";
+  ivRefresh(); return;
+ }
+ if (b.dataset.tog) { P[b.dataset.tog] = !P[b.dataset.tog]; ivRefresh(); return; }
+ if (b.id === "ivBack") { ivStep = Math.max(0, ivStep - 1); renderIV(); return; }
+ if (b.id === "ivNext") {
+  if (ivStep < IV.length - 1) { ivStep += 1; renderIV(); return; }
+  P.done = true; saveP(); show("unlocks"); window.scrollTo(0, 0); return;
+ }
+ if (b.id === "ivReset") {
+  picked = []; P.zip = ""; P.radius = 25; P.interests = []; P.family = false; P.over20 = false; P.done = false;
+  vdf.type = "all"; dirCat = "all"; nearKey = ""; $("#nearOut").innerHTML = ""; ivStep = 0; ivRefresh(); return;
+ }
+ if (b.id === "ivClearSteps") { store.set("eb_steps", {}); applyProfile(); renderIV(); }
 });
+$("#sec-start").addEventListener("change", (ev) => {
+ const t = ev.target;
+ if (t.dataset && t.dataset.have) {
+  const e = DATA.find((x) => x.id === t.dataset.have);
+  if (e) { setHave(e, t.checked); applyProfile(); renderIV(); }
+ } else if (t.id === "ivRad") { P.radius = Number(t.value); saveP(); applyProfile(); }
+});
+$("#sec-start").addEventListener("input", async (ev) => {
+ const t = ev.target;
+ if (t.id !== "ivZip") return;
+ const z = t.value.trim(), msg = $("#ivZipMsg");
+ if (z === "") { P.zip = ""; saveP(); applyProfile(); msg.textContent = "No ZIP saved."; return; }
+ if (!/^[0-9]{5}$/.test(z)) { msg.textContent = "Enter all 5 digits."; return; }
+ try { if (!ZIPS) ZIPS = await (await fetch("zip.json")).json(); } catch (e) { msg.textContent = "Could not load the ZIP list; saved anyway."; }
+ if (t.value.trim() !== z) return; // the person kept typing; this answer is stale
+ const ll = ZIPS && ZIPS[z];
+ if (ZIPS && !ll) { msg.textContent = "ZIP " + z + " has no Census area (PO box only ZIPs do not). Try a nearby ZIP."; return; }
+ P.zip = z; saveP(); applyProfile();
+ msg.textContent = "Saved: ZIP " + z + (ll && ll[2] ? ", " + ll[2] : "") + ".";
+});
+
+/* ---------- answers bar and re-render everything from the profile ---------- */
+function pbar() {
+ const who = STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1].split(" (")[0]);
+ const ints = INTERESTS.filter((i) => P.interests.includes(i[0])).map((i) => i[1].toLowerCase());
+ const mine = ivHave(), have = mine.filter(hasIt).length;
+ const bits = [who.length ? "For: " + who.join("; ") : "Showing benefits for everyone"];
+ if (P.zip) bits.push("ZIP " + P.zip + ", " + P.radius + " mi");
+ if (ints.length) bits.push("First: " + ints.join("; "));
+ if (P.over20) bits.push("over 20% only");
+ bits.push(have + " of " + mine.length + " benefits already in hand");
+ $("#pbar").innerHTML = esc(bits.join(" | ")) + ' <a href="#start" data-go="start">' +
+  (P.done || who.length ? "Edit my answers" : "Answer 5 quick questions") + "</a>";
+}
+function applyProfile() {
+ if ($("#zip").value.trim() !== P.zip) $("#zip").value = P.zip;
+ $("#radius").value = String(P.radius);
+ dir20 = P.over20;
+ if (!P.interests.length && vdf.type === "mine") vdf.type = "all";
+ if (!P.interests.length && dirCat === "mine") dirCat = "all";
+ tiles(); renderUnlocks(); vdChips(); renderVD(); renderTravel(); dirChips(); renderDir(); pbar();
+}
+
+/* ---------- what you unlock ---------- */
 document.addEventListener("change", (ev) => {
  const cb = ev.target.closest("input[data-step]");
  if (!cb) return;
  const id = cb.dataset.step, i = Number(cb.dataset.i);
  const all = store.get("eb_steps", {});
  const arr = all[id] || [];
+ const ent = DATA.find((x) => x.id === id);
+ const wasAll = !!ent && hasIt(ent);
  arr[i] = cb.checked;
  all[id] = arr;
  store.set("eb_steps", all);
@@ -341,22 +502,31 @@ document.addEventListener("change", (ev) => {
   x.checked = cb.checked;
   x.closest("li").classList.toggle("done", cb.checked);
  });
- const e = DATA.find((x) => x.id === id);
+ const e = ent;
  if (!e) return;
  const complete = arr.filter(Boolean).length === e.steps.length;
  document.querySelectorAll('[data-prog="' + id + '"]').forEach((p) => {
   p.textContent = stepsLabel(e, arr);
   p.classList.toggle("all", complete);
  });
+ if (complete !== wasAll) { tiles(); renderUnlocks(); pbar(); } // it moves between to-do and already have
 });
 
 function renderUnlocks() {
  const hidden = DATA.filter((e) => e.kind === "hidden");
- const mine = hidden.filter(fits);
+ const mine = hidden.filter(fits).sort(byLikes);
+ const todo = mine.filter((e) => !hasIt(e)), have = mine.filter(hasIt);
  const rest = hidden.filter((e) => !fits(e));
- const free = DATA.filter((e) => e.kind === "free" && fits(e));
- let h = card(picked.length ? "What your service unlocks" : "High-value benefits most people miss", "UNLOCK", "#0f2744",
-  mine.length + " benefits", mine.map((e) => item(e)).join(""));
+ const free = DATA.filter((e) => e.kind === "free" && fits(e)).sort(byLikes);
+ let h = '<div class="legend">Filtered by your answers on Start here' + (P.interests.length ? ", with your interests first" : "") +
+  '. <a href="#start" data-go="start">Change them</a>. Tick a step as you finish it; your progress stays in this browser.</div>';
+ h += card(picked.length ? "What your service unlocks" : "High-value benefits most people miss", "UNLOCK", "#0f2744",
+  todo.length + " to claim", todo.map((e) => item(e)).join("") ||
+  '<div class="none">You already have every benefit that matches your answers.</div>');
+ if (have.length) {
+  h += card("You already have these", "DONE", "#1e8449", have.length + " benefits", '<div class="none">' +
+   esc(have.map((e) => e.name).join("; ")) + '. <a href="#start" data-go="start" data-ivgo="3">Change</a></div>');
+ }
  h += card("Free for you, no purchase needed", "FREE", "#117a65", free.length + " items", free.map((e) => item(e)).join(""));
  if (picked.length && rest.length) {
   h += card("Not matched to your picks", "OTHER", "#6d5530", rest.length + " benefits",
@@ -369,10 +539,13 @@ function renderUnlocks() {
 const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
  ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
  ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
-let vdf = {type: "all", later: false, family: false, ended: false};
+const VD_TOGGLES = ["later", "family", "ended", "others"];
+let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false};
 function vdChips() {
- $("#vdChips").innerHTML = VD_FILTERS.map((f) => {
-  const on = ["later", "family", "ended"].includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
+ const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS,
+  picked.length ? [["others", "Include offers for other statuses"]] : []);
+ $("#vdChips").innerHTML = list.map((f) => {
+  const on = VD_TOGGLES.includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
   return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + f[0] + '">' + esc(f[1]) + "</button>";
  }).join("");
 }
@@ -380,19 +553,22 @@ $("#vdChips").addEventListener("click", (ev) => {
  const b = ev.target.closest("button[data-vf]");
  if (!b) return;
  const k = b.dataset.vf;
- if (["later", "family", "ended"].includes(k)) vdf[k] = !vdf[k]; else vdf.type = k;
+ if (VD_TOGGLES.includes(k)) vdf[k] = !vdf[k]; else vdf.type = k;
  vdChips(); renderVD();
 });
 function vdList() {
  return DATA.filter((e) => e.kind === "veterans-day").filter((e) => {
   if (!vdf.ended && ended(e)) return false;
+  if (!vdf.others && !fits(e)) return false;
   if (vdf.later && !e.redeem_by && !(e.event_end && e.event_end > VD)) return false;
   if (vdf.family && !e.family) return false;
   const t = vdf.type;
   if (t === "all") return true;
+  if (t === "mine") return likes(e);
   if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return e.slot === t;
   return e.category === t;
- }).sort((a, b) => (a.event_start + a.name).localeCompare(b.event_start + b.name));
+ }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) ||
+  (P.family ? (b.family ? 1 : 0) - (a.family ? 1 : 0) : 0) || a.name.localeCompare(b.name));
 }
 function renderVD() {
  const list = vdList();
@@ -431,18 +607,19 @@ $("#vdIcs").addEventListener("click", () => {
  a.href = URL.createObjectURL(blob); a.download = "veterans-day-2026-offers.ics";
  document.body.appendChild(a); a.click(); a.remove();
 });
-$("#vdNear").addEventListener("click", () => { show("near"); $("#zip").focus(); });
+$("#vdNear").addEventListener("click", () => { show("near"); if (!P.zip) $("#zip").focus(); });
 
 /* ---------- travel and cruises ---------- */
 function renderTravel() {
- const dod = DATA.filter((e) => e.kind === "hidden" && ["travel", "vacation"].includes(e.category) && fits(e));
- const cruise = DATA.filter((e) => e.kind === "travel");
- const exp = DATA.filter((e) => e.kind === "free" && ["retreats", "attractions", "support"].includes(e.category));
- const rental = DATA.filter((e) => e.kind === "discount" && e.category === "travel");
- $("#travelOut").innerHTML =
+ const dod = DATA.filter((e) => e.kind === "hidden" && ["travel", "vacation"].includes(e.category) && fits(e))
+  .sort((a, b) => (hasIt(a) ? 1 : 0) - (hasIt(b) ? 1 : 0));
+ const cruise = DATA.filter((e) => e.kind === "travel" && fits(e));
+ const exp = DATA.filter((e) => e.kind === "free" && ["retreats", "attractions", "support"].includes(e.category) && fits(e));
+ const rental = DATA.filter((e) => (e.kind === "discount" || e.kind === "crawled") && e.category === "travel" && fits(e));
+ $("#travelOut").innerHTML = '<div class="legend">Filtered by your answers on Start here. <a href="#start" data-go="start">Change them</a>.</div>' +
   card("Military-only travel most people never use", "DOD", "#0f2744", dod.length + " options", dod.map((e) => item(e)).join("")) +
   card("Cruise line military programs, with the fine print", "CRUISE", "#0b6ea8", cruise.length + " lines", cruise.map((e) => item(e)).join("")) +
-  card("Rental cars and travel memberships", "TRAVEL", "#34495e", rental.length + " items", rental.map((e) => item(e)).join("")) +
+  (rental.length ? card("Rental cars and travel discounts", "TRAVEL", "#34495e", rental.length + " items", rental.map((e) => item(e)).join("")) : "") +
   card("Free experiences, retreats and support", "FREE", "#117a65", exp.length + " programs",
    '<div class="none">Cost key: if an entry says travel is covered, the provider says so; otherwise confirm travel, lodging and meals with the organizer.</div>' +
    exp.map((e) => item(e)).join(""));
@@ -453,18 +630,19 @@ const SYN = {px: "exchange", bx: "exchange", nex: "exchange", mcx: "exchange", c
  deca: "commissary", groceries: "commissary", pt: "permanent", "p&t": "permanent", tdy: "travel", resort: "vacation",
  hotel: "travel", flight: "travel", flights: "travel", cruises: "cruise", clothes: "apparel", clothing: "apparel",
  shoes: "apparel", phone: "technology", streaming: "technology", eyeglasses: "health", vision: "health"};
-let dirCat = "all", dir20 = false;
-function dirEntries() { return DATA.filter((e) => e.kind === "discount" || e.kind === "crawled"); }
+let dirCat = P.interests.length ? "mine" : "all", dir20 = P.over20, dirOthers = false;
+function dirEntries() { return DATA.filter((e) => (e.kind === "discount" || e.kind === "crawled") && (dirOthers || fits(e))); }
 function dirChips() {
- const cats = ["all"].concat([...new Set(dirEntries().map((e) => e.category))].sort());
+ const cats = (P.interests.length ? ["mine"] : []).concat(["all"], [...new Set(dirEntries().map((e) => e.category))].sort());
  $("#dirChips").innerHTML = '<button type="button" class="chip' + (dir20 ? " on" : "") + '" data-d20="1">Over 20% only</button>' +
+  (picked.length ? '<button type="button" class="chip' + (dirOthers ? " on" : "") + '" data-dot="1">Include other statuses</button>' : "") +
   cats.map((c) => '<button type="button" class="chip' + (c === dirCat ? " on" : "") + '" data-dc="' + esc(c) + '">' +
-  esc(c === "all" ? "All categories" : c.replace(/-/g, " ")) + "</button>").join("");
+  esc(c === "all" ? "All categories" : c === "mine" ? "Your interests" : c.replace(/-/g, " ")) + "</button>").join("");
 }
 $("#dirChips").addEventListener("click", (ev) => {
  const b = ev.target.closest("button");
  if (!b) return;
- if (b.dataset.d20) dir20 = !dir20; else if (b.dataset.dc) dirCat = b.dataset.dc;
+ if (b.dataset.d20) dir20 = !dir20; else if (b.dataset.dot) dirOthers = !dirOthers; else if (b.dataset.dc) dirCat = b.dataset.dc;
  dirChips(); renderDir();
 });
 $("#q").addEventListener("input", renderDir);
@@ -472,7 +650,7 @@ $("#sort").addEventListener("change", renderDir);
 function renderDir() {
  const toks = $("#q").value.toLowerCase().split(/\s+/).filter(Boolean).map((t) => SYN[t] || t);
  let list = dirEntries().filter((e) => {
-  if (dirCat !== "all" && e.category !== dirCat) return false;
+  if (dirCat === "mine" ? !likes(e) : dirCat !== "all" && e.category !== dirCat) return false;
   if (dir20 && !(e.percent >= BADGE_MIN)) return false;
   const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category).toLowerCase();
   return toks.every((t) => hay.includes(t));
@@ -487,7 +665,7 @@ function renderDir() {
 }
 
 /* ---------- near me (runs on this device; no location leaves it) ---------- */
-let ZIPS = null, PLACES = null;
+let ZIPS = null, PLACES = null, nearKey = "";
 const lowName = (s) => String(s || "").toLowerCase().split(RSQ).join("'").replace(/\s+/g, " ").trim();
 function miles(a, b, c, d) {
  const R = 3958.8, t = Math.PI / 180;
@@ -498,6 +676,7 @@ function brandTargets() {
  const out = [];
  DATA.forEach((e) => {
   if (ended(e)) return;
+  if (!fits(e)) return;
   if (e.osm_brand) { e.osm_brand.forEach((b) => out.push([lowName(b), e])); return; }
   if (e.kind === "crawled") out.push([lowName(e.name.replace(/\(.*?\)/g, "")), e]);
  });
@@ -520,17 +699,19 @@ function placeLine(p) {
   '" target="_blank" rel="noopener">Directions</a></div>';
 }
 async function findNear() {
- const z = $("#zip").value.trim(), out = $("#nearOut");
+ const z = $("#zip").value.trim(), out = $("#nearOut"), mi = Number($("#radius").value), key = z + "|" + mi;
  if (!/^[0-9]{5}$/.test(z)) { out.innerHTML = '<div class="gap">Enter a 5-digit ZIP code.</div>'; return; }
- store.set("eb_zip", z);
+ if (P.zip !== z || P.radius !== mi) { P.zip = z; P.radius = mi; saveP(); pbar(); } // a ZIP typed here becomes the saved answer
+ nearKey = key;
  out.innerHTML = '<div class="legend">Searching around ZIP ' + esc(z) + "...</div>";
  try {
   if (!ZIPS) ZIPS = await (await fetch("zip.json")).json();
   if (!PLACES) PLACES = await (await fetch("places.json", {cache: "no-cache"})).json();
- } catch (e) { out.innerHTML = '<div class="gap">Could not load the location files. Reload the page and try again.</div>'; return; }
+ } catch (e) { nearKey = ""; out.innerHTML = '<div class="gap">Could not load the location files. Reload the page and try again.</div>'; return; }
+ if (key !== $("#zip").value.trim() + "|" + $("#radius").value) return; // inputs changed while loading; that search runs instead
  const ll = ZIPS[z];
  if (!ll) { out.innerHTML = '<div class="gap">ZIP ' + esc(z) + " is not in the Census ZIP area list (PO box only ZIPs have no area). Try a nearby ZIP.</div>"; return; }
- const lat = ll[0], lon = ll[1], state = ll[2] || "", mi = Number($("#radius").value), far = Math.max(mi, 50);
+ const lat = ll[0], lon = ll[1], state = ll[2] || "", far = Math.max(mi, 50);
  const vdRows = [], dirRows = [], seen = new Set();
  for (const pair of brandTargets()) {
   const e = pair[1];
@@ -561,7 +742,15 @@ async function findNear() {
 }
 $("#find").addEventListener("click", findNear);
 $("#zip").addEventListener("keydown", (ev) => { if (ev.key === "Enter") findNear(); });
-document.addEventListener("click", (ev) => { const a = ev.target.closest("a[data-go]"); if (a) { ev.preventDefault(); show(a.dataset.go); } });
+$("#radius").addEventListener("change", () => { if (/^[0-9]{5}$/.test($("#zip").value.trim())) findNear(); });
+document.addEventListener("click", (ev) => {
+ const a = ev.target.closest("a[data-go]");
+ if (!a) return;
+ ev.preventDefault();
+ if (a.dataset.ivgo) ivStep = Number(a.dataset.ivgo);
+ show(a.dataset.go);
+ if (a.dataset.go === "start") window.scrollTo(0, 0);
+});
 
 /* ---------- assistant: bring your own AI key ---------- */
 const AI_STORE = "eb_ai_settings";
@@ -589,6 +778,8 @@ function aiContext(q) {
   let s = e.kind === "hidden" ? 1 : 0;
   toks.forEach((t) => { if (hay.includes(t)) s += 2; });
   if (picked.length && fits(e)) s += 1;
+  if (likes(e)) s += 1;
+  if (hasIt(e)) s -= 1;
   return [s, e];
  }).sort((a, b) => b[0] - a[0]).slice(0, 14).map((p) => p[1]);
  return scored.map((e) => "[" + e.id + "] " + e.name + " | " + e.offer + (e.why_missed ? " | why missed: " + e.why_missed : "") +
@@ -632,7 +823,12 @@ $("#ask").addEventListener("click", async () => {
  out.style.display = "block";
  if (!q) { out.textContent = "Type a question first."; return; }
  if (provider !== "ollama" && !key) { out.textContent = "Add your own API key for " + provider + ", or pick Ollama for a free local model."; return; }
- const who = STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1]).join("; ") || "not given";
+ const ll = ZIPS && P.zip ? ZIPS[P.zip] : null;
+ const who = (STATUSES.filter((s) => picked.includes(s[0])).map((s) => s[1]).join("; ") || "not given") +
+  (ll && ll[2] ? " | lives in " + ll[2] : "") +
+  (P.interests.length ? " | interested in " + INTERESTS.filter((i) => P.interests.includes(i[0])).map((i) => i[1]).join(", ") : "") +
+  (P.family ? " | family usually comes along" : "") +
+  " | already has: " + (DATA.filter((e) => e.kind === "hidden" && hasIt(e)).map((e) => e.name).join("; ") || "none marked");
  const prompt = "You answer questions for Free Military Benefits, a free military and veteran benefits site. Use ONLY the entries below. " +
   "Cite entry ids in square brackets after each claim. If the entries do not cover the question, say so and suggest VA.gov or an accredited VSO. " +
   "Never invent an offer, percentage, date or eligibility rule. Mention when an entry is community reported. No em dashes.\n\n" +
@@ -647,11 +843,9 @@ fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error
  META = j; DATA = j.entries || [];
  $("#dek").textContent = "Updated " + j.data_version + ". " + DATA.length + " entries, all free. No account. No tracking. Every entry links its source.";
  $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated + ".";
- statusChips(); vdChips(); dirChips(); countdown(); tiles(); renderUnlocks(); renderVD(); renderTravel(); renderDir();
- const z = store.get("eb_zip", "");
- if (z) $("#zip").value = z;
+ countdown(); applyProfile();
  const tab = (location.hash || "").slice(1);
- show(["unlocks", "vd", "near", "travel", "dir", "ai"].includes(tab) ? tab : "unlocks");
+ show(TABS.includes(tab) ? tab : (P.done || picked.length ? "unlocks" : "start"));
 }).catch(() => {
  $("#unlockOut").innerHTML = '<div class="gap">Could not load data.json. Serve the site folder over HTTP and reload.</div>';
  show("unlocks");
