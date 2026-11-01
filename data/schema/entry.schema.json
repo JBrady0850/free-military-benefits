@@ -38,6 +38,7 @@
     "auto": { "type": "boolean" },
     "anchor": { "type": "string", "minLength": 2, "maxLength": 80 },
     "verified_by": { "type": "string", "enum": ["brand page", "two directories"] },
+    "stale": { "type": "boolean" },
     "sources": { "type": "array", "items": { "type": "string", "pattern": "^https://" }, "maxItems": 12 }
   }
 }

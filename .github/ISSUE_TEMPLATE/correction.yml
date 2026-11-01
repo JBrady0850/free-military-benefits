@@ -1,0 +1,23 @@
+name: Report a correction
+description: An entry is wrong, expired, or missing a detail
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry name or id
+      description: The business name, or the id shown in the link (for example auto-vd-texas-roadhouse).
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where can we confirm the correct terms?
+      description: A link to the brand's page or an official list.

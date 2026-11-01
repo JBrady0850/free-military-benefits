@@ -14,9 +14,11 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install pyyaml jsonschema requests beautifulsoup4
+        run: pip install -r requirements.txt
       - name: Prove the validator rejects a known-bad fixture
         run: python scripts/build_data.py --selftest
+      - name: Source configuration checks
+        run: python tests/test_sources.py
       - name: Crawler parsing checks (offline)
         run: python tests/test_crawl.py
       - name: Discount badge percentage checks

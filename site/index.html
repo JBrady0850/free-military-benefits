@@ -6,6 +6,11 @@
 <title>Free Military Benefits</title>
 <meta name="description" content="Free military and veteran benefits brief: what your service unlocks, Veterans Day 2026 offers, what is near your ZIP code, travel, and 20 percent plus discounts. No account, no tracking.">
 <link rel="icon" href="data:,">
+<link rel="prefetch" href="zip.json">
+<meta property="og:title" content="Free Military Benefits">
+<meta property="og:description" content="What your service unlocks, Veterans Day offers near your ZIP, travel, and discounts over 20 percent. Free, no account, no tracking, every entry sourced twice.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jbrady0850.github.io/free-military-benefits/">
 <style>
 body{margin:0;padding:0;background:#eef1f5;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a1a1a}
 a{color:#0b6ea8}
@@ -84,7 +89,14 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 .sumlist li{margin:4px 0}
 .foot{background:#0f2744;padding:14px 22px;font-size:11px;line-height:1.6;color:#aab6c6}
 .foot a{color:#d4a017}
+.tile{cursor:pointer}
+.p-stale{background:#7b241c}
+.srcrow{font-size:12.5px;padding:7px 14px;border-bottom:1px solid #f0f2f5;display:flex;gap:10px;align-items:baseline}
+.srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:#0f2744}
+.srcrow .bad{color:#c0392b;font-weight:bold}
+.it:target{background:#fff8e1;outline:2px solid #d4a017}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}}
+@media print{.tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.foot a[href*=github]{display:none !important}section{display:block !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
 </style>
 </head>
 <body>
@@ -99,18 +111,19 @@ ol.steps input{margin-right:6px;vertical-align:middle}
   <div class="crisis"><strong>Veterans Crisis Line:</strong> dial 988 then press 1, text 838255, or chat at <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">VeteransCrisisLine.net</a>.</div>
   <div id="countdown"></div>
   <div class="tiles" id="tiles"></div>
-  <nav class="tabs" id="tabs" aria-label="Sections">
-   <button type="button" data-tab="start">Start here</button>
-   <button type="button" data-tab="unlocks">What you unlock</button>
-   <button type="button" data-tab="vd">Veterans Day 2026</button>
-   <button type="button" data-tab="near">Near me</button>
-   <button type="button" data-tab="travel">Travel and cruises</button>
-   <button type="button" data-tab="dir">Discount directory</button>
-   <button type="button" data-tab="ai">Assistant</button>
+  <nav class="tabs" id="tabs" aria-label="Sections" role="tablist">
+   <button type="button" role="tab" data-tab="start">Start here</button>
+   <button type="button" role="tab" data-tab="unlocks">What you unlock</button>
+   <button type="button" role="tab" data-tab="vd">Veterans Day 2026</button>
+   <button type="button" role="tab" data-tab="near">Near me</button>
+   <button type="button" role="tab" data-tab="travel">Travel and cruises</button>
+   <button type="button" role="tab" data-tab="dir">Discount directory</button>
+   <button type="button" role="tab" data-tab="ai">Assistant</button>
+   <button type="button" role="tab" data-tab="sources">Sources and data</button>
   </nav>
   <div class="pbar" id="pbar"></div>
 
-  <section id="sec-start">
+  <section id="sec-start" data-title="Start here" role="tabpanel">
    <div class="legend">Five quick questions, asked once. Your answers save as you go, stay in this browser only, and shape every tab: what you unlock, Veterans Day offers, what is near you, travel and the discount directory. Skip any question to see everything.</div>
    <div class="ivdots" id="ivDots"></div>
    <div id="ivBody"></div>
@@ -120,45 +133,46 @@ ol.steps input{margin-right:6px;vertical-align:middle}
    </div>
   </section>
 
-  <section id="sec-unlocks">
+  <section id="sec-unlocks" data-title="What you unlock" role="tabpanel">
    <div class="gap"><strong>Most people miss this:</strong> any VA service-connected rating, even 0 percent, unlocks in-person commissary and exchange shopping and three military resorts, and every honorably discharged veteran can use the Defense Department's own travel booking site.</div>
    <div id="unlockOut"></div>
   </section>
 
-  <section id="sec-vd">
+  <section id="sec-vd" data-title="Veterans Day 2026" role="tabpanel">
    <div id="watchBox"></div>
-   <div class="legend">Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. Offers vary by location; confirm before you go.</div>
+   <div class="legend" id="vdLegend">Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. Offers vary by location; confirm before you go.</div>
    <div class="chips" id="vdChips"></div>
    <div class="row">
+    <span style="flex:1;min-width:180px"><label for="vdQ">Find a place</label><input id="vdQ" type="search" style="width:100%;box-sizing:border-box" placeholder="Chili's, coffee, car wash"></span>
     <button class="btn2" type="button" id="vdIcs">Add these to my calendar (.ics)</button>
-    <button class="btn2" type="button" id="vdNear">Find these near my ZIP</button>
+    <button class="btn2" type="button" id="vdNear">Map these near my ZIP</button>
    </div>
-   <div id="vdOut"></div>
+   <div id="vdOut" aria-live="polite"></div>
   </section>
 
-  <section id="sec-near">
+  <section id="sec-near" data-title="Near me" role="tabpanel">
    <div class="legend">Enter a ZIP code to see participating Veterans Day locations, discount brands with stores nearby, the closest commissaries and exchanges, VA facilities, and offers only in your state. Everything runs on this device from location files the site refreshes every week, so your ZIP code is never sent anywhere.</div>
    <div class="row">
     <span><label for="zip">ZIP code</label><input id="zip" inputmode="numeric" maxlength="5" size="8" placeholder="for example 20001"></span>
     <span><label for="radius">Distance</label><select id="radius"><option value="10">10 miles</option><option value="25" selected>25 miles</option><option value="50">50 miles</option></select></span>
     <button class="btn" type="button" id="find">Find near me</button>
    </div>
-   <div id="nearOut"></div>
+   <div id="nearOut" aria-live="polite"></div>
   </section>
 
-  <section id="sec-travel"><div id="travelOut"></div></section>
+  <section id="sec-travel" data-title="Travel and cruises" role="tabpanel"><div id="travelOut"></div></section>
 
-  <section id="sec-dir">
+  <section id="sec-dir" data-title="Discount directory" role="tabpanel">
    <div class="legend">Hand-checked discounts plus every brand that public military-discount directories report at <strong>more than 20 percent</strong>, refreshed automatically each week. A gold badge such as <span class="b20" style="margin-left:0">25% OFF</span> beside a name marks every company offering more than 20 percent, here and on every other tab. <strong>Every discount needs two independent sources</strong> (two different sites, or one site plus the brand's own page), and every link opens at the offer. <span id="heldLine"></span></div>
    <div class="row">
     <span style="flex:1;min-width:200px"><label for="q">Search</label><input id="q" type="search" style="width:100%;box-sizing:border-box" placeholder="Brand, category, PX, BX, commissary, cruise"></span>
-    <span><label for="sort">Sort</label><select id="sort"><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
+    <span><label for="sort">Sort</label><select id="sort"><option value="near">Nearest to me first</option><option value="pct">Biggest discount first</option><option value="az">A to Z</option><option value="new">Recently checked</option></select></span>
    </div>
    <div class="chips" id="dirChips"></div>
    <div id="dirOut"></div>
   </section>
 
-  <section id="sec-ai">
+  <section id="sec-ai" data-title="Assistant" role="tabpanel">
    <div class="legend">Optional, like the Road Trip Planner: bring your own AI key for plain-English answers drawn only from this site's entries and your status picks. The key is saved in this browser's localStorage and sent only to the provider you choose. A local Ollama server needs no key. Everything else on this site works without AI.</div>
    <div class="row">
     <span><label for="prov">Provider</label><select id="prov"><option value="anthropic">Anthropic Claude</option><option value="gemini">Google Gemini</option><option value="openai">OpenAI</option><option value="ollama">Ollama (local, no key)</option></select></span>
@@ -175,6 +189,12 @@ ol.steps input{margin-right:6px;vertical-align:middle}
     <button class="btn" type="button" id="ask">Ask</button>
    </div>
    <div class="legend" id="answer"></div>
+   <div class="src" id="aiUsed"></div>
+  </section>
+
+  <section id="sec-sources" data-title="Sources and data" role="tabpanel">
+   <div class="legend">Where every entry comes from, and how the last automatic refresh went. Every discount or offer needs two independent sources; one site plus the brand's own page also counts. Anything reported by only one source waits here until a second confirms it. Add a source or report a correction on <a href="https://github.com/JBrady0850/free-military-benefits/issues/new/choose" target="_blank" rel="noopener">GitHub</a>.</div>
+   <div id="sourcesOut"></div>
   </section>
  </div>
  <div class="foot" id="foot">
@@ -271,6 +291,7 @@ function pills(e) {
  if (e.family) p.push(["p-free", "FAMILY"]);
  if (e.online) p.push(["p-cool", "ONLINE"]);
  if (ended(e)) p.push(["p-old", "ENDED"]);
+ if (e.stale) p.push(["p-stale", "NOT RECHECKED IN 90 DAYS"]);
  p.push(["p-cool", "CHECKED " + e.last_verified]);
  return p.map((x) => '<span class="pill ' + x[0] + '">' + esc(x[1]) + "</span>").join("");
 }
@@ -322,16 +343,30 @@ function card(title, tag, color, mix, inner) {
 }
 
 /* ---------- tabs, countdown, tiles ---------- */
-const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "ai"];
-function show(tab) {
- document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
+const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "ai", "sources"];
+function show(tab, keepHash) {
+ document.querySelectorAll("#tabs button").forEach((b) => { const on = b.dataset.tab === tab; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
  document.querySelectorAll("section").forEach((s) => s.classList.toggle("on", s.id === "sec-" + tab));
  $("#pbar").style.display = tab === "start" ? "none" : "";
  if (tab === "start") renderIV();
  if (tab === "near" && /^[0-9]{5}$/.test(P.zip) && nearKey !== P.zip + "|" + P.radius) findNear();
- try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file:// */ }
+ if (tab === "sources") renderSources();
+ if (!keepHash) { try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file:// */ } }
 }
 $("#tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-tab]"); if (b) show(b.dataset.tab); });
+$("#tiles").addEventListener("click", (ev) => { const t = ev.target.closest(".tile"); if (t) show(t.dataset.tab); });
+// Deep link: #e-<id> opens the tab that holds the entry and scrolls to it.
+function openEntry(id) {
+ const e = DATA.find((x) => x.id === id);
+ if (!e) return false;
+ const tab = e.kind === "veterans-day" ? "vd" : e.kind === "travel" ? "travel" : (e.kind === "discount" || e.kind === "crawled") ? "dir" : "unlocks";
+ if (tab === "vd") { vdf.others = true; vdf.ended = true; vdf.type = "all"; vdf.everywhere = true; $("#vdQ").value = ""; vdChips(); renderVD(); }
+ if (tab === "dir") { dirOthers = true; dirCat = "all"; dir20 = false; $("#q").value = ""; dirChips(); renderDir(); }
+ show(tab, true);
+ const el = document.getElementById("e-" + id);
+ if (el) el.scrollIntoView({block: "center"});
+ return true;
+}
 
 const VD = NOW.getFullYear() + "-11-11";
 function countdown() {
@@ -361,9 +396,9 @@ function tiles() {
  const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e)).length;
  const big = DATA.filter((e) => e.percent >= BADGE_MIN && fits(e)).length;
  const custom = picked.length > 0;
- $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits"], [vdLive, custom ? "Veterans Day offers for you" : "Veterans Day offers"],
-  [big, "companies over 20% off"], [DATA.length, "entries, all free"]].map((t) =>
-  '<div class="tile"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
+ $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits", "unlocks"], [vdLive, custom ? "Veterans Day offers for you" : "Veterans Day offers", "vd"],
+  [big, "companies over 20% off", "dir"], [DATA.length, "entries, all free", "sources"]].map((t) =>
+  '<div class="tile" role="button" tabindex="0" data-tab="' + t[2] + '"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
 }
 
 /* ---------- start here: the interview ---------- */
@@ -478,12 +513,19 @@ function pbar() {
 }
 function applyProfile() {
  if ($("#zip").value.trim() !== P.zip) $("#zip").value = P.zip;
+ if (!/^[0-9]{5}$/.test(P.zip) && $("#sort").value === "near") $("#sort").value = "pct"; // no ZIP, nothing to be near
  $("#radius").value = String(P.radius);
  dir20 = P.over20;
  if (!P.interests.length && vdf.type === "mine") vdf.type = "all";
  if (!P.interests.length && dirCat === "mine") dirCat = "all";
+ if (LOCAL && (LOCAL.zip !== P.zip || LOCAL.mi !== P.radius)) LOCAL = null;
+ if (/^[0-9]{5}$/.test(P.zip) && !LOCAL && !localLoading) {
+  localLoading = true; // load the location files once, then re-render every list with local offers first
+  ensureLocal().then(() => { localLoading = false; if (LOCAL) applyProfile(); });
+ }
  tiles(); renderUnlocks(); vdChips(); renderVD(); renderTravel(); dirChips(); renderDir(); pbar();
 }
+let localLoading = false;
 
 /* ---------- what you unlock ---------- */
 document.addEventListener("change", (ev) => {
@@ -514,11 +556,11 @@ document.addEventListener("change", (ev) => {
 
 function renderUnlocks() {
  const hidden = DATA.filter((e) => e.kind === "hidden");
- const mine = hidden.filter(fits).sort(byLikes);
+ const mine = hidden.filter(fits).sort((a, b) => byLocal(a, b) || byLikes(a, b));
  const todo = mine.filter((e) => !hasIt(e)), have = mine.filter(hasIt);
  const rest = hidden.filter((e) => !fits(e));
- const free = DATA.filter((e) => e.kind === "free" && fits(e)).sort(byLikes);
- let h = '<div class="legend">Filtered by your answers on Start here' + (P.interests.length ? ", with your interests first" : "") +
+ const free = DATA.filter((e) => e.kind === "free" && fits(e)).sort((a, b) => byLocal(a, b) || byLikes(a, b));
+ let h = '<div class="legend">Filtered by your answers on Start here' + (LOCAL ? ", nearest to ZIP " + esc(LOCAL.zip) + " first" : "") + (P.interests.length ? ", with your interests first" : "") +
   '. <a href="#start" data-go="start">Change them</a>. Tick a step as you finish it; your progress stays in this browser.</div>';
  h += card(picked.length ? "What your service unlocks" : "High-value benefits most people miss", "UNLOCK", "#0f2744",
   todo.length + " to claim", todo.map((e) => item(e)).join("") ||
@@ -527,7 +569,7 @@ function renderUnlocks() {
   h += card("You already have these", "DONE", "#1e8449", have.length + " benefits", '<div class="none">' +
    esc(have.map((e) => e.name).join("; ")) + '. <a href="#start" data-go="start" data-ivgo="3">Change</a></div>');
  }
- h += card("Free for you, no purchase needed", "FREE", "#117a65", free.length + " items", free.map((e) => item(e)).join(""));
+ h += card("Free for you, no purchase needed", "FREE", "#117a65", free.length + " items", free.map((e) => item(e, nearLine(e))).join(""));
  if (picked.length && rest.length) {
   h += card("Not matched to your picks", "OTHER", "#6d5530", rest.length + " benefits",
    '<div class="none">These need a different status: ' + esc(rest.map((e) => e.name).join("; ")) + ".</div>");
@@ -539,11 +581,13 @@ function renderUnlocks() {
 const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
  ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
  ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
-const VD_TOGGLES = ["later", "family", "ended", "others"];
-let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false};
+const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi"];
+let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false};
+const nsources = (e) => new Set((e.sources || []).map((u) => host(u).split(".").slice(-2).join("."))).size;
 function vdChips() {
- const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS,
-  picked.length ? [["others", "Include offers for other statuses"]] : []);
+ const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS, [["multi", "3+ sources"]],
+  picked.length ? [["others", "Include offers for other statuses"]] : [],
+  /^[0-9]{5}$/.test(P.zip) ? [["everywhere", "Show offers everywhere, not just near " + P.zip]] : []);
  $("#vdChips").innerHTML = list.map((f) => {
   const on = VD_TOGGLES.includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
   return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + f[0] + '">' + esc(f[1]) + "</button>";
@@ -556,26 +600,84 @@ $("#vdChips").addEventListener("click", (ev) => {
  if (VD_TOGGLES.includes(k)) vdf[k] = !vdf[k]; else vdf.type = k;
  vdChips(); renderVD();
 });
+$("#vdQ").addEventListener("input", renderVD);
+/* Local view: with a ZIP set, keep national chains and anything with a location or state match near the ZIP,
+   and hide place-bound offers elsewhere (a Kansas City museum is not an offer for Florida). */
+let LOCAL = null; // {zip, lat, lon, state, mi}
+async function ensureLocal() {
+ if (!/^[0-9]{5}$/.test(P.zip)) { LOCAL = null; return null; }
+ if (LOCAL && LOCAL.zip === P.zip && LOCAL.mi === P.radius) return LOCAL;
+ try {
+  if (!ZIPS) ZIPS = await (await fetch("zip.json")).json();
+  if (!PLACES) PLACES = await (await fetch("places.json", {cache: "no-cache"})).json();
+ } catch (e) { return null; }
+ const ll = ZIPS[P.zip];
+ LOCAL = ll ? {zip: P.zip, lat: ll[0], lon: ll[1], state: ll[2] || "", mi: P.radius} : null;
+ return LOCAL;
+}
+function nearest(e) {
+ if (!LOCAL || !PLACES) return null;
+ let best = null;
+ for (const b of e.osm_brand || []) {
+  const pts = PLACES.brands[lowName(b)];
+  if (!pts) continue;
+  const hits = within(pts, LOCAL.lat, LOCAL.lon, LOCAL.mi, false);
+  if (hits.length && (!best || hits[0].d < best.d)) best = hits[0];
+ }
+ return best;
+}
+function hasLocationData(e) { return !!(PLACES && (e.osm_brand || []).some((b) => PLACES.brands[lowName(b)])); }
+/* Local first: with a ZIP set, every list sorts by how close the offer is. Store within range,
+   then your state, then national chains and online offers, then everything else. */
+function localScore(e) {
+ if (!LOCAL) return 0;
+ const p = nearest(e);
+ if (p) return p.d;
+ if (e.states && e.states.includes(LOCAL.state)) return 100;
+ if (e.online) return 400;
+ if (e.scope === "nationwide" || e.kind === "hidden" || e.kind === "free") return 300;
+ return 500;
+}
+const byLocal = (a, b) => localScore(a) - localScore(b);
+const nearLine = (e) => { const p = nearest(e); return p ? '<div class="sum"><strong>Nearest:</strong> ' + p.d.toFixed(1) + ' miles <span class="src">| <a href="https://www.openstreetmap.org/?mlat=' + p.lat + "&amp;mlon=" + p.lon + "#map=17/" + p.lat + "/" + p.lon + '" target="_blank" rel="noopener">Map</a> | <a href="https://www.google.com/maps/dir/?api=1&amp;destination=' + p.lat + "," + p.lon + '" target="_blank" rel="noopener">Directions</a></span></div>' : ""; };
+function localOK(e) {
+ if (!LOCAL || vdf.everywhere) return true;
+ if (e.online) return true;
+ if (e.states && e.states.length) return e.states.includes(LOCAL.state);
+ if (hasLocationData(e)) return !!nearest(e);
+ return e.scope !== "locations"; // a national chain we have no store data for stays; a single venue elsewhere goes
+}
 function vdList() {
+ const toks = $("#vdQ").value.toLowerCase().split(/\s+/).filter(Boolean);
  return DATA.filter((e) => e.kind === "veterans-day").filter((e) => {
   if (!vdf.ended && ended(e)) return false;
   if (!vdf.others && !fits(e)) return false;
+  if (!localOK(e)) return false;
   if (vdf.later && !e.redeem_by && !(e.event_end && e.event_end > VD)) return false;
   if (vdf.family && !e.family) return false;
+  if (vdf.multi && nsources(e) < 3) return false;
+  if (toks.length) { const hay = (e.name + " " + e.offer + " " + e.category + " " + (e.slot || "")).toLowerCase(); if (!toks.every((t) => hay.includes(t))) return false; }
   const t = vdf.type;
   if (t === "all") return true;
   if (t === "mine") return likes(e);
   if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return e.slot === t;
   return e.category === t;
- }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) ||
+ }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) || byLocal(a, b) ||
   (P.family ? (b.family ? 1 : 0) - (a.family ? 1 : 0) : 0) || a.name.localeCompare(b.name));
 }
 function renderVD() {
  const list = vdList();
  const groups = {};
  list.forEach((e) => { const k = dateRange(e) || "Date varies"; (groups[k] = groups[k] || []).push(e); });
- const inner = Object.keys(groups).map((k) => '<div class="dgrp">' + esc(k) + "</div>" + groups[k].map((e) => item(e)).join("")).join("");
- $("#vdOut").innerHTML = card("Veterans Day 2026 offers", "NOV 11", "#d4a017", list.length + " shown", inner);
+ const inner = Object.keys(groups).map((k) => '<div class="dgrp">' + esc(k) + (LOCAL && !vdf.everywhere ? " (nearest first)" : "") + "</div>" + groups[k].map((e) => item(e, nearLine(e))).join("")).join("");
+ const all = DATA.filter((e) => e.kind === "veterans-day" && !ended(e)).length;
+ const title = LOCAL && !vdf.everywhere ? "Veterans Day 2026 offers near " + LOCAL.zip + (LOCAL.state ? " (" + LOCAL.state + ")" : "") : "Veterans Day 2026 offers";
+ $("#vdOut").innerHTML = card(title, "NOV 11", "#d4a017", list.length + " of " + all, inner);
+ $("#vdLegend").innerHTML = LOCAL && !vdf.everywhere ?
+  "Showing national chains, offers in " + esc(LOCAL.state || "your state") + ", and anything with a location within " + LOCAL.mi + " miles of ZIP " + esc(LOCAL.zip) +
+  ". Place-bound offers elsewhere are hidden; use the chip to see everything. Distances come from weekly store data on this device. <a href=\"#start\" data-go=\"start\" data-ivgo=\"1\">Change ZIP</a>." :
+  "Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. " +
+  (P.zip ? "" : '<a href="#start" data-go="start" data-ivgo="1">Add your ZIP</a> to hide offers that are nowhere near you. ') + "Offers vary by location; confirm before you go.";
  const w = META.watch || {};
  $("#watchBox").innerHTML = (w.new_names && w.new_names.length) ? '<div class="gap"><strong>On VA News, waiting for a second source:</strong> ' +
   esc(w.new_names.join(", ")) + '. <a href="' + esc(w.source) + '" target="_blank" rel="noopener">See VA News</a> (checked ' + esc(w.checked) +
@@ -591,12 +693,12 @@ function fold(line) { const out = []; while (line.length > 72) { out.push(line.s
 function makeIcs(list) {
  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
  const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Free Military Benefits//Veterans Day//EN", "CALSCALE:GREGORIAN"];
- const ev = (uid, start, end, title, desc) => L.push("BEGIN:VEVENT", "UID:" + uid + "@free-military-benefits", "DTSTAMP:" + stamp,
+ const ev = (uid, start, end, title, desc, url) => L.push("BEGIN:VEVENT", "UID:" + uid + "@free-military-benefits", "DTSTAMP:" + stamp,
   "DTSTART;VALUE=DATE:" + ymd(start), "DTEND;VALUE=DATE:" + ymd(nextDay(end)), fold("SUMMARY:" + icsEsc(title)),
-  fold("DESCRIPTION:" + icsEsc(desc)), "END:VEVENT");
+  fold("DESCRIPTION:" + icsEsc(desc)), fold("URL:" + url), "END:VEVENT");
  list.forEach((e) => {
-  if (e.event_start) ev(e.id, e.event_start, e.event_end || e.event_start, e.name + " (veteran offer)", e.offer + " Source: " + e.source_url);
-  if (e.redeem_by) ev(e.id + "-redeem", e.redeem_by, e.redeem_by, "Last day to redeem: " + e.name, e.offer);
+  if (e.event_start) ev(e.id, e.event_start, e.event_end || e.event_start, e.name + " (veteran offer)", e.offer + " Source: " + e.source_url, e.source_url);
+  if (e.redeem_by) ev(e.id + "-redeem", e.redeem_by, e.redeem_by, "Last day to redeem: " + e.name, e.offer, e.source_url);
  });
  L.push("END:VCALENDAR");
  return L.join("\r\n") + "\r\n";
@@ -614,9 +716,9 @@ function renderTravel() {
  const dod = DATA.filter((e) => e.kind === "hidden" && ["travel", "vacation"].includes(e.category) && fits(e))
   .sort((a, b) => (hasIt(a) ? 1 : 0) - (hasIt(b) ? 1 : 0));
  const cruise = DATA.filter((e) => e.kind === "travel" && fits(e));
- const exp = DATA.filter((e) => e.kind === "free" && ["retreats", "attractions", "support"].includes(e.category) && fits(e));
- const rental = DATA.filter((e) => (e.kind === "discount" || e.kind === "crawled") && e.category === "travel" && fits(e));
- $("#travelOut").innerHTML = '<div class="legend">Filtered by your answers on Start here. <a href="#start" data-go="start">Change them</a>.</div>' +
+ const exp = DATA.filter((e) => e.kind === "free" && ["retreats", "attractions", "support"].includes(e.category) && fits(e)).sort(byLocal);
+ const rental = DATA.filter((e) => (e.kind === "discount" || e.kind === "crawled") && e.category === "travel" && fits(e)).sort(byLocal);
+ $("#travelOut").innerHTML = '<div class="legend">Filtered by your answers on Start here' + (LOCAL ? ", nearest to ZIP " + esc(LOCAL.zip) + " first" : "") + '. <a href="#start" data-go="start">Change them</a>.</div>' +
   card("Military-only travel most people never use", "DOD", "#0f2744", dod.length + " options", dod.map((e) => item(e)).join("")) +
   card("Cruise line military programs, with the fine print", "CRUISE", "#0b6ea8", cruise.length + " lines", cruise.map((e) => item(e)).join("")) +
   (rental.length ? card("Rental cars and travel discounts", "TRAVEL", "#34495e", rental.length + " items", rental.map((e) => item(e)).join("")) : "") +
@@ -630,19 +732,23 @@ const SYN = {px: "exchange", bx: "exchange", nex: "exchange", mcx: "exchange", c
  deca: "commissary", groceries: "commissary", pt: "permanent", "p&t": "permanent", tdy: "travel", resort: "vacation",
  hotel: "travel", flight: "travel", flights: "travel", cruises: "cruise", clothes: "apparel", clothing: "apparel",
  shoes: "apparel", phone: "technology", streaming: "technology", eyeglasses: "health", vision: "health"};
-let dirCat = P.interests.length ? "mine" : "all", dir20 = P.over20, dirOthers = false;
+let dirCat = P.interests.length ? "mine" : "all", dir20 = P.over20, dirOthers = false, dirBrand = false;
 function dirEntries() { return DATA.filter((e) => (e.kind === "discount" || e.kind === "crawled") && (dirOthers || fits(e))); }
 function dirChips() {
- const cats = (P.interests.length ? ["mine"] : []).concat(["all"], [...new Set(dirEntries().map((e) => e.category))].sort());
+ const all = dirEntries();
+ const count = {};
+ all.forEach((e) => { count[e.category] = (count[e.category] || 0) + 1; });
+ const cats = (P.interests.length ? ["mine"] : []).concat(["all"], Object.keys(count).sort());
  $("#dirChips").innerHTML = '<button type="button" class="chip' + (dir20 ? " on" : "") + '" data-d20="1">Over 20% only</button>' +
+  '<button type="button" class="chip' + (dirBrand ? " on" : "") + '" data-dbr="1">Confirmed on the brand\'s page</button>' +
   (picked.length ? '<button type="button" class="chip' + (dirOthers ? " on" : "") + '" data-dot="1">Include other statuses</button>' : "") +
   cats.map((c) => '<button type="button" class="chip' + (c === dirCat ? " on" : "") + '" data-dc="' + esc(c) + '">' +
-  esc(c === "all" ? "All categories" : c === "mine" ? "Your interests" : c.replace(/-/g, " ")) + "</button>").join("");
+  esc(c === "all" ? "All categories (" + all.length + ")" : c === "mine" ? "Your interests" : c.replace(/-/g, " ") + " (" + count[c] + ")") + "</button>").join("");
 }
 $("#dirChips").addEventListener("click", (ev) => {
  const b = ev.target.closest("button");
  if (!b) return;
- if (b.dataset.d20) dir20 = !dir20; else if (b.dataset.dot) dirOthers = !dirOthers; else if (b.dataset.dc) dirCat = b.dataset.dc;
+ if (b.dataset.d20) dir20 = !dir20; else if (b.dataset.dbr) dirBrand = !dirBrand; else if (b.dataset.dot) dirOthers = !dirOthers; else if (b.dataset.dc) dirCat = b.dataset.dc;
  dirChips(); renderDir();
 });
 $("#q").addEventListener("input", renderDir);
@@ -652,16 +758,18 @@ function renderDir() {
  let list = dirEntries().filter((e) => {
   if (dirCat === "mine" ? !likes(e) : dirCat !== "all" && e.category !== dirCat) return false;
   if (dir20 && !(e.percent >= BADGE_MIN)) return false;
+  if (dirBrand && e.verified_by !== "brand page" && e.confidence !== "official") return false;
   const hay = (e.name + " " + e.offer + " " + (e.notes || "") + " " + e.category).toLowerCase();
   return toks.every((t) => hay.includes(t));
  });
  const s = $("#sort").value;
+ const byPct = (a, b) => (b.percent || 0) - (a.percent || 0) || a.name.localeCompare(b.name);
  list.sort(s === "az" ? (a, b) => a.name.localeCompare(b.name) :
   s === "new" ? (a, b) => b.last_verified.localeCompare(a.last_verified) || a.name.localeCompare(b.name) :
-  (a, b) => (b.percent || 0) - (a.percent || 0) || a.name.localeCompare(b.name));
+  s === "near" ? (a, b) => byLocal(a, b) || byPct(a, b) : byPct);
  const auto = list.filter((e) => e.auto).length;
  $("#dirOut").innerHTML = card("Military discount directory", "BRANDS", "#c0392b",
-  list.length + " shown, " + auto + " auto-found", list.map((e) => item(e)).join(""));
+  list.length + " shown, " + auto + " auto-found" + (s === "near" && LOCAL ? ", nearest to " + LOCAL.zip + " first" : ""), list.map((e) => item(e, nearLine(e))).join(""));
 }
 
 /* ---------- near me (runs on this device; no location leaves it) ---------- */
@@ -744,6 +852,8 @@ $("#find").addEventListener("click", findNear);
 $("#zip").addEventListener("keydown", (ev) => { if (ev.key === "Enter") findNear(); });
 $("#radius").addEventListener("change", () => { if (/^[0-9]{5}$/.test($("#zip").value.trim())) findNear(); });
 document.addEventListener("click", (ev) => {
+ const en = ev.target.closest("a[data-entry]");
+ if (en) { ev.preventDefault(); openEntry(en.dataset.entry); return; }
  const a = ev.target.closest("a[data-go]");
  if (!a) return;
  ev.preventDefault();
@@ -751,6 +861,30 @@ document.addEventListener("click", (ev) => {
  show(a.dataset.go);
  if (a.dataset.go === "start") window.scrollTo(0, 0);
 });
+
+/* ---------- sources and data health ---------- */
+function renderSources() {
+ const w = META.watch || {}, s = META.stats || {}, src = w.sources || [], failed = w.failed || [];
+ const bad = {}; failed.forEach((f) => { bad[f.url] = f.reason; });
+ const row = (x) => '<div class="srcrow"><span class="n">' + (x.rows == null ? '<span class="bad">failed</span>' : esc(x.rows)) + '</span><span><a href="' +
+  esc(x.url) + '" target="_blank" rel="noopener">' + esc(host(x.url)) + "</a>" + (bad[x.url] ? ' <span class="bad">' + esc(bad[x.url]) + "</span>" : "") + "</span></div>";
+ const dirs = src.filter((x) => x.kind === "directory"), vds = src.filter((x) => x.kind === "veterans-day");
+ const counts = META.counts || {};
+ $("#sourcesOut").innerHTML =
+  card("Data health", "STATUS", "#0f2744", "refreshed " + esc(w.checked || META.data_version),
+   '<div class="it"><div class="sum">' + esc(META.total) + " entries: " + esc(Object.keys(counts).map((k) => counts[k] + " " + k.replace("-", " ")).join(", ")) + ".</div>" +
+   '<div class="sum">' + esc(s.source_pages_read) + " of " + esc(s.source_pages) + " source pages read in the last refresh; " + esc(failed.length) + " failed. " +
+   esc(s.distinct_sites) + " distinct sites back the entries. " + esc(s.brand_confirmed) + " discounts confirmed on the brand's own page; " +
+   esc(s.over_20) + " companies over 20 percent; " + esc((w.held_single_source || []).length) + " brands held back with one source" +
+   (s.stale ? "; " + esc(s.stale) + " curated entries not rechecked in 90 days" : "") + ".</div></div>") +
+  card("Year-round discount directories read weekly", "DIRECTORIES", "#c0392b", dirs.length + " pages",
+   '<div class="none">Number = rows at 21 percent or more found on that page in the last run.</div>' + dirs.map(row).join("")) +
+  card("Veterans Day 2026 lists read daily in November", "LISTS", "#d4a017", vds.length + " pages",
+   '<div class="none">Number = business names found on that page. An offer is listed once two lists name it.</div>' + vds.map(row).join("")) +
+  card("Held back: one source so far", "WAITING", "#6d5530", (w.held_single_source || []).length + " brands",
+   '<div class="none">' + esc((w.held_single_source || []).join("; ") || "none") + "</div>") +
+  card("Data sources and licenses", "CREDITS", "#117a65", "", '<div class="it"><div class="sum">Store, VA facility and base locations: All the Places (CC0) and Wikidata (CC0), refreshed weekly. ZIP centers and states: U.S. Census Bureau Gazetteer and ZCTA relationship file (public domain). Veterans Day anchor list: VA News. Code MIT; this dataset CC BY-SA 4.0. <a href="https://github.com/JBrady0850/free-military-benefits/blob/main/data/crawl_sources.yaml" target="_blank" rel="noopener">Source configuration on GitHub</a>.</div></div>');
+}
 
 /* ---------- assistant: bring your own AI key ---------- */
 const AI_STORE = "eb_ai_settings";
@@ -782,6 +916,7 @@ function aiContext(q) {
   if (hasIt(e)) s -= 1;
   return [s, e];
  }).sort((a, b) => b[0] - a[0]).slice(0, 14).map((p) => p[1]);
+ $("#aiUsed").innerHTML = "Entries sent to the model: " + scored.map((e) => '<a href="#e-' + esc(e.id) + '" data-entry="' + esc(e.id) + '">' + esc(e.id) + "</a>").join(", ") + ".";
  return scored.map((e) => "[" + e.id + "] " + e.name + " | " + e.offer + (e.why_missed ? " | why missed: " + e.why_missed : "") +
   (e.steps ? " | steps: " + e.steps.join(" / ") : "") + " | who: " + (e.eligibility || []).join(", ") +
   " | confidence: " + e.confidence + " | source: " + e.source_url).join("\n");
@@ -845,6 +980,7 @@ fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error
  $("#verline").textContent = "Data version " + j.data_version + ", generated " + j.generated + ".";
  countdown(); applyProfile();
  const tab = (location.hash || "").slice(1);
+ if (tab.startsWith("e-") && openEntry(tab.slice(2))) return;
  show(TABS.includes(tab) ? tab : (P.done || picked.length ? "unlocks" : "start"));
 }).catch(() => {
  $("#unlockOut").innerHTML = '<div class="gap">Could not load data.json. Serve the site folder over HTTP and reload.</div>';

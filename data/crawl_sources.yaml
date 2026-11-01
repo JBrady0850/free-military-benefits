@@ -6,7 +6,10 @@
 #   - every listed offer needs at least two independent sources: two different sites,
 #     or one site plus the brand's own page confirming the percentage
 #   - every link opens directly at the offer (brand page, or the source with the line highlighted)
+#   - sites on one registrable domain count once (365.military.com and military.com are one source)
+#   - wording such as "likely", "expected", "pending" or "2025 terms" is never counted as an offer
 threshold: 21
+veterans_day_year: 2026
 
 # Year-round military discount directories (feed the Discount directory).
 directories:
@@ -20,9 +23,24 @@ directories:
   - https://barbend.com/?p=218235
   - https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel
   - https://www.sheerid.com/?p=71432
+  # Added 2026-11-01 (13 directories)
+  - https://veteran.com/military-discounts/
+  - https://couponfollow.com/research/best-military-discounts
+  - https://www.operationmilitarykids.org/military-veterans-discounts/
+  - https://claimraven.com/military-discounts
+  - https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide
+  - https://guidetobargain.com/guides/military-discounts
+  - https://savingsgrove.com/blogs/guides/military-discount-list
+  - https://www.veteransbenefitskb.com/discounts-deals
+  - https://www.dealnews.com/features/discounts/military-discounts/
+  - https://www.military.com/discounts/best-retail-military-discounts.html
+  - https://www.militarybenefit.org/get-educated/military-discounts/
+  - https://baseneed.com/blog/military-discounts-2026-complete-list
+  - https://storepolicies.com/discounts-for-soldiers/
 
-# Upstream Veterans Day lists that Reddit freebie threads draw from (2026 pages only).
-# An offer named on two or more of these is auto-listed; one list alone goes to the watch box.
+# Upstream Veterans Day lists that Reddit freebie threads draw from (2026 pages only; a page
+# whose title names another year is skipped). An offer named on two or more of these is
+# auto-listed; one list alone goes to the watch box.
 veterans_day_lists:
   - https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html
@@ -32,6 +50,19 @@ veterans_day_lists:
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/
   - https://freshcalendars.com/news/veterans-day-free-meals-discounts/
   - https://veteransdaydeals.us/free-meals/
+  # Added 2026-11-01 (12 lists)
+  - https://www.dinova.com/dining-guide/veterans-day-guide/
+  - https://blog.ahrn.com/veterans-day-discounts/
+  - https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026
+  - https://veteransdmv.com/veterans-day-discounts/
+  - https://www.combatfitness.co/post/veterans-day
+  - https://bluestarfam.org/resources-perspectives/finance-benefits/veterans-day-free-meals-restaurant-deals/
+  - https://themilitarywallet.com/veterans-day-retail-discounts/
+  - https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html
+  - https://valoannetwork.com/veterans-day-deals-2026/
+  - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert
+  - https://www.hotdeals.com/blog/veterans-day-deals/
+  - https://www.tacticalgear.com/blog/veterans-day-2026-deals
 
 watch:
   veterans_day: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/

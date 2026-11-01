@@ -53,10 +53,24 @@ TRACKING = re.compile(r"([?&])(srsltid|utm_[a-z]+|gclid|fbclid|mc_[a-z]+)=[^&#]*
 
 
 def clean_url(url: str) -> str:
-    """Drop tracking parameters so links are clean and stable."""
+    """Drop tracking parameters and AMP markers so links are clean and stable."""
     out = TRACKING.sub(r"\1", url)
+    out = re.sub(r"[?&]amp(=1)?(?=[&#]|$)", "", out)
     out = re.sub(r"[?&]+(#|$)", r"\1", re.sub(r"([?&])&+", r"\1", out))
     return out.replace("?&", "?")
+
+
+STALE_DAYS = 90
+
+
+def mark_stale(entry: dict, today: date) -> None:
+    """Flag entries nobody has re-checked in STALE_DAYS so the page can say so."""
+    try:
+        seen = date.fromisoformat(str(entry.get("last_verified", "")))
+    except ValueError:
+        return
+    if (today - seen).days > STALE_DAYS and not entry.get("auto"):
+        entry["stale"] = True
 
 
 def with_fragment(url: str, anchor: str) -> str:
@@ -131,6 +145,7 @@ def load_entries(sources: list[tuple[str, Path]]) -> tuple[list[dict], list[str]
             entry = {**defaults, **raw, "kind": kind}
             derive_percent(entry)
             finalize_sources(entry)
+            mark_stale(entry, date.today())
             eid = str(entry.get("id", "<missing id>"))
             if eid in seen:
                 errors.append(f"duplicate id: {eid}")
@@ -195,11 +210,20 @@ def main() -> int:
     for entry in entries:
         counts[entry["kind"]] = counts.get(entry["kind"], 0) + 1
     watch = json.loads(WATCH.read_text(encoding="utf-8")) if WATCH.exists() else {}
+    order = {k: i for i, (k, _) in enumerate(SOURCES)}
+    entries.sort(key=lambda e: (order.get(e["kind"], 99), e["id"]))  # stable order keeps diffs small
+    distinct_sites = {site(u) for e in entries for u in e.get("sources") or []}
     payload = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "data_version": date.today().isoformat(),
         "counts": counts,
         "total": len(entries),
+        "stats": {"brand_confirmed": sum(1 for e in entries if e.get("verified_by") == "brand page"),
+                  "over_20": sum(1 for e in entries if (e.get("percent") or 0) >= 21),
+                  "stale": sum(1 for e in entries if e.get("stale")),
+                  "distinct_sites": len(distinct_sites),
+                  "source_pages": (watch.get("counts") or {}).get("sources_total", 0),
+                  "source_pages_read": (watch.get("counts") or {}).get("sources_read", 0)},
         "watch": watch,
         "entries": entries,
     }

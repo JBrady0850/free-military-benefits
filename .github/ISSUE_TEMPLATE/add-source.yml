@@ -1,0 +1,26 @@
+name: Add a source page
+description: Suggest a public page that lists military discounts or Veterans Day offers
+title: "Source: "
+labels: [source]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: A public page that names the business and the discount in the same line, row or heading.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of page is it?
+      options:
+        - Year-round military discount directory
+        - Veterans Day list for this year
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What does it add?
+      description: A brand or offer no current source has, or a second source for one that is held back.
