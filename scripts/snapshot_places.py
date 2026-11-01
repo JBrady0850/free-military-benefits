@@ -39,7 +39,12 @@ WIKIDATA_Q = """SELECT ?item ?itemLabel ?coord WHERE {
 FOREIGN = re.compile(r"_(?!us$)[a-z]{2}$")
 
 
+ALIASES = {"7eleven": "seveneleven"}  # brand spelled as digits where the spider spells it out
+
+
 def norm(s: str) -> str:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()  # Chão == Chao
     s = s.lower().replace(chr(0x2019), "'").replace("&", " ").replace("+", " plus ")
     s = re.sub(r"\(.*?\)", " ", s)
     s = re.sub(r"\band\b|^the\s+", " ", s)
@@ -72,11 +77,13 @@ def wanted_brands() -> dict[str, str]:
 
 def match_spiders(spiders: list[str], brands: dict[str, str]) -> dict[str, list[str]]:
     """brand lowName -> candidate U.S. spider names (exact or prefix match on normalized names)."""
-    us = [s for s in spiders if not FOREIGN.search(s)]
-    base = {s: norm(re.sub(r"_us$", "", s).replace("_", " ")) for s in us}
+    # U.S.-capable: names a _us part anywhere (seven_eleven_ca_us, smoothie_king_ky_us_tt) or carries no country code
+    us = [s for s in spiders if re.search(r"_us(_|$)", s) or not FOREIGN.search(s)]
+    base = {s: norm(re.sub(r"(_[a-z]{2})+$", "", s).replace("_", " ")) for s in us}  # drop trailing country/state codes
     out: dict[str, list[str]] = {}
     for low, display in brands.items():
         key = norm(display)
+        key = ALIASES.get(key, key)
         if len(key) < 3:
             continue
         exact = [s for s, b in base.items() if b == key]
@@ -114,6 +121,8 @@ def brand_ok(f: dict, display: str) -> bool:
     props = f.get("properties") or {}
     b = norm(props.get("brand") or props.get("name") or "")
     k = norm(display)
+    b, k = ALIASES.get(b, b), ALIASES.get(k, k)
+    b = ALIASES.get(b, b) if b != "seveneleven" else b
     return bool(b) and (b == k or b.startswith(k) or k.startswith(b))
 
 
@@ -160,7 +169,7 @@ def main() -> int:
     stats = requests.get(latest["stats_url"], headers=UA, timeout=120).json()
     spiders = [r["spider"] for r in stats["results"]]
     history = requests.get("https://data.alltheplaces.xyz/runs/history.json", headers=UA, timeout=60).json()
-    runs = [run] + [h["run_id"] for h in history if h["run_id"] < run][-4:][::-1]
+    runs = [run] + [h["run_id"] for h in history if h["run_id"] < run][-12:][::-1]  # a broken spider falls back up to 12 weeks
     brands = wanted_brands()
     matches = match_spiders(spiders, brands)
     print(f"ATP run {run} (fallbacks {runs[1:]}): {len(spiders)} spiders; {len(brands)} wanted brands; {len(matches)} matched")

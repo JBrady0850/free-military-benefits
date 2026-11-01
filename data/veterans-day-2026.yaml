@@ -290,6 +290,7 @@ entries:
     offer: Free or discounted haircuts at participating locations with valid ID.
     osm_brand: [Sport Clips]
   - id: grace-for-vets-vd26
+    national: true
     sources: ["https://graceforvets.com/"]
     anchor: "Grace for Vets"
     name: Grace for Vets car washes
@@ -305,6 +306,8 @@ entries:
     event_end: "2026-11-30"
     osm_brand: [AutoNation]
   - id: legoland-vd26
+    geo: [[27.9887, -81.6903], [41.392, -74.347]]
+    scope: locations
     sources: ["https://www.legoland.com/florida/deals/military-offers/"]
     name: Legoland Florida and New York
     category: attractions
@@ -314,6 +317,8 @@ entries:
     event_end: "2026-11-30"
     states: [FL, NY]
   - id: colonial-williamsburg-vd26
+    geo: [[37.271, -76.702]]
+    scope: locations
     sources: ["https://www.colonialwilliamsburg.org/visit/through-the-seasons/veterans-day-weekend/"]
     name: Colonial Williamsburg
     category: attractions
@@ -323,6 +328,8 @@ entries:
     event_start: "2026-11-06"
     states: [VA]
   - id: jyf-museums-vd26
+    geo: [[37.2228, -76.7835], [37.2339, -76.5137]]
+    scope: locations
     sources: ["https://www.jyfmuseums.org/events/programs-activities/veterans-day"]
     anchor: "American Revolution Museum at Yorktown"
     name: Yorktown and Jamestown Settlement museums
@@ -331,12 +338,16 @@ entries:
     family: true
     states: [VA]
   - id: aquarium-pacific-vd26
+    geo: [[33.762, -118.1966]]
+    scope: locations
     sources: ["https://www.aquariumofpacific.org/events/info/veterans_day"]
     name: Aquarium of the Pacific (Long Beach)
     category: attractions
     offer: Free admission for veterans and active duty. Advance reservations required; capacity is limited.
     states: [CA]
   - id: eisenhower-library-vd26
+    geo: [[38.9116, -97.2117]]
+    scope: locations
     sources: ["https://www.archives.gov/calendar/event/veterans-day-free-museum-admission-0"]
     name: Eisenhower Presidential Library (Abilene)
     category: attractions
@@ -345,6 +356,8 @@ entries:
     verification: [none]
     states: [KS]
   - id: harley-museum-vd26
+    geo: [[43.0317, -87.9166]]
+    scope: locations
     sources: ["https://www.harley-davidson.com/us/en/experiences/events/veteransday.html"]
     anchor: "Davidson Museum"
     name: Harley-Davidson Museum (Milwaukee)
@@ -353,12 +366,16 @@ entries:
     family: true
     states: [WI]
   - id: mount-vernon-vd26
+    geo: [[38.7293, -77.1074]]
+    scope: locations
     sources: ["https://www.mountvernon.org/plan-your-visit/calendar/events/mount-vernon-salutes-veterans"]
     name: Mount Vernon (George Washington's estate)
     category: attractions
     offer: Free admission for active duty and veterans with special programming.
     states: [VA]
   - id: amrev-museum-vd26
+    geo: [[39.9484, -75.1458]]
+    scope: locations
     sources: ["https://www.amrevmuseum.org/events/veterans-day-2026-at-the-museum"]
     name: Museum of the American Revolution (Philadelphia)
     category: attractions
@@ -368,6 +385,8 @@ entries:
     event_start: "2026-11-08"
     states: [PA]
   - id: wwi-museum-vd26
+    geo: [[39.0805, -94.5862]]
+    scope: locations
     sources: ["https://www.theworldwar.org/veteransday"]
     name: National WWI Museum and Memorial (Kansas City)
     category: attractions
@@ -375,6 +394,8 @@ entries:
     event_start: "2026-11-06"
     states: [MO]
   - id: trolley-savannah-vd26
+    geo: [[32.0809, -81.0912]]
+    scope: locations
     sources: ["https://www.trolleytours.com/savannah/coupons-promotions"]
     anchor: "Old Town Trolley – Savannah"
     name: Old Town Trolley Savannah
@@ -382,6 +403,8 @@ entries:
     offer: Free admission to listed attractions for veterans, active duty and first responders with valid ID.
     states: [GA]
   - id: trolley-staugustine-vd26
+    geo: [[29.8936, -81.3133]]
+    scope: locations
     sources: ["https://www.trolleytours.com/st-augustine/coupons-promotions"]
     anchor: "Old Town Trolley – St. Augustine"
     name: Old Town Trolley St. Augustine
@@ -389,6 +412,8 @@ entries:
     offer: Free admission to select attractions for veterans, active duty and first responders with valid ID.
     states: [FL]
   - id: san-antonio-zoo-vd26
+    geo: [[29.463, -98.474]]
+    scope: locations
     sources: ["https://sazoo.org/sitewrench-calendar/san-antonio-zoo/?swwpc_calendar_id=839&swwpc_event_id=6132937&swwpc_event_date=2026-11-01"]
     name: San Antonio Zoo
     category: attractions

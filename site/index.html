@@ -26,7 +26,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 <meta property="og:url" content="https://jbrady0850.github.io/free-military-benefits/">
 <style>
 :root{color-scheme:light;
---bg:#dfe4ea;--panel:#f3f5f8;--soft:#e8ecf1;--head:#eaedf2;--line:#d3dae3;--line2:#e1e6ec;
+--bg:#dfe4ea;--panel:#e9edf2;--card:#f7f9fb;--soft:#e2e7ed;--head:#dfe5ec;--line:#d3dae3;--line2:#e1e6ec;
 --text:#262b33;--body2:#3a4049;--muted:#545b65;--muted2:#58606a;--legend:#353b44;--strike:#6b7179;
 --ink:#13294a;--link:#0a5f93;--accent:#0f2744;--gold:#d4a017;--onGold:#0f2744;
 --warm:#f6efd9;--warm2:#f4efe2;--warmline:#e2d6b4;--brown:#6e5326;
@@ -35,7 +35,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --mast:#0f2744;--masttext:#fff;--dek:#c9d3e0;--foot:#0f2744;--foottext:#aab6c6;
 --tabon:#0f2744;--tabontext:#fff;--btn:#0f2744;--btntext:#fff}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
---bg:#0d1117;--panel:#161b22;--soft:#1f2630;--head:#1b212a;--line:#30363d;--line2:#262c34;
+--bg:#0b0f14;--panel:#11161d;--card:#1a212b;--soft:#1f2630;--head:#202935;--line:#30363d;--line2:#262c34;
 --text:#e6e9ee;--body2:#c9d1d9;--muted:#a6b0bb;--muted2:#9ea8b3;--legend:#c9d1d9;--strike:#8b949e;
 --ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
 --warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
@@ -44,7 +44,7 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
 --tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}}
 :root[data-theme="dark"]{color-scheme:dark;
---bg:#0d1117;--panel:#161b22;--soft:#1f2630;--head:#1b212a;--line:#30363d;--line2:#262c34;
+--bg:#0b0f14;--panel:#11161d;--card:#1a212b;--soft:#1f2630;--head:#202935;--line:#30363d;--line2:#262c34;
 --text:#e6e9ee;--body2:#c9d1d9;--muted:#a6b0bb;--muted2:#9ea8b3;--legend:#c9d1d9;--strike:#8b949e;
 --ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
 --warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
@@ -52,109 +52,124 @@ try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t
 --picked:#16243b;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
 --mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
 --tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}
-body{margin:0;padding:0;background:var(--bg);font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:var(--text)}
+body{margin:0;padding:0;background:var(--bg);font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:var(--text)}
 a{color:var(--link)}
 .wrap{max-width:680px;margin:0 auto}
 .mast{background:var(--mast);padding:22px 24px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;justify-content:space-between}
 .mhead{flex:1;min-width:220px}
 .mtools{display:flex;gap:6px;align-items:center}
-.mtools select,.mbtn{font:inherit;font-size:12px;font-weight:bold;color:#fff;background:transparent;border:1px solid #6d7f99;border-radius:4px;padding:5px 8px;cursor:pointer}
+.mtools select,.mbtn{font:inherit;font-size:13.5px;font-weight:bold;color:#fff;background:transparent;border:1px solid #6d7f99;border-radius:4px;padding:5px 8px;cursor:pointer}
 .mtools select option{color:#1a1a1a;background:#fff}
 .mbtn.gold{background:#d4a017;border-color:#d4a017;color:#0f2744}
-.kick{font-size:11px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:#d4a017}
+.kick{font-size:12.5px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:#d4a017}
 .ttl{font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;font-weight:bold;color:var(--masttext);margin:6px 0 4px}
-.dl{font-size:13px;color:var(--dek)}
+.dl{font-size:15px;color:var(--dek)}
 .rule{background:#d4a017;height:4px}
 .body{background:var(--panel);padding:18px 22px 8px}
-.crisis{font-size:12px;background:var(--soft);border-left:4px solid #c0392b;padding:8px 12px;margin:0 0 14px;color:var(--legend)}
+.crisis{font-size:13.5px;background:var(--soft);border-left:4px solid #c0392b;padding:8px 12px;margin:0 0 14px;color:var(--legend)}
 .cd{display:flex;background:var(--warm);border-left:5px solid #d4a017;margin:0 0 16px;cursor:pointer}
 .cdn{padding:14px 10px 14px 16px;font-family:Georgia,serif;font-size:44px;line-height:1;font-weight:bold;color:var(--ink);white-space:nowrap}
 .cdt{padding:14px 16px 10px 6px}
-.cdk{font-size:11px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase}
-.cds{font-size:13px;color:var(--body2);margin:2px 0 4px}
+.cdk{font-size:12.5px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase}
+.cds{font-size:15px;color:var(--body2);margin:2px 0 4px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 14px}
 .tile{background:var(--soft);border-top:3px solid var(--accent);padding:10px 6px;text-align:center;cursor:pointer}
 .tn{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:var(--ink);line-height:1.1}
-.tl{font-size:11px;color:var(--muted);margin-top:2px}
+.tl{font-size:12.5px;color:var(--muted);margin-top:2px}
 .tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;border-bottom:2px solid var(--line);padding-bottom:10px}
-.tabs button{font:inherit;font-size:12.5px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+.tabs button{font:inherit;font-size:14.5px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
 .tabs button.on{background:var(--tabon);color:var(--tabontext);border-color:var(--tabon)}
 section{display:none}
 section.on{display:block}
-.card{border:1px solid var(--line);margin:0 0 16px;background:var(--panel)}
-.ch{padding:10px 14px;border-bottom:1px solid var(--line);background:var(--head)}
-.tag{display:inline-block;font-size:11px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:3px;margin-right:8px;vertical-align:middle;letter-spacing:.04em}
-.cn{font-family:Georgia,serif;font-size:17px;font-weight:bold;color:var(--ink);vertical-align:middle}
-.mix{float:right;font-size:11px;color:var(--muted);margin-top:3px}
-.it{padding:11px 14px;border-bottom:1px solid var(--line2)}
-.it:last-child{border-bottom:0}
-.hl{font-size:15px;font-weight:bold;line-height:1.35;color:var(--ink);text-decoration:none}
+.card{margin:0 0 24px}
+.ch{padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--head);margin:0 0 10px}
+.tag{display:inline-block;font-size:12.5px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:3px;margin-right:8px;vertical-align:middle;letter-spacing:.04em}
+.cn{font-family:Georgia,serif;font-size:19.5px;font-weight:bold;color:var(--ink);vertical-align:middle}
+.mix{float:right;font-size:12.5px;color:var(--muted);margin-top:3px}
+.it{padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:0 0 10px;box-shadow:0 1px 3px rgba(15,39,68,.10)}
+.it:last-child{margin-bottom:0}
+.hl{font-size:17px;font-weight:bold;line-height:1.35;color:var(--ink);text-decoration:none}
 .hl:hover{text-decoration:underline}
 .meta{margin:5px 0 4px}
-.sum{font-size:13px;line-height:1.55;color:var(--body2);margin:2px 0}
+.sum{font-size:15px;line-height:1.55;color:var(--body2);margin:2px 0}
 .why{background:var(--warm);border-left:3px solid #d4a017;padding:4px 8px;margin:6px 0}
 .note{color:var(--muted)}
-.src{font-size:11px;color:var(--muted2);margin-top:4px}
-.none{font-size:13px;color:var(--muted);font-style:italic;padding:11px 14px}
-.gap{background:var(--gapbg);border-left:4px solid #c0392b;padding:10px 12px;font-size:12.5px;color:var(--gaptext);margin:0 0 16px}
-.legend{background:var(--soft);border-left:4px solid var(--accent);padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--legend);margin:8px 0 14px}
-.pill{display:inline-block;font-size:10px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:10px;letter-spacing:.03em;vertical-align:middle;margin:0 5px 3px 0}
+.src{font-size:12.5px;color:var(--muted2);margin-top:4px}
+.none{font-size:15px;color:var(--muted);font-style:italic;padding:11px 14px}
+.gap{background:var(--gapbg);border-left:4px solid #c0392b;padding:10px 12px;font-size:14.5px;color:var(--gaptext);margin:0 0 16px}
+.legend{background:var(--soft);border-left:4px solid var(--accent);padding:10px 12px;font-size:14.5px;line-height:1.55;color:var(--legend);margin:8px 0 14px}
+.pill{display:inline-block;font-size:11.5px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:10px;letter-spacing:.03em;vertical-align:middle;margin:0 5px 3px 0}
 .p-off{background:#1e8449}.p-com{background:#6c3d9e}.p-auto{background:#8a5a00}.p-free{background:#117a65}
 .p-hot{background:#c0392b}.p-warm{background:#a14f00}.p-cool{background:#34495e}.p-old{background:#6d5530}
 .p-mark{background:#d4a017;color:#0f2744}
 .p-stale{background:#7b241c}
-.b20{display:inline-block;margin-left:8px;vertical-align:middle;font-size:11px;font-weight:bold;letter-spacing:.05em;color:#0f2744;background:#d4a017;border:1px solid #0f2744;border-radius:3px;padding:1px 7px;white-space:nowrap}
+.b20{display:inline-block;margin-left:8px;vertical-align:middle;font-size:12.5px;font-weight:bold;letter-spacing:.05em;color:#0f2744;background:#d4a017;border:1px solid #0f2744;border-radius:3px;padding:1px 7px;white-space:nowrap}
 .chips{margin:4px 0 10px}
-.chip{font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--inline);border-radius:999px;background:var(--chipbg);color:var(--ink);cursor:pointer;margin:0 6px 6px 0}
+.chip{font:inherit;font-size:13.5px;padding:4px 10px;border:1px solid var(--inline);border-radius:999px;background:var(--chipbg);color:var(--ink);cursor:pointer;margin:0 6px 6px 0}
 .chip.on{background:#d4a017;border-color:#d4a017;color:#0f2744;font-weight:bold}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin:6px 0 12px}
-.row label{display:block;font-size:11px;color:var(--muted);font-weight:bold;letter-spacing:.05em;text-transform:uppercase}
-input,select,textarea{font:inherit;font-size:14px;color:var(--text);background:var(--inbg);border:1px solid var(--inline);border-radius:4px;padding:7px 9px}
-.btn{font:inherit;font-size:13px;background:var(--btn);color:var(--btntext);border:0;border-radius:4px;padding:8px 14px;font-weight:bold;cursor:pointer}
-.btn2{font:inherit;font-size:13px;background:var(--soft);color:var(--ink);border:1px solid var(--inline);border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
-ol.steps{margin:6px 0 4px;padding-left:20px;font-size:13px;color:var(--body2)}
+.row label{display:block;font-size:12.5px;color:var(--muted);font-weight:bold;letter-spacing:.05em;text-transform:uppercase}
+input,select,textarea{font:inherit;font-size:16px;color:var(--text);background:var(--inbg);border:1px solid var(--inline);border-radius:4px;padding:7px 9px}
+.btn{font:inherit;font-size:15px;background:var(--btn);color:var(--btntext);border:0;border-radius:4px;padding:8px 14px;font-weight:bold;cursor:pointer}
+.btn2{font:inherit;font-size:15px;background:var(--soft);color:var(--ink);border:1px solid var(--inline);border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
+ol.steps{margin:6px 0 4px;padding-left:20px;font-size:15px;color:var(--body2)}
 ol.steps li{margin:3px 0}
 ol.steps li.done label{color:var(--strike);text-decoration:line-through}
 ol.steps input{margin-right:6px;vertical-align:middle}
-.prog{font-size:11px;font-weight:bold;color:var(--prog)}
+.prog{font-size:12.5px;font-weight:bold;color:var(--prog)}
 .prog.all{display:inline-block;color:#fff;background:#1e8449;border-radius:10px;padding:1px 8px}
-.dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase;padding:9px 14px 3px;background:var(--warm2);border-bottom:1px solid var(--warmline)}
+.dgrp{font-size:12.5px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase;padding:14px 4px 6px}
 #answer{white-space:pre-wrap;display:none}
-.pbar{font-size:12.5px;line-height:1.5;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;margin:0 0 14px;color:var(--body2)}
+.pbar{font-size:14.5px;line-height:1.5;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;margin:0 0 14px;color:var(--body2)}
 .pbar a{font-weight:bold;white-space:nowrap}
 .ivdots{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
-.ivdots button{font:inherit;font-size:11.5px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+.ivdots button{font:inherit;font-size:13px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
 .ivdots button.on{background:var(--tabon);color:var(--tabontext);border-color:var(--tabon)}
 .ivq{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:bold;color:var(--ink);margin:2px 0 2px}
-.ivh{font-size:13px;color:var(--body2);margin:0 0 12px}
-.have{display:block;padding:9px 10px;border:1px solid var(--line);border-radius:4px;margin:0 0 6px;font-size:13.5px;font-weight:bold;color:var(--ink);cursor:pointer}
+.ivh{font-size:15px;color:var(--body2);margin:0 0 12px}
+.have{display:block;padding:9px 10px;border:1px solid var(--line);border-radius:4px;margin:0 0 6px;font-size:15.5px;font-weight:bold;color:var(--ink);cursor:pointer}
 .have input{margin-right:8px;vertical-align:middle}
 .have.on{background:var(--haveon);border-color:#1e8449}
 .have small{display:block;font-weight:normal;color:var(--muted);margin:2px 0 0 24px}
-.sumlist{margin:0 0 12px;padding-left:20px;font-size:13.5px;color:var(--body2)}
+.sumlist{margin:0 0 12px;padding-left:20px;font-size:15.5px;color:var(--body2)}
 .sumlist li{margin:4px 0}
-.foot{background:var(--foot);padding:14px 22px;font-size:11px;line-height:1.6;color:var(--foottext)}
+.foot{background:var(--foot);padding:14px 22px;font-size:12.5px;line-height:1.6;color:var(--foottext)}
 .foot a{color:#d4a017}
-.srcrow{font-size:12.5px;padding:7px 14px;border-bottom:1px solid var(--line2);display:flex;gap:10px;align-items:baseline}
+.srcrow{font-size:14.5px;padding:8px 14px;background:var(--card);border:1px solid var(--line);border-radius:6px;margin:0 0 6px;display:flex;gap:10px;align-items:baseline}
 .srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:var(--ink)}
 .srcrow .bad{color:var(--bad);font-weight:bold}
 .it:target{background:var(--warm);outline:2px solid #d4a017}
-.offer{font-size:14px;font-weight:bold;line-height:1.45;color:var(--text);margin:4px 0 4px}
-.pick{float:right;font-size:11.5px;font-weight:bold;color:var(--ink);cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:var(--soft);border:1px solid var(--inline);border-radius:999px;padding:3px 9px}
+.offer{font-size:16px;font-weight:bold;line-height:1.45;color:var(--text);margin:4px 0 4px}
+.pick{float:right;font-size:13px;font-weight:bold;color:var(--ink);cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:var(--soft);border:1px solid var(--inline);border-radius:999px;padding:3px 9px}
 .pick input{vertical-align:middle;margin:0 5px 0 0}
-.it.picked{background:var(--picked)}
+.it.picked{background:var(--picked);border-color:#d4a017}
 .it.picked .pick{background:#d4a017;border-color:#d4a017;color:#0f2744}
-.tray{position:fixed;left:0;right:0;bottom:0;background:var(--mast);color:#fff;font-size:13px;padding:8px 12px;display:none;z-index:20;box-shadow:0 -2px 6px rgba(0,0,0,.25)}
+.tray{position:fixed;left:0;right:0;bottom:0;background:var(--mast);color:#fff;font-size:15px;padding:8px 12px;display:none;z-index:20;box-shadow:0 -2px 6px rgba(0,0,0,.25)}
 .tray .in{max-width:680px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .tray .cnt{font-weight:bold;margin-right:auto}
-.tray button{font:inherit;font-size:12.5px;font-weight:bold;border:0;border-radius:4px;padding:7px 11px;cursor:pointer;background:#d4a017;color:#0f2744}
+.tray button{font:inherit;font-size:14.5px;font-weight:bold;border:0;border-radius:4px;padding:7px 11px;cursor:pointer;background:#d4a017;color:#0f2744}
 .tray button.ghost{background:transparent;color:#fff;border:1px solid #6d7f99}
 body.has-tray{padding-bottom:70px}
 body.on-picks .tray{display:none !important}
-.installhelp{display:none;background:var(--soft);border-left:4px solid #d4a017;padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--legend);margin:0 0 14px}
+.installhelp{display:none;background:var(--soft);border-left:4px solid #d4a017;padding:10px 12px;font-size:14.5px;line-height:1.55;color:var(--legend);margin:0 0 14px}
 .installhelp.on{display:block}
-.offline{display:none;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;font-size:12.5px;color:var(--body2);margin:0 0 14px}
+.offline{display:none;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;font-size:14.5px;color:var(--body2);margin:0 0 14px}
 .offline.on{display:block}
+
+/* Tabs: pinned to the top of the page; one swipeable row on phones */
+.tabs{position:sticky;top:0;z-index:15;background:var(--panel);margin:-18px -22px 14px;padding:10px 22px;box-shadow:0 1px 0 var(--line)}
+@media (max-width:640px){
+.tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin:-14px -14px 12px;padding:8px 14px;
+-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto}
+/* 44 px touch targets on phones */
+.tabs button,.chip,.btn,.btn2,.pick,.ivdots button,.tray button,.mtools select,.mbtn,select,input:not([type=checkbox]){min-height:44px}
+.chip,.pick,.ivdots button{display:inline-flex;align-items:center}
+input[type=checkbox]{width:22px;height:22px}
+ol.steps li label,.have{display:flex;align-items:center;min-height:44px}
+.pick input{width:20px;height:20px}
+}
 @media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}.mast{padding:18px 16px 14px}}
 @media print{:root,:root[data-theme],:root:not([data-theme="light"]){color-scheme:light;--bg:#fff;--panel:#fff;--soft:#f4f6f9;--head:#f8f9fb;--line:#e3e8ee;--line2:#f0f2f5;--text:#000;--body2:#222;--muted:#444;--muted2:#444;--legend:#222;--ink:#0f2744;--link:#0b6ea8;--accent:#0f2744;--warm:#fff8e1;--warm2:#fffdf5;--picked:#fff;--mast:#0f2744;--foot:#0f2744}
 .tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.tray,.pick,.mtools,.installhelp,.offline,.foot a[href*=github]{display:none !important}section{display:block !important}body.print-picks section:not(#sec-picks){display:none !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
@@ -175,11 +190,6 @@ body.on-picks .tray{display:none !important}
  </div>
  <div class="rule"></div>
  <div class="body">
-  <div class="installhelp" id="installHelp" role="status"></div>
-  <div class="offline" id="offlineNote" role="status">You are offline. Showing the data saved on this device the last time you opened the app. Store distances and your list still work.</div>
-  <div class="crisis"><strong>Veterans Crisis Line:</strong> dial 988 then press 1, text 838255, or chat at <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">VeteransCrisisLine.net</a>.</div>
-  <div id="countdown"></div>
-  <div class="tiles" id="tiles"></div>
   <nav class="tabs" id="tabs" aria-label="Sections" role="tablist">
    <button type="button" role="tab" data-tab="start">Start here</button>
    <button type="button" role="tab" data-tab="unlocks">What you unlock</button>
@@ -191,6 +201,11 @@ body.on-picks .tray{display:none !important}
    <button type="button" role="tab" data-tab="ai">Assistant</button>
    <button type="button" role="tab" data-tab="sources">Sources and data</button>
   </nav>
+  <div class="installhelp" id="installHelp" role="status"></div>
+  <div class="offline" id="offlineNote" role="status">You are offline. Showing the data saved on this device the last time you opened the app. Store distances and your list still work.</div>
+  <div class="crisis"><strong>Veterans Crisis Line:</strong> dial 988 then press 1, text 838255, or chat at <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">VeteransCrisisLine.net</a>.</div>
+  <div id="countdown"></div>
+  <div class="tiles" id="tiles"></div>
   <div class="pbar" id="pbar"></div>
 
   <section id="sec-start" data-title="Start here" role="tabpanel">
@@ -263,7 +278,7 @@ body.on-picks .tray{display:none !important}
   </section>
 
   <section id="sec-ai" data-title="Assistant" role="tabpanel">
-   <div class="legend">Optional, like the Road Trip Planner: bring your own AI key for plain-English answers drawn only from this site's entries and your status picks. The key is saved in this browser's localStorage and sent only to the provider you choose. A local Ollama server needs no key. Everything else on this site works without AI.</div>
+   <div class="legend">Optional: bring your own AI key for plain-English answers drawn only from this site's entries and your status picks. The key is saved in this browser's localStorage and sent only to the provider you choose. A local Ollama server needs no key. Everything else on this site works without AI.</div>
    <div class="row">
     <span><label for="prov">Provider</label><select id="prov"><option value="anthropic">Anthropic Claude</option><option value="gemini">Google Gemini</option><option value="openai">OpenAI</option><option value="ollama">Ollama (local, no key)</option></select></span>
     <span><label for="model">Model</label><input id="model" type="text" size="20"></span>
@@ -430,7 +445,7 @@ function item(e, extra) {
 
 function card(title, tag, color, mix, inner) {
  if (color === "#0f2744") color = "var(--accent)"; // navy cards lighten in dark mode so the edge stays visible
- return '<div class="card" style="border-left:5px solid ' + color + '"><div class="ch">' +
+ return '<div class="card"><div class="ch" style="border-left:5px solid ' + color + '">' +
   (tag ? '<span class="tag" style="background:' + color + '">' + esc(tag) + "</span>" : "") +
   '<span class="cn">' + esc(title) + "</span>" + (mix ? '<span class="mix">' + esc(mix) + "</span>" : "") +
   "</div>" + (inner || '<div class="none">Nothing matches yet.</div>') + "</div>";
@@ -440,6 +455,7 @@ function card(title, tag, color, mix, inner) {
 const TABS = ["start", "unlocks", "vd", "near", "travel", "dir", "picks", "ai", "sources"];
 function show(tab, keepHash) {
  document.querySelectorAll("#tabs button").forEach((b) => { const on = b.dataset.tab === tab; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
+ const onBtn = document.querySelector("#tabs button.on"); if (onBtn && onBtn.scrollIntoView) onBtn.scrollIntoView({block: "nearest", inline: "center"});
  document.querySelectorAll("section").forEach((s) => s.classList.toggle("on", s.id === "sec-" + tab));
  $("#pbar").style.display = tab === "start" ? "none" : "";
  document.body.classList.toggle("on-picks", tab === "picks");
@@ -489,10 +505,10 @@ function countdown() {
 function tiles() {
  const mine = DATA.filter((e) => e.kind === "hidden" && fits(e));
  const todo = mine.filter((e) => !hasIt(e)).length;
- const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e)).length;
+ const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && (!LOCAL || placeStatus(e) === "near")).length;
  const big = DATA.filter((e) => e.percent >= BADGE_MIN && fits(e)).length;
  const custom = picked.length > 0;
- $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits", "unlocks"], [vdLive, custom ? "Veterans Day offers for you" : "Veterans Day offers", "vd"],
+ $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits", "unlocks"], [vdLive, LOCAL ? "Veterans Day offers near " + LOCAL.zip : custom ? "Veterans Day offers for you" : "Veterans Day offers", "vd"],
   [big, "companies over 20% off", "dir"], [DATA.length, "entries, all free", "sources"]].map((t) =>
   '<div class="tile" role="button" tabindex="0" data-tab="' + t[2] + '"><div class="tn">' + esc(t[0]) + '</div><div class="tl">' + esc(t[1]) + "</div></div>").join("");
 }
@@ -677,12 +693,13 @@ function renderUnlocks() {
 const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
  ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
  ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
-const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi"];
-let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false};
+const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi", "unknown"];
+let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false, unknown: false};
 const nsources = (e) => new Set((e.sources || []).map((u) => host(u).split(".").slice(-2).join("."))).size;
 function vdChips() {
  const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS, [["multi", "3+ sources"]],
   picked.length ? [["others", "Include offers for other statuses"]] : [],
+  LOCAL && unknownCount() ? [["unknown", "Add " + unknownCount() + " chains we cannot place"]] : [],
   /^[0-9]{5}$/.test(P.zip) ? [["everywhere", "Show offers everywhere, not just near " + P.zip]] : []);
  $("#vdChips").innerHTML = list.map((f) => {
   const on = VD_TOGGLES.includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
@@ -712,17 +729,23 @@ async function ensureLocal() {
  return LOCAL;
 }
 function nearest(e) {
- if (!LOCAL || !PLACES) return null;
+ if (!LOCAL) return null;
  let best = null;
- for (const b of e.osm_brand || []) {
-  const pts = PLACES.brands[lowName(b)];
-  if (!pts) continue;
-  const hits = within(pts, LOCAL.lat, LOCAL.lon, LOCAL.mi, false);
-  if (hits.length && (!best || hits[0].d < best.d)) best = hits[0];
- }
+ const consider = (pts) => { const hits = within(pts, LOCAL.lat, LOCAL.lon, LOCAL.mi, false); if (hits.length && (!best || hits[0].d < best.d)) best = hits[0]; };
+ if (PLACES) for (const b of e.osm_brand || []) { const pts = PLACES.brands[lowName(b)]; if (pts) consider(pts); }
+ if (e.geo) consider(e.geo.map((g) => [Math.round(g[0] * 1000), Math.round(g[1] * 1000)])); // a single venue
  return best;
 }
-function hasLocationData(e) { return !!(PLACES && (e.osm_brand || []).some((b) => PLACES.brands[lowName(b)])); }
+function hasLocationData(e) { return !!((e.geo && e.geo.length) || (PLACES && (e.osm_brand || []).some((b) => PLACES.brands[lowName(b)]))); }
+/* near: online, a national program, a store or venue within your distance, or a statewide offer in your state.
+   far: we know where it is and it is not near you. unknown: we have no locations for it, so we cannot say. */
+function placeStatus(e) {
+ if (!LOCAL) return "near";
+ if (e.online || e.national) return "near";
+ if (hasLocationData(e)) return nearest(e) ? "near" : "far";
+ if (e.states && e.states.length) return e.states.includes(LOCAL.state) ? "near" : "far";
+ return "unknown";
+}
 /* Local first: with a ZIP set, every list sorts by how close the offer is. Store within range,
    then your state, then national chains and online offers, then everything else. */
 function localScore(e) {
@@ -730,19 +753,19 @@ function localScore(e) {
  const p = nearest(e);
  if (p) return p.d;
  if (e.states && e.states.includes(LOCAL.state)) return 100;
- if (e.online) return 400;
- if (e.scope === "nationwide" || e.kind === "hidden" || e.kind === "free") return 300;
- return 500;
+ if (e.online || e.national) return 300;
+ if (e.kind === "hidden" || e.kind === "free") return 300;
+ const s = placeStatus(e);
+ return s === "unknown" ? 450 : s === "far" ? 600 : 500;
 }
 const byLocal = (a, b) => localScore(a) - localScore(b);
 const nearLine = (e) => { const p = nearest(e); return p ? '<div class="sum"><strong>Nearest:</strong> ' + p.d.toFixed(1) + ' miles <span class="src">| <a href="https://www.openstreetmap.org/?mlat=' + p.lat + "&amp;mlon=" + p.lon + "#map=17/" + p.lat + "/" + p.lon + '" target="_blank" rel="noopener">Map</a> | <a href="https://www.google.com/maps/dir/?api=1&amp;destination=' + p.lat + "," + p.lon + '" target="_blank" rel="noopener">Directions</a></span></div>' : ""; };
 function localOK(e) {
  if (!LOCAL || vdf.everywhere) return true;
- if (e.online) return true;
- if (e.states && e.states.length) return e.states.includes(LOCAL.state);
- if (hasLocationData(e)) return !!nearest(e);
- return e.scope !== "locations"; // a national chain we have no store data for stays; a single venue elsewhere goes
+ const s = placeStatus(e);
+ return s === "near" || (s === "unknown" && vdf.unknown);
 }
+const unknownCount = () => LOCAL ? DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && placeStatus(e) === "unknown").length : 0;
 function vdList() {
  const toks = $("#vdQ").value.toLowerCase().split(/\s+/).filter(Boolean);
  return DATA.filter((e) => e.kind === "veterans-day").filter((e) => {
@@ -770,8 +793,9 @@ function renderVD() {
  const title = LOCAL && !vdf.everywhere ? "Veterans Day 2026 offers near " + LOCAL.zip + (LOCAL.state ? " (" + LOCAL.state + ")" : "") : "Veterans Day 2026 offers";
  $("#vdOut").innerHTML = card(title, "NOV 11", "#d4a017", list.length + " of " + all, inner);
  $("#vdLegend").innerHTML = LOCAL && !vdf.everywhere ?
-  "Showing national chains, offers in " + esc(LOCAL.state || "your state") + ", and anything with a location within " + LOCAL.mi + " miles of ZIP " + esc(LOCAL.zip) +
-  ". Place-bound offers elsewhere are hidden; use the chip to see everything. Distances come from weekly store data on this device. <a href=\"#start\" data-go=\"start\" data-ivgo=\"1\">Change ZIP</a>." :
+  "Showing only offers with a store or venue within " + LOCAL.mi + " miles of ZIP " + esc(LOCAL.zip) + ", statewide offers in " + esc(LOCAL.state || "your state") +
+  ", online offers and national programs. " + (unknownCount() ? unknownCount() + " chains have no store locations in our data yet, so we cannot tell if they are near you; they are hidden unless you add them with the chip. " : "") +
+  "Distances come from weekly store data on this device. <a href=\"#start\" data-go=\"start\" data-ivgo=\"1\">Change ZIP or distance</a>." :
   "Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. " +
   (P.zip ? "" : '<a href="#start" data-go="start" data-ivgo="1">Add your ZIP</a> to hide offers that are nowhere near you. ') + "Offers vary by location; confirm before you go.";
  const w = META.watch || {};

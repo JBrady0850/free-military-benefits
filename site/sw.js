@@ -3,7 +3,7 @@
    zip.json and places.json are cached on first use and refreshed in the background.
    Only same-origin GET requests are handled; AI provider calls and map links are never cached.
    Bump VERSION whenever the SHELL list changes. */
-const VERSION = "fmb-v0.7.0";
+const VERSION = "fmb-v0.7.1";
 const SHELL = ["./", "index.html", "data.json", "manifest.webmanifest", "icon-192.png", "icon-512.png",
   "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png"];
 const BIG = ["zip.json", "places.json"];

@@ -2,7 +2,7 @@
  "name": "Free Military Benefits",
  "short_name": "Mil Benefits",
  "description": "What your service unlocks, Veterans Day offers near your ZIP, travel, and discounts over 20 percent. Free, no account, no tracking, every entry sourced twice.",
- "id": "./",
+ "id": "/free-military-benefits/",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

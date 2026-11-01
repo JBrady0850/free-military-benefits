@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 23:03 UTC",
+ "generated": "2026-11-01 23:21 UTC",
  "data_version": "2026-11-01",
  "counts": {
   "hidden": 10,
@@ -617,7 +617,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Museum%20of%20the%20American%20Revolution",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -625,6 +625,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "amrev-museum-vd26",
+   "geo": [
+    [
+     39.9484,
+     -75.1458
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Museum%20of%20the%20American%20Revolution",
     "https://www.amrevmuseum.org/events/veterans-day-2026-at-the-museum"
@@ -675,7 +681,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Aquarium%20of%20the%20Pacific",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -683,6 +689,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "aquarium-pacific-vd26",
+   "geo": [
+    [
+     33.762,
+     -118.1966
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Aquarium%20of%20the%20Pacific",
     "https://www.aquariumofpacific.org/events/info/veterans_day"
@@ -5554,7 +5566,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Colonial%20Williamsburg",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -5562,6 +5574,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "colonial-williamsburg-vd26",
+   "geo": [
+    [
+     37.271,
+     -76.702
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Colonial%20Williamsburg",
     "https://www.colonialwilliamsburg.org/visit/through-the-seasons/veterans-day-weekend/"
@@ -5665,7 +5683,7 @@
    "verification": [
     "none"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Eisenhower%20Presidential%20Library",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -5673,6 +5691,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "eisenhower-library-vd26",
+   "geo": [
+    [
+     38.9116,
+     -97.2117
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Eisenhower%20Presidential%20Library",
     "https://www.archives.gov/calendar/event/veterans-day-free-museum-admission-0"
@@ -5817,6 +5841,7 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "grace-for-vets-vd26",
+   "national": true,
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Grace%20for%20Vets",
     "https://graceforvets.com/"
@@ -5865,7 +5890,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Davidson%20Museum",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -5873,6 +5898,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "harley-museum-vd26",
+   "geo": [
+    [
+     43.0317,
+     -87.9166
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Davidson%20Museum",
     "https://www.harley-davidson.com/us/en/experiences/events/veteransday.html"
@@ -5980,7 +6011,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=American%20Revolution%20Museum%20at%20Yorktown",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -5988,6 +6019,16 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "jyf-museums-vd26",
+   "geo": [
+    [
+     37.2228,
+     -76.7835
+    ],
+    [
+     37.2339,
+     -76.5137
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=American%20Revolution%20Museum%20at%20Yorktown",
     "https://www.jyfmuseums.org/events/programs-activities/veterans-day"
@@ -6069,7 +6110,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Legoland%20Florida%20and%20New%20York",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6077,6 +6118,16 @@
    "event_end": "2026-11-30",
    "slot": "anytime",
    "id": "legoland-vd26",
+   "geo": [
+    [
+     27.9887,
+     -81.6903
+    ],
+    [
+     41.392,
+     -74.347
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Legoland%20Florida%20and%20New%20York",
     "https://www.legoland.com/florida/deals/military-offers/"
@@ -6211,7 +6262,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Mount%20Vernon",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6219,6 +6270,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "mount-vernon-vd26",
+   "geo": [
+    [
+     38.7293,
+     -77.1074
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Mount%20Vernon",
     "https://www.mountvernon.org/plan-your-visit/calendar/events/mount-vernon-salutes-veterans"
@@ -6473,7 +6530,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=San%20Antonio%20Zoo",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6481,6 +6538,12 @@
    "event_end": "2026-11-30",
    "slot": "anytime",
    "id": "san-antonio-zoo-vd26",
+   "geo": [
+    [
+     29.463,
+     -98.474
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=San%20Antonio%20Zoo",
     "https://sazoo.org/sitewrench-calendar/san-antonio-zoo/?swwpc_calendar_id=839&swwpc_event_id=6132937&swwpc_event_date=2026-11-01"
@@ -6671,7 +6734,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Old%20Town%20Trolley%20%E2%80%93%20Savannah",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6679,6 +6742,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "trolley-savannah-vd26",
+   "geo": [
+    [
+     32.0809,
+     -81.0912
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Old%20Town%20Trolley%20%E2%80%93%20Savannah",
     "https://www.trolleytours.com/savannah/coupons-promotions"
@@ -6700,7 +6769,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Old%20Town%20Trolley%20%E2%80%93%20St.%20Augustine",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6708,6 +6777,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "trolley-staugustine-vd26",
+   "geo": [
+    [
+     29.8936,
+     -81.3133
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Old%20Town%20Trolley%20%E2%80%93%20St.%20Augustine",
     "https://www.trolleytours.com/st-augustine/coupons-promotions"
@@ -6758,7 +6833,7 @@
    "verification": [
     "proof-of-service"
    ],
-   "scope": "nationwide",
+   "scope": "locations",
    "source_url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=National%20WWI%20Museum%20and%20Memorial",
    "last_verified": "2026-11-01",
    "confidence": "official",
@@ -6766,6 +6841,12 @@
    "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "wwi-museum-vd26",
+   "geo": [
+    [
+     39.0805,
+     -94.5862
+    ]
+   ],
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=National%20WWI%20Museum%20and%20Memorial",
     "https://www.theworldwar.org/veteransday"
