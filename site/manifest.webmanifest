@@ -1,0 +1,25 @@
+{
+ "name": "Free Military Benefits",
+ "short_name": "Mil Benefits",
+ "description": "What your service unlocks, Veterans Day offers near your ZIP, travel, and discounts over 20 percent. Free, no account, no tracking, every entry sourced twice.",
+ "id": "./",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#0f2744",
+ "theme_color": "#0f2744",
+ "lang": "en-US",
+ "dir": "ltr",
+ "categories": ["lifestyle", "shopping", "utilities"],
+ "icons": [
+  {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+  {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+  {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+ ],
+ "shortcuts": [
+  {"name": "Veterans Day offers", "short_name": "Veterans Day", "url": "./#vd", "icons": [{"src": "icon-192.png", "sizes": "192x192"}]},
+  {"name": "Near me", "url": "./#near", "icons": [{"src": "icon-192.png", "sizes": "192x192"}]},
+  {"name": "My list", "url": "./#picks", "icons": [{"src": "icon-192.png", "sizes": "192x192"}]}
+ ]
+}

@@ -5,121 +5,178 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free Military Benefits</title>
 <meta name="description" content="Free military and veteran benefits brief: what your service unlocks, Veterans Day 2026 offers, what is near your ZIP code, travel, and 20 percent plus discounts. No account, no tracking.">
-<link rel="icon" href="data:,">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f2744" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1a30" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mil Benefits">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>
+// Apply a saved Light or Dark choice before the page paints, so it never flashes the other theme.
+try { const t = JSON.parse(localStorage.getItem("fmb_theme") || '"auto"'); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) { /* storage blocked */ }
+</script>
 <link rel="prefetch" href="zip.json">
 <meta property="og:title" content="Free Military Benefits">
 <meta property="og:description" content="What your service unlocks, Veterans Day offers near your ZIP, travel, and discounts over 20 percent. Free, no account, no tracking, every entry sourced twice.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jbrady0850.github.io/free-military-benefits/">
 <style>
-body{margin:0;padding:0;background:#eef1f5;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a1a1a}
-a{color:#0b6ea8}
+:root{color-scheme:light;
+--bg:#dfe4ea;--panel:#f3f5f8;--soft:#e8ecf1;--head:#eaedf2;--line:#d3dae3;--line2:#e1e6ec;
+--text:#262b33;--body2:#3a4049;--muted:#545b65;--muted2:#58606a;--legend:#353b44;--strike:#6b7179;
+--ink:#13294a;--link:#0a5f93;--accent:#0f2744;--gold:#d4a017;--onGold:#0f2744;
+--warm:#f6efd9;--warm2:#f4efe2;--warmline:#e2d6b4;--brown:#6e5326;
+--gapbg:#f6e3e0;--gaptext:#7b241c;--inbg:#f9fafb;--inline:#c5cdd8;--chipbg:#f6f7f9;
+--picked:#e4ecf8;--haveon:#e3f0e7;--prog:#0f6b58;--bad:#b0362a;
+--mast:#0f2744;--masttext:#fff;--dek:#c9d3e0;--foot:#0f2744;--foottext:#aab6c6;
+--tabon:#0f2744;--tabontext:#fff;--btn:#0f2744;--btntext:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+--bg:#0d1117;--panel:#161b22;--soft:#1f2630;--head:#1b212a;--line:#30363d;--line2:#262c34;
+--text:#e6e9ee;--body2:#c9d1d9;--muted:#a6b0bb;--muted2:#9ea8b3;--legend:#c9d1d9;--strike:#8b949e;
+--ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
+--warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
+--gapbg:#3b1e1e;--gaptext:#ffb3a6;--inbg:#0d1117;--inline:#3d4652;--chipbg:#161b22;
+--picked:#16243b;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
+--mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
+--tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}}
+:root[data-theme="dark"]{color-scheme:dark;
+--bg:#0d1117;--panel:#161b22;--soft:#1f2630;--head:#1b212a;--line:#30363d;--line2:#262c34;
+--text:#e6e9ee;--body2:#c9d1d9;--muted:#a6b0bb;--muted2:#9ea8b3;--legend:#c9d1d9;--strike:#8b949e;
+--ink:#dbe7ff;--link:#79b8ff;--accent:#4a7cc4;--gold:#d4a017;--onGold:#0f2744;
+--warm:#2a2312;--warm2:#211c10;--warmline:#4d3f1c;--brown:#e3bd63;
+--gapbg:#3b1e1e;--gaptext:#ffb3a6;--inbg:#0d1117;--inline:#3d4652;--chipbg:#161b22;
+--picked:#16243b;--haveon:#122a1c;--prog:#4cc49a;--bad:#ff7b72;
+--mast:#0a1a30;--masttext:#fff;--dek:#b8c4d4;--foot:#0a1a30;--foottext:#9fb0c4;
+--tabon:#d4a017;--tabontext:#0f2744;--btn:#d4a017;--btntext:#0f2744}
+body{margin:0;padding:0;background:var(--bg);font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:var(--text)}
+a{color:var(--link)}
 .wrap{max-width:680px;margin:0 auto}
-.mast{background:#0f2744;padding:22px 24px 16px}
+.mast{background:var(--mast);padding:22px 24px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;justify-content:space-between}
+.mhead{flex:1;min-width:220px}
+.mtools{display:flex;gap:6px;align-items:center}
+.mtools select,.mbtn{font:inherit;font-size:12px;font-weight:bold;color:#fff;background:transparent;border:1px solid #6d7f99;border-radius:4px;padding:5px 8px;cursor:pointer}
+.mtools select option{color:#1a1a1a;background:#fff}
+.mbtn.gold{background:#d4a017;border-color:#d4a017;color:#0f2744}
 .kick{font-size:11px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;color:#d4a017}
-.ttl{font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;font-weight:bold;color:#fff;margin:6px 0 4px}
-.dl{font-size:13px;color:#c9d3e0}
+.ttl{font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;font-weight:bold;color:var(--masttext);margin:6px 0 4px}
+.dl{font-size:13px;color:var(--dek)}
 .rule{background:#d4a017;height:4px}
-.body{background:#fff;padding:18px 22px 8px}
-.crisis{font-size:12px;background:#f4f6f9;border-left:4px solid #c0392b;padding:8px 12px;margin:0 0 14px;color:#333}
-.cd{display:flex;background:#fff8e1;border-left:5px solid #d4a017;margin:0 0 16px;cursor:pointer}
-.cdn{padding:14px 10px 14px 16px;font-family:Georgia,serif;font-size:44px;line-height:1;font-weight:bold;color:#0f2744;white-space:nowrap}
+.body{background:var(--panel);padding:18px 22px 8px}
+.crisis{font-size:12px;background:var(--soft);border-left:4px solid #c0392b;padding:8px 12px;margin:0 0 14px;color:var(--legend)}
+.cd{display:flex;background:var(--warm);border-left:5px solid #d4a017;margin:0 0 16px;cursor:pointer}
+.cdn{padding:14px 10px 14px 16px;font-family:Georgia,serif;font-size:44px;line-height:1;font-weight:bold;color:var(--ink);white-space:nowrap}
 .cdt{padding:14px 16px 10px 6px}
-.cdk{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase}
-.cds{font-size:13px;color:#4a4a4a;margin:2px 0 4px}
+.cdk{font-size:11px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase}
+.cds{font-size:13px;color:var(--body2);margin:2px 0 4px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 14px}
-.tile{background:#f4f6f9;border-top:3px solid #0f2744;padding:10px 6px;text-align:center}
-.tn{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:#0f2744;line-height:1.1}
-.tl{font-size:11px;color:#555;margin-top:2px}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;border-bottom:2px solid #e3e8ee;padding-bottom:10px}
-.tabs button{font:inherit;font-size:12.5px;font-weight:bold;color:#0f2744;background:#f4f6f9;border:1px solid #e3e8ee;border-radius:4px;padding:6px 10px;cursor:pointer}
-.tabs button.on{background:#0f2744;color:#fff;border-color:#0f2744}
+.tile{background:var(--soft);border-top:3px solid var(--accent);padding:10px 6px;text-align:center;cursor:pointer}
+.tn{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:var(--ink);line-height:1.1}
+.tl{font-size:11px;color:var(--muted);margin-top:2px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.tabs button{font:inherit;font-size:12.5px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+.tabs button.on{background:var(--tabon);color:var(--tabontext);border-color:var(--tabon)}
 section{display:none}
 section.on{display:block}
-.card{border:1px solid #e3e8ee;margin:0 0 16px;background:#fff}
-.ch{padding:10px 14px;border-bottom:1px solid #e3e8ee;background:#f8f9fb}
+.card{border:1px solid var(--line);margin:0 0 16px;background:var(--panel)}
+.ch{padding:10px 14px;border-bottom:1px solid var(--line);background:var(--head)}
 .tag{display:inline-block;font-size:11px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:3px;margin-right:8px;vertical-align:middle;letter-spacing:.04em}
-.cn{font-family:Georgia,serif;font-size:17px;font-weight:bold;color:#0f2744;vertical-align:middle}
-.mix{float:right;font-size:11px;color:#555;margin-top:3px}
-.it{padding:11px 14px;border-bottom:1px solid #f0f2f5}
+.cn{font-family:Georgia,serif;font-size:17px;font-weight:bold;color:var(--ink);vertical-align:middle}
+.mix{float:right;font-size:11px;color:var(--muted);margin-top:3px}
+.it{padding:11px 14px;border-bottom:1px solid var(--line2)}
 .it:last-child{border-bottom:0}
-.hl{font-size:15px;font-weight:bold;line-height:1.35;color:#0f2744;text-decoration:none}
+.hl{font-size:15px;font-weight:bold;line-height:1.35;color:var(--ink);text-decoration:none}
 .hl:hover{text-decoration:underline}
 .meta{margin:5px 0 4px}
-.sum{font-size:13px;line-height:1.55;color:#3d3d3d;margin:2px 0}
-.why{background:#fff8e1;border-left:3px solid #d4a017;padding:4px 8px;margin:6px 0}
-.note{color:#555}
-.src{font-size:11px;color:#5f5f5f;margin-top:4px}
-.none{font-size:13px;color:#555;font-style:italic;padding:11px 14px}
-.gap{background:#fdecea;border-left:4px solid #c0392b;padding:10px 12px;font-size:12.5px;color:#7b241c;margin:0 0 16px}
-.legend{background:#f4f6f9;border-left:4px solid #0f2744;padding:10px 12px;font-size:12.5px;line-height:1.55;color:#333;margin:8px 0 14px}
+.sum{font-size:13px;line-height:1.55;color:var(--body2);margin:2px 0}
+.why{background:var(--warm);border-left:3px solid #d4a017;padding:4px 8px;margin:6px 0}
+.note{color:var(--muted)}
+.src{font-size:11px;color:var(--muted2);margin-top:4px}
+.none{font-size:13px;color:var(--muted);font-style:italic;padding:11px 14px}
+.gap{background:var(--gapbg);border-left:4px solid #c0392b;padding:10px 12px;font-size:12.5px;color:var(--gaptext);margin:0 0 16px}
+.legend{background:var(--soft);border-left:4px solid var(--accent);padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--legend);margin:8px 0 14px}
 .pill{display:inline-block;font-size:10px;font-weight:bold;color:#fff;padding:2px 7px;border-radius:10px;letter-spacing:.03em;vertical-align:middle;margin:0 5px 3px 0}
 .p-off{background:#1e8449}.p-com{background:#6c3d9e}.p-auto{background:#8a5a00}.p-free{background:#117a65}
 .p-hot{background:#c0392b}.p-warm{background:#a14f00}.p-cool{background:#34495e}.p-old{background:#6d5530}
 .p-mark{background:#d4a017;color:#0f2744}
+.p-stale{background:#7b241c}
 .b20{display:inline-block;margin-left:8px;vertical-align:middle;font-size:11px;font-weight:bold;letter-spacing:.05em;color:#0f2744;background:#d4a017;border:1px solid #0f2744;border-radius:3px;padding:1px 7px;white-space:nowrap}
 .chips{margin:4px 0 10px}
-.chip{font:inherit;font-size:12px;padding:4px 10px;border:1px solid #cfd6df;border-radius:999px;background:#fff;color:#0f2744;cursor:pointer;margin:0 6px 6px 0}
+.chip{font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--inline);border-radius:999px;background:var(--chipbg);color:var(--ink);cursor:pointer;margin:0 6px 6px 0}
 .chip.on{background:#d4a017;border-color:#d4a017;color:#0f2744;font-weight:bold}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin:6px 0 12px}
-.row label{display:block;font-size:11px;color:#555;font-weight:bold;letter-spacing:.05em;text-transform:uppercase}
-input,select,textarea{font:inherit;font-size:14px;color:#1a1a1a;background:#fff;border:1px solid #cfd6df;border-radius:4px;padding:7px 9px}
-.btn{font:inherit;font-size:13px;background:#0f2744;color:#fff;border:0;border-radius:4px;padding:8px 14px;font-weight:bold;cursor:pointer}
-.btn2{font:inherit;font-size:13px;background:#f4f6f9;color:#0f2744;border:1px solid #cfd6df;border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
-ol.steps{margin:6px 0 4px;padding-left:20px;font-size:13px;color:#3d3d3d}
+.row label{display:block;font-size:11px;color:var(--muted);font-weight:bold;letter-spacing:.05em;text-transform:uppercase}
+input,select,textarea{font:inherit;font-size:14px;color:var(--text);background:var(--inbg);border:1px solid var(--inline);border-radius:4px;padding:7px 9px}
+.btn{font:inherit;font-size:13px;background:var(--btn);color:var(--btntext);border:0;border-radius:4px;padding:8px 14px;font-weight:bold;cursor:pointer}
+.btn2{font:inherit;font-size:13px;background:var(--soft);color:var(--ink);border:1px solid var(--inline);border-radius:4px;padding:7px 12px;font-weight:bold;cursor:pointer}
+ol.steps{margin:6px 0 4px;padding-left:20px;font-size:13px;color:var(--body2)}
 ol.steps li{margin:3px 0}
-ol.steps li.done label{color:#6b6b6b;text-decoration:line-through}
-.prog.all{display:inline-block;color:#fff;background:#1e8449;border-radius:10px;padding:1px 8px}
+ol.steps li.done label{color:var(--strike);text-decoration:line-through}
 ol.steps input{margin-right:6px;vertical-align:middle}
-.prog{font-size:11px;font-weight:bold;color:#117a65}
-.dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:#7a5c2e;text-transform:uppercase;padding:9px 14px 3px;background:#fffdf5;border-bottom:1px solid #efe6c7}
+.prog{font-size:11px;font-weight:bold;color:var(--prog)}
+.prog.all{display:inline-block;color:#fff;background:#1e8449;border-radius:10px;padding:1px 8px}
+.dgrp{font-size:11px;font-weight:bold;letter-spacing:.14em;color:var(--brown);text-transform:uppercase;padding:9px 14px 3px;background:var(--warm2);border-bottom:1px solid var(--warmline)}
 #answer{white-space:pre-wrap;display:none}
-.pbar{font-size:12.5px;line-height:1.5;background:#fff8e1;border-left:4px solid #d4a017;padding:8px 12px;margin:0 0 14px;color:#3d3d3d}
+.pbar{font-size:12.5px;line-height:1.5;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;margin:0 0 14px;color:var(--body2)}
 .pbar a{font-weight:bold;white-space:nowrap}
 .ivdots{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
-.ivdots button{font:inherit;font-size:11.5px;font-weight:bold;color:#0f2744;background:#f4f6f9;border:1px solid #e3e8ee;border-radius:999px;padding:4px 10px;cursor:pointer}
-.ivdots button.on{background:#0f2744;color:#fff;border-color:#0f2744}
-.ivq{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:bold;color:#0f2744;margin:2px 0 2px}
-.ivh{font-size:13px;color:#4a4a4a;margin:0 0 12px}
-.have{display:block;padding:9px 10px;border:1px solid #e3e8ee;border-radius:4px;margin:0 0 6px;font-size:13.5px;font-weight:bold;color:#0f2744;cursor:pointer}
+.ivdots button{font:inherit;font-size:11.5px;font-weight:bold;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+.ivdots button.on{background:var(--tabon);color:var(--tabontext);border-color:var(--tabon)}
+.ivq{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:bold;color:var(--ink);margin:2px 0 2px}
+.ivh{font-size:13px;color:var(--body2);margin:0 0 12px}
+.have{display:block;padding:9px 10px;border:1px solid var(--line);border-radius:4px;margin:0 0 6px;font-size:13.5px;font-weight:bold;color:var(--ink);cursor:pointer}
 .have input{margin-right:8px;vertical-align:middle}
-.have.on{background:#eef8f1;border-color:#1e8449}
-.have small{display:block;font-weight:normal;color:#555;margin:2px 0 0 24px}
-.sumlist{margin:0 0 12px;padding-left:20px;font-size:13.5px;color:#3d3d3d}
+.have.on{background:var(--haveon);border-color:#1e8449}
+.have small{display:block;font-weight:normal;color:var(--muted);margin:2px 0 0 24px}
+.sumlist{margin:0 0 12px;padding-left:20px;font-size:13.5px;color:var(--body2)}
 .sumlist li{margin:4px 0}
-.foot{background:#0f2744;padding:14px 22px;font-size:11px;line-height:1.6;color:#aab6c6}
+.foot{background:var(--foot);padding:14px 22px;font-size:11px;line-height:1.6;color:var(--foottext)}
 .foot a{color:#d4a017}
-.tile{cursor:pointer}
-.p-stale{background:#7b241c}
-.srcrow{font-size:12.5px;padding:7px 14px;border-bottom:1px solid #f0f2f5;display:flex;gap:10px;align-items:baseline}
-.srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:#0f2744}
-.srcrow .bad{color:#c0392b;font-weight:bold}
-.it:target{background:#fff8e1;outline:2px solid #d4a017}
-.offer{font-size:14px;font-weight:bold;line-height:1.45;color:#1a1a1a;margin:4px 0 4px}
-.pick{float:right;font-size:11.5px;font-weight:bold;color:#0f2744;cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:#f4f6f9;border:1px solid #cfd6df;border-radius:999px;padding:3px 9px}
+.srcrow{font-size:12.5px;padding:7px 14px;border-bottom:1px solid var(--line2);display:flex;gap:10px;align-items:baseline}
+.srcrow .n{min-width:52px;text-align:right;font-weight:bold;color:var(--ink)}
+.srcrow .bad{color:var(--bad);font-weight:bold}
+.it:target{background:var(--warm);outline:2px solid #d4a017}
+.offer{font-size:14px;font-weight:bold;line-height:1.45;color:var(--text);margin:4px 0 4px}
+.pick{float:right;font-size:11.5px;font-weight:bold;color:var(--ink);cursor:pointer;margin:0 0 4px 10px;white-space:nowrap;background:var(--soft);border:1px solid var(--inline);border-radius:999px;padding:3px 9px}
 .pick input{vertical-align:middle;margin:0 5px 0 0}
-.it.picked{background:#f3f8ff}
-.it.picked .pick{background:#d4a017;border-color:#d4a017}
-.tray{position:fixed;left:0;right:0;bottom:0;background:#0f2744;color:#fff;font-size:13px;padding:8px 12px;display:none;z-index:20;box-shadow:0 -2px 6px rgba(0,0,0,.25)}
+.it.picked{background:var(--picked)}
+.it.picked .pick{background:#d4a017;border-color:#d4a017;color:#0f2744}
+.tray{position:fixed;left:0;right:0;bottom:0;background:var(--mast);color:#fff;font-size:13px;padding:8px 12px;display:none;z-index:20;box-shadow:0 -2px 6px rgba(0,0,0,.25)}
 .tray .in{max-width:680px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .tray .cnt{font-weight:bold;margin-right:auto}
 .tray button{font:inherit;font-size:12.5px;font-weight:bold;border:0;border-radius:4px;padding:7px 11px;cursor:pointer;background:#d4a017;color:#0f2744}
 .tray button.ghost{background:transparent;color:#fff;border:1px solid #6d7f99}
 body.has-tray{padding-bottom:70px}
 body.on-picks .tray{display:none !important}
-@media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}}
-@media print{.tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.tray,.pick,.foot a[href*=github]{display:none !important}section{display:block !important}body.print-picks section:not(#sec-picks){display:none !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
+.installhelp{display:none;background:var(--soft);border-left:4px solid #d4a017;padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--legend);margin:0 0 14px}
+.installhelp.on{display:block}
+.offline{display:none;background:var(--warm);border-left:4px solid #d4a017;padding:8px 12px;font-size:12.5px;color:var(--body2);margin:0 0 14px}
+.offline.on{display:block}
+@media (max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}.ttl{font-size:24px}.body{padding:14px}.cdn{font-size:36px}.mast{padding:18px 16px 14px}}
+@media print{:root,:root[data-theme],:root:not([data-theme="light"]){color-scheme:light;--bg:#fff;--panel:#fff;--soft:#f4f6f9;--head:#f8f9fb;--line:#e3e8ee;--line2:#f0f2f5;--text:#000;--body2:#222;--muted:#444;--muted2:#444;--legend:#222;--ink:#0f2744;--link:#0b6ea8;--accent:#0f2744;--warm:#fff8e1;--warm2:#fffdf5;--picked:#fff;--mast:#0f2744;--foot:#0f2744}
+.tabs,.crisis,.cd,.pbar,.row,.chips,#tiles,.tray,.pick,.mtools,.installhelp,.offline,.foot a[href*=github]{display:none !important}section{display:block !important}body.print-picks section:not(#sec-picks){display:none !important}section::before{content:attr(data-title);display:block;font-family:Georgia,serif;font-size:20px;font-weight:bold;margin:18px 0 8px;color:#0f2744}.it{break-inside:avoid}body{background:#fff}}
 </style>
 </head>
 <body>
 <div class="wrap">
  <div class="mast">
-  <div class="kick">Free military and veteran benefits brief</div>
-  <div class="ttl">Free Military Benefits</div>
-  <div class="dl" id="dek">No account. No tracking. Every entry links its source.</div>
+  <div class="mhead">
+   <div class="kick">Free military and veteran benefits brief</div>
+   <div class="ttl">Free Military Benefits</div>
+   <div class="dl" id="dek">No account. No tracking. Every entry links its source.</div>
+  </div>
+  <div class="mtools">
+   <select id="theme" aria-label="Color theme"><option value="auto">Theme: Auto</option><option value="light">Theme: Light</option><option value="dark">Theme: Dark</option></select>
+   <button class="mbtn gold" type="button" id="installBtn" hidden>Install app</button>
+  </div>
  </div>
  <div class="rule"></div>
  <div class="body">
+  <div class="installhelp" id="installHelp" role="status"></div>
+  <div class="offline" id="offlineNote" role="status">You are offline. Showing the data saved on this device the last time you opened the app. Store distances and your list still work.</div>
   <div class="crisis"><strong>Veterans Crisis Line:</strong> dial 988 then press 1, text 838255, or chat at <a href="https://www.veteranscrisisline.net/" rel="noopener" target="_blank">VeteransCrisisLine.net</a>.</div>
   <div id="countdown"></div>
   <div class="tiles" id="tiles"></div>
@@ -372,6 +429,7 @@ function item(e, extra) {
 }
 
 function card(title, tag, color, mix, inner) {
+ if (color === "#0f2744") color = "var(--accent)"; // navy cards lighten in dark mode so the edge stays visible
  return '<div class="card" style="border-left:5px solid ' + color + '"><div class="ch">' +
   (tag ? '<span class="tag" style="background:' + color + '">' + esc(tag) + "</span>" : "") +
   '<span class="cn">' + esc(title) + "</span>" + (mix ? '<span class="mix">' + esc(mix) + "</span>" : "") +
@@ -1213,6 +1271,47 @@ $("#ask").addEventListener("click", async () => {
  try { out.textContent = await callModel(provider, model, key, prompt); }
  catch (err) { out.textContent = "The " + provider + " call failed: " + err.message + ". Check the key and model name; for Ollama, allow this site's origin."; }
 });
+
+/* ---------- theme: Auto follows the device; Light and Dark are remembered ---------- */
+function applyTheme(t) {
+ if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+ else document.documentElement.removeAttribute("data-theme");
+ const dark = t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+ document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { m.setAttribute("content", dark ? "#0a1a30" : "#0f2744"); m.removeAttribute("media"); });
+}
+$("#theme").value = store.get("fmb_theme", "auto");
+applyTheme($("#theme").value);
+$("#theme").addEventListener("change", () => { store.set("fmb_theme", $("#theme").value); applyTheme($("#theme").value); });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => applyTheme($("#theme").value));
+
+/* ---------- install as an app (desktop and phone) and work offline ---------- */
+let deferredInstall = null;
+const isStandalone = () => window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isMacSafari = () => /Macintosh/.test(navigator.userAgent) && /Safari/.test(navigator.userAgent) && !/Chrome|Chromium|Edg|Firefox/.test(navigator.userAgent) && navigator.maxTouchPoints < 2;
+function installHelp(html) { const h = $("#installHelp"); h.innerHTML = html; h.classList.add("on"); }
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredInstall = e; if (!isStandalone()) $("#installBtn").hidden = false; });
+window.addEventListener("appinstalled", () => { deferredInstall = null; $("#installBtn").hidden = true; installHelp("Installed. Open <strong>Free Military Benefits</strong> from your home screen, Start menu or dock. It opens in its own window and works offline."); });
+if (!isStandalone() && (isIOS() || isMacSafari())) $("#installBtn").hidden = false;
+$("#installBtn").addEventListener("click", async () => {
+ if (deferredInstall) {
+  deferredInstall.prompt();
+  const choice = await deferredInstall.userChoice;
+  deferredInstall = null;
+  if (choice && choice.outcome === "accepted") $("#installBtn").hidden = true;
+  return;
+ }
+ if (isIOS()) installHelp("<strong>Install on iPhone or iPad:</strong> open this page in Safari, tap the <strong>Share</strong> button (the square with an arrow), scroll down and tap <strong>Add to Home Screen</strong>, then <strong>Add</strong>.");
+ else if (isMacSafari()) installHelp("<strong>Install on a Mac:</strong> in Safari, choose <strong>File</strong>, then <strong>Add to Dock</strong>.");
+ else installHelp("<strong>Install:</strong> in Chrome or Edge, use the install icon at the right end of the address bar, or the browser menu, then <strong>Install Free Military Benefits</strong>. On Android, use the menu and <strong>Install app</strong> or <strong>Add to Home screen</strong>.");
+});
+function showOffline() { $("#offlineNote").classList.toggle("on", !navigator.onLine); }
+window.addEventListener("online", showOffline);
+window.addEventListener("offline", showOffline);
+showOffline();
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+ window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => { /* still works online without it */ }); });
+}
 
 /* ---------- start: fetch fresh data on every visit ---------- */
 fetch("data.json", {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then((j) => {

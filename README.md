@@ -14,6 +14,9 @@ A free military and veteran benefits brief. It leads with what most people do no
 - **Discount directory.** Hand-checked discounts plus every brand that public directories report at **more than 20 percent**, with category counts, an over-20 filter and a "confirmed on the brand's page" filter.
 - **Assistant (optional).** Bring your own AI key (Anthropic, Gemini, OpenAI or local Ollama). Answers come only from this site's entries, and the page lists which entries it sent.
 - **Sources and data.** Every source page read in the last refresh, how many rows it gave, which ones failed, and which brands are waiting on a second source.
+- **My list.** Tick any card, then add the list to your calendar (.ics with reminders), email it, share it, copy it or print it.
+- **Light and dark.** Follows your device setting, or pick Light or Dark in the masthead. Light uses a soft gray-blue page rather than bright white. Every text color meets WCAG AA contrast in both themes.
+- **Install it.** Chrome, Edge and Android show an Install app button; on iPhone or iPad use Share, then Add to Home Screen; on a Mac, Safari's File, then Add to Dock. Installed, it opens in its own window and works offline with the last data it saved (`site/sw.js`, `site/manifest.webmanifest`, icons from `scripts/make_icons.py`).
 
 ## The two-source rule
 
