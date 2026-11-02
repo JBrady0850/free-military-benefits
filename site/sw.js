@@ -5,7 +5,7 @@
    Only same-origin GET requests under this app's scope are handled; AI provider calls and map links are never cached.
    Bump VERSION whenever the SHELL list changes. */
 const PREFIX = "fmb-";
-const VERSION = PREFIX + "v0.8.1";
+const VERSION = PREFIX + "v0.8.2";
 const SHELL = ["./", "index.html", "data.json", "manifest.webmanifest", "icon-192.png", "icon-512.png",
   "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png"];
 const BIG = ["zip.json", "places.json"];

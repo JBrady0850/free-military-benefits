@@ -196,6 +196,32 @@ def extract(text: str) -> tuple[str, int, bool] | None:
     return None
 
 
+LEAD_OFFER = re.compile(r"^(?:save\b|savings\b|up to\b|get\b|receive\b|enjoy\b|\d{1,2}\s?(?:%|percent))", re.I)
+
+
+def extract_linked(el, text: str) -> tuple[str, int, bool] | None:
+    """A paragraph or list item that opens with a link naming the brand, then the offer:
+    '<a href=brand page>DOG iD</a> Save 50% off engraved ID products.' (the VA News year-round list).
+    Plain text cannot show where the brand ends; the link can."""
+    if el is None or el.name not in ("p", "li") or SPECULATIVE.search(text):
+        return None
+    a = el.find("a", href=True)
+    if a is None:
+        return None
+    name = clean(a.get_text(" "))
+    if not name or not text.startswith(name):
+        return None
+    rest = text[len(name):].lstrip(" :-\u2013\u2014")
+    if not LEAD_OFFER.match(rest):
+        return None
+    p = PCT.search(rest[:90])
+    brand = valid_brand(name)
+    if not (p and brand):
+        return None
+    pct, up = pct_of(p)
+    return brand, pct, up
+
+
 def curated_names() -> tuple[set[str], set[str]]:
     all_names, vd_names = set(), set()
     for fname in CURATED:
@@ -503,6 +529,25 @@ def check_brand_page(url: str, pct: int, robots: dict) -> dict | None:
 
 
 SOURCE_STATS: dict[str, int] = {}
+PREV_NAMES: dict[str, str] = {}  # norm(name) -> the display name a generated entry already has, so its id never changes
+DESCRIPTORS = {"sleep", "bed", "beds", "mattress", "coffee", "co", "co.", "company", "inc", "inc.", "brand", "brands", "shop", "store",
+               "usa", "apparel", "outdoors", "outdoor", "gear", "supply", "cosmetics", "beauty", "knives", "running", "bikes", "foods",
+               "wear", "clothing", "official"}
+
+
+def same_brand(short: str, long: str) -> bool:
+    """'Helix' and 'Helix Sleep' are one brand; 'Delta' and 'Delta Faucet' are not (only descriptor words may follow)."""
+    s, l = clean(short).lower().split(), clean(long).lower().split()
+    return len(norm(short)) >= 5 and len(l) > len(s) and l[:len(s)] == s and all(w in DESCRIPTORS for w in l[len(s):])
+
+
+def load_prev_names(*paths) -> None:
+    for path in paths:
+        try:
+            for e in (yaml.safe_load(path.read_text(encoding="utf-8")) or {}).get("entries") or []:
+                PREV_NAMES.setdefault(norm(e["name"]), e["name"])
+        except (OSError, ValueError, yaml.YAMLError):
+            pass
 
 
 def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int, today: str, report: list):
@@ -518,7 +563,7 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
         else:
             rows = []
             for text, heading, el in blocks(soup, with_el=True):
-                got = extract(text)
+                got = extract(text) or extract_linked(el, text)
                 if not got or got[1] < threshold or got[1] > 90:
                     continue
                 brand, pct, up = got
@@ -533,7 +578,7 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
             if not key or known(key, all_names):
                 continue
             hits += 1
-            row = found.setdefault(key, {"name": brand, "category": cat, "hits": {}, "links": []})
+            row = found.setdefault(key, {"name": PREV_NAMES.get(key, brand), "category": cat, "hits": {}, "links": []})
             d = domain(url)
             if d not in row["hits"] or pct > row["hits"][d]["pct"]:
                 row["hits"][d] = {"pct": pct, "up": up, "url": url, "text": brand}
@@ -546,6 +591,20 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
             continue
         report.append(f"OK {hits} qualifying rows: {url}")
         SOURCE_STATS[url] = hits
+    # One brand under two spellings ("Helix" and "Helix Sleep"): merge, keeping the stronger listing per directory.
+    for key in sorted(found, key=len):
+        if key not in found:
+            continue
+        for other in [k for k in found if k != key and k.startswith(key) and same_brand(found[key]["name"], found[k]["name"])]:
+            for d, h in found[other]["hits"].items():
+                if d not in found[key]["hits"] or h["pct"] > found[key]["hits"][d]["pct"]:
+                    found[key]["hits"][d] = h
+            found[key]["links"] += [l for l in found[other]["links"] if l not in found[key]["links"]]
+            if other in PREV_NAMES and key not in PREV_NAMES:
+                found[key]["name"] = PREV_NAMES[other]
+            elif key not in PREV_NAMES:
+                found[key]["name"] = found[other]["name"]  # the fuller spelling reads better
+            del found[other]
     # Verify candidate brand pages in parallel (robots.txt checked per host first).
     jobs = [(key, link, max(h["pct"] for h in row["hits"].values())) for key, row in found.items() for link in row["links"][:2]]
     for _, link, _ in jobs:
@@ -654,7 +713,7 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
             remember(url, {"pairs": [list(p) for p in pairs]})
         for name, said in pairs:
             key = norm(name)
-            row = seen.setdefault(key, {"name": name, "lists": {}, "texts": {}})
+            row = seen.setdefault(key, {"name": PREV_NAMES.get(key, name), "lists": {}, "texts": {}})
             if chr(0xFFFD) in row["name"] and chr(0xFFFD) not in name:
                 row["name"] = name  # prefer a clean spelling over a garbled one
             d = domain(url)
@@ -732,6 +791,7 @@ def main() -> int:
     threshold = int(cfg.get("threshold", 21))
     today = date.today().isoformat()
     all_names, vd_names = curated_names()
+    load_prev_names(OUT, VD_OUT)
     robots: dict = {}
     report: list[str] = []
     dir_entries, held = harvest_directories(cfg, robots, all_names, threshold, today, report)

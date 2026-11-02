@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 13:38 UTC",
+ "generated": "2026-11-02 13:58 UTC",
  "data_version": "2026-11-02",
  "counts": {
   "hidden": 10,
@@ -7,20 +7,20 @@
   "travel": 3,
   "free": 13,
   "discount": 6,
-  "crawled": 51
+  "crawled": 57
  },
- "total": 295,
+ "total": 301,
  "stats": {
-  "brand_confirmed": 35,
-  "over_20": 64,
+  "brand_confirmed": 39,
+  "over_20": 70,
   "stale": 0,
-  "distinct_sites": 121,
-  "source_pages": 43,
-  "source_pages_read": 43
+  "distinct_sites": 125,
+  "source_pages": 44,
+  "source_pages_read": 44
  },
  "watch": {
   "checked": "2026-11-02",
-  "run_utc": "2026-11-02T13:36Z",
+  "run_utc": "2026-11-02T13:55Z",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
   "new_names": [],
   "held_single_source": [
@@ -30,16 +30,17 @@
    "Americanflat",
    "Armor Concepts",
    "BURST Oral Care",
-   "Brooks Running",
+   "Black Rifle Coffee",
    "Chaco",
    "Columbia Sportswear",
+   "DOG iD",
    "Disney World Resort",
    "Dixxon Flannel Company",
    "Dockers",
    "Dollywood",
+   "Ghost Bed",
    "Hawk's Cay Resort",
    "Helix Mattress Helix Mattress",
-   "Helix Sleep",
    "Hertz",
    "Home Chef",
    "Lazarus Naturals",
@@ -51,6 +52,7 @@
    "NASCAR Racing Experience",
    "Nine27 Athletics",
    "Opticann Opticann",
+   "PODS",
    "Pimsleur",
    "Pingback: Paramount Plus",
    "Quiksilver",
@@ -58,371 +60,383 @@
    "SiriusXM Radio",
    "Sixt",
    "Specialized",
+   "Stanley",
    "T-Mobile",
    "TIDAL",
    "Take 5",
    "Targus",
    "Tri-County Humane Society",
    "Trident University",
+   "Uncharted Supply Co",
    "Verizon",
    "WellnessMats",
+   "Winkler Knives",
    "Wrangler",
-   "YETI"
+   "YETI",
+   "e.l.f Cosmetics"
   ],
   "sources": [
    {
     "url": "https://dealhack.com/blog/military-discounts-guide",
     "kind": "directory",
     "rows": 32,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://hip2save.com/deals/military-discounts/",
     "kind": "directory",
     "rows": 9,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-military-discounts-clothes.html",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
+    "carried_from": null
+   },
+   {
+    "url": "https://news.va.gov/85765/veteran-discounts-available-year-round/",
+    "kind": "directory",
+    "rows": 33,
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "kind": "directory",
     "rows": 12,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://usmilitary.com/top-25-military-discounts/",
     "kind": "directory",
     "rows": 10,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://militaryfamilies.com/?p=32765",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://barbend.com/?p=218235",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.sheerid.com/?p=71432",
     "kind": "directory",
     "rows": 13,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/military-discounts/",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://couponfollow.com/research/best-military-discounts",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.operationmilitarykids.org/military-veterans-discounts/",
     "kind": "directory",
     "rows": 3,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://claimraven.com/military-discounts",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide",
     "kind": "directory",
     "rows": 7,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://guidetobargain.com/guides/military-discounts",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://savingsgrove.com/blogs/guides/military-discount-list",
     "kind": "directory",
     "rows": 5,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.veteransbenefitskb.com/discounts-deals",
     "kind": "directory",
     "rows": 72,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/discounts/military-discounts/",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-retail-military-discounts.html",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarybenefit.org/get-educated/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://baseneed.com/blog/military-discounts-2026-complete-list",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://storepolicies.com/discounts-for-soldiers/",
     "kind": "directory",
     "rows": 6,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
     "kind": "veterans-day",
     "rows": 43,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 55,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/",
     "kind": "veterans-day",
     "rows": 45,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
     "kind": "veterans-day",
     "rows": 111,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/",
     "kind": "veterans-day",
     "rows": 93,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/",
     "kind": "veterans-day",
     "rows": 45,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/",
     "kind": "veterans-day",
     "rows": 99,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdaydeals.us/free-meals/",
     "kind": "veterans-day",
     "rows": 78,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.dinova.com/dining-guide/veterans-day-guide/",
     "kind": "veterans-day",
     "rows": 9,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://blog.ahrn.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 11,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026",
     "kind": "veterans-day",
     "rows": 7,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdmv.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 205,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.combatfitness.co/post/veterans-day",
     "kind": "veterans-day",
     "rows": 32,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/",
     "kind": "veterans-day",
     "rows": 80,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-retail-discounts/",
     "kind": "veterans-day",
     "rows": 105,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 15,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://valoannetwork.com/veterans-day-deals-2026/",
     "kind": "veterans-day",
     "rows": 128,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert",
     "kind": "veterans-day",
     "rows": 60,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
     "kind": "veterans-day",
     "rows": 166,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    },
    {
     "url": "https://fedratecalc.com/veterans-day-free-meals-2026/",
     "kind": "veterans-day",
     "rows": 13,
-    "last_try": "2026-11-02T13:36Z",
-    "last_ok": "2026-11-02T13:36Z",
+    "last_try": "2026-11-02T13:55Z",
+    "last_ok": "2026-11-02T13:55Z",
     "carried_from": null
    }
   ],
   "failed": [],
   "counts": {
-   "directory_listed": 51,
+   "directory_listed": 57,
    "veterans_day_listed": 156,
-   "held": 44,
-   "sources_read": 43,
+   "held": 50,
+   "sources_read": 44,
    "sources_carried": 0,
-   "sources_total": 43
+   "sources_total": 44
   }
  },
  "entries": [
@@ -7290,7 +7304,7 @@
    ],
    "id": "carnival-military",
    "sources": [
-    "https://365.military.com/discounts/cruise-line-military-discounts.html#:~:text=Carnival%20Cruise%20Line",
+    "https://www.military.com/discounts/cruise-line-military-discounts.html#:~:text=Carnival%20Cruise%20Line",
     "https://www.cruisecritic.com/articles/military-cruise-deals-what-they-are-and-how-to-get-one#:~:text=Carnival%20Cruise%20Line"
    ],
    "anchor": "Carnival Cruise Line",
@@ -7300,7 +7314,7 @@
     "active-duty",
     "retiree"
    ],
-   "source_url": "https://365.military.com/discounts/cruise-line-military-discounts.html#:~:text=Carnival%20Cruise%20Line",
+   "source_url": "https://www.military.com/discounts/cruise-line-military-discounts.html#:~:text=Carnival%20Cruise%20Line",
    "notes": "Sources disagree on non-retired veterans. Military.com lists active duty and retirees; other guides include veterans. Ask Carnival or your agent at booking.",
    "kind": "travel"
   },
@@ -7315,7 +7329,7 @@
    "id": "ncl-military",
    "sources": [
     "https://www.cruisecritic.com/articles/military-cruise-deals-what-they-are-and-how-to-get-one#:~:text=Norwegian%20Cruise%20Line",
-    "https://365.military.com/discounts/cruise-line-military-discounts.html#:~:text=Norwegian%20Cruise%20Line",
+    "https://www.military.com/discounts/cruise-line-military-discounts.html#:~:text=Norwegian%20Cruise%20Line",
     "https://www.travelmarketreport.com/cruises/articles/cruise-line-military-discounts#:~:text=Norwegian%20Cruise%20Line"
    ],
    "anchor": "Norwegian Cruise Line",
@@ -7644,15 +7658,18 @@
    "sources": [
     "https://get.expertvoice.com/military-community/",
     "https://news.va.gov/142034/exclusive-discounts-veterans-60-off-top-brands/#:~:text=ExpertVoice",
-    "https://365.military.com/discounts/expertvoice-military-discount#:~:text=ExpertVoice"
+    "https://www.military.com/discounts/expertvoice-military-discount#:~:text=ExpertVoice",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=ExpertVoice"
    ],
    "anchor": "ExpertVoice",
    "name": "ExpertVoice",
    "category": "outdoor",
-   "offer": "Free membership for the military community with brand discounts and flash deals up to 60 percent.",
+   "offer": "Free membership for the military community with brand discounts and flash deals up to 60 percent on 650+ brands, mostly outdoor, fitness and gear.",
    "eligibility": [
     "active-duty",
     "veteran",
+    "retiree",
+    "guard-reserve",
     "spouse"
    ],
    "verification": [
@@ -7662,8 +7679,9 @@
    "percent": 60,
    "percent_up": true,
    "source_url": "https://get.expertvoice.com/military-community/",
-   "last_verified": "2026-11-01",
+   "last_verified": "2026-11-02",
    "confidence": "official",
+   "notes": "The sources word it differently. ExpertVoice and Military.com say up to 60 percent off 650+ brands for active duty, retirees, veterans, Reserve and Guard, and dependents; VA News's year-round list says 150+ brands at more than 40 percent off. Verify once, then shop.",
    "kind": "discount"
   },
   {
@@ -7758,7 +7776,7 @@
    "sources": [
     "https://www.lowes.com/l/military-discount",
     "https://www.militarytimes.com/articles/lowes-expands-changes-its-military-discount-program",
-    "https://365.military.com/discounts/lowes-military-discount#:~:text=Lowe%27s&text=Lowe%E2%80%99s"
+    "https://www.military.com/discounts/lowes-military-discount#:~:text=Lowe%27s&text=Lowe%E2%80%99s"
    ],
    "anchor": "Lowe's",
    "name": "Lowe's military discount",
@@ -7853,7 +7871,7 @@
    "id": "auto-adidas",
    "name": "Adidas",
    "category": "retail",
-   "offer": "30% off with the military discount, as reported by 12 independent directories (dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org, vetunlock.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com, storepolicies.com). Confirm current terms and who qualifies before buying.",
+   "offer": "30% off with the military discount, as reported by 13 independent directories (dealhack.com, hip2save.com, va.gov, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org, vetunlock.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com, storepolicies.com). Confirm current terms and who qualifies before buying.",
    "percent": 30,
    "percent_up": false,
    "verified_by": "two directories",
@@ -7862,6 +7880,7 @@
    "sources": [
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Adidas",
     "https://hip2save.com/deals/military-discounts/#:~:text=Adidas",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Adidas",
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=Adidas",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=adidas",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=Adidas",
@@ -7870,8 +7889,7 @@
     "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Adidas",
     "https://guidetobargain.com/guides/military-discounts#:~:text=adidas",
     "https://savingsgrove.com/blogs/guides/military-discount-list#:~:text=Adidas",
-    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Adidas",
-    "https://storepolicies.com/discounts-for-soldiers/#:~:text=Adidas"
+    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Adidas"
    ],
    "kind": "crawled"
   },
@@ -7914,7 +7932,7 @@
    "id": "auto-alpine-rings",
    "name": "Alpine Rings",
    "category": "apparel",
-   "offer": "30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 30,
    "percent_up": false,
    "verified_by": "brand page",
@@ -7923,6 +7941,7 @@
    "sources": [
     "https://alpinerings.com/pages/military-and-first-responder-discounts",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Alpine%20Rings",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Alpine%20Rings",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Alpine%20Rings"
    ],
    "kind": "crawled"
@@ -7940,7 +7959,7 @@
    "id": "auto-asics",
    "name": "ASICS",
    "category": "apparel",
-   "offer": "40% off with the military discount, as reported by 6 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "offer": "40% off with the military discount, as reported by 7 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
    "percent": 40,
    "percent_up": false,
    "verified_by": "two directories",
@@ -7953,6 +7972,7 @@
     "https://militaryfamilies.com/?p=32765#:~:text=ASICS",
     "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Asics",
     "https://hip2save.com/deals/military-discounts/#:~:text=ASICS",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Asics",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Asics"
    ],
    "kind": "crawled"
@@ -7970,7 +7990,7 @@
    "id": "auto-at-t",
    "name": "AT&T",
    "category": "technology",
-   "offer": "25% off with the military discount, as reported by 5 independent directories (wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount, as reported by 6 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "two directories",
@@ -7978,6 +7998,7 @@
    "source_url": "https://www.att.com/offers/discount-program/military-discount/",
    "sources": [
     "https://www.att.com/offers/discount-program/military-discount/",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=AT%26T",
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=AT%26T",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=AT%26T",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=AT%26T",
@@ -8074,8 +8095,8 @@
    "auto": true,
    "id": "auto-beard-sorcery",
    "name": "Beard Sorcery",
-   "category": "health",
-   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "category": "retail",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "brand page",
@@ -8083,6 +8104,7 @@
    "source_url": "https://beardsorcery.com/military",
    "sources": [
     "https://beardsorcery.com/military",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Beard%20Sorcery",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Beard%20Sorcery"
    ],
    "kind": "crawled"
@@ -8150,15 +8172,41 @@
    "id": "auto-birch",
    "name": "Birch",
    "category": "retail",
-   "offer": "30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com, va.gov. Confirm current terms and who qualifies before buying.",
    "percent": 30,
    "percent_up": false,
    "verified_by": "brand page",
    "confidence": "official",
-   "source_url": "https://birchliving.com/pages/discount-military",
+   "source_url": "https://birchliving.com/pages/discount-military?irclickid=XCYTeny2vxyLU6V0MdV3iVCmUkETRlxmEUgW0o0&irgwc=1",
    "sources": [
-    "https://birchliving.com/pages/discount-military",
-    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Birch"
+    "https://birchliving.com/pages/discount-military?irclickid=XCYTeny2vxyLU6V0MdV3iVCmUkETRlxmEUgW0o0&irgwc=1",
+    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Birch",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Birch"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
+   "id": "auto-brooks-running",
+   "name": "Brooks Running",
+   "category": "apparel",
+   "offer": "25% off with the military discount, as reported by 2 independent directories (va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "percent": 25,
+   "percent_up": false,
+   "verified_by": "two directories",
+   "confidence": "community",
+   "source_url": "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Brooks%20Running",
+   "sources": [
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Brooks%20Running",
+    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Brooks%20Running"
    ],
    "kind": "crawled"
   },
@@ -8301,7 +8349,7 @@
    "id": "auto-disney",
    "name": "Disney+",
    "category": "technology",
-   "offer": "25% off with the military discount, as reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount, as reported by 3 independent directories (va.gov, usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "two directories",
@@ -8309,6 +8357,7 @@
    "source_url": "https://www.shopmyexchange.com/disney-military-exclusive-offer/3255283",
    "sources": [
     "https://www.shopmyexchange.com/disney-military-exclusive-offer/3255283",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Disney%2B",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=Disney%2B",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Disney%2B"
    ],
@@ -8427,7 +8476,7 @@
    "id": "auto-gelpro",
    "name": "GelPro",
    "category": "services",
-   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "brand page",
@@ -8436,6 +8485,7 @@
    "sources": [
     "https://www.gelpro.com/military-discounts/",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=GelPro",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=GelPro",
     "https://www.sheerid.com/?p=71432#:~:text=Gelpro",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Gel%20Pro"
    ],
@@ -8454,7 +8504,7 @@
    "id": "auto-great-wolf-lodge",
    "name": "Great Wolf Lodge",
    "category": "services",
-   "offer": "Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com. Confirm current terms and who qualifies before buying.",
+   "offer": "Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, va.gov, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com. Confirm current terms and who qualifies before buying.",
    "percent": 40,
    "percent_up": true,
    "verified_by": "brand page",
@@ -8463,6 +8513,7 @@
    "sources": [
     "https://www.greatwolf.com/deals/heroes",
     "https://hip2save.com/deals/military-discounts/#:~:text=Great%20Wolf%20Lodge",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Great%20Wolf%20Lodge",
     "https://couponfollow.com/research/best-military-discounts#:~:text=Great%20Wolf%20Lodge",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Great%20Wolf%20Lodge",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Great%20Wolf%20Lodge",
@@ -8506,6 +8557,31 @@
    "scope": "online",
    "last_verified": "2026-11-02",
    "auto": true,
+   "id": "auto-helix-sleep",
+   "name": "Helix Sleep",
+   "category": "retail",
+   "offer": "30% off with the military discount, as reported by 2 independent directories (va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "percent": 30,
+   "percent_up": false,
+   "verified_by": "two directories",
+   "confidence": "community",
+   "source_url": "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix",
+   "sources": [
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix",
+    "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Helix%20Sleep"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
    "id": "auto-hellofresh",
    "name": "HelloFresh",
    "category": "food",
@@ -8533,14 +8609,15 @@
    "auto": true,
    "id": "auto-helly-hansen",
    "name": "Helly Hansen",
-   "category": "services",
-   "offer": "35% off with the military discount, as reported by 3 independent directories (dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.",
+   "category": "apparel",
+   "offer": "35% off with the military discount, as reported by 4 independent directories (va.gov, dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.",
    "percent": 35,
    "percent_up": false,
    "verified_by": "two directories",
    "confidence": "community",
-   "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Helly%20Hansen",
+   "source_url": "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helly%20Hansen",
    "sources": [
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helly%20Hansen",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Helly%20Hansen",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=Helly%20Hansen",
     "https://www.sheerid.com/?p=71432#:~:text=Helly%20Hansen"
@@ -8610,13 +8687,14 @@
    "id": "auto-hp-hewlett-packard",
    "name": "HP (Hewlett Packard)",
    "category": "technology",
-   "offer": "Up to 40% off with the military discount, as reported by 3 independent directories (wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.",
+   "offer": "Up to 40% off with the military discount, as reported by 4 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.",
    "percent": 40,
    "percent_up": true,
    "verified_by": "two directories",
    "confidence": "community",
-   "source_url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=HP",
+   "source_url": "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=HP",
    "sources": [
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=HP",
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=HP",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=HP",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=HP"
@@ -8636,14 +8714,16 @@
    "id": "auto-hulu",
    "name": "Hulu",
    "category": "technology",
-   "offer": "25% off with the military discount, as reported by 2 independent directories (hip2save.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount, as reported by 3 independent directories (hip2save.com, va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "two directories",
    "confidence": "community",
-   "source_url": "https://hip2save.com/deals/military-discounts/#:~:text=Hulu",
+   "source_url": "https://www.aafes.com/exchange-stores/patrons.htm",
    "sources": [
+    "https://www.aafes.com/exchange-stores/patrons.htm",
     "https://hip2save.com/deals/military-discounts/#:~:text=Hulu",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Hulu",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Hulu"
    ],
    "kind": "crawled"
@@ -8735,6 +8815,31 @@
    "scope": "online",
    "last_verified": "2026-11-02",
    "auto": true,
+   "id": "auto-mlb-tv",
+   "name": "MLB TV",
+   "category": "technology",
+   "offer": "35% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.",
+   "percent": 35,
+   "percent_up": false,
+   "verified_by": "brand page",
+   "confidence": "official",
+   "source_url": "https://www.mlb.com/news/us-military-college-students-eligible-for-mlbtv-discount/c-119835004",
+   "sources": [
+    "https://www.mlb.com/news/us-military-college-students-eligible-for-mlbtv-discount/c-119835004",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=MLB%20TV"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
    "id": "auto-mountain-khakis",
    "name": "Mountain Khakis",
    "category": "apparel",
@@ -8772,6 +8877,31 @@
    "sources": [
     "https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=NBA%20League%20Pass"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
+   "id": "auto-nba-tv",
+   "name": "NBA TV",
+   "category": "technology",
+   "offer": "30% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.",
+   "percent": 30,
+   "percent_up": false,
+   "verified_by": "brand page",
+   "confidence": "official",
+   "source_url": "https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer",
+   "sources": [
+    "https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=NBA%20TV"
    ],
    "kind": "crawled"
   },
@@ -8837,8 +8967,8 @@
    "auto": true,
    "id": "auto-oakley",
    "name": "Oakley",
-   "category": "services",
-   "offer": "Up to 50% off with the military discount, as reported by 4 independent directories (dealnews.com, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "category": "retail",
+   "offer": "Up to 50% off with the military discount, as reported by 5 independent directories (dealnews.com, va.gov, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
    "percent": 50,
    "percent_up": true,
    "verified_by": "two directories",
@@ -8846,6 +8976,7 @@
    "source_url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Oakley",
    "sources": [
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Oakley",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Oakley",
     "https://www.operationmilitarykids.org/military-veterans-discounts/#:~:text=Oakley",
     "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Oakley",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Oakley"
@@ -8890,14 +9021,16 @@
    "id": "auto-paramount",
    "name": "Paramount+",
    "category": "technology",
-   "offer": "50% off with the military discount, as reported by 6 independent directories (hip2save.com, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
+   "offer": "50% off with the military discount, as reported by 7 independent directories (hip2save.com, va.gov, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.",
    "percent": 50,
    "percent_up": false,
    "verified_by": "two directories",
    "confidence": "community",
-   "source_url": "https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B",
+   "source_url": "https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E#:~:text=Paramount%2B",
    "sources": [
+    "https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E#:~:text=Paramount%2B",
     "https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Paramount%2B",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Paramount%20Plus",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=Paramount%2B",
     "https://www.sheerid.com/?p=71432#:~:text=Paramount%2B",
@@ -8945,6 +9078,31 @@
    "scope": "online",
    "last_verified": "2026-11-02",
    "auto": true,
+   "id": "auto-roboform",
+   "name": "RoboForm",
+   "category": "retail",
+   "offer": "Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.",
+   "percent": 40,
+   "percent_up": true,
+   "verified_by": "brand page",
+   "confidence": "official",
+   "source_url": "https://www.roboform.com/military-discount",
+   "sources": [
+    "https://www.roboform.com/military-discount",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=RoboForm"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
    "id": "auto-sam-s-club",
    "name": "Sam's Club",
    "category": "retail",
@@ -8973,7 +9131,7 @@
    "id": "auto-samsung",
    "name": "Samsung",
    "category": "technology",
-   "offer": "Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, hip2save.com, va.gov, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 30,
    "percent_up": true,
    "verified_by": "brand page",
@@ -8983,6 +9141,7 @@
     "https://www.samsung.com/us/shop/offer-program/military/",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Samsung",
     "https://hip2save.com/deals/military-discounts/#:~:text=Samsung",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Samsung",
     "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=Samsung",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Samsung",
     "https://usmilitary.com/top-25-military-discounts/#:~:text=Samsung",
@@ -9004,8 +9163,8 @@
    "auto": true,
    "id": "auto-siriusxm",
    "name": "SiriusXM",
-   "category": "services",
-   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "category": "technology",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "brand page",
@@ -9013,6 +9172,7 @@
    "source_url": "https://www.siriusxm.com/offers/military",
    "sources": [
     "https://www.siriusxm.com/offers/military",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Sirius%20XM",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=SiriusXM",
     "https://www.sheerid.com/?p=71432#:~:text=SiriusXM",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Sirius%20XM"
@@ -9057,7 +9217,7 @@
    "id": "auto-take-5-oil-change",
    "name": "Take 5 Oil Change",
    "category": "services",
-   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "brand page",
@@ -9065,6 +9225,7 @@
    "source_url": "https://www.take5.com/newsroom/veterans-discount/",
    "sources": [
     "https://www.take5.com/newsroom/veterans-discount/",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Take%205%20Oil%20Change",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Take%205%20Oil%20Change"
    ],
    "kind": "crawled"
@@ -9107,7 +9268,7 @@
    "id": "auto-tough-mudder",
    "name": "Tough Mudder",
    "category": "services",
-   "offer": "Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": true,
    "verified_by": "brand page",
@@ -9116,6 +9277,7 @@
    "sources": [
     "https://toughmudder.com/tough-mudder-discounts/",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Tough%20Mudder",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Tough%20Mudder",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Tough%20Mudder"
    ],
    "kind": "crawled"
@@ -9133,7 +9295,7 @@
    "id": "auto-untuckit",
    "name": "UNTUCKit",
    "category": "retail",
-   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, military.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, military.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.",
    "percent": 25,
    "percent_up": false,
    "verified_by": "brand page",
@@ -9143,7 +9305,33 @@
     "https://www.untuckit.com/pages/military",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=UNTUCKit",
     "https://www.military.com/discounts/best-military-discounts-clothes.html#:~:text=UNTUCKit",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=UNTUCKit",
     "https://www.veteransbenefitskb.com/discounts-deals#:~:text=Untuck%20It"
+   ],
+   "kind": "crawled"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "online",
+   "last_verified": "2026-11-02",
+   "auto": true,
+   "id": "auto-yardsigns-com",
+   "name": "Yardsigns.com",
+   "category": "retail",
+   "offer": "25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.",
+   "percent": 25,
+   "percent_up": false,
+   "verified_by": "brand page",
+   "confidence": "official",
+   "source_url": "https://yardsigns.com/pages/discount-for-military-and-veterans",
+   "sources": [
+    "https://yardsigns.com/pages/discount-for-military-and-veterans",
+    "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Yardsigns.com"
    ],
    "kind": "crawled"
   }

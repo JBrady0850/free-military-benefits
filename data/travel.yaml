@@ -7,7 +7,7 @@ defaults:
   verification: [see-source]
 entries:
   - id: ncl-military
-    sources: ["https://365.military.com/discounts/cruise-line-military-discounts.html", "https://www.travelmarketreport.com/cruises/articles/cruise-line-military-discounts"]
+    sources: ["https://www.military.com/discounts/cruise-line-military-discounts.html", "https://www.travelmarketreport.com/cruises/articles/cruise-line-military-discounts"]
     anchor: "Norwegian Cruise Line"
     name: Norwegian Cruise Line Military Appreciation Program
     offer: Up to 10 percent off cruise fares on select sailings, subject to availability, for U.S. and Canadian service members, veterans and their dependents after online verification.
@@ -28,5 +28,5 @@ entries:
     name: Carnival Cruise Line military rates
     offer: Reduced military rates on many sailings with proof of service.
     eligibility: [active-duty, retiree]
-    source_url: https://365.military.com/discounts/cruise-line-military-discounts.html
+    source_url: https://www.military.com/discounts/cruise-line-military-discounts.html
     notes: Sources disagree on non-retired veterans. Military.com lists active duty and retirees; other guides include veterans. Ask Carnival or your agent at booking.

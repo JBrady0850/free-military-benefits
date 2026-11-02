@@ -2,7 +2,7 @@
 "note": "Last good read of each source, parsed; replayed up to 7 days when a source refuses.",
 "sources": {
 "https://dealhack.com/blog/military-discounts-guide": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Adidas",
@@ -291,7 +291,7 @@ true,
 ]
 },
 "https://hip2save.com/deals/military-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Adidas",
@@ -359,7 +359,7 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-military-discounts-clothes.html": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "UNTUCKit",
@@ -370,8 +370,308 @@ false,
 ]
 ]
 },
+"https://news.va.gov/85765/veteran-discounts-available-year-round/": {
+"read_utc": "2026-11-02T13:55Z",
+"rows": [
+[
+"Oakley",
+50,
+true,
+"retail",
+[
+"https://www.oakleysi.com/en-us"
+]
+],
+[
+"Take 5 Oil Change",
+25,
+false,
+"services",
+[
+"https://www.take5.com/oil-change/newsroom/veterans-discount/"
+]
+],
+[
+"Adidas",
+30,
+true,
+"apparel",
+[
+"https://www.adidas.com/us/discount-programs"
+]
+],
+[
+"Asics",
+25,
+false,
+"apparel",
+[
+"https://www.asics.com/us/en-us/discount-programs.html"
+]
+],
+[
+"Brooks Running",
+25,
+false,
+"apparel",
+[
+"https://www.brooksrunning.com/en_us/community-heroes-program/?srsltid=AfmBOoqYLPgpWz8kVJj5AsDZ_ai3pwmV7_cbxJ62xXtCoWJ9hJNtkUlo"
+]
+],
+[
+"Helly Hansen",
+35,
+true,
+"apparel",
+[
+"https://www.hellyhansen.com/en_us/military"
+]
+],
+[
+"UNTUCKit",
+25,
+false,
+"apparel",
+[
+"https://www.untuckit.com/pages/idme"
+]
+],
+[
+"HP",
+40,
+true,
+"technology",
+[
+"https://www.hp.com/us-en/shop/cv/hp-frontline-heroes"
+]
+],
+[
+"Tough Mudder",
+25,
+true,
+"attractions",
+[
+"https://toughmudder.com/tough-mudder-discounts/"
+]
+],
+[
+"Black Rifle Coffee",
+50,
+false,
+"food",
+[
+"https://www.blackriflecoffee.com/id-me-military-discount"
+]
+],
+[
+"Birch",
+25,
+false,
+"retail",
+[
+"https://birchliving.com/pages/discount-military?irclickid=XCYTeny2vxyLU6V0MdV3iVCmUkETRlxmEUgW0o0&utm_source=impact&utm_content=2415042&utm_medium=611983&irgwc=1"
+]
+],
+[
+"GelPro",
+25,
+false,
+"retail",
+[
+"https://www.gelpro.com/military-discounts/"
+]
+],
+[
+"Ghost Bed",
+27,
+false,
+"retail",
+[
+"https://www.ghostbed.com/pages/military-discount"
+]
+],
+[
+"Helix",
+30,
+false,
+"retail",
+[
+"https://helixsleep.com/pages/military-discount/?irgwc=1&irclickid=zc%3AxRfy2qxyLRkt0TbWK8Xs3UkETRlW3EUgW0o0&utm_source=impact&utm_content=1317881&utm_medium=605588"
+]
+],
+[
+"Yardsigns.com",
+25,
+false,
+"retail",
+[
+"https://yardsigns.com/pages/discount-for-military-and-veterans"
+]
+],
+[
+"Alpine Rings",
+30,
+false,
+"apparel",
+[
+"https://alpinerings.com/pages/military-and-first-responder-discounts"
+]
+],
+[
+"Beard Sorcery",
+25,
+false,
+"retail",
+[
+"https://beardsorcery.com/military?srsltid=AfmBOorXivQzsg-7HaxnfLjbRBnAKwplxzfdPFQJ6lQLyIVRwJclyQBx"
+]
+],
+[
+"e.l.f Cosmetics",
+25,
+false,
+"retail",
+[
+"https://www.elfcosmetics.com/pages/essential-workers?srsltid=AfmBOop4WsHHTWy_zDA2GHdLepXHRhqSrFEBWAZdZJjDVHiw-j7Yy5xF"
+]
+],
+[
+"RoboForm",
+40,
+true,
+"retail",
+[
+"https://www.roboform.com/military-discount"
+]
+],
+[
+"Stanley",
+40,
+true,
+"retail",
+[]
+],
+[
+"PODS",
+30,
+true,
+"retail",
+[
+"https://www.pods.com/resource-center/military"
+]
+],
+[
+"Uncharted Supply Co",
+25,
+true,
+"outdoor",
+[
+"https://unchartedsupplyco.com/pages/gov-x-discount?srsltid=AfmBOopydxKc_JfkNk6mkfTl4HvjjxZu_pooFMZOzE2rq2XqCpcbwGpT"
+]
+],
+[
+"Winkler Knives",
+25,
+false,
+"outdoor",
+[
+"https://winklerknives.com/pages/winkler-knives-actual"
+]
+],
+[
+"DOG iD",
+50,
+false,
+"retail",
+[
+"https://dogid.com/pages/first-responder-military-discount"
+]
+],
+[
+"Samsung",
+30,
+true,
+"technology",
+[
+"https://www.samsung.com/us/shop/discount-program/military/?CID=afl-ecomm-cjn-cha-092118-53038&cjevent=d373746a680211eb814a03b00a24060c&utm_source=11497444&utm_medium=552179&utm_campaign=pr5ps0pteao10q16bh5ahttQfLO4DHyi&AID=11497444&PID=552179&SID=pr5ps0pteao10q16bh5ahttQfLO4DHyi"
+]
+],
+[
+"Disney+",
+25,
+false,
+"technology",
+[
+"https://www.shopmyexchange.com/disney-military-exclusive-offer/3255283",
+"https://www.aafes.com/exchange-stores/patrons.htm"
+]
+],
+[
+"Hulu",
+25,
+false,
+"technology",
+[
+"https://help.hulu.com/article/hulu-military-discount-on-hulu",
+"https://www.aafes.com/exchange-stores/patrons.htm"
+]
+],
+[
+"MLB TV",
+35,
+false,
+"technology",
+[
+"https://www.mlb.com/news/us-military-college-students-eligible-for-mlbtv-discount/c-119835004"
+]
+],
+[
+"NBA TV",
+30,
+false,
+"technology",
+[
+"https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer"
+]
+],
+[
+"Paramount+",
+50,
+false,
+"technology",
+[
+"https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E"
+]
+],
+[
+"Sirius XM",
+25,
+false,
+"technology",
+[
+"https://www.siriusxm.com/offers/military"
+]
+],
+[
+"Great Wolf Lodge",
+40,
+true,
+"travel",
+[
+"https://www.greatwolf.com/heroes"
+]
+],
+[
+"AT&T",
+25,
+false,
+"technology",
+[]
+]
+]
+},
 "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Adidas",
@@ -491,7 +791,7 @@ true,
 ]
 },
 "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Paramount Plus",
@@ -650,7 +950,7 @@ false,
 ]
 },
 "https://usmilitary.com/top-25-military-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Paramount+",
@@ -725,7 +1025,7 @@ true,
 ]
 },
 "https://militaryfamilies.com/?p=32765": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "ASICS",
@@ -766,11 +1066,11 @@ false,
 ]
 },
 "https://barbend.com/?p=218235": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": []
 },
 "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Reebok",
@@ -782,7 +1082,7 @@ false,
 ]
 },
 "https://www.sheerid.com/?p=71432": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Florence Marine X",
@@ -900,7 +1200,7 @@ false,
 ]
 },
 "https://veteran.com/military-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Helix Mattress Helix Mattress",
@@ -925,7 +1225,7 @@ false,
 ]
 },
 "https://couponfollow.com/research/best-military-discounts": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Great Wolf Lodge",
@@ -948,7 +1248,7 @@ false,
 ]
 },
 "https://www.operationmilitarykids.org/military-veterans-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Dollywood",
@@ -974,11 +1274,11 @@ false,
 ]
 },
 "https://claimraven.com/military-discounts": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": []
 },
 "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Adidas",
@@ -1032,7 +1332,7 @@ true,
 ]
 },
 "https://guidetobargain.com/guides/military-discounts": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "adidas",
@@ -1065,7 +1365,7 @@ false,
 ]
 },
 "https://savingsgrove.com/blogs/guides/military-discount-list": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Paramount+",
@@ -1117,7 +1417,7 @@ false,
 ]
 },
 "https://www.veteransbenefitskb.com/discounts-deals": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Take 5 Oil Change",
@@ -1766,7 +2066,7 @@ false,
 ]
 },
 "https://www.dealnews.com/features/discounts/military-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Paramount Plus",
@@ -1925,19 +2225,19 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-retail-military-discounts.html": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": []
 },
 "https://www.militarybenefit.org/get-educated/military-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": []
 },
 "https://baseneed.com/blog/military-discounts-2026-complete-list": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": []
 },
 "https://storepolicies.com/discounts-for-soldiers/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "rows": [
 [
 "Adidas",
@@ -1984,7 +2284,7 @@ false,
 ]
 },
 "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Applebee's",
@@ -2165,7 +2465,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "151 Coffee",
@@ -2390,7 +2690,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Editor's Note",
@@ -2579,7 +2879,7 @@ false,
 ]
 },
 "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Napa Valley Coffee Roasting Company",
@@ -3032,7 +3332,7 @@ false,
 ]
 },
 "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Food & Dining",
@@ -3429,7 +3729,7 @@ false,
 ]
 },
 "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "2027 VA Disability Pay Rates",
@@ -3622,7 +3922,7 @@ false,
 ]
 },
 "https://freshcalendars.com/news/veterans-day-free-meals-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Facebook",
@@ -4055,7 +4355,7 @@ false,
 ]
 },
 "https://veteransdaydeals.us/free-meals/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Chili's",
@@ -4372,7 +4672,7 @@ false,
 ]
 },
 "https://www.dinova.com/dining-guide/veterans-day-guide/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Bar Louie",
@@ -4413,7 +4713,7 @@ false,
 ]
 },
 "https://blog.ahrn.com/veterans-day-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Applebee's",
@@ -4462,7 +4762,7 @@ false,
 ]
 },
 "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Chili's",
@@ -4495,7 +4795,7 @@ false,
 ]
 },
 "https://veteransdmv.com/veterans-day-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Last updated",
@@ -5424,7 +5724,7 @@ false,
 ]
 },
 "https://www.combatfitness.co/post/veterans-day": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Start Training for Free",
@@ -5669,7 +5969,7 @@ false,
 ]
 },
 "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Quick Tips Before You Go",
@@ -6010,7 +6310,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-retail-discounts/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Editor's Note",
@@ -6451,7 +6751,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "4Patriots",
@@ -6516,7 +6816,7 @@ false,
 ]
 },
 "https://valoannetwork.com/veterans-day-deals-2026/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Chili's",
@@ -7033,7 +7333,7 @@ false,
 ]
 },
 "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "But Wait, There's More",
@@ -7518,7 +7818,7 @@ false,
 ]
 },
 "https://www.hotdeals.com/blog/veterans-day-deals/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Confirmed 2026",
@@ -8775,7 +9075,7 @@ false,
 ]
 },
 "https://fedratecalc.com/veterans-day-free-meals-2026/": {
-"read_utc": "2026-11-02T13:36Z",
+"read_utc": "2026-11-02T13:55Z",
 "pairs": [
 [
 "Chili's Grill & Bar",

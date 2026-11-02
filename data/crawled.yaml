@@ -107,9 +107,9 @@ entries:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Jungle%20Island
 - id: auto-oakley
   name: Oakley
-  category: services
-  offer: Up to 50% off with the military discount, as reported by 4 independent directories (dealnews.com, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms and who
-    qualifies before buying.
+  category: retail
+  offer: Up to 50% off with the military discount, as reported by 5 independent directories (dealnews.com, va.gov, operationmilitarykids.org, vetunlock.com, veteransbenefitskb.com). Confirm current terms
+    and who qualifies before buying.
   percent: 50
   percent_up: true
   verified_by: two directories
@@ -117,6 +117,7 @@ entries:
   source_url: https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Oakley
   sources:
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Oakley
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Oakley
   - https://www.operationmilitarykids.org/military-veterans-discounts/#:~:text=Oakley
   - https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Oakley
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Oakley
@@ -135,15 +136,17 @@ entries:
 - id: auto-paramount
   name: Paramount+
   category: technology
-  offer: 50% off with the military discount, as reported by 6 independent directories (hip2save.com, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm current
-    terms and who qualifies before buying.
+  offer: 50% off with the military discount, as reported by 7 independent directories (hip2save.com, va.gov, dealnews.com, usmilitary.com, sheerid.com, savingsgrove.com, veteransbenefitskb.com). Confirm
+    current terms and who qualifies before buying.
   percent: 50
   percent_up: false
   verified_by: two directories
   confidence: community
-  source_url: https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B
+  source_url: https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E
   sources:
+  - https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E
   - https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Paramount%2B
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Paramount%20Plus
   - https://usmilitary.com/top-25-military-discounts/#:~:text=Paramount%2B
   - https://www.sheerid.com/?p=71432#:~:text=Paramount%2B
@@ -169,8 +172,8 @@ entries:
 - id: auto-asics
   name: ASICS
   category: apparel
-  offer: 40% off with the military discount, as reported by 6 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, veteransbenefitskb.com). Confirm
-    current terms and who qualifies before buying.
+  offer: 40% off with the military discount, as reported by 7 independent directories (wearethemighty.com, dealnews.com, militaryfamilies.com, vetunlock.com, hip2save.com, va.gov, veteransbenefitskb.com).
+    Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: false
   verified_by: two directories
@@ -183,6 +186,7 @@ entries:
   - https://militaryfamilies.com/?p=32765#:~:text=ASICS
   - https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Asics
   - https://hip2save.com/deals/military-discounts/#:~:text=ASICS
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Asics
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Asics
 - id: auto-bear-mattress
   name: Bear Mattress
@@ -199,7 +203,7 @@ entries:
 - id: auto-great-wolf-lodge
   name: Great Wolf Lodge
   category: services
-  offer: Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com.
+  offer: Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by hip2save.com, va.gov, couponfollow.com, veteransbenefitskb.com, dealhack.com, wearethemighty.com, dealnews.com.
     Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: true
@@ -209,6 +213,7 @@ entries:
   sources:
   - https://www.greatwolf.com/deals/heroes
   - https://hip2save.com/deals/military-discounts/#:~:text=Great%20Wolf%20Lodge
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Great%20Wolf%20Lodge
   - https://couponfollow.com/research/best-military-discounts#:~:text=Great%20Wolf%20Lodge
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Great%20Wolf%20Lodge
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Great%20Wolf%20Lodge
@@ -229,13 +234,14 @@ entries:
 - id: auto-hp-hewlett-packard
   name: HP (Hewlett Packard)
   category: technology
-  offer: Up to 40% off with the military discount, as reported by 3 independent directories (wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.
+  offer: Up to 40% off with the military discount, as reported by 4 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com). Confirm current terms and who qualifies before buying.
   percent: 40
   percent_up: true
   verified_by: two directories
   confidence: community
-  source_url: https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=HP
+  source_url: https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=HP
   sources:
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=HP
   - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=HP
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=HP
   - https://usmilitary.com/top-25-military-discounts/#:~:text=HP
@@ -251,6 +257,18 @@ entries:
   sources:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Mountain%20Khakis
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Mountain%20Khakis
+- id: auto-roboform
+  name: RoboForm
+  category: retail
+  offer: Up to 40% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.
+  percent: 40
+  percent_up: true
+  verified_by: brand page
+  confidence: official
+  source_url: https://www.roboform.com/military-discount
+  sources:
+  - https://www.roboform.com/military-discount
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=RoboForm
 - id: auto-tarte-cosmetics
   name: Tarte Cosmetics
   category: retail
@@ -303,17 +321,30 @@ entries:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Budget%20Car%20Rental
 - id: auto-helly-hansen
   name: Helly Hansen
-  category: services
-  offer: 35% off with the military discount, as reported by 3 independent directories (dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.
+  category: apparel
+  offer: 35% off with the military discount, as reported by 4 independent directories (va.gov, dealnews.com, usmilitary.com, sheerid.com). Confirm current terms and who qualifies before buying.
   percent: 35
   percent_up: false
   verified_by: two directories
   confidence: community
-  source_url: https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Helly%20Hansen
+  source_url: https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helly%20Hansen
   sources:
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helly%20Hansen
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Helly%20Hansen
   - https://usmilitary.com/top-25-military-discounts/#:~:text=Helly%20Hansen
   - https://www.sheerid.com/?p=71432#:~:text=Helly%20Hansen
+- id: auto-mlb-tv
+  name: MLB TV
+  category: technology
+  offer: 35% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.
+  percent: 35
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://www.mlb.com/news/us-military-college-students-eligible-for-mlbtv-discount/c-119835004
+  sources:
+  - https://www.mlb.com/news/us-military-college-students-eligible-for-mlbtv-discount/c-119835004
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=MLB%20TV
 - id: auto-1-800-flowers-com
   name: 1-800-Flowers.com
   category: retail
@@ -329,7 +360,7 @@ entries:
 - id: auto-adidas
   name: Adidas
   category: retail
-  offer: 30% off with the military discount, as reported by 12 independent directories (dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org,
+  offer: 30% off with the military discount, as reported by 13 independent directories (dealhack.com, hip2save.com, va.gov, wearethemighty.com, dealnews.com, usmilitary.com, militaryfamilies.com, operationmilitarykids.org,
     vetunlock.com, guidetobargain.com, savingsgrove.com, veteransbenefitskb.com, storepolicies.com). Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
@@ -339,6 +370,7 @@ entries:
   sources:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Adidas
   - https://hip2save.com/deals/military-discounts/#:~:text=Adidas
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Adidas
   - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=Adidas
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=adidas
   - https://usmilitary.com/top-25-military-discounts/#:~:text=Adidas
@@ -348,7 +380,6 @@ entries:
   - https://guidetobargain.com/guides/military-discounts#:~:text=adidas
   - https://savingsgrove.com/blogs/guides/military-discount-list#:~:text=Adidas
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Adidas
-  - https://storepolicies.com/discounts-for-soldiers/#:~:text=Adidas
 - id: auto-alpha-industries
   name: Alpha Industries
   category: retail
@@ -365,7 +396,7 @@ entries:
 - id: auto-alpine-rings
   name: Alpine Rings
   category: apparel
-  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
@@ -374,6 +405,7 @@ entries:
   sources:
   - https://alpinerings.com/pages/military-and-first-responder-discounts
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Alpine%20Rings
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Alpine%20Rings
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Alpine%20Rings
 - id: auto-berklee-online
   name: Berklee Online
@@ -402,15 +434,28 @@ entries:
 - id: auto-birch
   name: Birch
   category: retail
-  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com, va.gov. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
   verified_by: brand page
   confidence: official
-  source_url: https://birchliving.com/pages/discount-military
+  source_url: https://birchliving.com/pages/discount-military?irclickid=XCYTeny2vxyLU6V0MdV3iVCmUkETRlxmEUgW0o0&utm_source=impact&utm_content=2415042&utm_medium=611983&irgwc=1
   sources:
-  - https://birchliving.com/pages/discount-military
+  - https://birchliving.com/pages/discount-military?irclickid=XCYTeny2vxyLU6V0MdV3iVCmUkETRlxmEUgW0o0&utm_source=impact&utm_content=2415042&utm_medium=611983&irgwc=1
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Birch
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Birch
+- id: auto-helix-sleep
+  name: Helix Sleep
+  category: retail
+  offer: 30% off with the military discount, as reported by 2 independent directories (va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  percent: 30
+  percent_up: false
+  verified_by: two directories
+  confidence: community
+  source_url: https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix
+  sources:
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix
+  - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Helix%20Sleep
 - id: auto-leatherman
   name: Leatherman
   category: outdoor
@@ -437,6 +482,18 @@ entries:
   sources:
   - https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=NBA%20League%20Pass
+- id: auto-nba-tv
+  name: NBA TV
+  category: technology
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.
+  percent: 30
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  sources:
+  - https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=NBA%20TV
 - id: auto-nutrex
   name: Nutrex
   category: health
@@ -452,8 +509,8 @@ entries:
 - id: auto-samsung
   name: Samsung
   category: technology
-  offer: Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, hip2save.com, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com, savingsgrove.com,
-    veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 30% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, hip2save.com, va.gov, wearethemighty.com, dealnews.com, usmilitary.com, guidetobargain.com,
+    savingsgrove.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: true
   verified_by: brand page
@@ -463,6 +520,7 @@ entries:
   - https://www.samsung.com/us/shop/offer-program/military/
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Samsung
   - https://hip2save.com/deals/military-discounts/#:~:text=Samsung
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Samsung
   - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=Samsung
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Samsung
   - https://usmilitary.com/top-25-military-discounts/#:~:text=Samsung
@@ -472,8 +530,8 @@ entries:
 - id: auto-at-t
   name: AT&T
   category: technology
-  offer: 25% off with the military discount, as reported by 5 independent directories (wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and who qualifies
-    before buying.
+  offer: 25% off with the military discount, as reported by 6 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and
+    who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -481,6 +539,7 @@ entries:
   source_url: https://www.att.com/offers/discount-program/military-discount/
   sources:
   - https://www.att.com/offers/discount-program/military-discount/
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=AT%26T
   - https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/#:~:text=AT%26T
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=AT%26T
   - https://usmilitary.com/top-25-military-discounts/#:~:text=AT%26T
@@ -500,16 +559,29 @@ entries:
   - https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=Avis%20%2F%20Budget
 - id: auto-beard-sorcery
   name: Beard Sorcery
-  category: health
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  category: retail
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
   confidence: official
-  source_url: https://beardsorcery.com/military
+  source_url: https://beardsorcery.com/military?srsltid=AfmBOorXivQzsg-7HaxnfLjbRBnAKwplxzfdPFQJ6lQLyIVRwJclyQBx
   sources:
-  - https://beardsorcery.com/military
+  - https://beardsorcery.com/military?srsltid=AfmBOorXivQzsg-7HaxnfLjbRBnAKwplxzfdPFQJ6lQLyIVRwJclyQBx
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Beard%20Sorcery
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Beard%20Sorcery
+- id: auto-brooks-running
+  name: Brooks Running
+  category: apparel
+  offer: 25% off with the military discount, as reported by 2 independent directories (va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  percent: 25
+  percent_up: false
+  verified_by: two directories
+  confidence: community
+  source_url: https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Brooks%20Running
+  sources:
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Brooks%20Running
+  - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Brooks%20Running
 - id: auto-carhartt
   name: Carhartt
   category: apparel
@@ -525,7 +597,7 @@ entries:
 - id: auto-disney
   name: Disney+
   category: technology
-  offer: 25% off with the military discount, as reported by 2 independent directories (usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 3 independent directories (va.gov, usmilitary.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -533,6 +605,7 @@ entries:
   source_url: https://www.shopmyexchange.com/disney-military-exclusive-offer/3255283
   sources:
   - https://www.shopmyexchange.com/disney-military-exclusive-offer/3255283
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Disney%2B
   - https://usmilitary.com/top-25-military-discounts/#:~:text=Disney%2B
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Disney%2B
 - id: auto-eset
@@ -562,7 +635,7 @@ entries:
 - id: auto-gelpro
   name: GelPro
   category: services
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -571,6 +644,7 @@ entries:
   sources:
   - https://www.gelpro.com/military-discounts/
   - https://dealhack.com/blog/military-discounts-guide#:~:text=GelPro
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=GelPro
   - https://www.sheerid.com/?p=71432#:~:text=Gelpro
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Gel%20Pro
 - id: auto-harry-david
@@ -588,14 +662,16 @@ entries:
 - id: auto-hulu
   name: Hulu
   category: technology
-  offer: 25% off with the military discount, as reported by 2 independent directories (hip2save.com, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 3 independent directories (hip2save.com, va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
   confidence: community
-  source_url: https://hip2save.com/deals/military-discounts/#:~:text=Hulu
+  source_url: https://www.aafes.com/exchange-stores/patrons.htm
   sources:
+  - https://www.aafes.com/exchange-stores/patrons.htm
   - https://hip2save.com/deals/military-discounts/#:~:text=Hulu
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Hulu
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Hulu
 - id: auto-kawaii-stop
   name: Kawaii Stop
@@ -623,8 +699,8 @@ entries:
   - https://militaryfamilies.com/?p=32765#:~:text=New%20Balance
 - id: auto-siriusxm
   name: SiriusXM
-  category: services
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  category: technology
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, dealnews.com, sheerid.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -632,6 +708,7 @@ entries:
   source_url: https://www.siriusxm.com/offers/military
   sources:
   - https://www.siriusxm.com/offers/military
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Sirius%20XM
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=SiriusXM
   - https://www.sheerid.com/?p=71432#:~:text=SiriusXM
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Sirius%20XM
@@ -650,7 +727,7 @@ entries:
 - id: auto-take-5-oil-change
   name: Take 5 Oil Change
   category: services
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -658,11 +735,12 @@ entries:
   source_url: https://www.take5.com/newsroom/veterans-discount/
   sources:
   - https://www.take5.com/newsroom/veterans-discount/
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Take%205%20Oil%20Change
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Take%205%20Oil%20Change
 - id: auto-tough-mudder
   name: Tough Mudder
   category: services
-  offer: Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: Up to 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 25
   percent_up: true
   verified_by: brand page
@@ -671,11 +749,13 @@ entries:
   sources:
   - https://toughmudder.com/tough-mudder-discounts/
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Tough%20Mudder
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Tough%20Mudder
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Tough%20Mudder
 - id: auto-untuckit
   name: UNTUCKit
   category: retail
-  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, military.com, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com, military.com, va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before
+    buying.
   percent: 25
   percent_up: false
   verified_by: brand page
@@ -685,4 +765,17 @@ entries:
   - https://www.untuckit.com/pages/military
   - https://dealhack.com/blog/military-discounts-guide#:~:text=UNTUCKit
   - https://www.military.com/discounts/best-military-discounts-clothes.html#:~:text=UNTUCKit
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=UNTUCKit
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Untuck%20It
+- id: auto-yardsigns-com
+  name: Yardsigns.com
+  category: retail
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.
+  percent: 25
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://yardsigns.com/pages/discount-for-military-and-veterans
+  sources:
+  - https://yardsigns.com/pages/discount-for-military-and-veterans
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Yardsigns.com

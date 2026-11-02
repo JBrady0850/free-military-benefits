@@ -80,4 +80,24 @@ check("replayed lists are marked as kept", sorted(crawl.CARRIED), sorted([_u1, _
 crawl.MEM[_u1]["read_utc"] = "2026-10-01T00:00Z"; crawl.CARRIED.clear()
 check("a read older than 7 days is not replayed", [e["name"] for e in crawl.harvest_vd_lists(_cfg, {}, set(), "2026-11-02", [])[0]], [])
 crawl.fetch = _real_fetch; crawl.MEM.clear(); crawl.CARRIED.clear()
-print("CRAWL TESTS PASSED (48 checks)")
+# Linked-brand rows: the leading link names the brand (VA News year-round list)
+_p = lambda html: BeautifulSoup(html, "html.parser").find(["p", "li"])
+_x = lambda html: crawl.extract_linked(_p(html), crawl.clean(_p(html).get_text(" ")))
+check("linked brand, Save N% off", _x('<p><a href="https://dogid.com/pages/military">DOG iD</a> Save 50% off engraved ID products.</p>'), ("DOG iD", 50, False))
+check("linked brand, Up to N% off", _x('<p><a href="https://www.pods.com/military">PODS</a> Up to 30% off.</p>'), ("PODS", 30, True))
+check("linked brand, N% Off", _x('<p><a href="https://apupabove.com/x">A Pup Above</a> 20% Off.</p>'), ("A Pup Above", 20, False))
+check("a link inside a sentence is not a brand row", _x('<p>Read our <a href="https://x.com">guide</a> to save 50% off.</p>'), None)
+# Same brand under two spellings, and names that never change (so ids stay put)
+check("Helix and Helix Sleep are one brand", crawl.same_brand("Helix", "Helix Sleep"), True)
+check("Delta and Delta Faucet are not", crawl.same_brand("Delta", "Delta Faucet"), False)
+check("a short name never merges", crawl.same_brand("HP", "HP Inc"), False)
+crawl.fetch = lambda url, robots, report: None
+_d1, _d2 = "https://example.org/discounts/", "https://example.net/discounts/"
+crawl.MEM.clear(); crawl.CARRIED.clear(); crawl.PREV_NAMES.clear()
+crawl.MEM[_d1] = {"read_utc": crawl.RUN_UTC, "rows": [["Helix", 30, False, "home", []], ["Sirius XM", 25, False, "entertainment", []]]}
+crawl.MEM[_d2] = {"read_utc": crawl.RUN_UTC, "rows": [["Helix Sleep", 30, False, "home", []], ["SiriusXM", 25, False, "entertainment", []]]}
+crawl.PREV_NAMES["siriusxm"] = "SiriusXM"
+_listed = sorted(e["name"] for e in crawl.harvest_directories({"directories": [_d1, _d2]}, {}, set(), 21, "2026-11-02", [])[0])
+check("two spellings on two directories list once, and a listed name keeps its spelling", _listed, ["Helix Sleep", "SiriusXM"])
+crawl.fetch = _real_fetch; crawl.MEM.clear(); crawl.CARRIED.clear(); crawl.PREV_NAMES.clear()
+print("CRAWL TESTS PASSED (56 checks)")

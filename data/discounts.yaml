@@ -28,19 +28,20 @@ entries:
     confidence: official
     notes: Verification is the most friction-heavy of the services; keep the account active year-round so it does not lapse.
   - id: expertvoice
-    sources: ["https://news.va.gov/142034/exclusive-discounts-veterans-60-off-top-brands/", "https://365.military.com/discounts/expertvoice-military-discount"]
+    sources: ["https://news.va.gov/142034/exclusive-discounts-veterans-60-off-top-brands/", "https://www.military.com/discounts/expertvoice-military-discount", "https://news.va.gov/85765/veteran-discounts-available-year-round/"]
     anchor: "ExpertVoice"
     name: ExpertVoice
     category: outdoor
-    offer: Free membership for the military community with brand discounts and flash deals up to 60 percent.
-    eligibility: [active-duty, veteran, spouse]
+    offer: Free membership for the military community with brand discounts and flash deals up to 60 percent on 650+ brands, mostly outdoor, fitness and gear.
+    eligibility: [active-duty, veteran, retiree, guard-reserve, spouse]
     verification: [sheerid]
     scope: online
     percent: 60
     percent_up: true
     source_url: https://get.expertvoice.com/military-community/
-    last_verified: "2026-11-01"
+    last_verified: "2026-11-02"
     confidence: official
+    notes: The sources word it differently. ExpertVoice and Military.com say up to 60 percent off 650+ brands for active duty, retirees, veterans, Reserve and Guard, and dependents; VA News's year-round list says 150+ brands at more than 40 percent off. Verify once, then shop.
   - id: the-north-face-military
     sources: ["https://www.operationmilitarykids.org/north-face-military-discount/"]
     name: The North Face
@@ -70,7 +71,7 @@ entries:
     last_verified: "2026-11-01"
     confidence: official
   - id: lowes-military
-    sources: ["https://www.militarytimes.com/articles/lowes-expands-changes-its-military-discount-program", "https://365.military.com/discounts/lowes-military-discount"]
+    sources: ["https://www.militarytimes.com/articles/lowes-expands-changes-its-military-discount-program", "https://www.military.com/discounts/lowes-military-discount"]
     anchor: "Lowe's"
     name: Lowe's military discount
     category: home-improvement
