@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 13:58 UTC",
+ "generated": "2026-11-02 15:56 UTC",
  "data_version": "2026-11-02",
  "counts": {
   "hidden": 10,
@@ -16,11 +16,11 @@
   "stale": 0,
   "distinct_sites": 125,
   "source_pages": 44,
-  "source_pages_read": 44
+  "source_pages_read": 39
  },
  "watch": {
   "checked": "2026-11-02",
-  "run_utc": "2026-11-02T13:55Z",
+  "run_utc": "2026-11-02T15:54Z",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
   "new_names": [],
   "held_single_source": [
@@ -80,362 +80,383 @@
     "url": "https://dealhack.com/blog/military-discounts-guide",
     "kind": "directory",
     "rows": 32,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://hip2save.com/deals/military-discounts/",
     "kind": "directory",
     "rows": 9,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-military-discounts-clothes.html",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/85765/veteran-discounts-available-year-round/",
     "kind": "directory",
     "rows": 33,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "kind": "directory",
     "rows": 12,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://usmilitary.com/top-25-military-discounts/",
     "kind": "directory",
-    "rows": 10,
-    "last_try": "2026-11-02T13:55Z",
+    "rows": null,
+    "last_try": "2026-11-02T15:54Z",
     "last_ok": "2026-11-02T13:55Z",
-    "carried_from": null
+    "carried_from": "2026-11-02T13:55Z"
    },
    {
     "url": "https://militaryfamilies.com/?p=32765",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://barbend.com/?p=218235",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
     "kind": "directory",
-    "rows": 1,
-    "last_try": "2026-11-02T13:55Z",
+    "rows": null,
+    "last_try": "2026-11-02T15:54Z",
     "last_ok": "2026-11-02T13:55Z",
-    "carried_from": null
+    "carried_from": "2026-11-02T13:55Z"
    },
    {
     "url": "https://www.sheerid.com/?p=71432",
     "kind": "directory",
     "rows": 13,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/military-discounts/",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://couponfollow.com/research/best-military-discounts",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.operationmilitarykids.org/military-veterans-discounts/",
     "kind": "directory",
     "rows": 3,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://claimraven.com/military-discounts",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide",
     "kind": "directory",
     "rows": 7,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://guidetobargain.com/guides/military-discounts",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://savingsgrove.com/blogs/guides/military-discount-list",
     "kind": "directory",
     "rows": 5,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.veteransbenefitskb.com/discounts-deals",
     "kind": "directory",
     "rows": 72,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/discounts/military-discounts/",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-retail-military-discounts.html",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarybenefit.org/get-educated/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://baseneed.com/blog/military-discounts-2026-complete-list",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://storepolicies.com/discounts-for-soldiers/",
     "kind": "directory",
     "rows": 6,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
     "kind": "veterans-day",
     "rows": 43,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html",
     "kind": "veterans-day",
-    "rows": 55,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "rows": 56,
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/",
     "kind": "veterans-day",
     "rows": 45,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
     "kind": "veterans-day",
-    "rows": 111,
-    "last_try": "2026-11-02T13:55Z",
+    "rows": null,
+    "last_try": "2026-11-02T15:54Z",
     "last_ok": "2026-11-02T13:55Z",
-    "carried_from": null
+    "carried_from": "2026-11-02T13:55Z"
    },
    {
     "url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/",
     "kind": "veterans-day",
     "rows": 93,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/",
     "kind": "veterans-day",
     "rows": 45,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/",
     "kind": "veterans-day",
-    "rows": 99,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "rows": 100,
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdaydeals.us/free-meals/",
     "kind": "veterans-day",
     "rows": 78,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.dinova.com/dining-guide/veterans-day-guide/",
     "kind": "veterans-day",
     "rows": 9,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://blog.ahrn.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 11,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026",
     "kind": "veterans-day",
     "rows": 7,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdmv.com/veterans-day-discounts/",
     "kind": "veterans-day",
-    "rows": 205,
-    "last_try": "2026-11-02T13:55Z",
+    "rows": null,
+    "last_try": "2026-11-02T15:54Z",
     "last_ok": "2026-11-02T13:55Z",
-    "carried_from": null
+    "carried_from": "2026-11-02T13:55Z"
    },
    {
     "url": "https://www.combatfitness.co/post/veterans-day",
     "kind": "veterans-day",
     "rows": 32,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/",
     "kind": "veterans-day",
     "rows": 80,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-retail-discounts/",
     "kind": "veterans-day",
     "rows": 105,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html",
     "kind": "veterans-day",
-    "rows": 15,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "rows": 18,
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://valoannetwork.com/veterans-day-deals-2026/",
     "kind": "veterans-day",
     "rows": 128,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert",
     "kind": "veterans-day",
-    "rows": 60,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "rows": 62,
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    },
    {
     "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
     "kind": "veterans-day",
-    "rows": 166,
-    "last_try": "2026-11-02T13:55Z",
+    "rows": null,
+    "last_try": "2026-11-02T15:54Z",
     "last_ok": "2026-11-02T13:55Z",
-    "carried_from": null
+    "carried_from": "2026-11-02T13:55Z"
    },
    {
     "url": "https://fedratecalc.com/veterans-day-free-meals-2026/",
     "kind": "veterans-day",
     "rows": 13,
-    "last_try": "2026-11-02T13:55Z",
-    "last_ok": "2026-11-02T13:55Z",
+    "last_try": "2026-11-02T15:54Z",
+    "last_ok": "2026-11-02T15:54Z",
     "carried_from": null
    }
   ],
-  "failed": [],
+  "failed": [
+   {
+    "url": "https://usmilitary.com/top-25-military-discounts/",
+    "reason": "HTTP 403"
+   },
+   {
+    "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
+    "reason": "HTTP 403"
+   },
+   {
+    "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
+    "reason": "HTTP 403"
+   },
+   {
+    "url": "https://veteransdmv.com/veterans-day-discounts/",
+    "reason": "HTTP 403"
+   },
+   {
+    "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
+    "reason": "HTTP 403"
+   }
+  ],
   "counts": {
    "directory_listed": 57,
    "veterans_day_listed": 156,
    "held": 50,
-   "sources_read": 44,
-   "sources_carried": 0,
+   "sources_read": 39,
+   "sources_carried": 5,
    "sources_total": 44
   }
  },
@@ -3675,12 +3696,13 @@
    "id": "auto-vd-logan-s-roadhouse",
    "name": "Logan's Roadhouse",
    "category": "food",
-   "offer": "Free meal. Bring proof of service. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.",
+   "offer": "Free meal. Bring proof of service. Named on 6 independent lists, 5 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Logan's Roadhouse"
    ],
-   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
@@ -4737,7 +4759,8 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
+    "military-id",
+    "proof-of-service"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-02",
@@ -4749,7 +4772,7 @@
    "id": "auto-vd-shoney-s",
    "name": "Shoney's",
    "category": "food",
-   "offer": "Free Legendary Breakfast Bar. At participating locations. Dine-in only. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free Legendary Breakfast Bar. At participating locations. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Shoney's"
    ],
@@ -4759,6 +4782,7 @@
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Shoney%27s&text=Shoney%E2%80%99s",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Shoney%27s&text=Shoney%E2%80%99s",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Shoney%27s&text=Shoney%E2%80%99s",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Shoney%27s&text=Shoney%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Shoney%27s&text=Shoney%E2%80%99s"
    ],
    "kind": "veterans-day"
@@ -5321,7 +5345,7 @@
    "id": "auto-vd-twin-peaks",
    "name": "Twin Peaks",
    "category": "food",
-   "offer": "Free lunch. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free lunch. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Twin Peaks"
    ],
@@ -5331,6 +5355,7 @@
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Twin%20Peaks",
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Twin%20Peaks",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Twin%20Peaks",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Twin%20Peaks",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Twin%20Peaks"
    ],
    "kind": "veterans-day"

@@ -1641,11 +1641,12 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. Bring proof of service. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: Free meal. Bring proof of service. Named on 6 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Logan's Roadhouse
-  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
@@ -2259,7 +2260,7 @@ entries:
   category: food
   slot: breakfast
   scope: nationwide
-  offer: Free Legendary Breakfast Bar. At participating locations. Dine-in only. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free Legendary Breakfast Bar. At participating locations. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Shoney's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Shoney%27s&text=Shoney%E2%80%99s
@@ -2268,10 +2269,14 @@ entries:
   - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Shoney%27s&text=Shoney%E2%80%99s
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Shoney%27s&text=Shoney%E2%80%99s
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Shoney%27s&text=Shoney%E2%80%99s
+  - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Shoney%27s&text=Shoney%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Shoney%27s&text=Shoney%E2%80%99s
   eligibility:
   - active-duty
   - veteran
+  verification:
+  - military-id
+  - proof-of-service
 - id: auto-vd-silver-dollar-city
   name: Silver Dollar City
   category: food
@@ -2594,7 +2599,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free lunch. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free lunch. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Twin Peaks
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Twin%20Peaks
@@ -2603,6 +2608,7 @@ entries:
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Twin%20Peaks
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Twin%20Peaks
   - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Twin%20Peaks
+  - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Twin%20Peaks
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Twin%20Peaks
   eligibility:
   - active-duty
