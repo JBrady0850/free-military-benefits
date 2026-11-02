@@ -67,4 +67,17 @@ if failures:
     sys.exit(1)
 check("emoji stripped from a heading name", crawl.clean("\u2615 Scooter's Coffee"), "Scooter's Coffee")
 check("pictograph stripped", crawl.clean("\U0001F6D2 Kroger \U0001F1FA\U0001F1F8"), "Kroger")
-print("CRAWL TESTS PASSED (45 checks)")
+# Carry forward: a list that refuses this run is replayed from its last good read, only when it is at most 7 days old
+_real_fetch = crawl.fetch
+crawl.fetch = lambda url, robots, report: None
+_u1, _u2 = "https://example.org/vd-list/", "https://example.net/vd-list/"
+crawl.MEM.clear(); crawl.CARRIED.clear()
+crawl.MEM[_u1] = {"read_utc": crawl.RUN_UTC, "pairs": [["Testco Grill", "Free meal for veterans"], ["Othercafe", "Free coffee"]]}
+crawl.MEM[_u2] = {"read_utc": crawl.RUN_UTC, "pairs": [["Testco Grill", "Free meal"]]}
+_cfg = {"veterans_day_lists": [_u1, _u2], "veterans_day_year": 2026}
+check("refused lists replay their last good read", [e["name"] for e in crawl.harvest_vd_lists(_cfg, {}, set(), "2026-11-02", [])[0]], ["Testco Grill"])
+check("replayed lists are marked as kept", sorted(crawl.CARRIED), sorted([_u1, _u2]))
+crawl.MEM[_u1]["read_utc"] = "2026-10-01T00:00Z"; crawl.CARRIED.clear()
+check("a read older than 7 days is not replayed", [e["name"] for e in crawl.harvest_vd_lists(_cfg, {}, set(), "2026-11-02", [])[0]], [])
+crawl.fetch = _real_fetch; crawl.MEM.clear(); crawl.CARRIED.clear()
+print("CRAWL TESTS PASSED (48 checks)")

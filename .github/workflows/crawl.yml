@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "free-military-benefits-bot"
           git config user.email "free-military-benefits-bot@users.noreply.github.com"
-          git add data/crawled.yaml data/crawled-veterans-day.yaml data/watch.json site/data.json site/places.json
+          git add data/crawled.yaml data/crawled-veterans-day.yaml data/watch.json data/source_memory.json site/data.json site/places.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else

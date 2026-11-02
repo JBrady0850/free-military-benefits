@@ -51,6 +51,15 @@ entries:
     family: true
     slot: dinner
     osm_brand: [Bonefish Grill]
+  - id: capriottis-vd26
+    source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/
+    sources: ["https://tffdeals.com/deals/ced7caf8-e122-487d-b238-0c3ebf47b41e"]
+    name: Capriotti's Sandwich Shop
+    offer: Free small sub with any purchase for veterans and active-duty military. In-shop only with valid military ID, at participating shops.
+    verification: [military-id, in-person]
+    confidence: community
+    osm_brand: ["Capriotti's"]
+    last_verified: "2026-11-02"
   - id: chilis-vd26
     sources: ["https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html"]
     name: Chili's

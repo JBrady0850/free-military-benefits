@@ -1201,7 +1201,7 @@ function renderSources() {
  const bad = {}; failed.forEach((f) => { bad[f.url] = f.reason; });
  const row = (x) => '<div class="srcrow"><span class="n">' + (x.rows == null ? '<span class="bad">failed</span>' : esc(x.rows)) + '</span><span><a href="' +
   esc(x.url) + '" target="_blank" rel="noopener">' + esc(host(x.url)) + "</a>" + (bad[x.url] ? ' <span class="bad">' + esc(bad[x.url]) + "</span>" : "") +
-  ' <span class="src">' + (x.rows == null ? (x.last_ok ? "last good read " + esc(when(parseUTC(x.last_ok))) : "not read in this run") : "read " + esc(when(parseUTC(x.last_ok)))) + "</span></span></div>";
+  ' <span class="src">' + (x.rows == null ? (x.carried_from ? "refused this run; using its read from " + esc(when(parseUTC(x.carried_from))) : x.last_ok ? "last good read " + esc(when(parseUTC(x.last_ok))) : "not read in this run") : "read " + esc(when(parseUTC(x.last_ok)))) + "</span></span></div>";
  const dirs = src.filter((x) => x.kind === "directory"), vds = src.filter((x) => x.kind === "veterans-day");
  const counts = META.counts || {};
  $("#sourcesOut").innerHTML =
@@ -1380,7 +1380,7 @@ function renderFresh(note) {
  const page = new Date(document.lastModified);
  const pageOK = !isNaN(page) && Math.abs(page.getTime() - LOADED_AT) > 5000; // a server that sends no date reports "now"
  $("#fresh").innerHTML = "Sources checked <b>" + esc(when(parseUTC(w.run_utc) || parseUTC(META.generated))) + "</b> (" + esc(s.source_pages_read) + " of " +
-  esc(s.source_pages) + " read). Data rebuilt <b>" + esc(when(parseUTC(META.generated))) + "</b>." +
+  esc(s.source_pages) + " read" + (((w.counts || {}).sources_carried) ? "; " + esc(w.counts.sources_carried) + " kept from an earlier read" : "") + "). Data rebuilt <b>" + esc(when(parseUTC(META.generated))) + "</b>." +
   (pageOK ? " Page updated <b>" + esc(when(page)) + "</b>." : "") + " Next automatic check about <b>" + esc(when(nextRun(new Date()))) + "</b>." +
   '<button type="button" id="checkNow">Check for updates</button>' + (note ? " <span>" + esc(note) + "</span>" : "");
 }

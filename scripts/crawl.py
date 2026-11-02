@@ -33,6 +33,8 @@ CONFIG = ROOT / "data" / "crawl_sources.yaml"
 OUT = ROOT / "data" / "crawled.yaml"
 VD_OUT = ROOT / "data" / "crawled-veterans-day.yaml"
 WATCH_OUT = ROOT / "data" / "watch.json"
+MEMORY_OUT = ROOT / "data" / "source_memory.json"  # each source's last good read, parsed
+MAX_CARRY_DAYS = 7  # a source that refuses (HTTP 403 to GitHub's servers, say) is replayed from a read this recent
 CURATED = ["discounts.yaml", "hidden.yaml", "travel.yaml", "free.yaml", "veterans-day-2026.yaml"]
 UA = "FreeMilitaryBenefitsBot/0.5 (+https://github.com/JBrady0850/free-military-benefits)"
 HEADERS = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"}
@@ -218,6 +220,27 @@ def known(key: str, names: set[str]) -> bool:
 PAGE_CACHE: dict[str, BeautifulSoup | None] = {}
 FAILED: list[dict] = []
 LAST_HIT: dict[str, float] = {}
+
+
+from datetime import datetime as _dtm, timedelta as _tdm, timezone as _tzm  # noqa: E402
+
+RUN_UTC = _dtm.now(_tzm.utc).strftime("%Y-%m-%dT%H:%MZ")
+MEM: dict = {}      # url -> {"read_utc": ..., "pairs": [...]} or {"read_utc": ..., "rows": [...]}
+CARRIED: dict = {}  # url -> read_utc of the replayed read, for sources that refused this run
+
+
+def remember(url: str, payload: dict) -> None:
+    MEM[url] = {"read_utc": RUN_UTC, **payload}
+
+
+def carried(url: str) -> dict | None:
+    """The source's last good read when it is at most MAX_CARRY_DAYS old, else None."""
+    m = MEM.get(url)
+    try:
+        age = _dtm.now(_tzm.utc) - _dtm.strptime(m["read_utc"], "%Y-%m-%dT%H:%MZ").replace(tzinfo=_tzm.utc)
+    except (TypeError, KeyError, ValueError):
+        return None
+    return m if age <= _tdm(days=MAX_CARRY_DAYS) else None
 
 
 def fetch(url: str, robots: dict, report: list) -> BeautifulSoup | None:
@@ -486,28 +509,41 @@ def harvest_directories(cfg: dict, robots: dict, all_names: set, threshold: int,
     found: dict[str, dict] = {}
     for url in cfg.get("directories") or []:
         soup = fetch(url, robots, report)
+        mem = None
         if soup is None:
-            continue
-        hits = 0
-        for text, heading, el in blocks(soup, with_el=True):
-            got = extract(text)
-            if not got:
+            mem = carried(url)
+            if mem is None:
                 continue
-            brand, pct, up = got
+            rows = [tuple(r) for r in mem.get("rows") or []]
+        else:
+            rows = []
+            for text, heading, el in blocks(soup, with_el=True):
+                got = extract(text)
+                if not got or got[1] < threshold or got[1] > 90:
+                    continue
+                brand, pct, up = got
+                cat = guess_category(text)
+                if cat == "retail":
+                    cat = guess_category(heading)
+                rows.append((brand, pct, up, cat, list(brand_links(el, url, brand))))
+            remember(url, {"rows": [list(r) for r in rows]})
+        hits = 0
+        for brand, pct, up, cat, links in rows:
             key = norm(brand)
-            if pct < threshold or pct > 90 or not key or known(key, all_names):
+            if not key or known(key, all_names):
                 continue
             hits += 1
-            cat = guess_category(text)
-            if cat == "retail":
-                cat = guess_category(heading)
             row = found.setdefault(key, {"name": brand, "category": cat, "hits": {}, "links": []})
             d = domain(url)
             if d not in row["hits"] or pct > row["hits"][d]["pct"]:
                 row["hits"][d] = {"pct": pct, "up": up, "url": url, "text": brand}
-            for link in brand_links(el, url, brand):
+            for link in links:
                 if link not in row["links"]:
                     row["links"].append(link)
+        if mem is not None:
+            CARRIED[url] = mem["read_utc"]
+            report.append(f"KEPT {hits} qualifying rows from the last good read ({mem['read_utc']}): {url}")
+            continue
         report.append(f"OK {hits} qualifying rows: {url}")
         SOURCE_STATS[url] = hits
     # Verify candidate brand pages in parallel (robots.txt checked per host first).
@@ -603,13 +639,19 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
     year = (cfg.get("veterans_day_year") or today[:4])
     for url in cfg.get("veterans_day_lists") or []:
         soup = fetch(url, robots, report)
+        mem = None
         if soup is None:
-            continue
-        if not page_is_for(soup, str(year)):
-            report.append(f"SKIP not a {year} list by its title: {url}")
-            FAILED.append({"url": url, "reason": f"title is not a {year} list"})
-            continue
-        pairs = vd_names_on(soup)
+            mem = carried(url)
+            if mem is None:
+                continue
+            pairs = [tuple(p) for p in mem.get("pairs") or []]
+        else:
+            if not page_is_for(soup, str(year)):
+                report.append(f"SKIP not a {year} list by its title: {url}")
+                FAILED.append({"url": url, "reason": f"title is not a {year} list"})
+                continue
+            pairs = vd_names_on(soup)
+            remember(url, {"pairs": [list(p) for p in pairs]})
         for name, said in pairs:
             key = norm(name)
             row = seen.setdefault(key, {"name": name, "lists": {}, "texts": {}})
@@ -620,6 +662,10 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
             if said and len(said) > len(row["texts"].get(d, "")):
                 row["texts"][d] = said
         names = {p[0] for p in pairs}
+        if mem is not None:
+            CARRIED[url] = mem["read_utc"]
+            report.append(f"KEPT {len(names)} names from the last good read ({mem['read_utc']}): {url}")
+            continue
         report.append(f"VD LIST {len(names)} names: {url}")
         SOURCE_STATS[url] = len(names)
     # Merge the same business listed under a longer name ("Cracker Barrel Old Country Store").
@@ -679,6 +725,10 @@ def write_yaml(path: Path, defaults: dict, entries: list, note: str) -> None:
 
 def main() -> int:
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
+    try:
+        MEM.update(json.loads(MEMORY_OUT.read_text(encoding="utf-8")).get("sources") or {})
+    except (OSError, ValueError):
+        pass
     threshold = int(cfg.get("threshold", 21))
     today = date.today().isoformat()
     all_names, vd_names = curated_names()
@@ -696,8 +746,7 @@ def main() -> int:
                "Veterans Day 2026 offers named on two or more independent lists and not yet curated by hand.")
     url = (cfg.get("watch") or {}).get("veterans_day", "")
     # When each source was last tried and last read; a failed source keeps its last good read from earlier runs
-    from datetime import datetime as _dt, timezone as _tz
-    run_utc = _dt.now(_tz.utc).strftime("%Y-%m-%dT%H:%MZ")
+    run_utc = RUN_UTC
     try:
         prev = {s["url"]: s for s in json.loads(WATCH_OUT.read_text(encoding="utf-8")).get("sources") or []}
     except (OSError, ValueError):
@@ -706,16 +755,19 @@ def main() -> int:
     def status(u: str, kind: str) -> dict:
         rows = SOURCE_STATS.get(u)
         last_ok = run_utc if rows is not None else (prev.get(u) or {}).get("last_ok")
-        return {"url": u, "kind": kind, "rows": rows, "last_try": run_utc, "last_ok": last_ok}
+        return {"url": u, "kind": kind, "rows": rows, "last_try": run_utc, "last_ok": last_ok, "carried_from": CARRIED.get(u)}
     sources = [status(u, "directory") for u in cfg.get("directories") or []] + \
               [status(u, "veterans-day") for u in cfg.get("veterans_day_lists") or []]
     WATCH_OUT.write_text(json.dumps({"checked": today, "run_utc": run_utc, "source": url, "new_names": va_only[:40],
                                      "held_single_source": held, "sources": sources, "failed": FAILED,
                                      "counts": {"directory_listed": len(dir_entries), "veterans_day_listed": len(vd_entries),
                                                 "held": len(held), "sources_read": sum(1 for s in sources if s["rows"] is not None),
-                                                "sources_total": len(sources)}}, indent=1) + "\n", encoding="utf-8")
+                                                "sources_carried": len(CARRIED), "sources_total": len(sources)}}, indent=1) + "\n", encoding="utf-8")
+    configured = [s["url"] for s in sources]
+    MEMORY_OUT.write_text(json.dumps({"note": f"Last good read of each source, parsed; replayed up to {MAX_CARRY_DAYS} days when a source refuses.",
+                                      "sources": {u: MEM[u] for u in configured if u in MEM}}, indent=0, ensure_ascii=True) + "\n", encoding="utf-8")
     print("\n".join(report))
-    print(f"SOURCES: {sum(1 for s in sources if s['rows'] is not None)} of {len(sources)} read; {len(FAILED)} failed")
+    print(f"SOURCES: {sum(1 for s in sources if s['rows'] is not None)} of {len(sources)} read; {len(FAILED)} failed; {len(CARRIED)} kept from an earlier read")
     return 0
 
 
