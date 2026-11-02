@@ -659,6 +659,21 @@ entries:
   eligibility:
   - active-duty
   - veteran
+- id: auto-vd-casa-do-brasil
+  name: Casa do Brasil
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: 50% off. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Casa do Brasil
+  source_url: https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Casa%20do%20Brasil
+  sources:
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Casa%20do%20Brasil
+  - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Casa%20do%20Brasil
+  eligibility:
+  - active-duty
+  - veteran
 - id: auto-vd-casey-s
   name: Casey's
   category: food
@@ -1553,19 +1568,22 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 50% off. Bring proof of service. Named on 3 independent lists. Confirm with your location.
+  offer: 50% off. Bring proof of service. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Kona Grill
   source_url: https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Kona%20Grill
   sources:
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Kona%20Grill
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Kona%20Grill
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Kona%20Grill
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Kona%20Grill
   eligibility:
   - active-duty
+  - guard-reserve
   - veteran
   verification:
   - military-id
+  - proof-of-service
 - id: auto-vd-kroger
   name: Kroger
   category: food
