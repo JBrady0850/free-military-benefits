@@ -2,7 +2,7 @@
 "note": "Last good read of each source, parsed; replayed up to 7 days when a source refuses.",
 "sources": {
 "https://dealhack.com/blog/military-discounts-guide": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Adidas",
@@ -144,7 +144,9 @@ true,
 25,
 false,
 "technology",
-[]
+[
+"https://www.siriusxm.com/military25"
+]
 ],
 [
 "Lazarus Naturals",
@@ -291,7 +293,7 @@ true,
 ]
 },
 "https://hip2save.com/deals/military-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Adidas",
@@ -359,7 +361,7 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-military-discounts-clothes.html": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "UNTUCKit",
@@ -371,7 +373,7 @@ false,
 ]
 },
 "https://news.va.gov/85765/veteran-discounts-available-year-round/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Oakley",
@@ -671,7 +673,7 @@ false,
 ]
 },
 "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Adidas",
@@ -791,7 +793,7 @@ true,
 ]
 },
 "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Paramount Plus",
@@ -1025,7 +1027,7 @@ true,
 ]
 },
 "https://militaryfamilies.com/?p=32765": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "ASICS",
@@ -1066,7 +1068,7 @@ false,
 ]
 },
 "https://barbend.com/?p=218235": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": []
 },
 "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel": {
@@ -1082,7 +1084,7 @@ false,
 ]
 },
 "https://www.sheerid.com/?p=71432": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Florence Marine X",
@@ -1200,32 +1202,11 @@ false,
 ]
 },
 "https://veteran.com/military-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
-"rows": [
-[
-"Helix Mattress Helix Mattress",
-25,
-false,
-"home-improvement",
-[
-"https://helixsleep.com/pages/military-discount",
-"https://www.google.com/maps/search/Helix+Mattress"
-]
-],
-[
-"Opticann Opticann",
-25,
-false,
-"retail",
-[
-"https://arthrocbd.com/can-cbd-help-veterans-with-anxiety-and-ptsd/",
-"https://www.google.com/maps/search/Opticann"
-]
-]
-]
+"read_utc": "2026-11-03T23:23Z",
+"rows": []
 },
 "https://couponfollow.com/research/best-military-discounts": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Great Wolf Lodge",
@@ -1248,7 +1229,7 @@ false,
 ]
 },
 "https://www.operationmilitarykids.org/military-veterans-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Dollywood",
@@ -1274,11 +1255,11 @@ false,
 ]
 },
 "https://claimraven.com/military-discounts": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": []
 },
 "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Adidas",
@@ -1332,7 +1313,7 @@ true,
 ]
 },
 "https://guidetobargain.com/guides/military-discounts": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "adidas",
@@ -1365,7 +1346,7 @@ false,
 ]
 },
 "https://savingsgrove.com/blogs/guides/military-discount-list": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Paramount+",
@@ -1417,7 +1398,7 @@ false,
 ]
 },
 "https://www.veteransbenefitskb.com/discounts-deals": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Take 5 Oil Change",
@@ -2066,7 +2047,7 @@ false,
 ]
 },
 "https://www.dealnews.com/features/discounts/military-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Paramount Plus",
@@ -2225,19 +2206,19 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-retail-military-discounts.html": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": []
 },
 "https://www.militarybenefit.org/get-educated/military-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": []
 },
 "https://baseneed.com/blog/military-discounts-2026-complete-list": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": []
 },
 "https://storepolicies.com/discounts-for-soldiers/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "rows": [
 [
 "Adidas",
@@ -2284,7 +2265,7 @@ false,
 ]
 },
 "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Applebee's",
@@ -2465,7 +2446,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "151 Coffee",
@@ -2628,6 +2609,10 @@ false,
 "On November 11 , veterans receive a free Soup, Salad, Bread, Nacho & Dessert Bar and an Iced Tea. Dine-in only. After dining, veterans will receive a $10 off $40 voucher to be used on their next visit. Available while supplies last. Voucher expires 11/25/26."
 ],
 [
+"Hy-Vee",
+"Veterans get a free breakfast on November 11 from 6 to 10 a.m. at all stores. Plus, veterans and active-duty military get 15% off groceries. Valid on in-store and online orders placed November 11 using code: VETS2026"
+],
+[
 "IHOP",
 "Veterans and active-duty military get a free Red, White, and Blueberry Pancake Combo on November 11 . Dine-in only, at participating restaurants nationwide. Military ID or proof of service required."
 ],
@@ -2642,6 +2627,10 @@ false,
 [
 "Logan's Roadhouse",
 "Veterans and active-duty military members get a free meal from the Veterans Day menu from 11am - 3pm on November 11 ."
+],
+[
+"Lucille's Smokehouse BBQ",
+"Veterans get a complimentary Pulled Pork Sandwich or personal-sized Fried Chicken Plate for dine-in only on November 11 , as well as a $10 Thank You Bonus Card redeemable 11/27/26 \u2013 12/6/26."
 ],
 [
 "Mission BBQ",
@@ -2692,12 +2681,20 @@ false,
 "On November 11 , from open until 4 p.m., veterans and active-duty service members can enjoy a complimentary lunch and non-alcoholic beverage. Guests can choose between three dishes: 6oz Tri-Tip Sirloin Steak, Malibu Chicken or half dozen Crispy Shrimp."
 ],
 [
+"Smashburger",
+"Active-duty military members and veterans get a free All-American Smash on November 11 at participating locations. Offer available only for in-store purchases during regular business hours. Show your military or veteran ID."
+],
+[
 "SONIC",
 "On November 11 , guests can sip on half-priced shakes in any size and flavor, including both Classic and Master Shakes."
 ],
 [
 "Texas Roadhouse",
 "Texas Roadhouse will distribute free meal vouchers to veterans and active-duty U.S. military members on November 11 . Vouchers will be available from 11 a.m. to 2 p.m. Guests must provide proof of service, such as a military or VA card or discharge papers. The vouchers can be redeemed through May 31, 2027, for a choice of 10 entr\u00e9es, including a 6-ounce sirloin, along with two made-from-scratch si"
+],
+[
+"Torchy's Tacos",
+"Veterans and active-duty military get a free taco and drink on November 11 . Offer available in-store only. Must present military ID or proof of service."
 ],
 [
 "Tuscan Brands",
@@ -2725,7 +2722,7 @@ false,
 ],
 [
 "Fogo de Ch\u00e3o",
-"Veterans and active-duty personnel enjoy 50% off their Full Churrasco or Indulgent Churrasco meals on November 7 . Guests dining with eligible service members can enjoy 10% off the same offerings. To redeem, inform your server when ordering. Restrictions apply."
+"Military veterans and active-duty personnel can dine in on November 11 and get a discount of 50% off Full Churrasco or Indulgent Churrasco, and all their guests will get a 10% discount on their Full Churrasco or Indulgent Churrasco meal only."
 ],
 [
 "Joe's Crab Shack",
@@ -2742,15 +2739,15 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Editor's Note",
 "This list is constantly being updated. We at The Military Wallet take great pride in this effort each year and have an entire team working to verify the accuracy of these discounts. It's so good, many of the lists you'll see online this time of year tend to 'borrow' **wink** this list. No worries here, we're just glad the information is getting shared."
 ],
 [
-"10/21/26 Update",
-"We've begun updating our discount content for Veterans Day 2026 deals and free meals. You will start seeing updated discount information regarding the upcoming Veterans Day. Some of the 2025 content remains listed below, as many companies offer the same discount each year, so we want you to have an idea of what you can expect. We'll continue to update the discount lists as we get any announcements"
+"11/3/26 Update",
+"We've updated around 50 verified deals for 2026 so far. Some of the 2025 free meals and deals remain listed below, as many companies offer the same discount each year. We'll continue to update the discount lists as we find announcements from the restaurants. Keep checking back with us as we update this list daily. These updates will also be sent to you via email, so I encourage you to sign up to r"
 ],
 [
 "Anthony's Coal Fired Pizza",
@@ -2915,6 +2912,10 @@ false,
 [
 "Red Robin",
 "On Veterans Day, dine-in veterans and military members get a free Red's Big Tavern Burger with fries."
+],
+[
+"Rock & Brews",
+"On November 11, Rock & Brews honors veterans, active-duty military, and first responders with a complimentary Pulled Pork Sandwich or Strawberry Fields Salad for dine-in with valid ID."
 ],
 [
 "Saltgrass Steak House",
@@ -3420,7 +3421,7 @@ false,
 ]
 },
 "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Food & Dining",
@@ -3837,7 +3838,7 @@ false,
 ]
 },
 "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "2027 VA Disability Pay Rates",
@@ -4028,8 +4029,16 @@ false,
 "Veterans and military members get a free Red's Big Tavern Burger with fries for dine-in on Veterans Day. Get Directions"
 ],
 [
+"Rock & Brews",
+"Rock & Brews offers veterans, active-duty military, and first responders a free Pulled Pork Sandwich or Strawberry Fields Salad with ID on November 11 for dine-in only. Get Directions"
+],
+[
 "Saltgrass Steak House",
 "On Wednesday, November 11, 2026, veterans get 20% off their meal when dining in, and up to four guests at the table get the discount too. Valid military ID required; alcohol and retail purchases are excluded. Get Directions"
+],
+[
+"STK Steakhouse",
+"Veterans, active duty service members, reservists and Gold Star Families get a complimentary entr\u00e9e with the purchase of a starter from November 9 to 11, 2026. Dine-in only at participating U.S. locations; military ID or proof of service required. Get Directions"
 ],
 [
 "TCBY",
@@ -4062,7 +4071,7 @@ false,
 ]
 },
 "https://freshcalendars.com/news/veterans-day-free-meals-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Facebook",
@@ -4487,7 +4496,7 @@ false,
 ]
 },
 "https://veteransdaydeals.us/free-meals/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Chili's",
@@ -4804,7 +4813,7 @@ false,
 ]
 },
 "https://www.dinova.com/dining-guide/veterans-day-guide/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Bar Louie",
@@ -4845,7 +4854,7 @@ false,
 ]
 },
 "https://blog.ahrn.com/veterans-day-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Applebee's",
@@ -4894,7 +4903,7 @@ false,
 ]
 },
 "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Chili's",
@@ -5856,7 +5865,7 @@ false,
 ]
 },
 "https://www.combatfitness.co/post/veterans-day": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Start Training for Free",
@@ -6101,7 +6110,7 @@ false,
 ]
 },
 "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Quick Tips Before You Go",
@@ -6442,7 +6451,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-retail-discounts/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Editor's Note",
@@ -6761,6 +6770,10 @@ false,
 "Dell offers military members, first responders and healthcare heroes up to 10% extra off PCs and electronics through its Heroes Purchase Program. Customers create a Dell account, register for Dell Rewards and verify member status; savings show in the cart and exclusions may apply."
 ],
 [
+"Five Below",
+"Five Below is giving veterans and military families 10% off in-store purchases from Nov. 9-15, 2026. The Five Below Foundation will also donate $1 per transaction during the event to Blue Star Families."
+],
+[
 "Great Clips Free Haircut",
 "Great Clips offers veterans and active military service members a free haircut, or a free haircut card for a future visit, on Veterans Day, November 11, 2026, at any U.S. salon. Cards are redeemable through December 4, 2026."
 ],
@@ -6821,12 +6834,20 @@ false,
 "RetailMeNot is offering up to 50% off on top deals from national retailers for Veterans Day. These savings are available through coupon codes. To take advantage of these offers, all you need is a valid Military ID."
 ],
 [
+"Rexing USA",
+"This Veteran's Day, veterans and military personnel get 10% off across Rexing's full product lineup."
+],
+[
 "San Diego Bayfair",
 "Active military and reservists receive free admission to San Diego Bayfair with valid identification. Plus, spouses attending alongside their service member enjoy 50% off their ticket."
 ],
 [
 "San Diego Zoo",
 "Active-duty military personnel can enjoy complimentary entry at San Diego Zoo, while their spouses and dependents receive a 10% discount on their 1-Day Pass as a token of appreciation."
+],
+[
+"ScrubaDub Car Wash",
+"ScrubaDub is offering a complimentary express car wash to military members, veterans, and retirees on November 11 to show appreciation for their service."
 ],
 [
 "Sea World",
@@ -6903,7 +6924,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "4Patriots",
@@ -6934,12 +6955,24 @@ false,
 "Active duty, retirees, veterans, military spouses and military family members get 50% off the entire website from November 2 through 13 ."
 ],
 [
+"Five Below",
+"From November 9-15 , veterans and military families get 10% off."
+],
+[
+"Food Lion",
+"Veterans and active duty service members receive 10% off in\u2011store on November 11 , with military ID and MVP card; exclusions apply."
+],
+[
 "Grace for Vets",
 "Car washes from around the world who join this program offer free car washes to veterans and service members on November 11 ."
 ],
 [
 "Great Clips",
 "On November 11 , veterans and active military service members can go to any U.S. Great Clips salon and get a free haircut or a card for a free haircut that can be redeemed during a future visit."
+],
+[
+"Hy-Vee",
+"Veterans get a free breakfast on November 11 from 6 to 10 a.m. at all stores. Plus, veterans and active-duty military get 15% off groceries. Valid on in-store and online orders placed November 11 using code: VETS2026"
 ],
 [
 "Joint Chiropractic in Groton",
@@ -6956,6 +6989,10 @@ false,
 [
 "Orthofeet",
 "On November 11 and 12 , Orthofeet will offer up to 30% off. Verify with ID.me at checkout."
+],
+[
+"Publix",
+"Veterans and active military personnel get 10% off on groceries on November 11 ."
 ],
 [
 "R. Riveter",
@@ -6992,7 +7029,7 @@ false,
 ]
 },
 "https://valoannetwork.com/veterans-day-deals-2026/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Chili's",
@@ -7509,7 +7546,7 @@ false,
 ]
 },
 "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "But Wait, There's More",
@@ -9323,7 +9360,7 @@ false,
 ]
 },
 "https://fedratecalc.com/veterans-day-free-meals-2026/": {
-"read_utc": "2026-11-03T18:28Z",
+"read_utc": "2026-11-03T23:23Z",
 "pairs": [
 [
 "Chili's Grill & Bar",

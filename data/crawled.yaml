@@ -712,6 +712,18 @@ entries:
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=SiriusXM
   - https://www.sheerid.com/?p=71432#:~:text=SiriusXM
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Sirius%20XM
+- id: auto-siriusxm-radio
+  name: SiriusXM Radio
+  category: technology
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  percent: 25
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://www.siriusxm.com/offers/military
+  sources:
+  - https://www.siriusxm.com/offers/military
+  - https://dealhack.com/blog/military-discounts-guide#:~:text=SiriusXM%20Radio
 - id: auto-steve-madden
   name: Steve Madden
   category: apparel
