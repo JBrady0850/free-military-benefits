@@ -433,15 +433,17 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free one-topping pizza. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: Free one-topping pizza. At participating locations. Named on 7 independent lists, 6 of them with this offer. Confirm with your location.
   osm_brand:
   - Blaze Pizza
-  source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Blaze%20Pizza
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Blaze%20Pizza
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Blaze%20Pizza
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Blaze%20Pizza
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Blaze%20Pizza
   - https://veteransdaydeals.us/free-meals/#:~:text=Blaze%20Pizza
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Blaze%20Pizza
+  - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Blaze%20Pizza
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Blaze%20Pizza
   eligibility:
   - active-duty
@@ -482,6 +484,23 @@ entries:
   eligibility:
   - active-duty
   - veteran
+- id: auto-vd-bravo-italian-kitchen
+  name: BRAVO! Italian Kitchen
+  category: home-improvement
+  slot: anytime
+  scope: nationwide
+  offer: Free pasta. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - BRAVO! Italian Kitchen
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=BRAVO%21%20Italian%20Kitchen
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=BRAVO%21%20Italian%20Kitchen
+  - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=BRAVO%21%20Italian%20Kitchen
+  eligibility:
+  - active-duty
+  - veteran
+  verification:
+  - proof-of-service
 - id: auto-vd-bruegger-s-bagels
   name: Bruegger's Bagels
   category: food
@@ -1005,11 +1024,12 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: Free hot or iced coffee. Named on 6 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: Free hot or iced coffee. Named on 7 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Einstein Bros. Bagels
-  source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Einstein%20Bros.%20Bagels
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Einstein%20Bros.%20Bagels
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Einstein%20Bros.%20Bagels
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Einstein%20Bros.%20Bagels
   - https://veteransdaydeals.us/free-meals/#:~:text=Einstein%20Bros.%20Bagels
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Einstein%20Bros.%20Bagels
@@ -1354,17 +1374,20 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Includes something to use later. Named on 3 independent lists. Confirm with your location.
+  offer: Veterans Day offer; the lists word the terms differently. Bring proof of service. Includes something to use later. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Hof's Hut
-  source_url: https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   eligibility:
   - active-duty
   - veteran
+  verification:
+  - proof-of-service
 - id: auto-vd-hooters
   name: Hooters
   category: food
@@ -1394,11 +1417,12 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Classic Burger or Classic Burger. Dine-in only. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free classic burger. Dine-in only. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Hopdoddy Burger Bar
-  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hopdoddy%20Burger%20Bar
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hopdoddy%20Burger%20Bar
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hopdoddy%20Burger%20Bar
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hopdoddy%20Burger%20Bar
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hopdoddy%20Burger%20Bar
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hopdoddy%20Burger%20Bar
@@ -1780,20 +1804,6 @@ entries:
   - veteran
   verification:
   - proof-of-service
-- id: auto-vd-mcdonald-s
-  name: McDonald's
-  category: food
-  slot: anytime
-  scope: nationwide
-  offer: Free Sausage Egg McMuffin Meal. Bring proof of service. Named on 2 independent lists. Confirm with your location.
-  osm_brand:
-  - McDonald's
-  source_url: https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=McDonald%27s&text=McDonald%E2%80%99s
-  sources:
-  - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=McDonald%27s&text=McDonald%E2%80%99s
-  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=McDonald%27s%20Pok%C3%A9mon%20Happy%20Meal%202026&text=McDonald%E2%80%99s%20Pok%C3%A9mon%20Happy%20Meal%202026
-  verification:
-  - military-id
 - id: auto-vd-medieval-times
   name: Medieval Times
   category: food
@@ -2056,7 +2066,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free pork chop. Named on 4 independent lists. Confirm with your location.
+  offer: Free pork chop. Named on 5 independent lists. Confirm with your location.
   osm_brand:
   - Perry's Steakhouse & Grille
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
@@ -2064,6 +2074,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
   - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
+  - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Perry%27s%20Steakhouse%20%26%20Grille&text=Perry%E2%80%99s%20Steakhouse%20%26%20Grille
   eligibility:
   - active-duty
