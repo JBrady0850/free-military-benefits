@@ -315,9 +315,9 @@ entries:
   percent_up: true
   verified_by: brand page
   confidence: official
-  source_url: https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  source_url: https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
   sources:
-  - https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  - https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Budget%20Car%20Rental
 - id: auto-helly-hansen
   name: Helly Hansen
