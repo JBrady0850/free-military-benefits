@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-03 23:25 UTC",
- "data_version": "2026-11-03",
+ "generated": "2026-11-04 06:24 UTC",
+ "data_version": "2026-11-04",
  "counts": {
   "hidden": 10,
   "veterans-day": 222,
@@ -19,8 +19,8 @@
   "source_pages_read": 39
  },
  "watch": {
-  "checked": "2026-11-03",
-  "run_utc": "2026-11-03T23:23Z",
+  "checked": "2026-11-04",
+  "run_utc": "2026-11-04T06:23Z",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
   "new_names": [],
   "held_single_source": [
@@ -77,55 +77,55 @@
     "url": "https://dealhack.com/blog/military-discounts-guide",
     "kind": "directory",
     "rows": 32,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://hip2save.com/deals/military-discounts/",
     "kind": "directory",
     "rows": 9,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-military-discounts-clothes.html",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/85765/veteran-discounts-available-year-round/",
     "kind": "directory",
     "rows": 33,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "kind": "directory",
     "rows": 12,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://usmilitary.com/top-25-military-discounts/",
     "kind": "directory",
     "rows": null,
-    "last_try": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
     "last_ok": "2026-11-02T13:55Z",
     "carried_from": "2026-11-02T13:55Z"
    },
@@ -133,23 +133,23 @@
     "url": "https://militaryfamilies.com/?p=32765",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://barbend.com/?p=218235",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
     "kind": "directory",
     "rows": null,
-    "last_try": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
     "last_ok": "2026-11-02T13:55Z",
     "carried_from": "2026-11-02T13:55Z"
    },
@@ -157,143 +157,143 @@
     "url": "https://www.sheerid.com/?p=71432",
     "kind": "directory",
     "rows": 13,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://couponfollow.com/research/best-military-discounts",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.operationmilitarykids.org/military-veterans-discounts/",
     "kind": "directory",
     "rows": 3,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://claimraven.com/military-discounts",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide",
     "kind": "directory",
     "rows": 7,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://guidetobargain.com/guides/military-discounts",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://savingsgrove.com/blogs/guides/military-discount-list",
     "kind": "directory",
     "rows": 5,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.veteransbenefitskb.com/discounts-deals",
     "kind": "directory",
     "rows": 72,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/discounts/military-discounts/",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-retail-military-discounts.html",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarybenefit.org/get-educated/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://baseneed.com/blog/military-discounts-2026-complete-list",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://storepolicies.com/discounts-for-soldiers/",
     "kind": "directory",
     "rows": 6,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
     "kind": "veterans-day",
     "rows": 43,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 72,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/",
     "kind": "veterans-day",
     "rows": 54,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
     "last_ok": "2026-11-02T13:55Z",
     "carried_from": "2026-11-02T13:55Z"
    },
@@ -301,63 +301,63 @@
     "url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/",
     "kind": "veterans-day",
     "rows": 99,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/",
     "kind": "veterans-day",
     "rows": 54,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/",
     "kind": "veterans-day",
     "rows": 97,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdaydeals.us/free-meals/",
     "kind": "veterans-day",
     "rows": 78,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.dinova.com/dining-guide/veterans-day-guide/",
     "kind": "veterans-day",
     "rows": 9,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://blog.ahrn.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 11,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026",
     "kind": "veterans-day",
     "rows": 7,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdmv.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
     "last_ok": "2026-11-02T13:55Z",
     "carried_from": "2026-11-02T13:55Z"
    },
@@ -365,55 +365,55 @@
     "url": "https://www.combatfitness.co/post/veterans-day",
     "kind": "veterans-day",
     "rows": 32,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/",
     "kind": "veterans-day",
     "rows": 80,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-retail-discounts/",
     "kind": "veterans-day",
     "rows": 113,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 25,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://valoannetwork.com/veterans-day-deals-2026/",
     "kind": "veterans-day",
     "rows": 128,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert",
     "kind": "veterans-day",
     "rows": 69,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    },
    {
     "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
     "last_ok": "2026-11-02T13:55Z",
     "carried_from": "2026-11-02T13:55Z"
    },
@@ -421,8 +421,8 @@
     "url": "https://fedratecalc.com/veterans-day-free-meals-2026/",
     "kind": "veterans-day",
     "rows": 15,
-    "last_try": "2026-11-03T23:23Z",
-    "last_ok": "2026-11-03T23:23Z",
+    "last_try": "2026-11-04T06:23Z",
+    "last_ok": "2026-11-04T06:23Z",
     "carried_from": null
    }
   ],
@@ -895,7 +895,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -924,7 +924,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -956,7 +956,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -988,7 +988,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1016,7 +1016,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1047,7 +1047,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1079,7 +1079,7 @@
     "military-id"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1108,7 +1108,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1139,7 +1139,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1169,7 +1169,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1200,7 +1200,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1230,7 +1230,7 @@
     "sheerid"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1265,7 +1265,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1295,7 +1295,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1324,7 +1324,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1354,7 +1354,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1386,7 +1386,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1416,7 +1416,7 @@
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1446,7 +1446,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1477,7 +1477,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1507,7 +1507,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1537,7 +1537,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1568,7 +1568,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1605,7 +1605,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1635,7 +1635,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1670,7 +1670,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1703,7 +1703,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1732,7 +1732,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1761,7 +1761,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1790,7 +1790,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1822,7 +1822,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1852,7 +1852,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1882,7 +1882,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1913,7 +1913,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1949,7 +1949,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1979,7 +1979,7 @@
     "see-source"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2007,7 +2007,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2036,7 +2036,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2072,7 +2072,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2102,7 +2102,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2134,7 +2134,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2167,7 +2167,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2198,7 +2198,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2230,7 +2230,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2261,7 +2261,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2294,7 +2294,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2331,7 +2331,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2366,7 +2366,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2398,7 +2398,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-02",
@@ -2432,7 +2432,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2463,7 +2463,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2491,7 +2491,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2521,7 +2521,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2550,7 +2550,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2582,7 +2582,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2618,7 +2618,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-01",
@@ -2648,7 +2648,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2679,7 +2679,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2712,7 +2712,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2742,7 +2742,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2777,7 +2777,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2809,7 +2809,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2839,7 +2839,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2870,7 +2870,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2906,7 +2906,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -2940,7 +2940,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-07",
@@ -2975,7 +2975,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3004,7 +3004,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3037,7 +3037,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3067,7 +3067,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3097,7 +3097,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3126,7 +3126,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3155,7 +3155,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3184,7 +3184,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3216,7 +3216,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3249,7 +3249,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3278,7 +3278,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3310,7 +3310,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3345,7 +3345,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3377,7 +3377,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3408,7 +3408,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3438,7 +3438,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3469,7 +3469,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3501,7 +3501,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-10",
@@ -3533,7 +3533,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3561,7 +3561,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3594,7 +3594,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3623,7 +3623,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3652,7 +3652,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3684,7 +3684,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -3718,7 +3718,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3750,7 +3750,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -3782,7 +3782,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3818,7 +3818,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-10-01",
@@ -3847,7 +3847,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3882,7 +3882,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3915,7 +3915,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3945,7 +3945,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3975,7 +3975,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4004,7 +4004,7 @@
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4034,7 +4034,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4065,7 +4065,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4093,7 +4093,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4123,7 +4123,7 @@
     "see-source"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4154,7 +4154,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4183,7 +4183,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4212,7 +4212,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4246,7 +4246,7 @@
     "proof-of-service"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-07",
@@ -4277,7 +4277,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4305,7 +4305,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4334,7 +4334,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-10",
@@ -4364,7 +4364,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4397,7 +4397,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4433,7 +4433,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4464,7 +4464,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4497,7 +4497,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4527,7 +4527,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4559,7 +4559,7 @@
     "proof-of-service"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4588,7 +4588,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-10",
@@ -4619,7 +4619,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4647,7 +4647,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4677,7 +4677,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4711,7 +4711,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4739,7 +4739,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4769,7 +4769,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4800,7 +4800,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4831,7 +4831,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4862,7 +4862,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4893,7 +4893,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4927,7 +4927,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4961,7 +4961,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4996,7 +4996,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5031,7 +5031,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5060,7 +5060,7 @@
     "id.me"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5092,7 +5092,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-04",
@@ -5124,7 +5124,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5153,7 +5153,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5185,7 +5185,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5214,7 +5214,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5245,7 +5245,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -5277,7 +5277,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5309,7 +5309,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5339,7 +5339,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-05",
@@ -5378,7 +5378,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5411,7 +5411,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5443,7 +5443,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5483,7 +5483,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5514,7 +5514,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5543,7 +5543,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5572,7 +5572,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5602,7 +5602,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5635,7 +5635,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5666,7 +5666,7 @@
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5697,7 +5697,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5726,7 +5726,7 @@
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5756,7 +5756,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5784,7 +5784,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5813,7 +5813,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5844,7 +5844,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5875,7 +5875,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5906,7 +5906,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5936,7 +5936,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5972,7 +5972,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6005,7 +6005,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6033,7 +6033,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6065,7 +6065,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -8195,7 +8195,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-1-800-flowers-com",
    "name": "1-800-Flowers.com",
@@ -8220,7 +8220,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-adidas",
    "name": "Adidas",
@@ -8255,7 +8255,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-alpha-industries",
    "name": "Alpha Industries",
@@ -8281,7 +8281,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-alpine-rings",
    "name": "Alpine Rings",
@@ -8308,7 +8308,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-asics",
    "name": "ASICS",
@@ -8339,7 +8339,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-at-t",
    "name": "AT&T",
@@ -8369,7 +8369,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-avis",
    "name": "Avis",
@@ -8395,7 +8395,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-avis-budget",
    "name": "Avis/Budget",
@@ -8420,7 +8420,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-bear-mattress",
    "name": "Bear Mattress",
@@ -8445,7 +8445,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-beard-sorcery",
    "name": "Beard Sorcery",
@@ -8471,7 +8471,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-berklee-online",
    "name": "Berklee Online",
@@ -8496,7 +8496,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-bioionic",
    "name": "Bioionic",
@@ -8521,7 +8521,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-birch",
    "name": "Birch",
@@ -8547,7 +8547,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-brooks-running",
    "name": "Brooks Running",
@@ -8572,7 +8572,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-budget",
    "name": "Budget",
@@ -8598,7 +8598,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-budget-car-rental",
    "name": "Budget Car Rental",
@@ -8608,9 +8608,9 @@
    "percent_up": true,
    "verified_by": "brand page",
    "confidence": "official",
-   "source_url": "https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
+   "source_url": "https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
    "sources": [
-    "https://go.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
+    "https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans",
     "https://dealhack.com/blog/military-discounts-guide#:~:text=Budget%20Car%20Rental"
    ],
    "kind": "crawled"
@@ -8623,7 +8623,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-butchart-gardens",
    "name": "Butchart Gardens",
@@ -8648,7 +8648,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-carhartt",
    "name": "Carhartt",
@@ -8673,7 +8673,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-codecademy",
    "name": "Codecademy",
@@ -8698,7 +8698,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-disney",
    "name": "Disney+",
@@ -8725,7 +8725,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-eset",
    "name": "ESET",
@@ -8750,7 +8750,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-florence-marine-x",
    "name": "Florence Marine X",
@@ -8775,7 +8775,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-flying-squirrel-trampoline-park",
    "name": "Flying Squirrel Trampoline Park",
@@ -8800,7 +8800,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-ford-s-theatre",
    "name": "Ford's Theatre",
@@ -8825,7 +8825,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-gelpro",
    "name": "GelPro",
@@ -8853,7 +8853,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-great-wolf-lodge",
    "name": "Great Wolf Lodge",
@@ -8884,7 +8884,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-harry-david",
    "name": "Harry & David",
@@ -8909,7 +8909,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-helix-sleep",
    "name": "Helix Sleep",
@@ -8934,7 +8934,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-hellofresh",
    "name": "HelloFresh",
@@ -8959,7 +8959,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-helly-hansen",
    "name": "Helly Hansen",
@@ -8986,7 +8986,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-helm-audio",
    "name": "HELM Audio",
@@ -9011,7 +9011,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-houston-zoo",
    "name": "Houston Zoo",
@@ -9036,7 +9036,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-hp-hewlett-packard",
    "name": "HP (Hewlett Packard)",
@@ -9063,7 +9063,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-hulu",
    "name": "Hulu",
@@ -9090,7 +9090,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-jungle-island",
    "name": "Jungle Island",
@@ -9115,7 +9115,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-kawaii-stop",
    "name": "Kawaii Stop",
@@ -9140,7 +9140,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-leatherman",
    "name": "Leatherman",
@@ -9167,7 +9167,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-mlb-tv",
    "name": "MLB TV",
@@ -9192,7 +9192,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-mountain-khakis",
    "name": "Mountain Khakis",
@@ -9217,7 +9217,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-nba-league-pass",
    "name": "NBA League Pass",
@@ -9242,7 +9242,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-nba-tv",
    "name": "NBA TV",
@@ -9267,7 +9267,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-new-balance",
    "name": "New Balance",
@@ -9292,7 +9292,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-nutrex",
    "name": "Nutrex",
@@ -9317,7 +9317,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-oakley",
    "name": "Oakley",
@@ -9345,7 +9345,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-oakley-standard-issue",
    "name": "Oakley Standard Issue",
@@ -9370,7 +9370,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-paramount",
    "name": "Paramount+",
@@ -9380,9 +9380,8 @@
    "percent_up": false,
    "verified_by": "two directories",
    "confidence": "community",
-   "source_url": "https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E#:~:text=Paramount%2B",
+   "source_url": "https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B",
    "sources": [
-    "https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E#:~:text=Paramount%2B",
     "https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B",
     "https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Paramount%2B",
     "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Paramount%20Plus",
@@ -9401,7 +9400,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-reebok",
    "name": "Reebok",
@@ -9430,7 +9429,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-roboform",
    "name": "RoboForm",
@@ -9455,7 +9454,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-sam-s-club",
    "name": "Sam's Club",
@@ -9480,7 +9479,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-samsung",
    "name": "Samsung",
@@ -9513,7 +9512,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-siriusxm",
    "name": "SiriusXM",
@@ -9541,7 +9540,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-siriusxm-radio",
    "name": "SiriusXM Radio",
@@ -9566,7 +9565,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-steve-madden",
    "name": "Steve Madden",
@@ -9591,7 +9590,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-take-5-oil-change",
    "name": "Take 5 Oil Change",
@@ -9617,7 +9616,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-tarte-cosmetics",
    "name": "Tarte Cosmetics",
@@ -9642,7 +9641,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-tough-mudder",
    "name": "Tough Mudder",
@@ -9669,7 +9668,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-untuckit",
    "name": "UNTUCKit",
@@ -9697,7 +9696,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-03",
+   "last_verified": "2026-11-04",
    "auto": true,
    "id": "auto-yardsigns-com",
    "name": "Yardsigns.com",
