@@ -1348,16 +1348,19 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free large Wet Burrito. Named on 2 independent lists. Confirm with your location.
+  offer: Free Large Wet Burrito. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Hacienda Mexican Restaurant
-  source_url: https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hacienda%20Mexican%20Restaurant
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hacienda%20Mexican%20Restaurant
   sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hacienda%20Mexican%20Restaurant
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hacienda%20Mexican%20Restaurant
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hacienda%20Mexican%20Restaurants
   eligibility:
   - active-duty
   - veteran
+  verification:
+  - proof-of-service
 - id: auto-vd-hamburger-stand
   name: Hamburger Stand
   category: food

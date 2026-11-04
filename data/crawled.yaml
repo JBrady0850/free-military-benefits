@@ -720,9 +720,9 @@ entries:
   percent_up: false
   verified_by: brand page
   confidence: official
-  source_url: https://www.siriusxm.com/offers/military
+  source_url: https://www.siriusxm.com/offers/military?intcmp=AssetGroup%3AAny_NA_www%3Ahelp%3Areturn-processed_siriusxmcommilitary2_TextContent
   sources:
-  - https://www.siriusxm.com/offers/military
+  - https://www.siriusxm.com/offers/military?intcmp=AssetGroup%3AAny_NA_www%3Ahelp%3Areturn-processed_siriusxmcommilitary2_TextContent
   - https://dealhack.com/blog/military-discounts-guide#:~:text=SiriusXM%20Radio
 - id: auto-steve-madden
   name: Steve Madden
