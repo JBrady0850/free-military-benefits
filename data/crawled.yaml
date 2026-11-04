@@ -142,8 +142,9 @@ entries:
   percent_up: false
   verified_by: two directories
   confidence: community
-  source_url: https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B
+  source_url: https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E
   sources:
+  - https://services.sheerid.com/verify/635044dddc9b1e36a888e212/?layout=landing&gclsrc=aw.ds&ds_rl=1289065&ftag=PPM-02-10cbc4c&vndid=google$null$null$paramount%20plus%20veterans%20discount&gad_source=1&gad_campaignid=17873670690&gbraid=0AAAAADtO7xETLApVPZZmbLuTS_UN-AZ7E
   - https://hip2save.com/deals/military-discounts/#:~:text=Paramount%2B
   - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Paramount%2B
   - https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html#:~:text=Paramount%20Plus
@@ -762,6 +763,18 @@ entries:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Tough%20Mudder
   - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Tough%20Mudder
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Tough%20Mudder
+- id: auto-tri-county-humane-society
+  name: Tri-County Humane Society
+  category: retail
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  percent: 25
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://tricountyhumanesociety.org/adopt-a-cat/
+  sources:
+  - https://tricountyhumanesociety.org/adopt-a-cat/
+  - https://dealhack.com/blog/military-discounts-guide#:~:text=Tri-County%20Humane%20Society
 - id: auto-untuckit
   name: UNTUCKit
   category: retail
