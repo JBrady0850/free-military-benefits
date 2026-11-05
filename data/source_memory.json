@@ -2,7 +2,7 @@
 "note": "Last good read of each source, parsed; replayed up to 7 days when a source refuses.",
 "sources": {
 "https://dealhack.com/blog/military-discounts-guide": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Adidas",
@@ -289,7 +289,7 @@ true,
 ]
 },
 "https://hip2save.com/deals/military-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Adidas",
@@ -357,7 +357,7 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-military-discounts-clothes.html": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "UNTUCKit",
@@ -369,7 +369,7 @@ false,
 ]
 },
 "https://news.va.gov/85765/veteran-discounts-available-year-round/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Oakley",
@@ -669,7 +669,7 @@ false,
 ]
 },
 "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Adidas",
@@ -789,7 +789,7 @@ true,
 ]
 },
 "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Paramount Plus",
@@ -1023,7 +1023,7 @@ true,
 ]
 },
 "https://militaryfamilies.com/?p=32765": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "ASICS",
@@ -1064,7 +1064,7 @@ false,
 ]
 },
 "https://barbend.com/?p=218235": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": []
 },
 "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel": {
@@ -1080,7 +1080,7 @@ false,
 ]
 },
 "https://www.sheerid.com/?p=71432": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Florence Marine X",
@@ -1198,11 +1198,32 @@ false,
 ]
 },
 "https://veteran.com/military-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
-"rows": []
+"read_utc": "2026-11-05T06:47Z",
+"rows": [
+[
+"Helix Mattress Helix Mattress",
+25,
+false,
+"home-improvement",
+[
+"https://helixsleep.com/pages/military-discount",
+"https://www.google.com/maps/search/Helix+Mattress"
+]
+],
+[
+"Opticann Opticann",
+25,
+false,
+"retail",
+[
+"https://arthrocbd.com/can-cbd-help-veterans-with-anxiety-and-ptsd/",
+"https://www.google.com/maps/search/Opticann"
+]
+]
+]
 },
 "https://couponfollow.com/research/best-military-discounts": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Great Wolf Lodge",
@@ -1225,7 +1246,7 @@ false,
 ]
 },
 "https://www.operationmilitarykids.org/military-veterans-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Dollywood",
@@ -1251,11 +1272,11 @@ false,
 ]
 },
 "https://claimraven.com/military-discounts": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": []
 },
 "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Adidas",
@@ -1309,7 +1330,7 @@ true,
 ]
 },
 "https://guidetobargain.com/guides/military-discounts": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "adidas",
@@ -1342,7 +1363,7 @@ false,
 ]
 },
 "https://savingsgrove.com/blogs/guides/military-discount-list": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Paramount+",
@@ -1394,7 +1415,7 @@ false,
 ]
 },
 "https://www.veteransbenefitskb.com/discounts-deals": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Take 5 Oil Change",
@@ -2043,7 +2064,7 @@ false,
 ]
 },
 "https://www.dealnews.com/features/discounts/military-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Paramount Plus",
@@ -2202,19 +2223,19 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-retail-military-discounts.html": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": []
 },
 "https://www.militarybenefit.org/get-educated/military-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": []
 },
 "https://baseneed.com/blog/military-discounts-2026-complete-list": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": []
 },
 "https://storepolicies.com/discounts-for-soldiers/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "rows": [
 [
 "Adidas",
@@ -2261,7 +2282,7 @@ false,
 ]
 },
 "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Applebee's",
@@ -2442,7 +2463,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "151 Coffee",
@@ -2799,7 +2820,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Editor's Note",
@@ -3509,7 +3530,7 @@ false,
 ]
 },
 "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Food & Dining",
@@ -3926,7 +3947,7 @@ false,
 ]
 },
 "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "2027 VA Disability Pay Rates",
@@ -3951,6 +3972,10 @@ false,
 [
 "Please note",
 "Our team has begun verifying discounts and free meals for Veterans Day 2026. Below is our list of verified deals and meals from 2026 alongside previous 2025 deals.. Many retailers and restaurants will offer a similar discount from year to year (we've been tracking them for 15 years!). Please check back as we separate the list and get you your verified 2026 options."
+],
+[
+"110 Grill",
+"110 Grill offers active duty military and veterans a complimentary lunch from a select menu until 4pm on November 11. Get Directions"
 ],
 [
 "Anthony's Coal Fired Pizza",
@@ -4029,6 +4054,10 @@ false,
 "Culver's offers 10% off to all military and veterans at its Palatine, Illinois restaurant at 1765 N. Rand Road. The standing offer runs all year and is available at this location only. Get Directions"
 ],
 [
+"Dickey's Barbecue Pit",
+"Dickey's Barbecue Pit offers veterans and active military 10% off in-store orders daily at participating locations. The offer is available at participating Dickey's locations nationwide and applies to in-store orders only. Get Directions"
+],
+[
 "Famous Dave's",
 "Famous Dave's is offering veterans a complimentary two-meat lunch combo (2 meats + 1 side + corn bread muffin). On Monday, November 11 - all day, dine-in only. Valid at participating restaurants. Must show proof of service to receive discount. Get Directions"
 ],
@@ -4089,6 +4118,10 @@ false,
 "Kura Sushi is taking 20% off dine-in orders for veterans, active military, police, firefighters, nurses, and EMTs from November 9-15 at all locations. Proof of service is required (ID, badge, or uniform), and the offer can't be paired with other coupons. Get Directions"
 ],
 [
+"Kwik Trip",
+"Kwik Trip gives veterans and active duty a free breakfast sandwich plus a 16 fl oz coffee, milk or orange juice on November 11, 2026. Say you are a veteran when you check out with the cashier. Get Directions"
+],
+[
 "Lazy Dog Restaurants",
 "On November 11, Lazy Dog is honoring active-duty military, veterans, retirees and reserve/National Guard members with a complimentary Fireside Favorites entr\u00e9e, personal-sized dessert and soda. Guests can choose from six entr\u00e9es: Fried Chicken Dinner, Grilled Shrimp Tacos, Fettuccine Alfredo, All-American Burger, Mediterranean Chicken and the new Honey Miso Chicken. Get Directions"
 ],
@@ -4105,12 +4138,32 @@ false,
 "Medieval Times proudly supports military members and their families with exclusive discounts on tickets. Purchase discounted tickets at participating military bases across the U.S. and enjoy a free Royalty upgrade, or secure discounted rates for any Castle through ID.me. Get Directions"
 ],
 [
+"Ninety Nine Restaurant & Pub",
+"Veterans and active duty military get a free lunch from the Veterans Day Menu with any entr\u00e9e purchase on Nov. 11, from opening to 4 p.m. Military ID required. Get Directions"
+],
+[
 "Outback Steakhouse",
 "Military Mates can get a complimentary Bloomin' Onion\u00ae plus their choice of a Coca-Cola\u00ae drink or 16-ounce domestic draft beer at Outback Steakhouse on Nov. 10\u201311, 2026. The dine-in offer doesn't require Dine Rewards enrollment. Those who pay with their Dine Rewards account will also earn a free Hero's Meal for a later visit. Get Directions"
 ],
 [
+"Peet's Coffee",
+"Peet's Coffee offers several military discounts. 10% off for verified members of the military (and other listed groups) through ID.me. 10% off for members of the military, with eligibility verified through ID.me. Get Directions"
+],
+[
+"Piada Italian Street Food",
+"On Wednesday, November 11, 2026, veterans and active-duty military get a free regular-sized entree with protein at Piada restaurants. Show a valid military ID and mention the deal at checkout. Get Directions"
+],
+[
 "Pilot Flying J/U.S. Pilot",
 "Pilot Flying J offers veterans and active-duty service members verified through ID.me a complimentary sandwich and coffee or fountain drink on Veterans Day, November 11, 2026. The offer is claimed in the Pilot app and is valid at participating Pilot and Flying J locations. Get Directions"
+],
+[
+"Playa Bowls",
+"Show a valid military ID at any Playa Bowls shop on Veterans Day, Wednesday, November 11, and get 50% off a bowl. Open to veterans, active-duty, and retired service members; in-shop orders only. Get Directions"
+],
+[
+"Pluckers Wing Bar",
+"On Wednesday, November 11, 2026, veterans and active-duty military get a free meal at Pluckers on Veterans Day, up to a $17 value. Dine in only, with a valid ID or veteran designation. Get Directions"
 ],
 [
 "Red Robin",
@@ -4123,6 +4176,10 @@ false,
 [
 "Saltgrass Steak House",
 "On Wednesday, November 11, 2026, veterans get 20% off their meal when dining in, and up to four guests at the table get the discount too. Valid military ID required; alcohol and retail purchases are excluded. Get Directions"
+],
+[
+"Shake Shack",
+"Shake Shack gives veterans and active-duty military a free Single ShackBurger, with savings capped at $9.99, on November 11, 2026 at participating locations. Order in the Shack with a team member and show a valid military ID or proof of service. Get Directions"
 ],
 [
 "STK Steakhouse",
@@ -4146,10 +4203,6 @@ false,
 ],
 [
 "World of Beer",
-"World of Beer offers veterans a free Single Smash Burger with fries on November 11, 2026, for dine-in at participating locations with valid military ID. Get Directions"
-],
-[
-"World of Beer",
 "World of Beer offers veterans a free Single Smash Burger & Fries on November 11, 2026, at participating locations. A military ID, VA card or other military identification is required. In store only, limit one per customer. Get Directions"
 ],
 [
@@ -4159,7 +4212,7 @@ false,
 ]
 },
 "https://freshcalendars.com/news/veterans-day-free-meals-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Facebook",
@@ -4187,11 +4240,7 @@ false,
 ],
 [
 "Nov 11",
-"Wed Veterans Day: free meals and discounts list In 7 days + Google"
-],
-[
-"1 free printable below \u2193",
-"Checked Nov. 2, 2026. The list now has 44 free meals and 13 discounts, from Military.com's list updated Nov. 1 and the chains' own announcements. Applebee's, Denny's, Red Lobster, Buffalo Wild Wings, Dunkin' and Starbucks have confirmed for 2026. Veterans and active-duty service members can eat free at 44 restaurant chains on Veterans Day, Wednesday, Nov. 11, 2026, so far, and 13 more offer discou"
+"Wed Veterans Day: free meals and discounts list In 6 days + Google"
 ],
 [
 "Stores, haircuts and parks",
@@ -4546,40 +4595,32 @@ false,
 "(Lowe's)"
 ],
 [
-"Federal Holidays 2027",
-"All 11 Observed Dates, a Printable List and a Bonus Day Off on Dec. 31 October 19, 2026"
+"Golden Corral",
+"Wednesday, Nov. 11, 4 p.m. to Close November 4, 2026"
 ],
 [
-"Thanksgiving Meal",
-"Aldi, Lidl, Target and Sam's Club Prices, Servings and Sale Dates October 28, 2026"
+"Botanical Garden Holiday Lights 2026",
+"Dates, Hours and Prices at 5 Gardens November 4, 2026"
+],
+[
+"Christmas Parades 2026",
+"Chicago, Hollywood, Denver, Dallas and Fort Lauderdale Dates November 4, 2026"
+],
+[
+"Letters to Santa 2026",
+"USPS Operation Santa Dec. 5 Postmark, Canada Post Dec. 9 November 4, 2026"
 ],
 [
 "World Children's Day 2026",
 "Friday, Nov. 20, and the Rights of the Child Treaty November 4, 2026"
 ],
 [
-"Ugly Christmas Sweater Day 2026",
-"Friday, Dec. 18, and Charity Sweater Runs November 4, 2026"
-],
-[
-"Jewish Holidays 2027",
-"Dates for Purim, Passover, Rosh Hashanah, Yom Kippur and Hanukkah November 4, 2026"
-],
-[
-"Christmas Bird Count 2026-27",
-"Dec. 14 to Jan. 5, How to Join a Count November 4, 2026"
-],
-[
-"Black Friday Canada 2026",
-"Nov. 27 Date, Canadian Tire Deals From Nov. 5, Who Hasn't Announced"
-],
-[
 "November 2026 Meteor Showers",
 "Taurid Fireballs Under Dark Skies, Then the Leonids on Nov. 16-17"
 ],
 [
-"Election Night 2026 Live Blog",
-"Results Map, Senate, House and Governor Races"
+"Black Friday Canada 2026",
+"Nov. 27 Date, Canadian Tire Deals From Nov. 5, Who Hasn't Announced"
 ],
 [
 "SNAP Payment Schedule November 2026",
@@ -4592,7 +4633,7 @@ false,
 ]
 },
 "https://veteransdaydeals.us/free-meals/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Chili's",
@@ -4909,7 +4950,7 @@ false,
 ]
 },
 "https://www.dinova.com/dining-guide/veterans-day-guide/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Bar Louie",
@@ -4950,7 +4991,7 @@ false,
 ]
 },
 "https://blog.ahrn.com/veterans-day-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Applebee's",
@@ -4999,7 +5040,7 @@ false,
 ]
 },
 "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Chili's",
@@ -5011,11 +5052,11 @@ false,
 ],
 [
 "Bob Evans",
-"| One free item from a seven-item Veterans Day dine-in menu on November 11, 2026 | Veterans and active-duty military with proof of service | All Bob Evans restaurants. Dine-in only. Not valid with other offers, discounts or coupons. Beverages and gratuity not included; tax additional where applicable."
+"| One free item from an 11-item Veterans Day dine-in menu on November 11, 2026 | Veterans and active-duty military with proof of service | All Bob Evans restaurants. Dine-in only. Not valid with other offers, discounts or coupons. Beverages and gratuity not included; tax additional where applicable."
 ],
 [
 "Applebee's",
-"| A free meal for veterans and active duty \"on Tuesday 11/11\", valid \"November 11, 2025\", described as the 18th consecutive year. \"Stay tuned for news and updates.\" | Page shows 2025; VA's list has a 2026 offer"
+"| Free meal from a Veterans Day menu of seven entr\u00e9es on Wednesday, November 11, 2026 | U.S. veterans and active-duty military with proof of service | Participating Applebee's. Dine-in only. Not valid with other coupons or discounts. Beverage and gratuity not included. Limit one meal per person."
 ],
 [
 "IHOP",
@@ -5961,7 +6002,7 @@ false,
 ]
 },
 "https://www.combatfitness.co/post/veterans-day": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Start Training for Free",
@@ -6206,7 +6247,7 @@ false,
 ]
 },
 "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Quick Tips Before You Go",
@@ -6547,7 +6588,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-retail-discounts/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Editor's Note",
@@ -6566,446 +6607,6 @@ false,
 "."
 ],
 [
-"Acura",
-"Acura is pleased to offer a $750 savings opportunity on an eligible 2025 or newer Integra, TLX, ADX, RDX, or MDX vehicle (excluding PMC vehicles) when you choose to finance or lease through Acura Financial Services (AFS) during the period from April 1, 2026, to March 31, 2027. Please refer to the offer details to confirm client and vehicle eligibility."
-],
-[
-"Adventure Aquarium",
-"Adventure Aquarium extends special one-day admission rates to active or retired military, disabled veterans, and military reservists. However, advance booking might fetch cheaper General Admission tickets due to their fluctuating Plan-Ahead-Pricing. Validate your credentials through ID.me to benefit from this respectful gesture."
-],
-[
-"AFTCO",
-"Veterans can enhance their fishing experience with a 20% discount from AFTCO, the American Fishing Tackle Company. Recognized for innovative, high-quality products and environmental conservation efforts, AFTCO rewards military members with savings on their orders. To claim your discount, you'll need your GovX ID."
-],
-[
-"Akron Zoo",
-"The Akron Zoo offers free entry to veterans on Veterans Day with a valid military ID. Their immediate family members also receive a 50% admission discount. The zoo houses over 1,000 animals across more than 100 species."
-],
-[
-"Alamo Car Rental",
-"Alamo Car Rental, a global provider of car rental services, offers special rates to military members and their families. The discount is applicable in numerous travel destinations, including the U.S., Canada, Europe, and more. Further details like the specific rate or savings are not disclosed."
-],
-[
-"Allegiant Airlines",
-"Allegiant Air offers active-duty military, reserves, veterans and eligible family on the same reservation up to 2 free checked bags, a free carry-on, a personal item, one in-cabin pet and priority boarding on domestic flights. Valid ID is required."
-],
-[
-"Allegiant Airlines",
-"Military travelers receive comprehensive Allegiant benefits, including free checked baggage, complimentary cabin pet transport, priority boarding, and no change fees when orders are changed. Families traveling together also access these same perks."
-],
-[
-"Allen Edmonds",
-"Allen Edmonds offers a 15% discount to veterans and active military members. The discount can be applied at checkout through ID.me verification. The offer requires a valid military ID and doesn't have a specific expiration date."
-],
-[
-"Allen Fly Fishing",
-"Allen Fly Fishing extends a special discount program to qualified U.S. military service members, retirees, and veterans. Note that verification of service is needed to qualify."
-],
-[
-"Alpha Industries",
-"Alpha Industries extends a 15% discount to all active duty, reserve, and retired U.S. military members. This savings applies to all website purchases and requires a valid military ID or proof of service."
-],
-[
-"Alpine Rings",
-"For those who serve, Alpine Rings offers a 30% discount to military personnel, veterans, and first responders, along with their families, using GovX ID for verification."
-],
-[
-"Amanda Products",
-"Amanda Products offers veterans and active-duty personnel a 10% discount on American-made goods. Confirmation via ID.me is required or proof of service."
-],
-[
-"American Airlines",
-"Active-duty service members enjoy perks with American Airlines: free checked bags, priority boarding, waived fees for active-duty working dogs, and special government fares on select routes. For fare details, reach out to Reservations directly."
-],
-[
-"American Forces Travel",
-"American Forces Travel gives eligible military members, including those in the Guard and Reserve, veterans, family members, and caregivers, exclusive access to offers saving up to 60% on travel bookings."
-],
-[
-"American Muscle Car Museum",
-"American Muscle Car Museum welcomes veterans, active-duty military and their families, including spouses, children and significant others, to a free Veterans Day Open House on November 8, 2026, from 1 to 4 PM at 3500 Sarno Road in Melbourne, Florida. Visitors tour the collection of vehicles, displays and automotive memorabilia."
-],
-[
-"Anthem Off-Road",
-"Anthem Wheels offers a 15% discount on all sets of regularly priced wheels, including any custom drill fees. This deal is applicable to active duty, veterans, disabled, and retired members of the U.S. Armed Forces. A valid military ID or proof of service is required for the discount."
-],
-[
-"Anthony Veer",
-"Anthony Veer offers a discount to military members, veterans, and first responders. A valid military ID or proof of service is necessary to receive the discount. This deal is ongoing and available to all qualifying customers."
-],
-[
-"Antique Jewelry Mall",
-"The Antique Jewelry Mall grants veterans and active-duty military a 10% discount on jewelry, including vintage and unique reproduction styles. This deal also comes with free, insured shipping to both domestic and APO/FPO military addresses. Proof of military service is required to receive the discount."
-],
-[
-"Apple",
-"Apple provides a 10% discount on its electronic products and accessories to current and veteran US Military, National Guard, and Reserve participants. Immediate family members living in the same household may also benefit from this reduction. Verification via ID.me is necessary during checkout."
-],
-[
-"Ariat",
-"Ariat International offers a permanent 10% discount to military personnel. This discount applies to their full range of products and requires a valid Military ID."
-],
-[
-"Armed Forces Gear",
-"Armed Forces Gear gives all verified active military members, veterans, plus their spouses and immediate families 20% off purchases. Eligibility is verified using GovX ID."
-],
-[
-"Armed Forces Vacation Club",
-"Armed Forces Vacation Club welcomes active and retired military personnel with a free membership. This offer allows them access to vacations at various resorts starting at $349 per week. Eligible members will need proof of service."
-],
-[
-"ASCM",
-"ASCM offers a discount to active-duty military members and veterans of the US Armed Forces. The discounted rate of $120 per year includes membership and a certificate upgrade add-on. Valid proof of military service, through a military ID, is required to access this deal."
-],
-[
-"Ashley Furniture",
-"Ashley Furniture, a renowned American home furnishings manufacturer and retailer, offers a 5% discount to veterans and active military. This deal, available online only, requires status verification through SheerID. The discount applies upon proof of service."
-],
-[
-"AT&T",
-"AT&T offers up to a 20% discount on their unlimited plans to veterans, military personnel, and their families. Their discounted pricing begins at less than $27 per line for those buying four lines. A valid military ID is required to access this offer."
-],
-[
-"Atkins Nutritionals",
-"Atkins Nutritionals, a health and wellness company, provides a 10% discount to military veterans, service members, and first responders. The offer applies to their range of low-carb diet plans, snacks, and meals. To get the discount, eligibility must be verified through ID.me."
-],
-[
-"Audi of America",
-"Audi of America, a leading German automotive company, offers exclusive benefits and offers to overseas U.S. military personnel. They offer a $1000 bonus towards a lease or purchase of a new, unused vehicle. This is available through their Military Sales Program. Additional information can be found on Audi of America's website."
-],
-[
-"Audi of America",
-"Save $1,000 on a new Audi lease or purchase if you're military, veteran, or a family member\u2014just confirm your status with ID.me."
-],
-[
-"Aura",
-"Aura, a digital security service, offers military members, veterans, and their families up to 68% off protection plans. The discount begins with a two-week free trial. Proof of service is needed to activate the discount."
-],
-[
-"Authentically American",
-"Authentically American offers a 15% discount to all military personnel. Verification through ID.me is required."
-],
-[
-"Auto Accessories Garage",
-"Auto Accessories Garage offers up to 20% off for Veterans and servicemembers. Proof of service or a valid military ID is required."
-],
-[
-"AutoZone",
-"While AutoZone doesn't advertise a military discount online, some stores may provide 10% off for military personnel with ID. Contact your nearest AutoZone to confirm if the discount is available at that location."
-],
-[
-"B&O Railroad Museum",
-"Active military can explore the historic B&O Railroad Museum in Baltimore for free. Veterans with a valid military ID receive a $3 discount on admission."
-],
-[
-"Back Market",
-"Back Market, a popular online platform for refurbished electronics, offers a 10% discount to military personnel and veterans. A valid military ID is required for the discount. The offer is available on Veterans Day."
-],
-[
-"Backcountry",
-"At Backcountry, an outdoor gear and clothing retailer, veterans can receive a discount on most full-priced items by sending a request from their official military email address. A valid Military ID is required. The discount is unspecified and may vary."
-],
-[
-"Ballistic Armor Co",
-"Ballistic Armor Co., a trusted supplier of protection solutions, offers a 10% discount to US Military members on all products. To receive this deal, service members need to verify their eligibility and secure a personal discount code. The offer requires a valid military ID or proof of service."
-],
-[
-"Bare Performance Nutrition",
-"Bare Performance Nutrition, a veteran-founded supplement company, gives a 15% discount to active-duty military members, veterans, and their dependents. Just use ID.me to verify your service status. This way, they show gratitude for the daily sacrifices made by our military community."
-],
-[
-"Barstool Sports",
-"Barstool Sports, a popular sports and pop culture platform, offers a 15% discount on its vast catalog of merchandise. This savings applies to active-duty military, veterans, their dependents, as well as police, fire and EMT personnel. Verification for the discount is required online via a service or GovX ID."
-],
-[
-"Bass Pro Shops",
-"Bass Pro Shops offers a year-round Legendary Salute, a 10% discount for military servicemembers and veterans."
-],
-[
-"Bass Pro Shops",
-"Bass Pro Shops gives back to the military community with a special discount. Veterans and their families can enjoy a 10% discount on firearms and ammunition, and 10% off on all other items year-round. A valid military ID or proof of service is required to get these discounts."
-],
-[
-"Bassett Furniture",
-"Bassett Furniture offers a $150 discount on one furniture item worth $1500 and 10% off accessories. This special pricing is available to all military community members, first responders, and medical providers, including active duty personnel, reservists, national guard, veterans and their immediate families, as well as nurses, doctors, and physician assistants. Verification through ID.me is requir"
-],
-[
-"Baton Rouge Zoo",
-"Baton Rouge Zoo offers former and current members of the military admission for $8.50 plus tax on any day other than its observed Veterans Day in November, when admission is free."
-],
-[
-"Battleship New Jersey",
-"Battleship New Jersey Museum offers veterans a $10 discount on general admission tickets throughout the year."
-],
-[
-"Beaches Resorts",
-"Beaches Resorts offers an additional 10% off to all military personnel year-round. This discount is applicable on top of existing promotions."
-],
-[
-"Bear Butt Hammocks",
-"Get a 15% discount code from Bear Butt Hammocks after verifying your military status."
-],
-[
-"Bear Mattress",
-"Bear Mattress provides veterans with a 40% discount on all items and throws in free sleep accessories with any mattress purchase. To secure the deal, a valid military ID or ID.me verification is necessary. The company's goal is superior sleep through advanced technology accessible to all, from athletes to everyday sleepers."
-],
-[
-"Bell Bicycling and Motorcycle Helmets",
-"Bell Bicycling and Motorcycle Helmets offers a 20% discount for military members. With the exclusive \"Pro Deal Program,\" military personnel can enjoy special discounts on all Bell products. To participate, a valid military ID or proof of service is required."
-],
-[
-"Berklee Online",
-"Berklee Online offers a 30% tuition reduction for veterans, reservists, and active-duty military students. This discount applies to their online degrees, certificate programs, and music courses. To take advantage of this offer, a valid military ID or proof of service is required."
-],
-[
-"Big 5 Sporting Goods",
-"Big 5 Sporting Goods offers a 10% discount on all purchases for active duty military, reservists, veterans, and their spouses and dependent children."
-],
-[
-"Bio-Therapeutic",
-"Bio-Therapeutic, a family-owned skincare equipment and product company, offers a 20% discount to armed service members, veterans, and their families on all items in their online store. The discount can be applied at checkout using a current ID.me account. The discount does not have a set expiration date."
-],
-[
-"Birch",
-"Birch, the eco-friendly bedding company, offers a 25% discount for active-duty military, veterans and their families. Interested individuals can secure a one-time code through Verifypass, limited to one use per day. Valid military ID or proof of service is required."
-],
-[
-"BJ's Wholesale Club",
-"BJ's Wholesale Club offers a 35% savings on annual membership fees for active and retired military personnel. They also provide a $10 bonus to show gratitude for their service. A valid military ID is required to receive these benefits."
-],
-[
-"Black Rifle Coffee Company",
-"Through a collaboration with Born Primitive and ForgiveCo, Black Rifle Coffee Company aims to erase $25 million in medical debt for over 10,000 military veterans. All profits generated by the two companies between November 7 and 11 will support this debt relief campaign."
-],
-[
-"Blue Force Gear",
-"Blue Force Gear extends a 10% discount to eligible active members. Requirements apply."
-],
-[
-"Blue Star Museums",
-"Blue Star Museums offer free entry to a variety of learning venues for active-duty military personnel, National Guard, Reserves, and their families, including over 2,000 museums, nature centers, and zoos annually between Armed Forces Day and Labor Day. Visitors must present a valid Military ID for admission. This special offer is also available on Veterans Day."
-],
-[
-"Blue Zoo Spokane",
-"Active military and veterans receive $2 off general admission year-round at Blue Zoo Spokane with a military ID or proof of service."
-],
-[
-"BMW",
-"BMW offers active duty military, veterans and their family members a chance to save on car leases and new vehicle purchases. Savings could range from $500 to $5,000. To learn more or claim the discount, reach out to a local BMW dealer."
-],
-[
-"BMW",
-"BMW Motorrad USA extends a discount of up to $900 on the purchase of eligible new BMW motorcycles to military service members."
-],
-[
-"Boden",
-"Boden, the beloved British fashion brand, gives military members a 20% discount on their purchases. To enjoy this offer, patrons must validate through SheerID. The brand is recognized for its quality and colorful designs for men, women, and children."
-],
-[
-"BodyBio",
-"BodyBio, renowned for its science-backed supplements that boost gut and brain health, is offering military members a 20% lifetime discount on all products. Proven by third-party potency tests, their popular offerings include BodyBio PC and Butyrate. All active, veteran, and reservist military members can enjoy this deal after providing proof of service."
-],
-[
-"Bonefish",
-"Bonefish gives all first responders, active and retired military members a 10% discount year-round with their ID."
-],
-[
-"Boscov's",
-"Boscov's offers military members, veterans, and their spouses a 15% discount on a wide selection of goods. This one-year Military Discount Code can be used for in-store and online purchases. Verification of military status is required."
-],
-[
-"Boston Bill Sunglasses",
-"Veteran-owned Boston Bill Sunglasses, known for affordable, quality eyewear since 1993, extends a $5 discount per pair to military members. Simply make your order via a call or email and present a valid military ID or proof of service. This offer is their way of thanking those who serve."
-],
-[
-"Brooklyn Bedding",
-"Brooklyn Bedding, a leading innovator in the mattress industry, offers a 5% discount to military members on all purchases. The discount is applicable both online and in-store, with potential for extra savings during holiday promotions. Verification through ID.me is required to enjoy these benefits."
-],
-[
-"Buckle",
-"Buckle offers a standing 10% discount for members of the military, their spouses, and dependents. To receive this discount online or in-store, show a valid military ID or proof of service at checkout. This versatile retailer carries a broad selection of brand-name and private brand merchandise."
-],
-[
-"Budget Car Rental",
-"Budget Car Rental provides a 25% discount to U.S. government and military personnel. To gain these savings, users should apply BCD number V053905 during booking. This offer can be coupled with other coupon savings and requires a valid military ID."
-],
-[
-"Budget Truck Rental",
-"Budget Truck Rental offers a 20% discount on truck rentals to U.S. Military Personnel with orders. The discount can be redeemed at budgettruck.com using the promotion code USMIO. A confirmation number is provided when the rental deposit is secured."
-],
-[
-"Buds Gun Shop",
-"Buds Gun Shop offers discounted prices on firearms from a variety of manufacturers and brands to active, veteran, and retired members."
-],
-[
-"Buick",
-"Buick offers a $500 discount on select vehicles for active duty military, reservists, National Guard members, retirees, immediate family, and veterans within three years of discharge. This deal can be combined with ongoing offers for enhanced savings. Verification through ID.me is required prior to purchase."
-],
-[
-"BuildASign.com",
-"BuildASign.com, a custom printing company based in Austin, provides a free 3x6 banner to honor returning troop homecomings. This offer asks for a valid military ID. The company also operates EasyCanvasPrints.com and AlliedShirts.com."
-],
-[
-"Burton",
-"For active duty, veteran, and reservist members of the U.S. and Canadian Armed Forces, Burton extends a 20% discount on select gear as a thank you for your service. Verification is required to receive the promo code, and while discounts may vary, Burton continues to explore ways to offer additional benefits to those who serve."
-],
-[
-"Cabela's",
-"Cabela's offers military members and first responders a 10% discount in stores and online, with exclusions. Its Veterans Day page also extends the military discount to current and former members of the military in stores, with some restrictions."
-],
-[
-"Calvert Marine Museum",
-"Calvert Marine Museum offers active-duty military members and veterans free museum admission all day on Veterans Day, Wednesday, Nov. 11, 2026, in Solomons, Maryland. Veterans Day tours are included with admission and need no reservations."
-],
-[
-"Circle K",
-"Circle K offers veterans with an honorable discharge from the U.S. Army, Navy, Air Force, Marine Corps or Coast Guard 10% off the Initial Franchise Fee when they sign the Convenience Store Franchise Agreement. Acceptable documentation of discharge is required. This is for prospective franchisees, not retail customers."
-],
-[
-"Dell Inc",
-"Dell offers military members, first responders and healthcare heroes up to 10% extra off PCs and electronics through its Heroes Purchase Program. Customers create a Dell account, register for Dell Rewards and verify member status; savings show in the cart and exclusions may apply."
-],
-[
-"Five Below",
-"Five Below is giving veterans and military families 10% off in-store purchases from Nov. 9-15, 2026. The Five Below Foundation will also donate $1 per transaction during the event to Blue Star Families."
-],
-[
-"Great Clips Free Haircut",
-"Great Clips offers veterans and active military service members a free haircut, or a free haircut card for a future visit, on Veterans Day, November 11, 2026, at any U.S. salon. Cards are redeemable through December 4, 2026."
-],
-[
-"Greater Des Moines Botanical Garden",
-"Greater Des Moines Botanical Garden offers active and retired veterans complimentary general admission on Saturday, November 7, 2026, from 9 am to 4 pm at 909 Robert D. Ray Drive in Des Moines."
-],
-[
-"Harley-Davidson Museum",
-"On November 11, 2026, the Harley-Davidson Museum gives veterans and active-duty military free admission for themselves, one adult guest, and up to four children, plus 10% off at the Harley-Davidson\u00ae Shop, 10% off food, and $2 off draft beers at MOTOR\u00ae Bar & Restaurant."
-],
-[
-"History Colorado Center",
-"Colorado History Museum provides free general admission to active-duty military, National Guard, Reservists, and up to five family members through the Blue Star Museums program, with eligible family members welcome to visit without the service member present. Veterans also enjoy a discounted admission rate of $2 off."
-],
-[
-"Home Depot",
-"Home Depot offers a 10% discount to active military, veterans, and their spouses, up to $400 in annual savings, with a military ID or proof of service."
-],
-[
-"IAITAM",
-"IAITAM invites veterans to claim one eligible one-day instructor-led certification course at no cost on November 11, 2026, 8:00 AM to 2:00 PM ET, after verifying veteran status. Self-paced courses and the CAIAM course are excluded, and the $425 exam is separate."
-],
-[
-"Kalahari",
-"Active, veteran, and retired military and first responders get 10% off Kalahari's Best Available Rate using promo code HEROES on November 11th, when showing valid ID."
-],
-[
-"Kings Dominion & Soak City",
-"Active and retired military personnel, along with veterans, can enjoy discounted tickets at Kings Dominion & Soak City for themselves and up to six family members. Available online only, this offer is valid on all public operating days, with seasonal variations in discount rates."
-],
-[
-"Kohl's",
-"Kohl's, a family-centric retail company, offers a standing 15% in-store discount every Monday to active military members, veterans, and retirees, including their immediate family. This offer requires proper identification or proof of service for validation. The discount applies to a wide variety of products such as clothing, shoes, home decor, appliances, and electronics."
-],
-[
-"Lowe's",
-"Lowe's, the well-known home improvement retailer, offers a 10% discount to active duty military, veterans, and their spouses."
-],
-[
-"New Hope Valley Railway",
-"New Hope Valley Railway welcomes Veterans and Active Duty Military aboard for a complimentary train ride on Veterans Day, Wednesday, November 11, 2026. American Legion Post 116 will present the colors at 10:00am before the train departs."
-],
-[
-"North Carolina Zoo",
-"North Carolina Zoo offers free admission to active duty, reserve, retired military, veterans and military spouses, plus up to three guests, Nov. 7-13, 2026. Accepted military or veteran ID is required, with a maximum of four entries per ID, and the offer is only available on-site."
-],
-[
-"Pro Football Hall of Fame",
-"The Pro Football Hall of Fame offers a $5 discount on admission to all active and retired US military members, first responders, and their families. Valid military ID must be shown at purchase. Enjoy football history and legendary players any time of year with this deal."
-],
-[
-"Reagan Presidential Library",
-"Reagan Library hosts its annual Veterans Day commemoration on November 11, 2026 in Simi Valley, with a 10:30 a.m. flyover and an 11:00 a.m. program honoring all branches. Outdoor events and the program are free; veterans with valid ID get free museum admission."
-],
-[
-"RetailMeNot",
-"RetailMeNot is offering up to 50% off on top deals from national retailers for Veterans Day. These savings are available through coupon codes. To take advantage of these offers, all you need is a valid Military ID."
-],
-[
-"Rexing USA",
-"This Veteran's Day, veterans and military personnel get 10% off across Rexing's full product lineup."
-],
-[
-"San Diego Bayfair",
-"Active military and reservists receive free admission to San Diego Bayfair with valid identification. Plus, spouses attending alongside their service member enjoy 50% off their ticket."
-],
-[
-"San Diego Zoo",
-"Active-duty military personnel can enjoy complimentary entry at San Diego Zoo, while their spouses and dependents receive a 10% discount on their 1-Day Pass as a token of appreciation."
-],
-[
-"ScrubaDub Car Wash",
-"ScrubaDub is offering a complimentary express car wash to military members, veterans, and retirees on November 11 to show appreciation for their service."
-],
-[
-"Sea World",
-"Active duty military members and their families can unlock year-round fun with the 2025 Military Pass at SeaWorld San Diego for just $99.99! This exclusive pass offers unlimited entry and parking, extending the excitement through December 31, 2025. Each service member can purchase up to six passes, perfect for family and close friends. Military ID is required, with dependents over 10 needing ID as"
-],
-[
-"Sesame Place",
-"Sesame Place Philadelphia thanks active-duty military members with a free single-day admission for themselves and up to three dependents through Waves of Honor. A valid military ID is required, and tickets must be reserved in advance for this offer."
-],
-[
-"Shedd Aquarium",
-"Shedd Aquarium offers free general admission to active-duty military personnel year-round with proper ID. Family members are welcome to join during Blue Star Museums dates, and 4-D Experience tickets can be added in person, subject to availability."
-],
-[
-"Showcase Cinemas",
-"Showcase Cinemas offers active and retired military personnel and their guests its military price all day on Wednesday, November 11, 2026: $6 bargain matinee, $8 evening, $12 SuperLux and $10 Lux Lite tickets. Valid only on tickets purchased at the box office."
-],
-[
-"Silver Dollar City",
-"Silver Dollar City Attractions proudly offers discounted tickets to U.S. active and retired military, veterans, reservists, along with their spouses and dependent children (ages 4-17) living in the same household, as a thank-you for their service."
-],
-[
-"Target",
-"Verified military community members get 20% off with Target Circle from November 5 through November 11, 2026. Verify your military status with Target Circle first; terms and conditions apply."
-],
-[
-"Tractor Supply Company",
-"On Veterans Day, Tractor Supply Company honors military members and their families with a 10% in-store discount . Valid military identification or service proof unlocks this one-day benefit across all locations on November 11, as a gesture of gratitude for their service."
-],
-[
-"True REST Float Spa",
-"On November 11, 2026, True REST Float Spa will honor veterans by offering complimentary float sessions by appointment at participating locations, provided they show proof of military ID."
-],
-[
-"Tuscan Brands",
-"Tuscan Brands welcomes veterans for complimentary dining at its New Hampshire and Massachusetts locations on November 11, 2026. Guests are asked to call ahead to reserve a spot."
-],
-[
-"Utah's Hogle Zoo",
-"Utah's Hogle Zoo offers active service members, veterans, military benefitted family members and immediate family free general admission on Veterans Day, November 11, 2026, from 10 AM to 5 PM. Tickets are available only at the zoo ticket window with a valid military ID."
-],
-[
-"Venture X",
-"Throughout November, veterans can enjoy a complimentary Community Membership at Venture X with full access to shared workspaces, networking events, and amenities for new members only."
-],
-[
-"WaTiki Indoor Waterpark Resort",
-"Military members receive 20% off individual Waterpark Admission Passes and 25% off the full bill at Sliders Bar & Grill (excluding alcoholic drinks) at WaTiki Indoor Waterpark Resort. Bring proof of service to KoKo's Arcade to access these savings. Offers cannot be combined with other discounts, and management reserves all rights."
-],
-[
-"Wyndham Hotels & Resorts",
-"Wyndham offers several Veterans Day deals. 3,000 Wyndham Rewards bonus points for one qualified stay booked direct under the Military Appreciation Rate between Oct 20 and Dec 7, 2026 and completed by Dec 31, 2026. 3,000 Wyndham Rewards bonus points for one qualifying stay booked under the Military Appreciation Rate on a direct channel."
-],
-[
-"Zips Car Wash",
-"On November 11, veterans and active-duty military personnel can enjoy a free best wash at several car washes: Premier at ZIPS Car Wash, Jet at Brite Car Wash, and Shoot the Moon at Rocket Express Car Wash."
-],
-[
-"Zoo Atlanta",
-"In gratitude for their service, Zoo Atlanta provides 10% off admission to active-duty, reserve, veteran, and retired military personnel with a valid military ID. Family members and guests pay regular admission rates, and no reservation is needed for military members."
-],
-[
 "Check out more",
 "Want to add a discount or offer to our site? We continually update this article each year and republish it with current information. Please contact us if you have any additions or corrections. Please be sure to include a link to the website so we can verify it and share it with our readers."
 ],
@@ -7020,7 +6621,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "4Patriots",
@@ -7133,7 +6734,7 @@ false,
 ]
 },
 "https://valoannetwork.com/veterans-day-deals-2026/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Chili's",
@@ -7650,7 +7251,7 @@ false,
 ]
 },
 "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "But Wait, There's More",
@@ -9576,7 +9177,7 @@ false,
 ]
 },
 "https://fedratecalc.com/veterans-day-free-meals-2026/": {
-"read_utc": "2026-11-04T19:45Z",
+"read_utc": "2026-11-05T06:47Z",
 "pairs": [
 [
 "Chili's Grill & Bar",
