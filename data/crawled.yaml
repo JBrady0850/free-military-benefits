@@ -269,6 +269,19 @@ entries:
   sources:
   - https://www.roboform.com/military-discount
   - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=RoboForm
+- id: auto-t-mobile
+  name: T-Mobile
+  category: technology
+  offer: 40% off with the military discount, as reported by 2 independent directories (sheerid.com, baseneed.com). Confirm current terms and who qualifies before buying.
+  percent: 40
+  percent_up: false
+  verified_by: two directories
+  confidence: community
+  source_url: https://www.t-mobile.com/cell-phone-plans/military-discount-plans
+  sources:
+  - https://www.t-mobile.com/cell-phone-plans/military-discount-plans
+  - https://www.sheerid.com/?p=71432#:~:text=T-Mobile
+  - https://baseneed.com/blog/military-discounts-2026-complete-list#:~:text=T-Mobile
 - id: auto-tarte-cosmetics
   name: Tarte Cosmetics
   category: retail
@@ -530,8 +543,8 @@ entries:
 - id: auto-at-t
   name: AT&T
   category: technology
-  offer: 25% off with the military discount, as reported by 6 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com). Confirm current terms and
-    who qualifies before buying.
+  offer: 25% off with the military discount, as reported by 7 independent directories (va.gov, wearethemighty.com, dealnews.com, usmilitary.com, vetunlock.com, savingsgrove.com, baseneed.com). Confirm current
+    terms and who qualifies before buying.
   percent: 25
   percent_up: false
   verified_by: two directories
@@ -545,6 +558,7 @@ entries:
   - https://usmilitary.com/top-25-military-discounts/#:~:text=AT%26T
   - https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide#:~:text=AT%26T
   - https://savingsgrove.com/blogs/guides/military-discount-list#:~:text=AT%26T
+  - https://baseneed.com/blog/military-discounts-2026-complete-list#:~:text=AT%26T
 - id: auto-avis-budget
   name: Avis/Budget
   category: travel
