@@ -93,6 +93,18 @@ entries:
   sources:
   - https://www.houstonzoo.org/plan-your-visit/prices-and-discounts/
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Houston%20Zoo
+- id: auto-jungle-island
+  name: Jungle Island
+  category: attractions
+  offer: 50% off with the military discount. Confirmed on the brand's own page; also listed by dealhack.com. Confirm current terms and who qualifies before buying.
+  percent: 50
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://www.jungleisland.com/discounts/
+  sources:
+  - https://www.jungleisland.com/discounts/
+  - https://dealhack.com/blog/military-discounts-guide#:~:text=Jungle%20Island
 - id: auto-oakley
   name: Oakley
   category: retail
