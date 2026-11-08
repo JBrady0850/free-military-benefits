@@ -100,4 +100,32 @@ crawl.PREV_NAMES["siriusxm"] = "SiriusXM"
 _listed = sorted(e["name"] for e in crawl.harvest_directories({"directories": [_d1, _d2]}, {}, set(), 21, "2026-11-02", [])[0])
 check("two spellings on two directories list once, and a listed name keeps its spelling", _listed, ["Helix Sleep", "SiriusXM"])
 crawl.fetch = _real_fetch; crawl.MEM.clear(); crawl.CARRIED.clear(); crawl.PREV_NAMES.clear()
-print("CRAWL TESTS PASSED (56 checks)")
+# Veterans Day categories: a discount store is never filed under free meals
+crawl.KINDS.clear()
+check("a store with a percent discount is retail", crawl.vd_category("Five Below", "10% off", []), "retail")
+check("a furniture store is retail", crawl.vd_category("Ashley", "5% off", ["5% off furniture"]), "retail")
+check("a free dish is food", crawl.vd_category("Fazoli's", "Free Spaghetti", []), "food")
+check("a restaurant discount on the meal is food", crawl.vd_category("Culver's", "10% off", ["10% off your meal"]), "food")
+crawl.KINDS["red roof"] = "travel"
+check("the store snapshot's business type wins", crawl.vd_category("Red Roof", "10% off", ["10% off stays"]), "travel")
+crawl.KINDS.clear()
+crawl.KINDS["7-eleven"] = "retail"; crawl.KINDS["target"] = "retail"
+check("a free coffee at a convenience store is food", crawl.vd_category("7-Eleven", "Free coffee", []), "food")
+check("a percent off at a department store is retail", crawl.vd_category("Target", "20% off", []), "retail")
+check("a theme park is an attraction", crawl.vd_category("Disney", "Discounted tickets", []), "attractions")
+check("a ferry is travel", crawl.vd_category("NY Waterway", "Free rides", []), "travel")
+check("a restaurant named Kitchen is food", crawl.vd_category("BRAVO! Italian Kitchen", "Half off an entree", []), "food")
+check("a free Italian ice is food", crawl.vd_category("Jeremiah's Italian Ice", "Free Italian ice", []), "food")
+crawl.KINDS.clear()
+check("zero-width characters are stripped", crawl.clean("\u200b Newk's Eatery"), "Newk's Eatery")
+# The published name survives when a new list uses a shorter spelling
+crawl.fetch = lambda url, robots, report: None
+_v1, _v2 = "https://example.org/vd2/", "https://example.net/vd2/"
+crawl.MEM.clear(); crawl.CARRIED.clear(); crawl.PREV_NAMES.clear()
+crawl.MEM[_v1] = {"read_utc": crawl.RUN_UTC, "pairs": [["Black Angus Steakhouse", "Free meal"]]}
+crawl.MEM[_v2] = {"read_utc": crawl.RUN_UTC, "pairs": [["Black Angus", "Free meal"]]}
+crawl.PREV_NAMES[crawl.norm("Black Angus Steakhouse")] = "Black Angus Steakhouse"
+_n = [e["name"] for e in crawl.harvest_vd_lists({"veterans_day_lists": [_v1, _v2], "veterans_day_year": 2026}, {}, set(), "2026-11-08", [])[0]]
+check("a shorter spelling on a new list keeps the published name", _n, ["Black Angus Steakhouse"])
+crawl.fetch = _real_fetch; crawl.MEM.clear(); crawl.CARRIED.clear(); crawl.PREV_NAMES.clear()
+print("CRAWL TESTS PASSED (69 checks)")

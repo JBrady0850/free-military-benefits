@@ -483,6 +483,30 @@ entries:
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Leatherman
   - https://www.sheerid.com/?p=71432#:~:text=Leatherman
   - https://couponfollow.com/research/best-military-discounts#:~:text=Leatherman
+- id: auto-nba-league-pass
+  name: NBA League Pass
+  category: technology
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
+  percent: 30
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  sources:
+  - https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  - https://www.veteransbenefitskb.com/discounts-deals#:~:text=NBA%20League%20Pass
+- id: auto-nba-tv
+  name: NBA TV
+  category: technology
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by va.gov. Confirm current terms and who qualifies before buying.
+  percent: 30
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  sources:
+  - https://support.watch.nba.com/hc/en-us/articles/27007279497239-NBA-League-Pass-GOVX-Offer
+  - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=NBA%20TV
 - id: auto-nutrex
   name: Nutrex
   category: health

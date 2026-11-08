@@ -33,6 +33,10 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 9 * * 1'
         run: python scripts/snapshot_places.py
         continue-on-error: true
+      - name: Add store locations for newly harvested brands (incremental, every other run)
+        if: github.event_name != 'workflow_dispatch' && github.event.schedule != '17 9 * * 1'
+        run: python scripts/snapshot_places.py --incremental
+        continue-on-error: true
       - name: Rebuild and validate data.json
         run: |
           python scripts/build_data.py --selftest

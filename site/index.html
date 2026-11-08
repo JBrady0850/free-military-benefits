@@ -159,6 +159,7 @@ ol.steps input{margin-right:6px;vertical-align:middle}
 .tray button{font:inherit;font-size:14.5px;font-weight:bold;border:0;border-radius:4px;padding:7px 11px;cursor:pointer;background:#d4a017;color:#0f2744}
 .tray button.ghost{background:transparent;color:#fff;border:1px solid #6d7f99}
 body.has-tray{padding-bottom:70px}
+@media (max-width:640px){.tray{padding:6px 10px}.tray .in{flex-wrap:nowrap;gap:6px}.tray .cnt{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.tray button{font-size:14px;padding:0 10px;flex:0 0 auto}body.has-tray{padding-bottom:64px}}
 body.on-picks .tray{display:none !important}
 .installhelp{display:none;background:var(--soft);border-left:4px solid #d4a017;padding:10px 12px;font-size:14.5px;line-height:1.55;color:var(--legend);margin:0 0 14px}
 .installhelp.on{display:block}
@@ -515,7 +516,7 @@ function countdown() {
 function tiles() {
  const mine = DATA.filter((e) => e.kind === "hidden" && fits(e));
  const todo = mine.filter((e) => !hasIt(e)).length;
- const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && (!LOCAL || placeStatus(e) === "near")).length;
+ const vdLive = DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && (!LOCAL || placeStatus(e) === "near") && !smallOffer(e)).length; // the same rule as the list
  const big = DATA.filter((e) => e.percent >= BADGE_MIN && fits(e)).length;
  const custom = picked.length > 0;
  $("#tiles").innerHTML = [[todo, custom ? "benefits to claim" : "hidden benefits", "unlocks"], [vdLive, LOCAL ? "Veterans Day offers near " + LOCAL.zip : custom ? "Veterans Day offers for you" : "Veterans Day offers", "vd"],
@@ -703,13 +704,18 @@ function renderUnlocks() {
 const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
  ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
  ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
-const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi", "unknown"];
-let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false, unknown: false};
+const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi", "unknown", "small"];
+let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false, unknown: false, small: false};
+/* An offer whose whole benefit is under 21 percent off is an everyday store discount, not a Veterans Day freebie:
+   it waits behind a chip, the same 21 percent line the discount directory uses. */
+const smallOffer = (e) => { const m = String(e.offer || "").match(/^\s*(?:up to\s+)?(\d{1,2})\s?(?:%|percent)/i); return !!m && +m[1] < 21; };
+const smallCount = () => DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && localOK(e) && smallOffer(e)).length;
 const nsources = (e) => new Set((e.sources || []).map((u) => host(u).split(".").slice(-2).join("."))).size;
 function vdChips() {
  const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS, [["multi", "3+ sources"]],
   picked.length ? [["others", "Include offers for other statuses"]] : [],
   LOCAL && unknownCount() ? [["unknown", "Add " + unknownCount() + " chains we cannot place"]] : [],
+  smallCount() ? [["small", "Add " + smallCount() + " small store discounts (under 21% off)"]] : [],
   /^[0-9]{5}$/.test(P.zip) ? [["everywhere", "Show offers everywhere, not just near " + P.zip]] : []);
  $("#vdChips").innerHTML = list.map((f) => {
   const on = VD_TOGGLES.includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
@@ -782,6 +788,7 @@ function vdList() {
   if (!vdf.ended && ended(e)) return false;
   if (!vdf.others && !fits(e)) return false;
   if (!localOK(e)) return false;
+  if (!vdf.small && smallOffer(e)) return false;
   if (vdf.later && !e.redeem_by && !(e.event_end && e.event_end > VD)) return false;
   if (vdf.family && !e.family) return false;
   if (vdf.multi && nsources(e) < 3) return false;
@@ -791,7 +798,8 @@ function vdList() {
   if (t === "mine") return likes(e);
   if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return e.slot === t;
   return e.category === t;
- }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) || byLocal(a, b) ||
+ }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) ||
+  (P.interests.length ? (likes(b) ? 1 : 0) - (likes(a) ? 1 : 0) : 0) || byLocal(a, b) ||
   (P.family ? (b.family ? 1 : 0) - (a.family ? 1 : 0) : 0) || a.name.localeCompare(b.name));
 }
 function renderVD() {
@@ -804,7 +812,7 @@ function renderVD() {
  $("#vdOut").innerHTML = card(title, "NOV 11", "#d4a017", list.length + " of " + all, inner);
  $("#vdLegend").innerHTML = LOCAL && !vdf.everywhere ?
   "Showing only offers with a store or venue within " + LOCAL.mi + " miles of ZIP " + esc(LOCAL.zip) + ", statewide offers in " + esc(LOCAL.state || "your state") +
-  ", online offers and national programs. " + (unknownCount() ? unknownCount() + " chains have no store locations in our data yet, so we cannot tell if they are near you; they are hidden unless you add them with the chip. " : "") +
+  ", online offers and national programs; your interests come first on each date. " + (smallCount() ? "Store discounts under 21 percent off wait behind a chip. " : "") + (unknownCount() ? unknownCount() + " chains have no store locations in our data yet, so we cannot tell if they are near you; they are hidden unless you add them with the chip. " : "") +
   "Distances come from weekly store data on this device. <a href=\"#start\" data-go=\"start\" data-ivgo=\"1\">Change ZIP or distance</a>." :
   "Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. " +
   (P.zip ? "" : '<a href="#start" data-go="start" data-ivgo="1">Add your ZIP</a> to hide offers that are nowhere near you. ') + "Offers vary by location; confirm before you go.";
@@ -1030,7 +1038,7 @@ function renderTray() {
  t.style.display = n ? "block" : "none";
  document.body.classList.toggle("has-tray", n > 0);
  if (!n) return;
- t.querySelector(".in").innerHTML = '<span class="cnt">' + n + (n === 1 ? " item" : " items") + " on My list</span>" +
+ t.querySelector(".in").innerHTML = '<span class="cnt">' + n + " on My list</span>" +
   '<button type="button" class="ghost" data-tray="view">View</button><button type="button" data-tray="ics">Calendar</button><button type="button" data-tray="mail">Email</button>';
 }
 $("#tray").addEventListener("click", (ev) => {

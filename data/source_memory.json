@@ -2,7 +2,7 @@
 "note": "Last good read of each source, parsed; replayed up to 7 days when a source refuses.",
 "sources": {
 "https://dealhack.com/blog/military-discounts-guide": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Adidas",
@@ -289,7 +289,7 @@ true,
 ]
 },
 "https://hip2save.com/deals/military-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Adidas",
@@ -357,7 +357,7 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-military-discounts-clothes.html": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "UNTUCKit",
@@ -369,7 +369,7 @@ false,
 ]
 },
 "https://news.va.gov/85765/veteran-discounts-available-year-round/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Oakley",
@@ -669,7 +669,7 @@ false,
 ]
 },
 "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Adidas",
@@ -789,7 +789,7 @@ true,
 ]
 },
 "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Paramount Plus",
@@ -948,7 +948,7 @@ false,
 ]
 },
 "https://usmilitary.com/top-25-military-discounts/": {
-"read_utc": "2026-11-02T13:55Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Paramount+",
@@ -1012,18 +1012,11 @@ false,
 false,
 "outdoor",
 []
-],
-[
-"HP",
-40,
-true,
-"technology",
-[]
 ]
 ]
 },
 "https://militaryfamilies.com/?p=32765": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "ASICS",
@@ -1064,11 +1057,11 @@ false,
 ]
 },
 "https://barbend.com/?p=218235": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": []
 },
 "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Reebok",
@@ -1080,7 +1073,7 @@ false,
 ]
 },
 "https://www.sheerid.com/?p=71432": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Florence Marine X",
@@ -1198,7 +1191,7 @@ false,
 ]
 },
 "https://veteran.com/military-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Helix Mattress Helix Mattress",
@@ -1223,7 +1216,7 @@ false,
 ]
 },
 "https://couponfollow.com/research/best-military-discounts": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Great Wolf Lodge",
@@ -1246,7 +1239,7 @@ false,
 ]
 },
 "https://www.operationmilitarykids.org/military-veterans-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Dollywood",
@@ -1272,11 +1265,11 @@ false,
 ]
 },
 "https://claimraven.com/military-discounts": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": []
 },
 "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Adidas",
@@ -1330,7 +1323,7 @@ true,
 ]
 },
 "https://guidetobargain.com/guides/military-discounts": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "adidas",
@@ -1363,7 +1356,7 @@ false,
 ]
 },
 "https://savingsgrove.com/blogs/guides/military-discount-list": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Paramount+",
@@ -1415,7 +1408,7 @@ false,
 ]
 },
 "https://www.veteransbenefitskb.com/discounts-deals": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Take 5 Oil Change",
@@ -2064,7 +2057,7 @@ false,
 ]
 },
 "https://www.dealnews.com/features/discounts/military-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Paramount Plus",
@@ -2223,15 +2216,15 @@ false,
 ]
 },
 "https://www.military.com/discounts/best-retail-military-discounts.html": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": []
 },
 "https://www.militarybenefit.org/get-educated/military-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": []
 },
 "https://baseneed.com/blog/military-discounts-2026-complete-list": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "AT&T",
@@ -2257,7 +2250,7 @@ false,
 ]
 },
 "https://storepolicies.com/discounts-for-soldiers/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "rows": [
 [
 "Adidas",
@@ -2304,7 +2297,7 @@ false,
 ]
 },
 "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Applebee's",
@@ -2513,7 +2506,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "110 Grill",
@@ -2541,7 +2534,7 @@ false,
 ],
 [
 "Bar Louie",
-"On November 10 and 11 , veterans and active duty military get a free burger of their choice (excluding the Big Louie). This offer is vali \u200b \u200b d for dine-in only at participating locations. Present a valid military ID or proof of service to redeem."
+"On November 10 and 11 , veterans and active duty military get a free burger of their choice (excluding the Big Louie). This offer is vali d for dine-in only at participating locations. Present a valid military ID or proof of service to redeem."
 ],
 [
 "Benihana",
@@ -2808,8 +2801,8 @@ false,
 "Veterans and active-duty military members can receive a free meal when dining in at participating locations on November 11 with proof of veteran or military status. Guests can choose from a \u00bd LB Stripper Combo, \u00bd LB Boneless Combo, MyNative Burger with fries or Native Chicken Sandwich with fries."
 ],
 [
-"\u200b Newk's Eatery",
-"Active-duty service members and veterans get a free Pick 2\u2014their choice of any two half sandwiches, half salads or cups of soup\u2014with a valid military ID on November 11 , at any participating Newk's Eatery. \u200b"
+"Newk's Eatery",
+"Active-duty service members and veterans get a free Pick 2\u2014their choice of any two half sandwiches, half salads or cups of soup\u2014with a valid military ID on November 11 , at any participating Newk's Eatery."
 ],
 [
 "Olive Garden",
@@ -2989,7 +2982,7 @@ false,
 ],
 [
 "Kings Family Restaurant",
-"Kings Family Restaurant is offering veterans and active military members 25% off meals on November 11 . \u200b"
+"Kings Family Restaurant is offering veterans and active military members 25% off meals on November 11 ."
 ],
 [
 "Margaritas Mexican Restaurant",
@@ -3010,7 +3003,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Editor's Note 11/6/26",
@@ -3371,7 +3364,7 @@ false,
 ]
 },
 "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Napa Valley Coffee Roasting Company",
@@ -3832,7 +3825,7 @@ false,
 ]
 },
 "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Food & Dining",
@@ -4249,7 +4242,7 @@ false,
 ]
 },
 "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "2027 VA Disability Pay Rates",
@@ -4614,7 +4607,7 @@ false,
 ]
 },
 "https://freshcalendars.com/news/veterans-day-free-meals-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Facebook",
@@ -4669,8 +4662,12 @@ false,
 ""
 ],
 [
-"Checked Nov. 7, 2026",
-"The list now has 48 free meals and 16 discounts, from Military.com's list updated Nov. 1, the Department of Veterans Affairs, the American Legion and the chains' own announcements. Little Caesars, Shake Shack, Circle K, Smashburger and Chipotle have now confirmed for 2026."
+"Checked Nov. 8, 2026",
+"The list now has 101 free meals and 30 discounts, from Military.com's list updated Nov. 8, the Department of Veterans Affairs, the American Legion and the chains' own announcements. Wendy's, Cracker Barrel, TGI Fridays, Logan's Roadhouse, Black Angus and Hy-Vee are among the 67 offers added."
+],
+[
+"110 Grill",
+"| Free lunch from a select menu | Veterans and active duty, select menu"
 ],
 [
 "151 Coffee",
@@ -4685,8 +4682,16 @@ false,
 "| $15 voucher | Pick up 11 a.m. to 6 p.m. ; use Nov. 11 through Dec. 24, dine-in, no alcohol"
 ],
 [
+"Bandana's BBQ",
+"| Free pulled pork sandwich and a side | No substitutions"
+],
+[
 "Bar Louie",
 "| Free burger (not the Big Louie) | Nov. 10 and 11, dine-in, ID"
+],
+[
+"Biggby Coffee",
+"| Free 16-ounce hot or iced coffee |"
 ],
 [
 "Biscuit Belly",
@@ -4697,12 +4702,32 @@ false,
 "| Free Chocolate Chunk Pizookie | Dine-in ; plus a free appetizer coupon for Nov. 12 through Dec. 31"
 ],
 [
+"Black Angus",
+"| Free 6-ounce sirloin meal | Families 15% off"
+],
+[
+"Blaze Pizza",
+"| Free one-topping pizza |"
+],
+[
 "Bob Evans",
 "| Free meal from an 11-item menu, served all day | Dine-in only, proof of service ; plus a coupon for free biscuits and sausage gravy on a later visit (Bob Evans)"
 ],
 [
 "Bonefish Grill",
 "| Free Bang Bang Shrimp and a nonalcoholic drink | Valid ID ; veterans, active duty and families"
+],
+[
+"Bravo! Italian Kitchen",
+"| Free pasta |"
+],
+[
+"Brio Italian Grille",
+"| Free pasta entr\u00e9e |"
+],
+[
+"Buca di Beppo",
+"| Free lunch entr\u00e9e | 40 participating locations , one per guest"
 ],
 [
 "Buffalo Wild Wings",
@@ -4713,8 +4738,20 @@ false,
 "| Free entr\u00e9e from a special menu and a nonalcoholic drink |"
 ],
 [
+"Carolina Ale House",
+"| Free half rack of ribs | North Carolina, Florida and Tennessee only"
+],
+[
+"Casey's",
+"| Free coffee or fountain drink and a car wash | Car wash where available"
+],
+[
 "Charleys Cheesesteaks",
 "| Free regular Gourmet Fry | Military ID , no purchase needed"
+],
+[
+"Chelo's",
+"| Free meal | Select menu"
 ],
 [
 "Chili's",
@@ -4729,40 +4766,96 @@ false,
 "| Free meal from a select menu |"
 ],
 [
+"Common Man",
+"| Free entr\u00e9e |"
+],
+[
 "Cotton Patch Cafe",
 "| Free regular chicken fried steak or chicken fried chicken | Dine-in only, military ID"
+],
+[
+"Cracker Barrel",
+"| Free Sunrise Pancake Special |"
 ],
 [
 "Denny's",
 "| Free Original Grand Slam | 5 a.m. to noon, military ID"
 ],
 [
+"Dickey's Barbecue Pit",
+"| Free pulled pork sandwich | Dine-in or carryout"
+],
+[
 "Dunkin'",
 "| Free donut | In store only , one per guest, not in the app (per Military.com)"
+],
+[
+"Eddie Merlot's",
+"| Free prime cheeseburger and fries |"
+],
+[
+"El Chico",
+"| Free entr\u00e9e | Up to $25"
+],
+[
+"Eureka!",
+"| Free burger |"
 ],
 [
 "Farmer Boys",
 "| Free Big Cheese Burger | Dine-in only , one per member, no delivery or mobile orders"
 ],
 [
+"Fazoli's",
+"| Free spaghetti | Code VET26 , no purchase needed"
+],
+[
 "Freddy's Frozen Custard & Steakburgers",
 "| Free combo meal card | Valid military ID ; card good through Nov. 25 (Freddy's)"
 ],
 [
+"Gold Star Chili",
+"| Free meal | Up to $12 value"
+],
+[
 "Golden Corral",
-"| Free \"thank you\" meal, Military Appreciation Night | Dine-in, 4 p.m. to close"
+"| Free \"thank you\" meal, Military Appreciation Night | Dine-in, 4 p.m. to close ; Military Appreciation Night details"
+],
+[
+"Hacienda",
+"| Free large wet burrito | Dine-in or carryout"
 ],
 [
 "Hard Rock Cafe",
 "| Free Classic Smash Burger, all day | Can be combined with its 15% military discount"
 ],
 [
+"Hickory River Smokehouse",
+"| Free meal |"
+],
+[
+"Hof's Hut",
+"| Free Hofburger or pancakes, plus a $10 card | $10 card good Nov. 27 to Dec. 6"
+],
+[
 "Hooters",
 "| Free meal from a special Veterans Day menu | With a beverage purchase"
 ],
 [
+"Hopdoddy",
+"| Free classic burger |"
+],
+[
 "Hoss's Steak & Sea House",
 "| Free soup, salad, bread, nacho and dessert bar with iced tea | Dine-in only ; plus a $10-off-$40 voucher good through Nov. 25"
+],
+[
+"Hurricane Grill & Wings",
+"| Free entr\u00e9e | Choice of several entr\u00e9es"
+],
+[
+"Hy-Vee",
+"| Free breakfast | 6 to 10 a.m. ; 15% off groceries with code VETS2026"
 ],
 [
 "IHOP",
@@ -4773,6 +4866,18 @@ false,
 "| Free burger, fries and drink, plus a Veterans Day decal | Proof of service ; Reserve and National Guard members included"
 ],
 [
+"J. Christopher's",
+"| Free meal |"
+],
+[
+"Jeremiah's Italian Ice",
+"| Free small treat |"
+],
+[
+"Keke's Breakfast Cafe",
+"| Free Classic Two Egg Combo | No purchase needed"
+],
+[
 "Lazy Dog Restaurants",
 "| Free Fireside Favorites entr\u00e9e, personal dessert and soda | Six entr\u00e9es to choose from; retirees, Reserve and Guard included"
 ],
@@ -4781,12 +4886,40 @@ false,
 "| Free lunch combo: four slices of Detroit-Style Deep Dish pepperoni pizza and a 20-ounce Pepsi product | 11 a.m. to 2 p.m. local, proof of service ; in store only, not online, app or delivery (Little Caesars)"
 ],
 [
+"Logan's Roadhouse",
+"| Free meal | 11 a.m. to 3 p.m."
+],
+[
+"Lucille's Smokehouse",
+"| Free sandwich or chicken, plus a $10 card | $10 card good Nov. 27 to Dec. 6"
+],
+[
+"Main Event",
+"| Free double cheeseburger, fries and a 30-minute game card |"
+],
+[
 "Marzoni's Brick Oven & Brewing",
 "| One free 12-ounce draft beer or nonalcoholic drink | Dine-in only , one per veteran"
 ],
 [
+"Max & Erma's",
+"| Free cheeseburger, fries and drink |"
+],
+[
+"Menchie's",
+"| Free first 6 ounces of frozen yogurt |"
+],
+[
 "Mission BBQ",
 "| Free sandwich |"
+],
+[
+"Native Grill & Wings",
+"| Free meal | Choice of several"
+],
+[
+"Newk's Eatery",
+"| Free Pick 2 |"
 ],
 [
 "Olive Garden",
@@ -4797,8 +4930,24 @@ false,
 "| Free Bloomin' Onion and a drink | Nov. 10 and 11 ; plus a free Hero's Meal for a later visit through Dine Rewards"
 ],
 [
+"Paisano's Pizza",
+"| Free large one-topping pizza | 40 participating locations"
+],
+[
+"Piada",
+"| Free entr\u00e9e |"
+],
+[
 "Pilot and Flying J",
 "| Free sandwich and coffee or fountain drink | In the Pilot app, verified through ID.me (Pilot)"
+],
+[
+"Polly's Pies",
+"| Free slice of pie | Nov. 10 and 11 , no purchase needed"
+],
+[
+"Prince St. Pizza",
+"| Free slice | One per person"
 ],
 [
 "Red Lobster",
@@ -4809,8 +4958,16 @@ false,
 "| One free Red's Big Tavern Burger with Bottomless Steak Fries | Dine-in only, Nov. 11 only , participating restaurants (Red Robin)"
 ],
 [
+"Rock and Brews",
+"| Free pulled pork sandwich or salad |"
+],
+[
 "Ruby Tuesday",
 "| Free Everyday Fresh Meal from 13 entr\u00e9es, with the Garden Bar and a drink | Dine-in only"
+],
+[
+"Scooter's Coffee",
+"| Free medium drink | In store , one per guest"
 ],
 [
 "Shake Shack",
@@ -4833,8 +4990,28 @@ false,
 "| Free All-American Smashburger | ID required , participating locations (per the Department of Veterans Affairs)"
 ],
 [
+"Sonny's BBQ",
+"| Free Pork Big Deal | One per guest"
+],
+[
+"The Country's Best Yogurt",
+"(TCBY) | Free first 6 ounces of frozen yogurt |"
+],
+[
+"Ted's Bulletin",
+"| Free Ted's Tart |"
+],
+[
+"Teriyaki Madness",
+"| Free bowl | In shop"
+],
+[
 "Texas Roadhouse",
 "| Free meal voucher | Handed out 11 a.m. to 2 p.m., proof of service ; good through May 31, 2027, per Military.com"
+],
+[
+"TGI Fridays",
+"| Free meal from a select menu | 11 a.m. to 7 p.m."
 ],
 [
 "Torchy's Tacos",
@@ -4849,12 +5026,36 @@ false,
 "| Free entr\u00e9e from a select menu | Plus 20% off all November"
 ],
 [
+"Uno Pizzeria & Grill",
+"| Free entr\u00e9e from a special menu |"
+],
+[
+"WaBa Grill",
+"| Free slice of crepe cake |"
+],
+[
+"Wendy's",
+"| Free Dave's Single | Inside or at the drive-thru"
+],
+[
 "White Castle",
 "| Free individual combo or breakfast combo |"
 ],
 [
+"Wings and Rings",
+"| Free lunch combo | All day"
+],
+[
+"WOB Bar & Kitchen",
+"| Free Single Smash Burger and fries |"
+],
+[
 "Yard House",
 "| Free appetizer | Dine-in, military ID"
+],
+[
+"7 Brew",
+"| 50% off a drink order | Open to all customers , not only military"
 ],
 [
 "54th Street",
@@ -4865,8 +5066,28 @@ false,
 "| Free lunch from the Veterans Day menu | Opening to 4 p.m., with any entr\u00e9e purchase, military ID"
 ],
 [
+"Benihana",
+"| Free hibachi entr\u00e9e with an appetizer purchase | Nov. 9-11"
+],
+[
+"Brick House Tavern + Tap",
+"| 20% off | Parties of up to four"
+],
+[
 "Bruegger's Bagels",
 "| Free coffee | With a food purchase"
+],
+[
+"Buffalo's Cafe",
+"| 25% off | Excludes alcohol"
+],
+[
+"Capriotti's",
+"| Free small sub with a purchase | Purchase required"
+],
+[
+"Carrabba's Italian Grill",
+"| Buy one entr\u00e9e, get one free Nov. 8-10; free appetizer or dessert and a drink on Nov. 11 | Buy one, get one Nov. 8-10"
 ],
 [
 "CentraArchy",
@@ -4885,8 +5106,16 @@ false,
 "| 10% off for you and your party | Dine-in, Nov. 1 through 30 ; free Smiley Cookie on Nov. 11"
 ],
 [
+"Einstein Bros. Bagels",
+"| Free coffee, any size, with a purchase | Purchase required"
+],
+[
 "Firebirds Wood Fired Grill",
 "| Free lunch or dinner, up to the value of a guest's meal | Dine-in only"
+],
+[
+"Firehouse Subs",
+"| Buy one sub, get one free | Purchase required"
 ],
 [
 "Fogo de Ch\u00e3o",
@@ -4895,6 +5124,14 @@ false,
 [
 "Joe's Crab Shack",
 "| 20% off | Dine-in, ID"
+],
+[
+"Kings Family Restaurant",
+"| 25% off meals |"
+],
+[
+"Kona Grill",
+"| Free entr\u00e9e with a starter purchase | Nov. 9-11"
 ],
 [
 "LongHorn Steakhouse",
@@ -4913,12 +5150,28 @@ false,
 "| Free dinner-cut pork chop with a full-price entr\u00e9e, or a three-course military menu for $39 | 4 p.m. to close, reservations required"
 ],
 [
+"Playa Bowls",
+"| 50% off bowls | In shop"
+],
+[
 "Rubio's",
 "| Buy one entr\u00e9e, get one free with code VETS26 | In-store only, military ID"
 ],
 [
+"Saltgrass Steak House",
+"| 20% off | Veteran plus up to four guests"
+],
+[
 "Sonic",
 "| Half-price shakes, any size or flavor | No ID required"
+],
+[
+"STK Steakhouse",
+"| Free entr\u00e9e with a starter purchase | Nov. 9-11"
+],
+[
+"Viva Chicken",
+"| Free entr\u00e9e with a qualifying guest entr\u00e9e | Guest entr\u00e9e required"
 ],
 [
 "When",
@@ -4953,16 +5206,8 @@ false,
 "| Texas Roadhouse | Pick up the voucher between 11 a.m. and 2 p.m. on Nov. 11"
 ],
 [
-"Cracker Barrel",
-"| Free Sunrise Pancake Special | Valid ID"
-],
-[
 "Krispy Kreme",
 "| Free doughnut and small coffee | In shop only"
-],
-[
-"Wendy's",
-"| Free breakfast combo, no purchase required | Breakfast hours"
 ],
 [
 "Home Depot",
@@ -4986,7 +5231,7 @@ false,
 ],
 [
 "Grace For Vets",
-"says participating car washes give free car washes to all veterans and active-duty personnel every Veterans Day, Nov. 11. Its find-a-participating-wash tool lists the locations taking part."
+"says participating car washes give free car washes to all veterans and active-duty personnel every Veterans Day, Nov. 11. Its list of participating car washes shows the locations taking part."
 ],
 [
 "Beverage and gratuity not included",
@@ -5066,44 +5311,44 @@ false,
 ],
 [
 "Golden Corral",
-"Wednesday, Nov. 11, 4 p.m. to Close November 4, 2026"
+"Nov. 11, 4 p.m.-Close November 4, 2026"
 ],
 [
-"McDonald's Pok\u00e9mon Happy Meal 2026",
-"November Release, 15 Toys and 15 Cards October 31, 2026"
-],
-[
-"Berlin Wall Fall Anniversary 2026",
-"37 Years on Monday, Nov. 9, and Freedom Week November 8, 2026"
+"Berlin Wall Anniversary 2026",
+"37 Years on Monday, Nov. 9 November 8, 2026"
 ],
 [
 "Marine Corps Birthday 2026",
-"Tuesday, Nov. 10 Is the 251st Anniversary November 8, 2026"
+"Tuesday, Nov. 10 Is the 251st November 8, 2026"
 ],
 [
 "Dongzhi Festival 2026",
-"Tuesday, Dec. 22, the Solstice Minute in Asia and North America November 7, 2026"
+"Dec. 22, Solstice at 4:50 a.m. Hong Kong Time November 7, 2026"
 ],
 [
 "Rosa Parks Day 2026",
-"Tuesday, Dec. 1, and the States That Mark It by Law November 7, 2026"
+"Dec. 1 in Ohio, Texas and Tennessee November 7, 2026"
 ],
 [
-"Black Friday 2026",
-"Date Is Friday, Nov. 27, Live Countdown and Ad Tracker"
+"Diwali 2026 Date",
+"Sunday, Nov. 8, Lakshmi Puja Time by City"
+],
+[
+"Black Friday Ads 2026",
+"Date Is Nov. 27, Walmart Deals Nov. 23-29"
 ],
 [
 "Holiday Menus 2026",
-"Every Chain's Christmas Drinks and Treats, With Launch Dates"
+"Chain Launch Dates, Starbucks Nov. 5"
 ],
 [
-"SNAP Payment Schedule November 2026",
-"Deposit Dates for Every State, With Weekend Days Flagged"
+"SNAP Benefits November 2026",
+"Dates by State, Weekends Flagged"
 ]
 ]
 },
 "https://veteransdaydeals.us/free-meals/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Chili's",
@@ -5420,7 +5665,7 @@ false,
 ]
 },
 "https://www.dinova.com/dining-guide/veterans-day-guide/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Bar Louie",
@@ -5461,7 +5706,7 @@ false,
 ]
 },
 "https://blog.ahrn.com/veterans-day-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Applebee's",
@@ -5510,7 +5755,7 @@ false,
 ]
 },
 "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Chili's",
@@ -5530,11 +5775,39 @@ false,
 ],
 [
 "IHOP",
-"| \"Veterans Day 2025 has come and gone. If you're a veteran or active duty military, come by in 2026 and let us serve you.\" | No 2026 details"
+"| Free Red, White & Blueberry Pancake Combo (two pancakes, two eggs, hash browns and bacon or sausage) on Wednesday, November 11 | Veterans (the page says \"our Vets\"); military ID or proof of service required | Participating restaurants. Dine-in only, 7 a.m. to 7 p.m. One per guest. Restrictions apply."
+],
+[
+"Denny's",
+"| Free Original Grand Slam on Wednesday, November 11, from 5 a.m. to noon local time | Active, non-active and retired military personnel | Participating restaurants. Dine-in. A valid military ID or DD-214 is required."
+],
+[
+"Red Robin",
+"| Free Red's Big Tavern Burger with Bottomless Steak Fries on Wednesday, November 11, 2026 | Veterans and active-duty military with a valid military ID or proof of service | Participating restaurants. Dine-in only."
+],
+[
+"Ruby Tuesday",
+"| Free Everyday Fresh Meal (an entr\u00e9e from any price tier, The Garden Bar and a bottomless drink, worth up to $17.99) on Wednesday, November 11, 2026, all day | U.S. veterans, retirees, active duty and Reserve with proof of service | Participating locations. Dine-in only. Not valid for TueGo. Excludes Guam, Hawaii and airport locations. Ruby Rewards not required."
+],
+[
+"Shake Shack",
+"| Free Single ShackBurger on November 11, 2026 | Active-duty military and veterans with military ID or other proof of service, such as the veteran designation on a driver's license | Order in-Shack with a team member: not through the app, the website, delivery apps or drive-thrus. Participating Shacks, excluding airports, stadiums, arenas, travel plazas and museums. One per order; savings up to $9"
+],
+[
+"Yard House",
+"| Free appetizer on November 11, 2026 | Veterans and active-duty military | Ask your server for details."
+],
+[
+"Freddy's",
+"| Free Freddy's Combo meal card, handed out on November 11 and redeemable through November 25, 2026 | All veterans and active military personnel | No purchase necessary. Pick the card up at your local Freddy's on November 11."
 ],
 [
 "Texas Roadhouse",
-"| Its community page says the company offers free meals to veterans and active military members on Veterans Day. No date or details for 2026. | No 2026 details"
+"| Its community page says the company offers free meals to veterans and active military members on Veterans Day, with no date or details for 2026. VA's list now carries the same words and adds that veterans should verify locally. | No 2026 details"
+],
+[
+"TGI Fridays",
+"| We found no Veterans Day page or offer on its website on November 8, 2026. It is not on VA's list. | Not on its own site"
 ],
 [
 "Next year",
@@ -5543,7 +5816,7 @@ false,
 ]
 },
 "https://veteransdmv.com/veterans-day-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Last updated",
@@ -6548,7 +6821,7 @@ false,
 ]
 },
 "https://www.combatfitness.co/post/veterans-day": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Start Training for Free",
@@ -6793,7 +7066,7 @@ false,
 ]
 },
 "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Applebee's",
@@ -7490,7 +7763,7 @@ false,
 ]
 },
 "https://themilitarywallet.com/veterans-day-retail-discounts/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Editor's Note",
@@ -8303,7 +8576,7 @@ false,
 ]
 },
 "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "4Patriots",
@@ -8452,7 +8725,7 @@ false,
 ]
 },
 "https://valoannetwork.com/veterans-day-deals-2026/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Chili's",
@@ -8969,7 +9242,7 @@ false,
 ]
 },
 "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "But Wait, There's More",
@@ -9846,7 +10119,7 @@ false,
 ]
 },
 "https://www.hotdeals.com/blog/veterans-day-deals/": {
-"read_utc": "2026-11-06T06:47Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Confirmed 2026",
@@ -11103,7 +11376,7 @@ false,
 ]
 },
 "https://fedratecalc.com/veterans-day-free-meals-2026/": {
-"read_utc": "2026-11-08T17:06Z",
+"read_utc": "2026-11-08T20:11Z",
 "pairs": [
 [
 "Chili's Grill & Bar",

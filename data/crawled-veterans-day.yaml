@@ -18,7 +18,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Named on 3 independent lists. Confirm with your location.
+  offer: Free lunch. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - 110 Grill
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=110%20Grill
@@ -26,6 +26,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=110%20Grill
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=110%20Grill
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=110%20Grill
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=110%20Grill
   eligibility:
   - active-duty
   - veteran
@@ -92,7 +93,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 50% off. Named on 4 independent lists. Confirm with your location.
+  offer: 50% off. Named on 5 independent lists. Confirm with your location.
   osm_brand:
   - 7 Brew
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=7%20Brew
@@ -100,6 +101,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=7%20Brew
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=7%20Brew
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=7%20Brew
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=7%20Brew
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=7%20Brew
   eligibility:
   - veteran
@@ -123,7 +125,7 @@ entries:
   - store-program
 - id: auto-vd-aarp
   name: AARP
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Up to 45% off. Named on 2 independent lists. Confirm with your location.
@@ -171,7 +173,7 @@ entries:
   family: true
 - id: auto-vd-andretti-indoor-karting-games
   name: Andretti Indoor Karting & Games
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free 1-hour game card. Also mentions 20% off; see a source for what it covers. In-store only. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -238,7 +240,7 @@ entries:
   - proof-of-service
 - id: auto-vd-ashley
   name: Ashley
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 5% off. At participating locations. Bring proof of service. Named on 7 independent lists, 2 of them with this offer. Confirm with your location.
@@ -264,7 +266,7 @@ entries:
   - sheerid
 - id: auto-vd-auto-bell
   name: Auto Bell
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Free Ride-Thru Exterior wash. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.
@@ -282,7 +284,7 @@ entries:
   - veteran
 - id: auto-vd-b-bs-for-vets
   name: B&Bs for Vets
-  category: food
+  category: travel
   slot: anytime
   scope: nationwide
   offer: Free room. Named on 2 independent lists. Confirm with your location.
@@ -334,12 +336,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free pulled pork sandwich. Dine-in only. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free pulled pork sandwich. Dine-in only. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Bandana's BBQ
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Bandana%27s%20BBQ&text=Bandana%E2%80%99s%20BBQ
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Bandana%27s%20BBQ&text=Bandana%E2%80%99s%20BBQ
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Bandana%27s%20BBQ&text=Bandana%E2%80%99s%20BBQ
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Bandana%27s%20BBQ&text=Bandana%E2%80%99s%20BBQ
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Bandana%27s%20BBQ&text=Bandana%E2%80%99s%20BBQ
   eligibility:
@@ -389,12 +392,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free five course hibachi entree. Dine-in only. Bring proof of service. Named on 4 independent lists. Confirm with your location.
+  offer: "Free hibachi entr\xE9e. Dine-in only. Bring proof of service. Named on 5 independent lists. Confirm with your location."
   osm_brand:
   - Benihana
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Benihana
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Benihana
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Benihana
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Benihana
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Benihana
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Benihana
@@ -431,12 +435,13 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: Free 16 oz hot or iced brewed coffee. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free 16 oz hot or iced brewed coffee. Named on 6 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - BIGGBY Coffee
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Biggby%20Coffee
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Biggby%20Coffee
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Biggby%20Coffee
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=BIGGBY%20Coffee
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Biggby%20Coffee
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Biggby%20Coffee
@@ -492,22 +497,24 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 15% off. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: 15% off. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Black Angus Steakhouse
-  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Black%20Angus%20Steakhouse
+  source_url: https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Black%20Angus
   sources:
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Black%20Angus
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Black%20Angus%20Steakhouse
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Black%20Angus%20Steakhouse
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Black%20Angus%20Steakhouse
   eligibility:
   - veteran
+  family: true
 - id: auto-vd-blaze-pizza
   name: Blaze Pizza
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free one-topping pizza. At participating locations. Named on 7 independent lists, 6 of them with this offer. Confirm with your location.
+  offer: Free one-topping pizza. At participating locations. Named on 8 independent lists, 7 of them with this offer. Confirm with your location.
   osm_brand:
   - Blaze Pizza
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Blaze%20Pizza
@@ -515,6 +522,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Blaze%20Pizza
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Blaze%20Pizza
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Blaze%20Pizza
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Blaze%20Pizza
   - https://veteransdaydeals.us/free-meals/#:~:text=Blaze%20Pizza
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Blaze%20Pizza
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Blaze%20Pizza
@@ -566,12 +574,13 @@ entries:
   category: home-improvement
   slot: anytime
   scope: nationwide
-  offer: Free pasta. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  offer: Free pasta. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - BRAVO! Italian Kitchen
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=BRAVO%21%20Italian%20Kitchen
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=BRAVO%21%20Italian%20Kitchen
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Bravo%21%20Italian%20Kitchen
   - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=BRAVO%21%20Italian%20Kitchen
   eligibility:
   - active-duty
@@ -583,12 +592,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 20% off. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  offer: 20% off. Dine-in only. Bring proof of service. Named on 3 independent lists. Confirm with your location.
   osm_brand:
   - Brick House Tavern + Tap
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brick%20House%20Tavern%20%2B%20Tap
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brick%20House%20Tavern%20%2B%20Tap
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Brick%20House%20Tavern%20%2B%20Tap
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Brick%20House%20Tavern%20%2B%20Tap
   eligibility:
   - veteran
@@ -612,7 +622,7 @@ entries:
   - military-id
 - id: auto-vd-brinyte
   name: Brinyte
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 15% off. Named on 2 independent lists. Confirm with your location.
@@ -632,12 +642,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.
+  offer: "Free pasta entr\xE9e. Named on 3 independent lists. Confirm with your location."
   osm_brand:
   - Brio Italian Grille
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brio%20Italian%20Grille
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brio%20Italian%20Grille
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Brio%20Italian%20Grille
   - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Brio%20Italian%20Grille
   eligibility:
   - active-duty
@@ -682,13 +693,14 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: "Free lunch entr\xE9e. Dine-in only. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location."
+  offer: "Free lunch entr\xE9e. Dine-in only. Bring proof of service. At participating locations. Named on 5 independent lists, 2 of them with this offer. Confirm with your location."
   osm_brand:
   - Buca di Beppo
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Buca%20di%20Beppo
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Buca%20di%20Beppo
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Buca%20di%20Beppo
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Buca%20di%20Beppo
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Buca%20di%20Beppo
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Buca%20di%20Beppo
   eligibility:
@@ -696,6 +708,7 @@ entries:
   - veteran
   verification:
   - military-id
+  family: true
 - id: auto-vd-buffalo-wild-wings
   name: Buffalo Wild Wings
   category: food
@@ -741,13 +754,14 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: 25% off. At participating locations. Bring proof of service. Dine-in only. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: 25% off. At participating locations. Bring proof of service. Dine-in only. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.
   osm_brand:
   - Buffalo's Cafe
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Buffalo%27s%20Cafe&text=Buffalo%E2%80%99s%20Cafe
   eligibility:
@@ -787,7 +801,7 @@ entries:
   - veteran
 - id: auto-vd-california-pizza-kitchen
   name: California Pizza Kitchen
-  category: home-improvement
+  category: food
   slot: anytime
   scope: nationwide
   offer: "Free entr\xE9e. Bring proof of service. Includes something to use later. Named on 8 independent lists, 2 of them with this offer. Confirm with your location."
@@ -815,15 +829,31 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free half rack rib platter. Dine-in only. While supplies last. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free half rack rib platter. Dine-in only. While supplies last. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Carolina Ale House
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Carolina%20Ale%20House
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Carolina%20Ale%20House
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Carolina%20Ale%20House
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Carolina%20Ale%20House
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Carolina%20Ale%20House
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Carolina%20Ale%20House
+  eligibility:
+  - active-duty
+  - veteran
+- id: auto-vd-carrabba-s
+  name: Carrabba's
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free nonalcoholic beverage. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Carrabba's
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Carrabba%27s&text=Carrabba%E2%80%99s
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Carrabba%27s&text=Carrabba%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Carrabba%27s%20Italian%20Grill&text=Carrabba%E2%80%99s%20Italian%20Grill
   eligibility:
   - active-duty
   - veteran
@@ -845,15 +875,16 @@ entries:
   - veteran
 - id: auto-vd-casey-s
   name: Casey's
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
-  offer: Free car wash where. Bring proof of service. Named on 8 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free car wash where. Bring proof of service. Named on 9 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Casey's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Casey%27s&text=Casey%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Casey%27s&text=Casey%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Casey%27s&text=Casey%E2%80%99s
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Casey%27s&text=Casey%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Casey%27s&text=Casey%E2%80%99s
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Casey%27s%20General%20Store&text=Casey%E2%80%99s%20General%20Store
@@ -903,6 +934,22 @@ entries:
   verification:
   - military-id
   - proof-of-service
+- id: auto-vd-chelo-s
+  name: Chelo's
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free meal. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Chelo's
+  source_url: https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Chelo%27s&text=Chelo%E2%80%99s
+  sources:
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Chelo%27s&text=Chelo%E2%80%99s
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Chelo%27s%20Hometown%20Bar%20%26%20Grille&text=Chelo%E2%80%99s%20Hometown%20Bar%20%26%20Grille
+  eligibility:
+  - veteran
+  verification:
+  - military-id
 - id: auto-vd-chicken-n-pickle
   name: Chicken N Pickle
   category: food
@@ -984,12 +1031,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Bring proof of service. Named on 3 independent lists. Confirm with your location.
+  offer: "Free entr\xE9e. Bring proof of service. Named on 4 independent lists. Confirm with your location."
   osm_brand:
   - Common Man
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Common%20Man
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Common%20Man
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Common%20Man
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=The%20Common%20Man%20Family
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=The%20Common%20Man%20Family
   eligibility:
@@ -1043,7 +1091,7 @@ entries:
   - veteran
 - id: auto-vd-devil-dog-dungarees
   name: DEVIL-DOG Dungarees
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 50% off. Named on 4 independent lists. Confirm with your location.
@@ -1068,7 +1116,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Pulled Pork Sandwich. Bring proof of service. At participating locations. In-store only. Named on 9 independent lists, 5 of them with this offer. Confirm with your location.
+  offer: Free Pulled Pork Sandwich. Bring proof of service. At participating locations. In-store only. Named on 10 independent lists, 6 of them with this offer. Confirm with your location.
   osm_brand:
   - Dickey's Barbecue Pit
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
@@ -1077,6 +1125,7 @@ entries:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
   - https://veteransdaydeals.us/free-meals/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Dickey%27s%20Barbecue%20Pit&text=Dickey%E2%80%99s%20Barbecue%20Pit
@@ -1090,7 +1139,7 @@ entries:
   - proof-of-service
 - id: auto-vd-disney
   name: Disney
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.
@@ -1118,7 +1167,7 @@ entries:
   - proof-of-service
 - id: auto-vd-dollar-tree
   name: Dollar Tree
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 10% off. Named on 2 independent lists. Confirm with your location.
@@ -1134,7 +1183,7 @@ entries:
   - veteran
 - id: auto-vd-duluth-trading-co
   name: Duluth Trading Co
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 10% off. Named on 2 independent lists. Confirm with your location.
@@ -1197,12 +1246,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Eddie's Prime Cheeseburger. Dine-in only. While supplies last. Named on 3 independent lists. Confirm with your location.
+  offer: Free Eddie's Prime Cheeseburger. Dine-in only. While supplies last. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Eddie Merlot's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Eddie%20Merlot%27s&text=Eddie%20Merlot%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Eddie%20Merlot%27s&text=Eddie%20Merlot%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Eddie%20Merlot%27s&text=Eddie%20Merlot%E2%80%99s
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Eddie%20Merlot%27s&text=Eddie%20Merlot%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Eddie%20Merlot%27s&text=Eddie%20Merlot%E2%80%99s
   eligibility:
@@ -1213,13 +1263,14 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: Free hot or iced coffee. Named on 7 independent lists, 5 of them with this offer. Confirm with your location.
+  offer: Free hot or iced coffee. Named on 8 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Einstein Bros. Bagels
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Einstein%20Bros.%20Bagels
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Einstein%20Bros.%20Bagels
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Einstein%20Bros.%20Bagels
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Einstein%20Bros.%20Bagels
   - https://veteransdaydeals.us/free-meals/#:~:text=Einstein%20Bros.%20Bagels
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Einstein%20Bros.%20Bagels
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Einstein%20Bros.%20Bagels
@@ -1231,18 +1282,36 @@ entries:
   verification:
   - promo-code
   - store-program
+- id: auto-vd-el-chico
+  name: El Chico
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: "Free entr\xE9e. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location."
+  osm_brand:
+  - El Chico
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=El%20Chico
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=El%20Chico
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=El%20Chico
+  eligibility:
+  - active-duty
+  - veteran
+  verification:
+  - proof-of-service
 - id: auto-vd-eureka
   name: Eureka!
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Named on 3 independent lists. Confirm with your location.
+  offer: Free burger. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Eureka!
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Eureka%21
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Eureka%21
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Eureka%21
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Eureka%21
   - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Eureka%21
   eligibility:
   - veteran
@@ -1291,7 +1360,7 @@ entries:
   - store-program
 - id: auto-vd-fast-monkey-auto
   name: Fast Monkey Auto
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Free oil change. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -1311,12 +1380,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Spaghetti. At participating locations. Bring proof of service. Named on 4 independent lists. Confirm with your location.
+  offer: Free Spaghetti. At participating locations. Bring proof of service. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.
   osm_brand:
   - Fazoli's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Fazoli%27s&text=Fazoli%E2%80%99s
@@ -1364,13 +1434,14 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free sub. Bring proof of service. At participating locations. In-store only. Named on 8 independent lists. Confirm with your location.
+  offer: Free sub. Bring proof of service. At participating locations. In-store only. Named on 9 independent lists. Confirm with your location.
   osm_brand:
   - Firehouse Subs
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Firehouse%20Subs
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Firehouse%20Subs
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Firehouse%20Subs
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Firehouse%20Subs
   - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Firehouse%20Subs
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Firehouse%20Subs
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Firehouse%20Subs
@@ -1384,7 +1455,7 @@ entries:
   - military-id
 - id: auto-vd-five-below
   name: Five Below
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 10% off. Named on 4 independent lists. Confirm with your location.
@@ -1468,7 +1539,7 @@ entries:
   - proof-of-service
 - id: auto-vd-george-washington-s-mount-vernon
   name: George Washington's Mount Vernon
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission. Named on 3 independent lists. Confirm with your location.
@@ -1488,7 +1559,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: $12 off. Bring proof of service. Named on 4 independent lists. Confirm with your location.
+  offer: $12 off. Bring proof of service. Named on 5 independent lists. Confirm with your location.
   osm_brand:
   - Gold Star Chili
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Gold%20Star%20Chili
@@ -1496,6 +1567,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Gold%20Star%20Chili
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Gold%20Star%20Chili
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Gold%20Star%20Chili
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Gold%20Star%20Chili
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Gold%20Star%20Chili
   eligibility:
   - active-duty
@@ -1519,7 +1591,7 @@ entries:
   - veteran
 - id: auto-vd-grease-monkey
   name: Grease Monkey
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: 50% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -1559,13 +1631,15 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Large Wet Burrito. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free large wet burrito. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Hacienda Mexican Restaurant
-  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hacienda%20Mexican%20Restaurant
+  source_url: https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hacienda
   sources:
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hacienda
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hacienda%20Mexican%20Restaurant
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hacienda%20Mexican%20Restaurant
+  - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Hacienda%27s&text=Hacienda%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hacienda%20Mexican%20Restaurants
   eligibility:
   - active-duty
@@ -1617,7 +1691,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. Bring proof of service. Named on 3 independent lists. Confirm with your location.
+  offer: Free meal. Bring proof of service. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Hickory River Smokehouse
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hickory%20River%20Smokehouse
@@ -1625,6 +1699,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hickory%20River%20Smokehouse
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hickory%20River%20Smokehouse
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hickory%20River%20Smokehouse
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hickory%20River%20Smokehouse
   eligibility:
   - active-duty
   - veteran
@@ -1633,15 +1708,16 @@ entries:
 - id: auto-vd-hof-s-hut
   name: Hof's Hut
   category: food
-  slot: anytime
+  slot: breakfast
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Bring proof of service. Includes something to use later. Named on 4 independent lists. Confirm with your location.
+  offer: Free Hofburger or pancakes. Bring proof of service. Includes something to use later. Named on 5 independent lists. Confirm with your location.
   osm_brand:
   - Hof's Hut
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hof%27s%20Hut&text=Hof%E2%80%99s%20Hut
   eligibility:
@@ -1649,6 +1725,7 @@ entries:
   - veteran
   verification:
   - proof-of-service
+  redeem_by: '2026-11-27'
 - id: auto-vd-hooters
   name: Hooters
   category: food
@@ -1678,11 +1755,12 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Classic Burger or Classic Burger. Dine-in only. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free classic burger. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Hopdoddy Burger Bar
-  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hopdoddy%20Burger%20Bar
+  source_url: https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hopdoddy
   sources:
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hopdoddy
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hopdoddy%20Burger%20Bar
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hopdoddy%20Burger%20Bar
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hopdoddy%20Burger%20Bar
@@ -1736,12 +1814,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. At participating locations. Named on 4 independent lists. Confirm with your location.
+  offer: "Free entr\xE9e Choice of several entr\xE9es. At participating locations. Named on 5 independent lists. Confirm with your location."
   osm_brand:
   - Hurricane Grill and Wings
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hurricane%20Grill%20and%20Wings
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hurricane%20Grill%20and%20Wings
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hurricane%20Grill%20%26%20Wings
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hurricane%20Grill%20and%20Wings
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hurricane%20Grill%20%26%20Wings
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hurricane%20Grill%20%26%20Wings
@@ -1772,7 +1851,7 @@ entries:
   category: food
   slot: breakfast
   scope: nationwide
-  offer: Free breakfast. Also mentions 15% off; see a source for what it covers. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free breakfast. Also mentions 15% off; see a source for what it covers. Named on 7 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - HyVee
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hy-Vee
@@ -1780,6 +1859,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hy-Vee
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=HyVee
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=HyVee
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hy-Vee
   - https://veteransdaydeals.us/free-meals/#:~:text=Hy-Vee
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hy-Vee
   - https://fedratecalc.com/veterans-day-free-meals-2026/#:~:text=Hy-Vee
@@ -1814,16 +1894,33 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. At participating locations. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free meal. At participating locations. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - J. Christopher's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s
   eligibility:
   - active-duty
+  - veteran
+  verification:
+  - military-id
+- id: auto-vd-jeremiah-s-italian-ice
+  name: Jeremiah's Italian Ice
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free small treat. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Jeremiah's Italian Ice
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Jeremiah%27s%20Italian%20Ice&text=Jeremiah%E2%80%99s%20Italian%20Ice
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Jeremiah%27s%20Italian%20Ice&text=Jeremiah%E2%80%99s%20Italian%20Ice
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Jeremiah%27s%20Italian%20Ice&text=Jeremiah%E2%80%99s%20Italian%20Ice
+  eligibility:
   - veteran
   verification:
   - military-id
@@ -1879,7 +1976,7 @@ entries:
   - veteran
 - id: auto-vd-keel-farms
   name: Keel Farms
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 20% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -1896,12 +1993,13 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: Free Classic Two Egg Combo. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  offer: Free Classic Two Egg Combo. Dine-in only. Bring proof of service. Named on 3 independent lists. Confirm with your location.
   osm_brand:
   - Keke's Breakfast Cafe
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Keke%27s%20Breakfast%20Cafe&text=Keke%E2%80%99s%20Breakfast%20Cafe
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Keke%27s%20Breakfast%20Cafe&text=Keke%E2%80%99s%20Breakfast%20Cafe
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Keke%27s%20Breakfast%20Cafe&text=Keke%E2%80%99s%20Breakfast%20Cafe
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Keke%27s%20Breakfast%20Cafe&text=Keke%E2%80%99s%20Breakfast%20Cafe
   eligibility:
   - active-duty
@@ -1914,12 +2012,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 25% off. Named on 3 independent lists. Confirm with your location.
+  offer: 25% off. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Kings Family Restaurant
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Kings%20Family%20Restaurant
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Kings%20Family%20Restaurant
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Kings%20Family%20Restaurant
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Kings%20Family%20Restaurant
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Kings%20Family%20Restaurants
   eligibility:
@@ -1927,7 +2026,7 @@ entries:
   - veteran
 - id: auto-vd-knott-s-berry-farm
   name: Knott's Berry Farm
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: $25 admission. Named on 3 independent lists. Confirm with your location.
@@ -1948,7 +2047,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 50% off. Dine-in only. Bring proof of service. Named on 6 independent lists. Confirm with your location.
+  offer: 50% off. Dine-in only. Bring proof of service. Named on 7 independent lists. Confirm with your location.
   osm_brand:
   - Kona Grill
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Kona%20Grill
@@ -1957,6 +2056,7 @@ entries:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Kona%20Grill
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Kona%20Grill
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Kona%20Grill
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Kona%20Grill
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Kona%20Grill
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Kona%20Grill
   eligibility:
@@ -1971,7 +2071,7 @@ entries:
   family: true
 - id: auto-vd-kroger
   name: Kroger
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 10% off. Named on 3 independent lists. Confirm with your location.
@@ -2045,7 +2145,7 @@ entries:
   family: true
 - id: auto-vd-legoland-new-york
   name: LEGOLAND New York
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission. Bring proof of service. Also mentions 50% off; see a source for what it covers. Named on 2 independent lists. Confirm with your location.
@@ -2092,7 +2192,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. Bring proof of service. Dine-in only. Named on 10 independent lists, 7 of them with this offer. Confirm with your location.
+  offer: Free meal. Bring proof of service. Dine-in only. Named on 11 independent lists, 7 of them with this offer. Confirm with your location.
   osm_brand:
   - Logan's Roadhouse
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
@@ -2102,6 +2202,7 @@ entries:
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse
@@ -2117,22 +2218,24 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Pulled Pork Sandwich or personal Fried Chicken Plate. Dine-in only. Includes something to use later. Named on 3 independent lists. Confirm with your location.
+  offer: Free sandwich or chicken. Dine-in only. Includes something to use later. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Lucille's Smokehouse BBQ
-  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Lucille%27s%20Smokehouse%20BBQ&text=Lucille%E2%80%99s%20Smokehouse%20BBQ
+  source_url: https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Lucille%27s%20Smokehouse&text=Lucille%E2%80%99s%20Smokehouse
   sources:
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Lucille%27s%20Smokehouse&text=Lucille%E2%80%99s%20Smokehouse
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Lucille%27s%20Smokehouse%20BBQ&text=Lucille%E2%80%99s%20Smokehouse%20BBQ
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Lucille%27s%20Smokehouse%20BBQ&text=Lucille%E2%80%99s%20Smokehouse%20BBQ
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Lucille%27s%20Smokehouse%20BBQ&text=Lucille%E2%80%99s%20Smokehouse%20BBQ
   eligibility:
   - veteran
+  redeem_by: '2026-11-27'
 - id: auto-vd-main-event
   name: Main Event
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Double Cheeseburger. Bring proof of service. Dine-in only. At participating locations. Named on 6 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: Free Double Cheeseburger. Bring proof of service. Dine-in only. At participating locations. Named on 7 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Main Event
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Main%20Event
@@ -2141,6 +2244,7 @@ entries:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Main%20Event
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Main%20Event
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Main%20Event
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Main%20Event
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Main%20Event
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Main%20Event
   eligibility:
@@ -2154,12 +2258,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free cheeseburger. Bring proof of service. At participating locations. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: Free cheeseburger. Bring proof of service. At participating locations. Named on 6 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Max & Erma's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
   - https://www.combatfitness.co/post/veterans-day#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s
@@ -2169,23 +2274,9 @@ entries:
   - veteran
   verification:
   - proof-of-service
-- id: auto-vd-mcdonald-s
-  name: McDonald's
-  category: food
-  slot: anytime
-  scope: nationwide
-  offer: Free Sausage Egg McMuffin Meal. Bring proof of service. Named on 2 independent lists. Confirm with your location.
-  osm_brand:
-  - McDonald's
-  source_url: https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=McDonald%27s&text=McDonald%E2%80%99s
-  sources:
-  - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=McDonald%27s&text=McDonald%E2%80%99s
-  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=McDonald%27s%20Pok%C3%A9mon%20Happy%20Meal%202026&text=McDonald%E2%80%99s%20Pok%C3%A9mon%20Happy%20Meal%202026
-  verification:
-  - military-id
 - id: auto-vd-medieval-times
   name: Medieval Times
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free Royalty upgrade. Named on 2 independent lists. Confirm with your location.
@@ -2203,13 +2294,14 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Veterans Day offer; the lists word the terms differently. Bring proof of service. Named on 5 independent lists. Confirm with your location.
+  offer: Free first 6 ounces of frozen yogurt. Bring proof of service. Named on 6 independent lists. Confirm with your location.
   osm_brand:
   - Menchie's
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Menchie%27s&text=Menchie%E2%80%99s
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Menchie%27s&text=Menchie%E2%80%99s
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Menchie%27s&text=Menchie%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Menchie%27s&text=Menchie%E2%80%99s
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Menchie%27s&text=Menchie%E2%80%99s
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Menchie%27s&text=Menchie%E2%80%99s
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Menchie%27s&text=Menchie%E2%80%99s
@@ -2254,7 +2346,7 @@ entries:
   - veteran
 - id: auto-vd-monticello
   name: Monticello
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission. Named on 2 independent lists. Confirm with your location.
@@ -2287,12 +2379,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. At participating locations. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free meal. At participating locations. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Native Grill & Wings
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Native%20Grill%20%26%20Wings
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Native%20Grill%20%26%20Wings
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Native%20Grill%20%26%20Wings
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Native%20Grill%20%26%20Wings
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Native%20Grill%20%26%20Wings
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Native%20Grill%20%26%20Wings
@@ -2301,7 +2394,7 @@ entries:
   - veteran
 - id: auto-vd-navyfed
   name: NavyFed
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.
@@ -2330,6 +2423,23 @@ entries:
   eligibility:
   - active-duty
   - veteran
+- id: auto-vd-newk-s-eatery
+  name: Newk's Eatery
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free Pick 2. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Newk's Eatery
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Newk%27s%20Eatery&text=Newk%E2%80%99s%20Eatery
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Newk%27s%20Eatery&text=Newk%E2%80%99s%20Eatery
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Newk%27s%20Eatery&text=Newk%E2%80%99s%20Eatery
+  eligibility:
+  - active-duty
+  - veteran
+  verification:
+  - military-id
 - id: auto-vd-ninety-nine-restaurant
   name: Ninety Nine Restaurant
   category: food
@@ -2378,7 +2488,7 @@ entries:
   family: true
 - id: auto-vd-northwest-trek-wildlife-park
   name: Northwest Trek Wildlife Park
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission. Named on 2 independent lists. Confirm with your location.
@@ -2395,7 +2505,7 @@ entries:
   event_end: '2026-11-15'
 - id: auto-vd-ny-waterway
   name: NY Waterway
-  category: food
+  category: travel
   slot: anytime
   scope: nationwide
   offer: Free ferry rides. Named on 2 independent lists. Confirm with your location.
@@ -2428,7 +2538,7 @@ entries:
   event_end: '2026-11-11'
 - id: auto-vd-office-depot-officemax
   name: Office Depot / OfficeMax
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 20% off. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
@@ -2471,7 +2581,7 @@ entries:
   - proof-of-service
 - id: auto-vd-orthofeet
   name: Orthofeet
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: Up to 30% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -2572,7 +2682,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 50% off. Bring proof of service. At participating locations. Named on 8 independent lists, 5 of them with this offer. Confirm with your location.
+  offer: 50% off. Bring proof of service. At participating locations. Named on 9 independent lists, 6 of them with this offer. Confirm with your location.
   osm_brand:
   - Playa Bowls
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Playa%20Bowls
@@ -2580,6 +2690,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Playa%20Bowls
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Playa%20Bowls
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Playa%20Bowls
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Playa%20Bowls
   - https://veteransdaydeals.us/free-meals/#:~:text=Playa%20Bowls
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Playa%20Bowls
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Playa%20Bowls
@@ -2631,7 +2742,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free slice of pie. Bring proof of service. Named on 6 independent lists. Confirm with your location.
+  offer: Free slice of pie. Bring proof of service. Named on 7 independent lists. Confirm with your location.
   osm_brand:
   - Polly's Pies
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
@@ -2639,6 +2750,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Polly%27s%20Pies&text=Polly%E2%80%99s%20Pies
@@ -2651,7 +2763,7 @@ entries:
   event_end: '2026-11-11'
 - id: auto-vd-potawatomi-casino-hotel
   name: Potawatomi Casino Hotel
-  category: travel
+  category: food
   slot: anytime
   scope: nationwide
   offer: Free order of street tacos. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -2671,13 +2783,14 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free slice of pizza. At participating locations. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free slice of pizza. At participating locations. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Prince St. Pizza
   source_url: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Prince%20St.%20Pizza
   sources:
   - https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Prince%20St.%20Pizza
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Prince%20St.%20Pizza
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Prince%20St.%20Pizza
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Prince%20St.%20Pizza
   eligibility:
   - active-duty
@@ -2687,7 +2800,7 @@ entries:
   - proof-of-service
 - id: auto-vd-pro-football-hall-of-fame
   name: Pro Football Hall of Fame
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission and parking. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -2736,7 +2849,7 @@ entries:
   family: true
 - id: auto-vd-red-roof
   name: Red Roof
-  category: food
+  category: travel
   slot: anytime
   scope: nationwide
   offer: 10% off. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.
@@ -2781,7 +2894,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Pulled Pork Sandwich or Strawberry Fields Salad. Dine-in only. At participating locations. Bring proof of service. Named on 3 independent lists. Confirm with your location.
+  offer: Free pulled pork sandwich or salad. Dine-in only. At participating locations. Bring proof of service. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Rock and Brews
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Rock%20and%20Brews
@@ -2789,6 +2902,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Rock%20and%20Brews
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Rock%20%26%20Brews
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Rock%20%26%20Brews
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Rock%20and%20Brews
   eligibility:
   - active-duty
   - veteran
@@ -2842,7 +2956,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 20% off. Bring proof of service. Named on 3 independent lists. Confirm with your location.
+  offer: 20% off. Bring proof of service. Named on 4 independent lists. Confirm with your location.
   osm_brand:
   - Salt Grass Steak House
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Salt%20Grass%20Steak%20House
@@ -2850,6 +2964,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Salt%20Grass%20Steak%20House
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Saltgrass%20Steak%20House
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Saltgrass%20Steak%20House
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Saltgrass%20Steak%20House
   eligibility:
   - veteran
   verification:
@@ -2882,7 +2997,7 @@ entries:
   category: food
   slot: coffee
   scope: nationwide
-  offer: Free medium drink. In-store only. Bring proof of service. Named on 7 independent lists, 6 of them with this offer. Confirm with your location.
+  offer: Free medium drink. In-store only. Bring proof of service. Named on 8 independent lists, 7 of them with this offer. Confirm with your location.
   osm_brand:
   - Scooter's Coffee
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
@@ -2890,6 +3005,7 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Scooter%27s%20Coffee&text=Scooter%E2%80%99s%20Coffee
@@ -2902,7 +3018,7 @@ entries:
   family: true
 - id: auto-vd-scrubadub
   name: ScrubaDub
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Free washes. Named on 3 independent lists. Confirm with your location.
@@ -2919,7 +3035,7 @@ entries:
   - veteran
 - id: auto-vd-seaworld
   name: SeaWorld
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free admission. Bring proof of service. Also mentions 55% off; see a source for what it covers. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
@@ -2944,7 +3060,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free single ShackBurger. Bring proof of service. While supplies last. At participating locations. Named on 11 independent lists, 5 of them with this offer. Confirm with your location.
+  offer: Free single ShackBurger. Bring proof of service. While supplies last. At participating locations. Named on 12 independent lists, 6 of them with this offer. Confirm with your location.
   osm_brand:
   - Shake Shack
   source_url: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Shake%20Shack
@@ -2956,6 +3072,7 @@ entries:
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Shake%20Shack
   - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Shake%20Shack
   - https://veteransdaydeals.us/free-meals/#:~:text=Shake%20Shack
+  - https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026#:~:text=Shake%20Shack
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Shake%20Shack
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Shake%20Shack
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Shake%20Shack
@@ -3015,7 +3132,7 @@ entries:
   - veteran
 - id: auto-vd-silver-dollar-city
   name: Silver Dollar City
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.
@@ -3134,12 +3251,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Pork Big Deal. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
+  offer: Free Pork Big Deal. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Sonny's BBQ
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Sonny%27s%20BBQ&text=Sonny%E2%80%99s%20BBQ
@@ -3149,9 +3267,10 @@ entries:
   verification:
   - military-id
   - proof-of-service
+  family: true
 - id: auto-vd-spartannash
   name: SpartanNash
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 11% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.
@@ -3171,7 +3290,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free STK signature entree. Bring proof of service. Dine-in only. Named on 7 independent lists. Confirm with your location.
+  offer: "Free entr\xE9e. Bring proof of service. Dine-in only. Named on 8 independent lists. Confirm with your location."
   osm_brand:
   - STK Steakhouse
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=STK%20Steakhouse
@@ -3180,6 +3299,7 @@ entries:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=STK%20Steakhouse
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=STK%20Steakhouse
   - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=STK%20Steakhouse
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=STK%20Steakhouse
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=STK%20Steakhouse
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=STK%20Steakhouse
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=STK%20Steakhouse
@@ -3224,7 +3344,7 @@ entries:
   - veteran
 - id: auto-vd-super-8
   name: Super 8
-  category: food
+  category: travel
   slot: anytime
   scope: nationwide
   offer: 15% off. At participating locations. Named on 2 independent lists. Confirm with your location.
@@ -3236,7 +3356,7 @@ entries:
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Super%208
 - id: auto-vd-target
   name: Target
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 20% off. Named on 11 independent lists, 5 of them with this offer. Confirm with your location.
@@ -3291,12 +3411,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Ted's Tart. Named on 2 independent lists. Confirm with your location.
+  offer: Free Ted's Tart. Named on 3 independent lists. Confirm with your location.
   osm_brand:
   - Ted's Bulletin
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Ted%27s%20Bulletin&text=Ted%E2%80%99s%20Bulletin
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Ted%27s%20Bulletin&text=Ted%E2%80%99s%20Bulletin
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Ted%27s%20Bulletin&text=Ted%E2%80%99s%20Bulletin
   - https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Ted%27s%20Bulletin&text=Ted%E2%80%99s%20Bulletin
   eligibility:
   - veteran
@@ -3305,13 +3426,14 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free bowl. At participating locations. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free bowl. At participating locations. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Teriyaki Madness
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Teriyaki%20Madness
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Teriyaki%20Madness
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Teriyaki%20Madness
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Teriyaki%20Madness
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Teriyaki%20Madness
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Teriyaki%20Madness
   eligibility:
@@ -3354,7 +3476,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free meal. Dine-in only. Bring proof of service. Named on 7 independent lists, 5 of them with this offer. Confirm with your location.
+  offer: Free meal. Dine-in only. Bring proof of service. Named on 9 independent lists, 6 of them with this offer. Confirm with your location.
   osm_brand:
   - TGI Fridays
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=TGI%20Fridays
@@ -3362,6 +3484,8 @@ entries:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=TGI%20Fridays
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=TGI%20Fridays
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=TGI%20Friday%27s&text=TGI%20Friday%E2%80%99s
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=TGI%20Fridays
+  - https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026#:~:text=TGI%20Fridays
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=TGI%20Fridays
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=TGI%20Fridays
   - https://valoannetwork.com/veterans-day-deals-2026/#:~:text=TGI%20Fridays
@@ -3374,7 +3498,7 @@ entries:
   - proof-of-service
 - id: auto-vd-tommy-s-express
   name: Tommy's Express
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Free car wash. At participating locations. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
@@ -3429,7 +3553,7 @@ entries:
   - military-id
 - id: auto-vd-u-s-fish-and-wildlife-service
   name: U.S. Fish and Wildlife Service
-  category: outdoor
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free day. Named on 5 independent lists. Confirm with your location.
@@ -3447,7 +3571,7 @@ entries:
   - veteran
 - id: auto-vd-under-armour
   name: Under Armour
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 20% off. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
@@ -3464,9 +3588,25 @@ entries:
   - veteran
   verification:
   - id.me
+- id: auto-vd-uno-pizzeria-grill
+  name: Uno Pizzeria & Grill
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free entree. Dine-in only. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Uno Pizzeria & Grill
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Uno%20Pizzeria%20%26%20Grill
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Uno%20Pizzeria%20%26%20Grill
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Uno%20Pizzeria%20%26%20Grill
+  eligibility:
+  - veteran
+  verification:
+  - military-id
 - id: auto-vd-valvoline
   name: Valvoline
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: 15% off. Named on 2 independent lists. Confirm with your location.
@@ -3481,7 +3621,7 @@ entries:
   redeem_by: '2026-12-05'
 - id: auto-vd-venture-x
   name: Venture X
-  category: food
+  category: services
   slot: anytime
   scope: nationwide
   offer: Free a community membership. Named on 3 independent lists. Confirm with your location.
@@ -3496,7 +3636,7 @@ entries:
   - veteran
 - id: auto-vd-verizon
   name: Verizon
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 25% off. While supplies last. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
@@ -3516,7 +3656,7 @@ entries:
   - id.me
 - id: auto-vd-vettix
   name: VetTix
-  category: food
+  category: attractions
   slot: anytime
   scope: nationwide
   offer: Free tickets. Named on 3 independent lists. Confirm with your location.
@@ -3537,12 +3677,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Buy one, get one free. At participating locations. Named on 2 independent lists. Confirm with your location.
+  offer: "Free entr\xE9e. At participating locations. Named on 3 independent lists. Confirm with your location."
   osm_brand:
   - Viva Chicken
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Viva%20Chicken
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Viva%20Chicken
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Viva%20Chicken
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Viva%20Chicken
   eligibility:
   - active-duty
@@ -3553,12 +3694,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free slice of crepe cake. While supplies last. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free slice of crepe cake. While supplies last. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - WaBa Grill
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=WaBa%20Grill
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=WaBa%20Grill
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=WaBa%20Grill
   - https://veteransdaydeals.us/free-meals/#:~:text=WaBa%20Grill
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=WaBa%20Grill
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=WaBa%20Grill
@@ -3686,12 +3828,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free lunch combo. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  offer: Free lunch combo. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.
   osm_brand:
   - Wings and Rings
   source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Wings%20and%20Rings
   sources:
   - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Wings%20and%20Rings
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Wings%20and%20Rings
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Wings%20and%20Rings
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Wings%20and%20Rings
   eligibility:
@@ -3701,7 +3844,7 @@ entries:
   - military-id
 - id: auto-vd-winn-dixie
   name: Winn-Dixie
-  category: food
+  category: retail
   slot: anytime
   scope: nationwide
   offer: 11% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.

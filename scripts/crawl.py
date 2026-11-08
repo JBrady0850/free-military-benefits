@@ -89,7 +89,7 @@ HEADER_NAMES = {"store", "brand", "company", "retailer", "restaurant", "discount
 WATCH_IGNORE = {"veteransday", "discounts", "nationalparksservice", "nationalparkservice"}
 
 
-SYMBOLS = re.compile("[\u2600-\u27BF\U0001F000-\U0001FAFF\uFE0F\u200D]")  # emoji and pictographs some lists put in headings
+SYMBOLS = re.compile("[\u2600-\u27BF\U0001F000-\U0001FAFF\uFE0F\u200B-\u200D\uFEFF]")  # emoji and pictographs some lists put in headings
 
 
 def clean(text: str) -> str:
@@ -541,6 +541,51 @@ def same_brand(short: str, long: str) -> bool:
     return len(norm(short)) >= 5 and len(l) > len(s) and l[:len(s)] == s and all(w in DESCRIPTORS for w in l[len(s):])
 
 
+KINDS: dict[str, str] = {}  # brand -> business type from the store snapshot (site/places.json "kinds")
+FOOD_WORDS = re.compile(
+    r"\b(?:meals?|entr[e\u00e9]es?|breakfast|lunch|dinner|brunch|coffee|latte|tea|donuts?|doughnuts?|burgers?|pancakes?|waffles?|subs?|"
+    r"sandwich(?:es)?|pizzas?|pizzeria|wings?|tacos?|burritos?|nachos|chips|fries|desserts?|appetizers?|combos?|soups?|salads?|smoothies?|"
+    r"shakes?|sundaes?|ice cream|cookies?|pies?|buffet|steaks?|steakhouse|shrimp|seafood|lobster|crab|fish|chicken|tenders|nuggets|bbq|"
+    r"barbecue|smokehouse|ribs|brisket|pasta|spaghetti|noodles|sushi|cheesesteaks?|sliders|quesadillas?|drinks?|beverages?|dine-in|dine in|"
+    r"menu|plates?|bowls?|biscuits?|bagels?|muffins?|pretzels?|hot dogs?|onion|grill|grille|kitchen|cafe|caf\u00e9|bistro|diner|eatery|"
+    r"restaurants?|bakery|cantina|tavern|roadhouse|brewing|taproom|creamery)\b", re.I)
+
+
+def low_key(s: str) -> str:
+    return " ".join(str(s).lower().replace(chr(0x2019), "'").split())
+
+
+ATTRACTION_WORDS = re.compile(r"\b(?:zoo|aquarium|museum|theme park|amusement|gardens|wildlife|hall of fame|admission|tickets?|disney|seaworld|"
+                              r"legoland|six flags|knott|silver dollar city|medieval times|monticello|mount vernon|karting|trolley)\b", re.I)
+TRAVEL_WORDS = re.compile(r"\b(?:hotels?|inns?|suites|motel|resorts?|cruises?|ferry|waterway|airlines?|b&bs?|stays?|lodging)\b", re.I)
+SERVICE_WORDS = re.compile(r"\b(?:car wash|wash|auto|oil change|tires?|haircuts?|salon|barber|bank|credit union|navyfed|navy federal|usaa|aarp|"
+                           r"insurance|membership|lube|monkey)\b", re.I)
+FREE_FOOD = re.compile(r"\bfree\b.{0,40}\b(?:meal|entr[e\u00e9]e|coffee|drink|donut|doughnut|burger|pancake|sub|sandwich|pizza|wings?|taco|fries|"
+                       r"dessert|appetizer|combo|smoothie|shake|ice|gelato|custard|cookie|breakfast|lunch|dinner|plate|bowl|biscuit|bagel|tea|latte|"
+                       r"beer|soda|chips|food|slice|cone|treat)", re.I)
+
+
+def vd_category(name: str, primary: str | None, texts: list[str]) -> str:
+    """A free food or drink is food at any store (7-Eleven's free coffee). Then the store snapshot's business type; then
+    attraction, travel or service words in the name or offer; then food words; else retail (a percent off at a store)."""
+    offer = primary or ""
+    if FREE_FOOD.search(offer):
+        return "food"
+    k = KINDS.get(low_key(name))
+    if k and k != "retail":
+        return k
+    head = name + " " + offer
+    for words, cat in ((ATTRACTION_WORDS, "attractions"), (TRAVEL_WORDS, "travel"), (SERVICE_WORDS, "services")):
+        if words.search(head):
+            return cat
+    g = guess_category(name)
+    if g not in ("retail", "food"):
+        return g
+    if k == "retail":
+        return "retail"
+    return "food" if FOOD_WORDS.search(" ".join([name, offer] + list(texts or []))) else "retail"
+
+
 def load_prev_names(*paths) -> None:
     for path in paths:
         try:
@@ -734,6 +779,8 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
                 seen[key]["lists"].setdefault(d, link)
             for d, said in seen[other]["texts"].items():
                 seen[key]["texts"].setdefault(d, said)
+            if other in PREV_NAMES and key not in PREV_NAMES:
+                seen[key]["name"] = PREV_NAMES[other]  # keep the published name, so the id and My list picks survive
             seen[other]["lists"] = {}
     entries, single = [], []
     for key, row in seen.items():
@@ -751,7 +798,7 @@ def harvest_vd_lists(cfg: dict, robots: dict, vd_names: set, today: str, report:
                 agree = f" Named on {len(links)} independent lists."
             quals = "".join(" " + q[0].upper() + q[1:] + "." for q in facts["quals"][:4])
             entry = {"id": "auto-vd-" + slug(row["name"]), "name": row["name"],
-                     "category": cat if cat != "retail" else "food", "slot": guess_slot(row["name"] + " " + (facts["primary"] or "")),
+                     "category": vd_category(row["name"], facts["primary"], list(row["texts"].values())), "slot": guess_slot(row["name"] + " " + (facts["primary"] or "")),
                      "scope": "locations" if cat == "attractions" else "nationwide",
                      "offer": (lead + quals + agree + " Confirm with your location.")[:500],
                      "osm_brand": [row["name"]], "source_url": links[0], "sources": links[:12]}
@@ -792,6 +839,10 @@ def main() -> int:
     today = date.today().isoformat()
     all_names, vd_names = curated_names()
     load_prev_names(OUT, VD_OUT)
+    try:
+        KINDS.update(json.loads((ROOT / "site" / "places.json").read_text(encoding="utf-8")).get("kinds") or {})
+    except (OSError, ValueError):
+        pass
     robots: dict = {}
     report: list[str] = []
     dir_entries, held = harvest_directories(cfg, robots, all_names, threshold, today, report)

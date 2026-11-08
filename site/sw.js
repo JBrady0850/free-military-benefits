@@ -1,14 +1,14 @@
 /* Free Military Benefits service worker. Standalone: it reads, writes and deletes only its own caches
    (names starting with "fmb-"), never another app's, even though other sites share this github.io address.
    Network first for the page and data.json, so updates show on the next visit and the app still opens offline.
-   zip.json and places.json are cached on first use and refreshed in the background.
+   zip.json is cached on first use and refreshed in the background; places.json is network first.
    Only same-origin GET requests under this app's scope are handled; AI provider calls and map links are never cached.
    Bump VERSION whenever the SHELL list changes. */
 const PREFIX = "fmb-";
-const VERSION = PREFIX + "v0.8.2";
+const VERSION = PREFIX + "v0.8.3";
 const SHELL = ["./", "index.html", "data.json", "manifest.webmanifest", "icon-192.png", "icon-512.png",
   "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png"];
-const BIG = ["zip.json", "places.json"];
+const BIG = ["zip.json"]; // places.json changes with each harvest, so it is network first like data.json
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -55,7 +55,7 @@ self.addEventListener("fetch", (event) => {
   const name = url.pathname.split("/").pop();
   if (req.mode === "navigate" || name === "" || name === "index.html") {
     event.respondWith(networkFirst(new Request(new URL("index.html", self.registration.scope)), 4000)); // one cached copy of the page
-  } else if (name === "data.json") {
+  } else if (name === "data.json" || name === "places.json") {
     event.respondWith(networkFirst(req, 4000));
   } else if (BIG.includes(name)) {
     event.respondWith(staleWhileRevalidate(req));
