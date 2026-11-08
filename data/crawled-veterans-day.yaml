@@ -578,6 +578,22 @@ entries:
   - veteran
   verification:
   - proof-of-service
+- id: auto-vd-brick-house-tavern-tap
+  name: Brick House Tavern + Tap
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: 20% off. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Brick House Tavern + Tap
+  source_url: https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brick%20House%20Tavern%20%2B%20Tap
+  sources:
+  - https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Brick%20House%20Tavern%20%2B%20Tap
+  - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Brick%20House%20Tavern%20%2B%20Tap
+  eligibility:
+  - veteran
+  verification:
+  - military-id
 - id: auto-vd-brickhouse-tavern-tap
   name: Brickhouse Tavern & Tap
   category: food
