@@ -3223,7 +3223,7 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: 20% off. Named on 10 independent lists, 4 of them with this offer. Confirm with your location.
+  offer: 20% off. Named on 11 independent lists, 5 of them with this offer. Confirm with your location.
   osm_brand:
   - Target
   source_url: https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Target
@@ -3231,6 +3231,7 @@ entries:
   - https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Target
   - https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Target
   - https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Target
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Target
   - https://veteransdmv.com/veterans-day-discounts/#:~:text=Target
   - https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Target
   - https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Target
