@@ -701,25 +701,61 @@ function renderUnlocks() {
 }
 
 /* ---------- Veterans Day planner ---------- */
-const VD_FILTERS = [["all", "All offers"], ["food", "Free meals"], ["breakfast", "Breakfast"], ["lunch", "Lunch"],
- ["dinner", "Dinner"], ["coffee", "Coffee"], ["retail", "Shopping"], ["services", "Haircuts and services"],
+/* Chips (reviewed 2026-11-08 against ZIP 32444 and everywhere): Lunch and Dinner returned nearly the same offers, so
+   they are one chip; "3+ sources" is gone (every card shows its source count). Each chip shows its count, and a chip
+   that would show nothing, add nothing, or repeat an earlier chip's offers is hidden unless it is the one selected. */
+const VD_FILTERS = [["all", "All offers"], ["food", "Food and drink"], ["breakfast", "Breakfast"], ["meal", "Lunch and dinner"],
+ ["coffee", "Coffee and treats"], ["retail", "Shopping"], ["services", "Haircuts and services"],
  ["attractions", "Attractions"], ["later", "Redeem later"], ["family", "Family included"], ["ended", "Show ended"]];
 const VD_TOGGLES = ["later", "family", "ended", "others", "everywhere", "multi", "unknown", "small"];
 let vdf = {type: P.interests.length ? "mine" : "all", later: false, family: false, ended: false, others: false, everywhere: false, multi: false, unknown: false, small: false};
 /* An offer whose whole benefit is under 21 percent off is an everyday store discount, not a Veterans Day freebie:
    it waits behind a chip, the same 21 percent line the discount directory uses. */
 const smallOffer = (e) => { const m = String(e.offer || "").match(/^\s*(?:up to\s+)?(\d{1,2})\s?(?:%|percent)/i); return !!m && +m[1] < 21; };
+/* Meal chips. Most Veterans Day meals are good all day ("anytime"), so Lunch and Dinner include them unless the offer's
+   own hours rule the meal out: "until 11 a.m." or "5 a.m. to 12 p.m." is mornings only, "until 4 p.m." is not dinner,
+   "after 4 p.m." is dinner only. Breakfast and Coffee stay strict: an all-day free entree is not a breakfast. */
+const MORNING_ONLY = /\b(?:until|till|to|through|-)\s*(?:10|11)(?::\d\d)?\s*a\.?m\b|\b(?:until|till|to|through|-)\s*(?:noon|12(?::00)?\s*p\.?m\b)/;
+const ENDS_AFTERNOON = /\b(?:until|till|to|through|-)\s*[2-4](?::\d\d)?\s*p\.?m\b|\blunch\b/;
+const EVENING_ONLY = /\b(?:after|from|starting(?: at)?)\s*[4-6](?::\d\d)?\s*p\.?m\b|\b[4-6](?::\d\d)?\s*p\.?m\.?\s*(?:to|-|until)\s*close\b|\bdinner\b|\bnight\b/;
+function mealFits(e, meal) {
+ if (e.slot === meal) return true;
+ if (meal === "breakfast" || meal === "coffee") return false;
+ if (e.category !== "food" || (e.slot && e.slot !== "anytime")) return false;
+ const said = (String(e.offer || "") + " " + String(e.notes || "")).toLowerCase();
+ if (MORNING_ONLY.test(said)) return false;
+ return meal === "lunch" ? !EVENING_ONLY.test(said) : !ENDS_AFTERNOON.test(said);
+}
 const smallCount = () => DATA.filter((e) => e.kind === "veterans-day" && !ended(e) && fits(e) && localOK(e) && smallOffer(e)).length;
 const nsources = (e) => new Set((e.sources || []).map((u) => host(u).split(".").slice(-2).join("."))).size;
 function vdChips() {
- const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS, [["multi", "3+ sources"]],
+ const list = (P.interests.length ? [["mine", "Your interests"]] : []).concat(VD_FILTERS,
   picked.length ? [["others", "Include offers for other statuses"]] : [],
   LOCAL && unknownCount() ? [["unknown", "Add " + unknownCount() + " chains we cannot place"]] : [],
   smallCount() ? [["small", "Add " + smallCount() + " small store discounts (under 21% off)"]] : [],
   /^[0-9]{5}$/.test(P.zip) ? [["everywhere", "Show offers everywhere, not just near " + P.zip]] : []);
+ const ADDS = ["ended", "others", "unknown", "small"];
+ const idsWith = (k) => { const save = JSON.stringify(vdf); if (VD_TOGGLES.includes(k)) vdf[k] = !vdf[k]; else vdf.type = k;
+  const ids = vdList().map((e) => e.id); Object.assign(vdf, JSON.parse(save)); return ids; };
+ const now = vdList().length, seen = new Set();
  $("#vdChips").innerHTML = list.map((f) => {
-  const on = VD_TOGGLES.includes(f[0]) ? vdf[f[0]] : vdf.type === f[0];
-  return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + f[0] + '">' + esc(f[1]) + "</button>";
+  const k = f[0], on = VD_TOGGLES.includes(k) ? vdf[k] : vdf.type === k;
+  if (k === "everywhere") return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + k + '">' + esc(f[1]) + "</button>";
+  const ids = idsWith(k), n = ids.length, added = n - now;
+  let label = f[1];
+  if (ADDS.includes(k)) {
+   if (!on && added <= 0) return "";
+   if (!/\d/.test(label)) label += " (+" + (on ? now - n : added) + ")";
+  } else {
+   if (!on && n === 0) return "";
+   if (!VD_TOGGLES.includes(k)) {
+    const sig = ids.join(",");
+    if (!on && seen.has(sig)) return ""; // the same offers as an earlier chip
+    seen.add(sig);
+   }
+   label += " (" + (on && !VD_TOGGLES.includes(k) ? now : n) + ")";
+  }
+  return '<button type="button" class="chip' + (on ? " on" : "") + '" data-vf="' + k + '">' + esc(label) + "</button>";
  }).join("");
 }
 $("#vdChips").addEventListener("click", (ev) => {
@@ -755,12 +791,17 @@ function nearest(e) {
 function hasLocationData(e) { return !!((e.geo && e.geo.length) || (PLACES && (e.osm_brand || []).some((b) => PLACES.brands[lowName(b)]))); }
 /* near: online, a national program, a store or venue within your distance, or a statewide offer in your state.
    far: we know where it is and it is not near you. unknown: we have no locations for it, so we cannot say. */
+const PLACE_MEMO = new Map(); // offer id, ZIP and distance -> status: the chips filter the list many times
 function placeStatus(e) {
  if (!LOCAL) return "near";
- if (e.online || e.national) return "near";
- if (hasLocationData(e)) return nearest(e) ? "near" : "far";
- if (e.states && e.states.length) return e.states.includes(LOCAL.state) ? "near" : "far";
- return "unknown";
+ const key = e.id + "|" + LOCAL.zip + "|" + LOCAL.mi + "|" + (PLACES ? Object.keys(PLACES.brands).length : 0);
+ if (PLACE_MEMO.has(key)) return PLACE_MEMO.get(key);
+ let s = "unknown";
+ if (e.online || e.national) s = "near";
+ else if (hasLocationData(e)) s = nearest(e) ? "near" : "far";
+ else if (e.states && e.states.length) s = e.states.includes(LOCAL.state) ? "near" : "far";
+ PLACE_MEMO.set(key, s);
+ return s;
 }
 /* Local first: with a ZIP set, every list sorts by how close the offer is. Store within range,
    then your state, then national chains and online offers, then everything else. */
@@ -796,7 +837,8 @@ function vdList() {
   const t = vdf.type;
   if (t === "all") return true;
   if (t === "mine") return likes(e);
-  if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return e.slot === t;
+  if (t === "meal") return mealFits(e, "lunch") || mealFits(e, "dinner");
+  if (["breakfast", "lunch", "dinner", "coffee"].includes(t)) return mealFits(e, t);
   return e.category === t;
  }).sort((a, b) => String(a.event_start).localeCompare(String(b.event_start)) ||
   (P.interests.length ? (likes(b) ? 1 : 0) - (likes(a) ? 1 : 0) : 0) || byLocal(a, b) ||
@@ -812,9 +854,9 @@ function renderVD() {
  $("#vdOut").innerHTML = card(title, "NOV 11", "#d4a017", list.length + " of " + all, inner);
  $("#vdLegend").innerHTML = LOCAL && !vdf.everywhere ?
   "Showing only offers with a store or venue within " + LOCAL.mi + " miles of ZIP " + esc(LOCAL.zip) + ", statewide offers in " + esc(LOCAL.state || "your state") +
-  ", online offers and national programs; your interests come first on each date. " + (smallCount() ? "Store discounts under 21 percent off wait behind a chip. " : "") + (unknownCount() ? unknownCount() + " chains have no store locations in our data yet, so we cannot tell if they are near you; they are hidden unless you add them with the chip. " : "") +
+  ", online offers and national programs; your interests come first on each date, and Lunch and Dinner include all-day meals. " + (smallCount() ? "Store discounts under 21 percent off wait behind a chip. " : "") + (unknownCount() ? unknownCount() + " chains have no store locations in our data yet, so we cannot tell if they are near you; they are hidden unless you add them with the chip. " : "") +
   "Distances come from weekly store data on this device. <a href=\"#start\" data-go=\"start\" data-ivgo=\"1\">Change ZIP or distance</a>." :
-  "Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. " +
+  "Every 2026 Veterans Day offer we can source, grouped by date. Filter by meal (Lunch and Dinner include all-day meals) or type, find ones you can <strong>redeem later</strong>, or add them all to your calendar. " +
   (P.zip ? "" : '<a href="#start" data-go="start" data-ivgo="1">Add your ZIP</a> to hide offers that are nowhere near you. ') + "Offers vary by location; confirm before you go.";
  const w = META.watch || {};
  $("#watchBox").innerHTML = (w.new_names && w.new_names.length) ? '<div class="gap"><strong>On VA News, waiting for a second source:</strong> ' +
