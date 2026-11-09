@@ -1158,12 +1158,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: Free Classic Lucy. Dine-in only. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  offer: Free select menu item. Dine-in only. At participating locations. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
   osm_brand:
   - Crooked Pint Ale House
   source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Crooked%20Pint%20Ale%20House
   sources:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Crooked%20Pint%20Ale%20House
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Crooked%20Pint%20Ale%20House
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Crooked%20Pint%20Ale%20House
   eligibility:
   - active-duty
@@ -1826,12 +1827,13 @@ entries:
   category: food
   slot: anytime
   scope: nationwide
-  offer: "Free entr\xE9e. Bring proof of service. Named on 2 independent lists. Confirm with your location."
+  offer: "Free entr\xE9e. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location."
   osm_brand:
   - Hickory Tavern
   source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hickory%20Tavern
   sources:
   - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hickory%20Tavern
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hickory%20Tavern
   - https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hickory%20Tavern
   eligibility:
   - active-duty
@@ -2759,6 +2761,22 @@ entries:
   - id.me
   event_start: '2026-11-11'
   event_end: '2026-11-12'
+- id: auto-vd-paisano-s-pizza
+  name: Paisano's Pizza
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free Large 1-Topping Pizza. At participating locations. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.
+  osm_brand:
+  - Paisano's Pizza
+  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Paisano%27s%20Pizza&text=Paisano%E2%80%99s%20Pizza
+  sources:
+  - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Paisano%27s%20Pizza&text=Paisano%E2%80%99s%20Pizza
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Paisano%27s%20Pizza&text=Paisano%E2%80%99s%20Pizza
+  - https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Paisano%27s%20Pizza&text=Paisano%E2%80%99s%20Pizza
+  eligibility:
+  - active-duty
+  - veteran
 - id: auto-vd-peet-s-coffee
   name: Peet's Coffee
   category: food
@@ -3011,6 +3029,23 @@ entries:
   event_start: '2026-11-09'
   event_end: '2026-11-11'
   family: true
+- id: auto-vd-red-arrow-diner
+  name: Red Arrow Diner
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free meal. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Red Arrow Diner
+  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Red%20Arrow%20Diner
+  sources:
+  - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Red%20Arrow%20Diner
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Red%20Arrow%20Diner
+  eligibility:
+  - active-duty
+  - veteran
+  verification:
+  - military-id
 - id: auto-vd-red-roof
   name: Red Roof
   category: travel
@@ -3300,6 +3335,20 @@ entries:
   - https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Shoney%27s&text=Shoney%E2%80%99s
   eligibility:
   - active-duty
+  - veteran
+- id: auto-vd-sickies-garage-burgers-and-brews
+  name: Sickies Garage Burgers and Brews
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: Free Cheeseburger Basket. Also mentions 20% off; see a source for what it covers. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Sickies Garage Burgers and Brews
+  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Sickies%20Garage%20Burgers%20and%20Brews
+  sources:
+  - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Sickies%20Garage%20Burgers%20and%20Brews
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Sickies%20Garage%20Burgers%20and%20Brews
+  eligibility:
   - veteran
 - id: auto-vd-silver-dollar-city
   name: Silver Dollar City
