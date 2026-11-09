@@ -328,9 +328,9 @@ entries:
   percent_up: true
   verified_by: brand page
   confidence: official
-  source_url: https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  source_url: https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans?x-target=euwest-05
   sources:
-  - https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans
+  - https://www.budget.com/en/offers/partner-offers/25-off-car-rentals-for-military-veterans?x-target=euwest-05
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Budget%20Car%20Rental
 - id: auto-helly-hansen
   name: Helly Hansen
@@ -460,13 +460,14 @@ entries:
 - id: auto-helix-sleep
   name: Helix Sleep
   category: retail
-  offer: 30% off with the military discount, as reported by 2 independent directories (va.gov, veteransbenefitskb.com). Confirm current terms and who qualifies before buying.
+  offer: 30% off with the military discount. Confirmed on the brand's own page; also listed by va.gov, veteransbenefitskb.com. Confirm current terms and who qualifies before buying.
   percent: 30
   percent_up: false
-  verified_by: two directories
-  confidence: community
-  source_url: https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix
+  verified_by: brand page
+  confidence: official
+  source_url: https://helixsleep.com/pages/military-discount/
   sources:
+  - https://helixsleep.com/pages/military-discount/
   - https://news.va.gov/85765/veteran-discounts-available-year-round/#:~:text=Helix
   - https://www.veteransbenefitskb.com/discounts-deals#:~:text=Helix%20Sleep
 - id: auto-leatherman
