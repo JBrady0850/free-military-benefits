@@ -2422,6 +2422,24 @@ entries:
   eligibility:
   - active-duty
   - veteran
+- id: auto-vd-landry-s
+  name: Landry's
+  category: food
+  slot: anytime
+  scope: nationwide
+  offer: 10% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.
+  osm_brand:
+  - Landry's
+  source_url: https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Landry%27s&text=Landry%E2%80%99s
+  sources:
+  - https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Landry%27s&text=Landry%E2%80%99s
+  - https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Landry%27s&text=Landry%E2%80%99s
+  eligibility:
+  - active-duty
+  - veteran
+  verification:
+  - military-id
+  - proof-of-service
 - id: auto-vd-lazy-dog-restaurants
   name: Lazy Dog Restaurants
   category: food
