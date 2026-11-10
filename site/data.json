@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-10 07:20 UTC",
+ "generated": "2026-11-10 18:48 UTC",
  "data_version": "2026-11-10",
  "counts": {
   "hidden": 10,
-  "veterans-day": 273,
+  "veterans-day": 291,
   "travel": 3,
   "free": 13,
   "discount": 6,
   "crawled": 59
  },
- "total": 364,
+ "total": 382,
  "stats": {
   "brand_confirmed": 41,
-  "over_20": 83,
+  "over_20": 84,
   "stale": 0,
   "distinct_sites": 128,
   "source_pages": 44,
@@ -20,7 +20,7 @@
  },
  "watch": {
   "checked": "2026-11-10",
-  "run_utc": "2026-11-10T07:19Z",
+  "run_utc": "2026-11-10T18:42Z",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
   "new_names": [],
   "held_single_source": [
@@ -78,55 +78,55 @@
     "url": "https://dealhack.com/blog/military-discounts-guide",
     "kind": "directory",
     "rows": 32,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://hip2save.com/deals/military-discounts/",
     "kind": "directory",
     "rows": 9,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-military-discounts-clothes.html",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/85765/veteran-discounts-available-year-round/",
     "kind": "directory",
     "rows": 33,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "kind": "directory",
     "rows": 12,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://usmilitary.com/top-25-military-discounts/",
     "kind": "directory",
     "rows": null,
-    "last_try": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
     "last_ok": "2026-11-08T20:11Z",
     "carried_from": "2026-11-08T20:11Z"
    },
@@ -134,287 +134,287 @@
     "url": "https://militaryfamilies.com/?p=32765",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://barbend.com/?p=218235",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.sheerid.com/?p=71432",
     "kind": "directory",
     "rows": 13,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/military-discounts/",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://couponfollow.com/research/best-military-discounts",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.operationmilitarykids.org/military-veterans-discounts/",
     "kind": "directory",
     "rows": 3,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://claimraven.com/military-discounts",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide",
     "kind": "directory",
     "rows": 7,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://guidetobargain.com/guides/military-discounts",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://savingsgrove.com/blogs/guides/military-discount-list",
     "kind": "directory",
     "rows": 5,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.veteransbenefitskb.com/discounts-deals",
     "kind": "directory",
     "rows": 72,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/discounts/military-discounts/",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-retail-military-discounts.html",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarybenefit.org/get-educated/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://baseneed.com/blog/military-discounts-2026-complete-list",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://storepolicies.com/discounts-for-soldiers/",
     "kind": "directory",
     "rows": 6,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
     "kind": "veterans-day",
     "rows": 50,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html",
     "kind": "veterans-day",
-    "rows": 133,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 150,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/",
     "kind": "veterans-day",
-    "rows": 91,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 106,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
     "kind": "veterans-day",
-    "rows": 114,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 115,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/",
     "kind": "veterans-day",
-    "rows": 99,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 70,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/",
     "kind": "veterans-day",
-    "rows": 93,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 107,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/",
     "kind": "veterans-day",
-    "rows": 176,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 174,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdaydeals.us/free-meals/",
     "kind": "veterans-day",
     "rows": 85,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.dinova.com/dining-guide/veterans-day-guide/",
     "kind": "veterans-day",
-    "rows": 9,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 8,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://blog.ahrn.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 11,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026",
     "kind": "veterans-day",
     "rows": 15,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdmv.com/veterans-day-discounts/",
     "kind": "veterans-day",
-    "rows": 219,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 237,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.combatfitness.co/post/veterans-day",
     "kind": "veterans-day",
     "rows": 32,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/",
     "kind": "veterans-day",
-    "rows": 109,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 114,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-retail-discounts/",
     "kind": "veterans-day",
-    "rows": 196,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 220,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html",
     "kind": "veterans-day",
-    "rows": 37,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 40,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://valoannetwork.com/veterans-day-deals-2026/",
     "kind": "veterans-day",
     "rows": 128,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert",
     "kind": "veterans-day",
-    "rows": 142,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "rows": 158,
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    },
    {
     "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
     "last_ok": "2026-11-08T20:11Z",
     "carried_from": "2026-11-08T20:11Z"
    },
@@ -422,8 +422,8 @@
     "url": "https://fedratecalc.com/veterans-day-free-meals-2026/",
     "kind": "veterans-day",
     "rows": 17,
-    "last_try": "2026-11-10T07:19Z",
-    "last_ok": "2026-11-10T07:19Z",
+    "last_try": "2026-11-10T18:42Z",
+    "last_ok": "2026-11-10T18:42Z",
     "carried_from": null
    }
   ],
@@ -439,7 +439,7 @@
   ],
   "counts": {
    "directory_listed": 59,
-   "veterans_day_listed": 217,
+   "veterans_day_listed": 235,
    "held": 48,
    "sources_read": 42,
    "sources_carried": 2,
@@ -1094,36 +1094,6 @@
   },
   {
    "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-10",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-aarp",
-   "name": "AARP",
-   "category": "services",
-   "offer": "Up to 45% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "AARP"
-   ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=AARP",
-   "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=AARP",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=AARP"
-   ],
-   "kind": "veterans-day",
-   "percent": 45,
-   "percent_up": true
-  },
-  {
-   "eligibility": [
     "active-duty",
     "guard-reserve",
     "veteran"
@@ -1233,7 +1203,7 @@
    "id": "auto-vd-another-broken-egg-cafe",
    "name": "Another Broken Egg Cafe",
    "category": "food",
-   "offer": "Free Patriot French Toast. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free Patriot French Toast. Dine-in only. Bring proof of service. Named on 7 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Another Broken Egg Cafe"
    ],
@@ -1242,6 +1212,7 @@
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Another%20Broken%20Egg%20Cafe",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Another%20Broken%20Egg%20Cafe",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Another%20Broken%20Egg%20Cafe",
+    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Another%20Broken%20Egg%20Cafe",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Another%20Broken%20Egg%20Cafe",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Another%20Broken%20Egg%20Cafe",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Another%20Broken%20Egg%20Cafe"
@@ -1348,6 +1319,36 @@
   },
   {
    "eligibility": [
+    "spouse",
+    "veteran"
+   ],
+   "verification": [
+    "military-id",
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-09",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-atlantis-casino-resort-spa",
+   "name": "Atlantis Casino Resort Spa",
+   "category": "travel",
+   "offer": "Free buffet. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Atlantis Casino Resort Spa"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Atlantis%20Casino%20Resort%20Spa",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Atlantis%20Casino%20Resort%20Spa",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Atlantis%20Casino%20Resort%20Spa"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
     "active-duty",
     "veteran"
    ],
@@ -1380,34 +1381,6 @@
   },
   {
    "eligibility": [
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-10",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-b-bs-for-vets",
-   "name": "B&Bs for Vets",
-   "category": "travel",
-   "offer": "Free room. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "B&Bs for Vets"
-   ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=B%26Bs%20for%20Vets",
-   "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=B%26Bs%20for%20Vets",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=B%26Bs%20for%20Vets"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "active-duty",
     "veteran"
    ],
@@ -1424,13 +1397,15 @@
    "id": "auto-vd-backyard-taco",
    "name": "Backyard Taco",
    "category": "food",
-   "offer": "Free meal. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "offer": "Free meal. Bring proof of service. Named on 4 independent lists. Confirm with your location.",
    "osm_brand": [
     "Backyard Taco"
    ],
    "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Backyard%20Taco",
    "sources": [
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Backyard%20Taco",
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Backyard%20Taco",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Backyard%20Taco",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Backyard%20Taco"
    ],
    "kind": "veterans-day"
@@ -1482,12 +1457,13 @@
    "id": "auto-vd-bad-daddy-s-burger-bar",
    "name": "Bad Daddy's Burger Bar",
    "category": "food",
-   "offer": "Free BD's All-American Burger. Bring proof of service. Dine-in only. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free BD's All-American Burger. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Bad Daddy's Burger Bar"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Bad%20Daddy%27s%20Burger%20Bar&text=Bad%20Daddy%E2%80%99s%20Burger%20Bar",
@@ -1806,7 +1782,7 @@
    "id": "auto-vd-blaze-pizza",
    "name": "Blaze Pizza",
    "category": "food",
-   "offer": "Free one-topping pizza. At participating locations. Named on 8 independent lists, 7 of them with this offer. Confirm with your location.",
+   "offer": "Free one-topping pizza. At participating locations. Named on 8 independent lists, 6 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Blaze Pizza"
    ],
@@ -1858,6 +1834,36 @@
    ],
    "family": true,
    "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "veteran"
+   ],
+   "verification": [
+    "promo-code",
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "coffee",
+   "id": "auto-vd-bones-coffee",
+   "name": "Bones Coffee",
+   "category": "food",
+   "offer": "10% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Bones Coffee"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Bones%20Coffee",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Bones%20Coffee",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Bones%20Coffee"
+   ],
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "eligibility": [
@@ -2487,7 +2493,7 @@
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Casey%27s&text=Casey%E2%80%99s",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Casey%27s%20General%20Store&text=Casey%E2%80%99s%20General%20Store",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Casey%27s%20General%20Store&text=Casey%E2%80%99s%20General%20Store",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Casey%27s%20and%20Sheetz&text=Casey%E2%80%99s%20and%20Sheetz",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Casey%27s%20General%20Store&text=Casey%E2%80%99s%20General%20Store",
     "https://www.combatfitness.co/post/veterans-day#:~:text=Casey%27s%20General%20Stores&text=Casey%E2%80%99s%20General%20Stores",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Casey%27s%20General%20Stores&text=Casey%E2%80%99s%20General%20Stores"
    ],
@@ -2660,7 +2666,7 @@
    "id": "auto-vd-chicken-salad-chick",
    "name": "Chicken Salad Chick",
    "category": "food",
-   "offer": "50% off. Bring proof of service. Named on 3 independent lists. Confirm with your location.",
+   "offer": "50% off. Bring proof of service. Dine-in only. Named on 4 independent lists. Confirm with your location.",
    "osm_brand": [
     "Chicken Salad Chick"
    ],
@@ -2668,6 +2674,7 @@
    "sources": [
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Chicken%20Salad%20Chick",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Chicken%20Salad%20Chick",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Chicken%20Salad%20Chick",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Chicken%20Salad%20Chick"
    ],
    "kind": "veterans-day",
@@ -2794,7 +2801,7 @@
    "id": "auto-vd-cracker-barrel",
    "name": "Cracker Barrel",
    "category": "food",
-   "offer": "Free Sunrise Pancake Special. Bring proof of service. Dine-in only. At participating locations. Also mentions 25% off; see a source for what it covers. Named on 11 independent lists, 5 of them with this offer. Confirm with your location.",
+   "offer": "Free Sunrise Pancake Special. Bring proof of service. Dine-in only. At participating locations. Also mentions 25% off; see a source for what it covers. Named on 11 independent lists, 6 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Cracker Barrel"
    ],
@@ -2806,11 +2813,11 @@
     "https://veteransdaydeals.us/free-meals/#:~:text=Cracker%20Barrel",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Cracker%20Barrel",
     "https://www.combatfitness.co/post/veterans-day#:~:text=Cracker%20Barrel",
+    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Cracker%20Barrel",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Cracker%20Barrel",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Cracker%20Barrel",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Cracker%20Barrel%20Old%20Country%20Store",
-    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Cracker%20Barrel%20Old%20Country%20Store",
-    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Cracker%20Barrel%20Old%20Country%20Store"
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Cracker%20Barrel%20Old%20Country%20Store"
    ],
    "kind": "veterans-day"
   },
@@ -2832,12 +2839,13 @@
    "id": "auto-vd-crooked-pint-ale-house",
    "name": "Crooked Pint Ale House",
    "category": "food",
-   "offer": "Free select menu item. Dine-in only. At participating locations. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free select menu item. Dine-in only. At participating locations. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Crooked Pint Ale House"
    ],
-   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Crooked%20Pint%20Ale%20House",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Crooked%20Pint%20Ale%20House",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Crooked%20Pint%20Ale%20House",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Crooked%20Pint%20Ale%20House",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Crooked%20Pint%20Ale%20House",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Crooked%20Pint%20Ale%20House"
@@ -2979,7 +2987,9 @@
     "veteran"
    ],
    "verification": [
-    "proof-of-service"
+    "military-id",
+    "proof-of-service",
+    "store-program"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-10",
@@ -2991,12 +3001,13 @@
    "id": "auto-vd-dog-haus",
    "name": "Dog Haus",
    "category": "food",
-   "offer": "Free entree. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "offer": "Free entree. Dine-in only. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Dog Haus"
    ],
-   "source_url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Dog%20Haus",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Dog%20Haus",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Dog%20Haus",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Dog%20Haus",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Dog%20Haus"
    ],
@@ -3264,6 +3275,7 @@
     "veteran"
    ],
    "verification": [
+    "promo-code",
     "proof-of-service"
    ],
    "scope": "nationwide",
@@ -3276,7 +3288,7 @@
    "id": "auto-vd-famous-dave-s",
    "name": "Famous Dave's",
    "category": "food",
-   "offer": "Free Georgia Chopped Pork Sandwich. Dine-in only. At participating locations. Bring proof of service. Named on 7 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free Georgia Chopped Pork Sandwich. Dine-in only. At participating locations. Bring proof of service. Named on 8 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Famous Dave's"
    ],
@@ -3287,6 +3299,7 @@
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Famous%20Dave%27s&text=Famous%20Dave%E2%80%99s",
     "https://blog.ahrn.com/veterans-day-discounts/#:~:text=Famous%20Dave%27s&text=Famous%20Dave%E2%80%99s",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Famous%20Dave%27s&text=Famous%20Dave%E2%80%99s",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Famous%20Dave%27s&text=Famous%20Dave%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Famous%20Dave%27s&text=Famous%20Dave%E2%80%99s",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Famous%20Dave%27s%20Bar-B-Que&text=Famous%20Dave%E2%80%99s%20Bar-B-Que"
    ],
@@ -3590,6 +3603,63 @@
     "veteran"
    ],
    "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-ford-s-garage",
+   "name": "Ford's Garage",
+   "category": "food",
+   "offer": "$16 off. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Ford's Garage"
+   ],
+   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Ford%27s%20Garage&text=Ford%E2%80%99s%20Garage",
+   "sources": [
+    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Ford%27s%20Garage&text=Ford%E2%80%99s%20Garage",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Ford%27s%20Garage&text=Ford%E2%80%99s%20Garage"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "retiree"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-fred-beans-automotive-group",
+   "name": "Fred Beans Automotive Group",
+   "category": "services",
+   "offer": "Free oil change throughout the day. Also mentions 20% off; see a source for what it covers. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Fred Beans Automotive Group"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fred%20Beans%20Automotive%20Group",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fred%20Beans%20Automotive%20Group",
+    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Fred%20Beans%20Automotive%20Group"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
     "military-id",
     "proof-of-service"
    ],
@@ -3603,18 +3673,47 @@
    "id": "auto-vd-friendly-s",
    "name": "Friendly's",
    "category": "food",
-   "offer": "Free burger. Dine-in only. Bring proof of service. Named on 6 independent lists. Confirm with your location.",
+   "offer": "Free burger. Dine-in only. Bring proof of service. Named on 5 independent lists. Confirm with your location.",
    "osm_brand": [
     "Friendly's"
    ],
    "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
    "sources": [
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Friendly%27s&text=Friendly%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Friendly%27s&text=Friendly%E2%80%99s"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "military-id",
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-frisch-s-big-boy",
+   "name": "Frisch's Big Boy",
+   "category": "food",
+   "offer": "Free Big Boy. Dine-in only. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Frisch's Big Boy"
+   ],
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Frisch%27s%20Big%20Boy&text=Frisch%E2%80%99s%20Big%20Boy",
+   "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Frisch%27s%20Big%20Boy&text=Frisch%E2%80%99s%20Big%20Boy",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Frisch%27s%20Big%20Boy&text=Frisch%E2%80%99s%20Big%20Boy"
    ],
    "kind": "veterans-day"
   },
@@ -3646,6 +3745,36 @@
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=George%20Washington%27s%20Mount%20Vernon&text=George%20Washington%E2%80%99s%20Mount%20Vernon",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=George%20Washington%27s%20Mount%20Vernon&text=George%20Washington%E2%80%99s%20Mount%20Vernon",
     "https://fedratecalc.com/veterans-day-free-meals-2026/#:~:text=George%20Washington%27s%20Mount%20Vernon&text=George%20Washington%E2%80%99s%20Mount%20Vernon"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "retiree",
+    "veteran"
+   ],
+   "verification": [
+    "military-id",
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-gold-dust-west-casino",
+   "name": "Gold Dust West Casino",
+   "category": "food",
+   "offer": "Free meal. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Gold Dust West Casino"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Gold%20Dust%20West%20Casino",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Gold%20Dust%20West%20Casino",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Gold%20Dust%20West%20Casino"
    ],
    "kind": "veterans-day"
   },
@@ -3687,7 +3816,7 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
+    "promo-code"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-10",
@@ -3699,13 +3828,14 @@
    "id": "auto-vd-granite-city-food-brewery",
    "name": "Granite City Food & Brewery",
    "category": "food",
-   "offer": "Free entr\u00e9e. Named on 2 independent lists. Confirm with your location.",
+   "offer": "Free entree. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Granite City Food & Brewery"
    ],
    "source_url": "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Granite%20City%20Food%20%26%20Brewery",
    "sources": [
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Granite%20City%20Food%20%26%20Brewery",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Granite%20City%20Food%20%26%20Brewery",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Granite%20City%20Food%20%26%20Brewery"
    ],
    "kind": "veterans-day"
@@ -3819,7 +3949,7 @@
    "id": "auto-vd-hacienda-mexican-restaurant",
    "name": "Hacienda Mexican Restaurant",
    "category": "food",
-   "offer": "Free large wet burrito. Bring proof of service. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free large wet burrito. Bring proof of service. Named on 7 independent lists, 5 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hacienda Mexican Restaurant"
    ],
@@ -3827,6 +3957,8 @@
    "sources": [
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hacienda",
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hacienda%20Mexican%20Restaurant",
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hacienda%20Mexican%20Restaurant",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hacienda%20Mexican%20Restaurant",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hacienda%20Mexican%20Restaurant",
     "https://www.dinova.com/dining-guide/veterans-day-guide/#:~:text=Hacienda%27s&text=Hacienda%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hacienda%20Mexican%20Restaurants"
@@ -3839,7 +3971,7 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
+    "military-id"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-10",
@@ -3851,14 +3983,46 @@
    "id": "auto-vd-hamburger-stand",
    "name": "Hamburger Stand",
    "category": "food",
-   "offer": "Free hamburger. Named on 2 independent lists. Confirm with your location.",
+   "offer": "Free Hamburger. At participating locations. Bring proof of service. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hamburger Stand"
    ],
-   "source_url": "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hamburger%20Stand",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hamburger%20Stand",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hamburger%20Stand",
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hamburger%20Stand",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hamburger%20Stand",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hamburger%20Stand",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hamburger%20Stand"
+   ],
+   "family": true,
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "veteran"
+   ],
+   "verification": [
+    "military-id"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-handel-s-homemade-ice-cream",
+   "name": "Handel's Homemade Ice Cream",
+   "category": "food",
+   "offer": "Free scoop of ice cream. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Handel's Homemade Ice Cream"
+   ],
+   "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Handel%27s%20Homemade%20Ice%20Cream&text=Handel%E2%80%99s%20Homemade%20Ice%20Cream",
+   "sources": [
+    "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Handel%27s%20Homemade%20Ice%20Cream&text=Handel%E2%80%99s%20Homemade%20Ice%20Cream",
+    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Handel%27s%20Homemade%20Ice%20Cream&text=Handel%E2%80%99s%20Homemade%20Ice%20Cream"
    ],
    "kind": "veterans-day"
   },
@@ -3883,7 +4047,7 @@
    "id": "auto-vd-hard-rock-cafe",
    "name": "Hard Rock Cafe",
    "category": "food",
-   "offer": "15% off. Bring proof of service. Named on 7 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free Classic Smashed Burger. Bring proof of service. Named on 8 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hard Rock Cafe"
    ],
@@ -3894,11 +4058,11 @@
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hard%20Rock%20Cafe",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hard%20Rock%20Cafe",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hard%20Rock%20Cafe",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Hard%20Rock%20Cafe",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Hard%20Rock%20Cafe",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hard%20Rock%20Cafe"
    ],
-   "kind": "veterans-day",
-   "percent": 15
+   "kind": "veterans-day"
   },
   {
    "eligibility": [
@@ -3951,17 +4115,48 @@
    "id": "auto-vd-hickory-tavern",
    "name": "Hickory Tavern",
    "category": "food",
-   "offer": "Free entr\u00e9e. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free entree. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hickory Tavern"
    ],
-   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hickory%20Tavern",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hickory%20Tavern",
    "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Hickory%20Tavern",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hickory%20Tavern",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hickory%20Tavern",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hickory%20Tavern"
    ],
    "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-high-street-place",
+   "name": "High Street Place",
+   "category": "retail",
+   "offer": "10% off. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "High Street Place"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=High%20Street%20Place",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=High%20Street%20Place",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=High%20Street%20Place"
+   ],
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "eligibility": [
@@ -4015,7 +4210,7 @@
    "id": "auto-vd-hooters",
    "name": "Hooters",
    "category": "food",
-   "offer": "Free menu item. Dine-in only. At participating locations. Bring proof of service. Named on 8 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free menu item. Dine-in only. At participating locations. Bring proof of service. Named on 10 independent lists, 4 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hooters"
    ],
@@ -4027,7 +4222,9 @@
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hooters",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Hooters",
     "https://veteransdaydeals.us/free-meals/#:~:text=Hooters",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Hooters",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Hooters",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hooters",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Hooters"
    ],
    "kind": "veterans-day"
@@ -4050,7 +4247,7 @@
    "id": "auto-vd-hopdoddy-burger-bar",
    "name": "Hopdoddy Burger Bar",
    "category": "food",
-   "offer": "Free classic burger. Dine-in only. Bring proof of service. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free Classic Burger or Classic Burger. Dine-in only. Bring proof of service. Named on 7 independent lists, 4 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Hopdoddy Burger Bar"
    ],
@@ -4061,6 +4258,7 @@
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Hopdoddy%20Burger%20Bar",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Hopdoddy%20Burger%20Bar",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Hopdoddy%20Burger%20Bar",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Hopdoddy%20Burger%20Bar",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Hopdoddy%20Burger%20Bar"
    ],
    "kind": "veterans-day"
@@ -4244,14 +4442,13 @@
    "id": "auto-vd-ikea",
    "name": "IKEA",
    "category": "food",
-   "offer": "15% off. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "15% off. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "IKEA"
    ],
    "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=IKEA",
    "sources": [
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=IKEA",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=IKEA",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=IKEA",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=IKEA"
    ],
@@ -4286,6 +4483,35 @@
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=J.%20Christopher%27s&text=J.%20Christopher%E2%80%99s"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "retiree",
+    "veteran"
+   ],
+   "verification": [
+    "military-id"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-j-resort-reno",
+   "name": "J Resort Reno",
+   "category": "travel",
+   "offer": "Free buffet. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "J Resort Reno"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=J%20Resort%20Reno",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=J%20Resort%20Reno",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=J%20Resort%20Reno"
    ],
    "kind": "veterans-day"
   },
@@ -4411,6 +4637,35 @@
   },
   {
    "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-juice-it-up",
+   "name": "Juice It Up",
+   "category": "food",
+   "offer": "Free 20-ounce smoothie. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Juice It Up"
+   ],
+   "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Juice%20It%20Up",
+   "sources": [
+    "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Juice%20It%20Up",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Juice%20It%20Up%21"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
     "military"
    ],
    "verification": [
@@ -4520,14 +4775,13 @@
    "id": "auto-vd-knott-s-berry-farm",
    "name": "Knott's Berry Farm",
    "category": "attractions",
-   "offer": "$25 admission. Named on 3 independent lists. Confirm with your location.",
+   "offer": "$25 admission. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Knott's Berry Farm"
    ],
    "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Knott%27s%20Berry%20Farm&text=Knott%E2%80%99s%20Berry%20Farm",
    "sources": [
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Knott%27s%20Berry%20Farm&text=Knott%E2%80%99s%20Berry%20Farm",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Knott%27s%20Berry%20Farm&text=Knott%E2%80%99s%20Berry%20Farm",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Knott%27s%20Berry%20Farm&text=Knott%E2%80%99s%20Berry%20Farm"
    ],
    "family": true,
@@ -4553,7 +4807,7 @@
    "id": "auto-vd-kona-grill",
    "name": "Kona Grill",
    "category": "food",
-   "offer": "50% off. Dine-in only. Bring proof of service. Named on 8 independent lists. Confirm with your location.",
+   "offer": "Free entr\u00e9e. Dine-in only. Bring proof of service. Named on 7 independent lists. Confirm with your location.",
    "osm_brand": [
     "Kona Grill"
    ],
@@ -4561,7 +4815,6 @@
    "sources": [
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Kona%20Grill",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Kona%20Grill",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Kona%20Grill",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Kona%20Grill",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Kona%20Grill",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Kona%20Grill",
@@ -4569,8 +4822,7 @@
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Kona%20Grill"
    ],
    "family": true,
-   "kind": "veterans-day",
-   "percent": 50
+   "kind": "veterans-day"
   },
   {
    "eligibility": [
@@ -4652,14 +4904,15 @@
    "id": "auto-vd-kwik-trip",
    "name": "Kwik Trip",
    "category": "food",
-   "offer": "Free breakfast sandwich. Named on 2 independent lists. Confirm with your location.",
+   "offer": "Free breakfast sandwich. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Kwik Trip"
    ],
    "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Kwik%20Trip",
    "sources": [
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Kwik%20Trip",
-    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Kwik%20Trip"
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Kwik%20Trip",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Kwik%20Trip"
    ],
    "kind": "veterans-day"
   },
@@ -4683,17 +4936,19 @@
    "id": "auto-vd-lazy-dog-restaurants",
    "name": "Lazy Dog Restaurants",
    "category": "food",
-   "offer": "Free entr\u00e9e. Named on 7 independent lists. Confirm with your location.",
+   "offer": "Free Fireside Favorites entr\u00e9e. Named on 9 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Lazy Dog Restaurants"
    ],
-   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Lazy%20Dog%20Restaurants",
+   "source_url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Lazy%20Dog",
    "sources": [
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Lazy%20Dog",
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Lazy%20Dog%20Restaurants",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Lazy%20Dog%20Restaurants",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Lazy%20Dog%20Restaurants",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Lazy%20Dog%20Restaurants",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Lazy%20Dog%20Restaurants",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Lazy%20Dog%20Restaurants",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Lazy%20Dog%20Restaurants",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Lazy%20Dog%20Restaurants"
    ],
@@ -4732,6 +4987,36 @@
   },
   {
    "eligibility": [
+    "veteran"
+   ],
+   "verification": [
+    "military-id"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-liberty-kitchen-oysterette",
+   "name": "Liberty Kitchen & Oysterette",
+   "category": "home-improvement",
+   "offer": "10% off. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Liberty Kitchen & Oysterette"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Liberty%20Kitchen%20%26%20Oysterette",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Liberty%20Kitchen%20%26%20Oysterette",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Liberty%20Kitchen%20%26%20Oysterette"
+   ],
+   "family": true,
+   "kind": "veterans-day",
+   "percent": 10
+  },
+  {
+   "eligibility": [
     "active-duty",
     "veteran"
    ],
@@ -4750,7 +5035,7 @@
    "id": "auto-vd-little-caesars",
    "name": "Little Caesars",
    "category": "food",
-   "offer": "Free lunch combo. In-store only. Bring proof of service. Named on 9 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free lunch combo. In-store only. Bring proof of service. At participating locations. Named on 10 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Little Caesars"
    ],
@@ -4761,6 +5046,7 @@
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Little%20Caesars",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Little%20Caesars",
     "https://veteransdaydeals.us/free-meals/#:~:text=Little%20Caesars",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Little%20Caesars",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Little%20Caesars",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Little%20Caesars",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Little%20Caesars",
@@ -4786,7 +5072,7 @@
    "id": "auto-vd-logan-s-roadhouse",
    "name": "Logan's Roadhouse",
    "category": "food",
-   "offer": "Free meal. Bring proof of service. Dine-in only. Named on 11 independent lists, 7 of them with this offer. Confirm with your location.",
+   "offer": "Free meal. Bring proof of service. Dine-in only. Named on 11 independent lists, 8 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Logan's Roadhouse"
    ],
@@ -4803,6 +5089,34 @@
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Logan%27s%20Roadhouse&text=Logan%E2%80%99s%20Roadhouse"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "military"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-longhorn-steakhouse",
+   "name": "LongHorn Steakhouse",
+   "category": "food",
+   "offer": "Free appetizer or dessert. Also mentions 10% off; see a source for what it covers. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "LongHorn Steakhouse"
+   ],
+   "source_url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=LongHorn%20Steakhouse",
+   "sources": [
+    "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=LongHorn%20Steakhouse",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=LongHorn%20Steakhouse"
    ],
    "kind": "veterans-day"
   },
@@ -4893,7 +5207,7 @@
    "id": "auto-vd-max-erma-s",
    "name": "Max & Erma's",
    "category": "food",
-   "offer": "Free cheeseburger. Bring proof of service. At participating locations. Named on 6 independent lists, 5 of them with this offer. Confirm with your location.",
+   "offer": "Free cheeseburger. Bring proof of service. At participating locations. Named on 7 independent lists, 6 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Max & Erma's"
    ],
@@ -4904,6 +5218,7 @@
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s",
     "https://www.combatfitness.co/post/veterans-day#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Max%20%26%20Erma%27s&text=Max%20%26%20Erma%E2%80%99s"
    ],
    "kind": "veterans-day"
@@ -5002,6 +5317,66 @@
   },
   {
    "eligibility": [
+    "active-duty",
+    "retiree",
+    "veteran"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-metro-diner",
+   "name": "Metro Diner",
+   "category": "food",
+   "offer": "50% off. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Metro Diner"
+   ],
+   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Metro%20Diner",
+   "sources": [
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Metro%20Diner",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Metro%20Diner"
+   ],
+   "kind": "veterans-day",
+   "percent": 50
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-milton-s-pizza-pasta",
+   "name": "Milton's Pizza & Pasta",
+   "category": "food",
+   "offer": "Free entr\u00e9e or buffet. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Milton's Pizza & Pasta"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Milton%27s%20Pizza%20%26%20Pasta&text=Milton%E2%80%99s%20Pizza%20%26%20Pasta",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Milton%27s%20Pizza%20%26%20Pasta&text=Milton%E2%80%99s%20Pizza%20%26%20Pasta",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Milton%27s%20Pizza%20%26%20Pasta&text=Milton%E2%80%99s%20Pizza%20%26%20Pasta"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
     "veteran"
    ],
    "verification": [
@@ -5065,7 +5440,8 @@
   },
   {
    "eligibility": [
-    "military"
+    "active-duty",
+    "veteran"
    ],
    "verification": [
     "see-source"
@@ -5077,17 +5453,17 @@
    "event_start": "2026-11-11",
    "event_end": "2026-11-11",
    "slot": "anytime",
-   "id": "auto-vd-monticello",
-   "name": "Monticello",
-   "category": "attractions",
-   "offer": "Free admission. Named on 2 independent lists. Confirm with your location.",
+   "id": "auto-vd-mojo-family-of-brands",
+   "name": "MOJO Family of Brands",
+   "category": "retail",
+   "offer": "Free car washes. At participating locations. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
-    "Monticello"
+    "MOJO Family of Brands"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Monticello",
+   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=MOJO%20Family%20of%20Brands",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Monticello",
-    "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Monticello"
+    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=MOJO%20Family%20of%20Brands",
+    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=MOJO%20Family%20of%20Brands"
    ],
    "kind": "veterans-day"
   },
@@ -5260,13 +5636,14 @@
    "id": "auto-vd-ninety-nine-restaurant",
    "name": "Ninety Nine Restaurant",
    "category": "food",
-   "offer": "Free lunch. Bring proof of service. Dine-in only. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free lunch. Bring proof of service. Dine-in only. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Ninety Nine Restaurant"
    ],
    "source_url": "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Ninety%20Nine%20Restaurant",
    "sources": [
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Ninety%20Nine%20Restaurant",
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Ninety%20Nine%20Restaurant%20and%20Pub",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Ninety%20Nine%20Restaurant%20%26%20Pub",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Ninety%20Nine%20Restaurant%20%26%20Pub",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Ninety-Nine%20Restaurant%20%26%20Pub",
@@ -5335,34 +5712,6 @@
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Northwest%20Trek%20Wildlife%20Park",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Northwest%20Trek%20Wildlife%20Park"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-10",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-ny-waterway",
-   "name": "NY Waterway",
-   "category": "travel",
-   "offer": "Free ferry rides. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "NY Waterway"
-   ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=NY%20Waterway",
-   "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=NY%20Waterway",
-    "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=NY%20Waterway"
    ],
    "kind": "veterans-day"
   },
@@ -5543,7 +5892,7 @@
    "id": "auto-vd-peet-s-coffee",
    "name": "Peet's Coffee",
    "category": "food",
-   "offer": "Free drip coffee or tea. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "10% off. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Peet's Coffee"
    ],
@@ -5551,11 +5900,11 @@
    "sources": [
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Peet%27s%20Coffee&text=Peet%E2%80%99s%20Coffee",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Peet%27s%20Coffee&text=Peet%E2%80%99s%20Coffee",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Peet%27s%20Coffee&text=Peet%E2%80%99s%20Coffee",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Peet%27s%20Coffee&text=Peet%E2%80%99s%20Coffee",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Peet%27s%20Coffee&text=Peet%E2%80%99s%20Coffee"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 10
   },
   {
    "eligibility": [
@@ -5611,7 +5960,7 @@
    "id": "auto-vd-piada-italian-street-food",
    "name": "Piada Italian Street Food",
    "category": "food",
-   "offer": "Free entr\u00e9e. Bring proof of service. In-store only. Named on 6 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free entr\u00e9e. Bring proof of service. In-store only. Named on 7 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Piada Italian Street Food"
    ],
@@ -5620,6 +5969,7 @@
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Piada%20Italian%20Street%20Food",
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Piada%20Italian%20Street%20Food",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Piada%20Italian%20Street%20Food",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Piada%20Italian%20Street%20Food",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Piada%20Italian%20Street%20Food",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Piada%20Italian%20Street%20Food",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Piada%20Italian%20Street%20Food"
@@ -5851,6 +6201,7 @@
   },
   {
    "eligibility": [
+    "active-duty",
     "retiree"
    ],
    "verification": [
@@ -5863,19 +6214,20 @@
    "event_start": "2026-11-11",
    "event_end": "2026-11-11",
    "slot": "anytime",
-   "id": "auto-vd-pro-football-hall-of-fame",
-   "name": "Pro Football Hall of Fame",
-   "category": "attractions",
-   "offer": "Free admission and parking. Also mentions 20% off; see a source for what it covers. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "id": "auto-vd-pt-s-taverns",
+   "name": "PT's Taverns",
+   "category": "retail",
+   "offer": "20% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
-    "Pro Football Hall of Fame"
+    "PT's Taverns"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Pro%20Football%20Hall%20of%20Fame",
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=PT%27s%20Taverns&text=PT%E2%80%99s%20Taverns",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Pro%20Football%20Hall%20of%20Fame",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Pro%20Football%20Hall%20of%20Fame"
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=PT%27s%20Taverns&text=PT%E2%80%99s%20Taverns",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=PT%27s%20Taverns&text=PT%E2%80%99s%20Taverns"
    ],
-   "kind": "veterans-day"
+   "kind": "veterans-day",
+   "percent": 20
   },
   {
    "eligibility": [
@@ -6142,13 +6494,14 @@
    "id": "auto-vd-russell-speeders-car-wash",
    "name": "Russell Speeders Car Wash",
    "category": "services",
-   "offer": "Free car wash. At participating locations. Named on 4 independent lists. Confirm with your location.",
+   "offer": "Free car wash. At participating locations. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Russell Speeders Car Wash"
    ],
    "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Russell%20Speeders%20Car%20Wash",
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Russell%20Speeders%20Car%20Wash",
+    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash"
@@ -6217,6 +6570,35 @@
    "sources": [
     "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Salt%20Water%20Social",
     "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Salt%20Water%20Social"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-salvatore-s-old-fashioned-pizzeria",
+   "name": "Salvatore's Old Fashioned Pizzeria",
+   "category": "food",
+   "offer": "Free 12-inch Thin Thin one-topping pizza. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Salvatore's Old Fashioned Pizzeria"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Salvatore%27s%20Old%20Fashioned%20Pizzeria&text=Salvatore%E2%80%99s%20Old%20Fashioned%20Pizzeria",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Salvatore%27s%20Old%20Fashioned%20Pizzeria&text=Salvatore%E2%80%99s%20Old%20Fashioned%20Pizzeria",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Salvatore%27s%20Old%20Fashioned%20Pizzeria&text=Salvatore%E2%80%99s%20Old%20Fashioned%20Pizzeria"
    ],
    "kind": "veterans-day"
   },
@@ -6343,7 +6725,7 @@
    "id": "auto-vd-shake-shack",
    "name": "Shake Shack",
    "category": "food",
-   "offer": "Free single ShackBurger. Bring proof of service. While supplies last. At participating locations. Named on 12 independent lists, 6 of them with this offer. Confirm with your location.",
+   "offer": "Free single ShackBurger. Bring proof of service. While supplies last. At participating locations. Named on 13 independent lists, 6 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Shake Shack"
    ],
@@ -6357,10 +6739,10 @@
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Shake%20Shack",
     "https://veteransdaydeals.us/free-meals/#:~:text=Shake%20Shack",
     "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026#:~:text=Shake%20Shack",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Shake%20Shack",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Shake%20Shack",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Shake%20Shack",
-    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Shake%20Shack",
-    "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Shake%20Shack"
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Shake%20Shack"
    ],
    "kind": "veterans-day"
   },
@@ -6384,7 +6766,7 @@
    "id": "auto-vd-sheetz",
    "name": "Sheetz",
    "category": "food",
-   "offer": "Free half turkey sub. Bring proof of service. At participating locations. Named on 10 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free half turkey sub and regular fountain drink. Bring proof of service. At participating locations. Named on 10 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Sheetz"
    ],
@@ -6515,7 +6897,7 @@
    "id": "auto-vd-six-flags",
    "name": "Six Flags",
    "category": "attractions",
-   "offer": "20% off. Named on 4 independent lists. Confirm with your location.",
+   "offer": "20% off. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Six Flags"
    ],
@@ -6523,8 +6905,7 @@
    "sources": [
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Six%20Flags",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Six%20Flags",
-    "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Six%20Flags%20Magic%20Mountain",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Six%20Flags%20Discovery%20Kingdom"
+    "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Six%20Flags%20Magic%20Mountain"
    ],
    "kind": "veterans-day",
    "percent": 20
@@ -6549,14 +6930,13 @@
    "id": "auto-vd-sleep-number",
    "name": "Sleep Number",
    "category": "home-improvement",
-   "offer": "10% off. Named on 6 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "10% off. Named on 5 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Sleep Number"
    ],
    "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Sleep%20Number",
    "sources": [
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Sleep%20Number",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Sleep%20Number",
     "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Sleep%20Number",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Sleep%20Number",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Sleep%20Number",
@@ -6820,10 +7200,10 @@
   },
   {
    "eligibility": [
-    "military"
+    "veteran"
    ],
    "verification": [
-    "see-source"
+    "military-id"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-10",
@@ -6832,20 +7212,20 @@
    "event_start": "2026-11-11",
    "event_end": "2026-11-11",
    "slot": "anytime",
-   "id": "auto-vd-super-8",
-   "name": "Super 8",
-   "category": "travel",
-   "offer": "15% off. At participating locations. Named on 2 independent lists. Confirm with your location.",
+   "id": "auto-vd-taffer-s-tavern",
+   "name": "Taffer's Tavern",
+   "category": "food",
+   "offer": "50% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
-    "Super 8"
+    "Taffer's Tavern"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Super%208",
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Taffer%27s%20Tavern&text=Taffer%E2%80%99s%20Tavern",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Super%208",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Super%208"
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Taffer%27s%20Tavern&text=Taffer%E2%80%99s%20Tavern",
+    "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Taffer%27s%20Tavern&text=Taffer%E2%80%99s%20Tavern"
    ],
    "kind": "veterans-day",
-   "percent": 15
+   "percent": 50
   },
   {
    "eligibility": [
@@ -6906,7 +7286,7 @@
    "id": "auto-vd-tcby",
    "name": "TCBY",
    "category": "food",
-   "offer": "Veterans Day offer; the lists word the terms differently. At participating locations. Bring proof of service. Named on 8 independent lists. Confirm with your location.",
+   "offer": "Free 6 oz serving of frozen yogurt. At participating locations. Bring proof of service. Named on 8 independent lists. Confirm with your location.",
    "osm_brand": [
     "TCBY"
    ],
@@ -7045,7 +7425,7 @@
    "id": "auto-vd-tgi-fridays",
    "name": "TGI Fridays",
    "category": "food",
-   "offer": "Free meal. Dine-in only. Bring proof of service. Named on 9 independent lists, 6 of them with this offer. Confirm with your location.",
+   "offer": "Free meal. Dine-in only. Bring proof of service. At participating locations. Named on 8 independent lists, 6 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "TGI Fridays"
    ],
@@ -7053,7 +7433,6 @@
    "sources": [
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=TGI%20Fridays",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=TGI%20Fridays",
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=TGI%20Friday%27s&text=TGI%20Friday%E2%80%99s",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=TGI%20Fridays",
     "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026#:~:text=TGI%20Fridays",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=TGI%20Fridays",
@@ -7062,6 +7441,36 @@
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=TGI%20Fridays"
    ],
    "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "promo-code"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "coffee",
+   "id": "auto-vd-the-coffee-project",
+   "name": "The Coffee Project",
+   "category": "food",
+   "offer": "15% off. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "The Coffee Project"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=The%20Coffee%20Project",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=The%20Coffee%20Project",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=The%20Coffee%20Project"
+   ],
+   "kind": "veterans-day",
+   "percent": 15
   },
   {
    "eligibility": [
@@ -7252,6 +7661,37 @@
   },
   {
    "eligibility": [
+    "active-duty",
+    "guard-reserve",
+    "veteran"
+   ],
+   "verification": [
+    "military-id",
+    "proof-of-service"
+   ],
+   "scope": "locations",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-uss-midway-museum",
+   "name": "USS Midway Museum",
+   "category": "attractions",
+   "offer": "Free admission. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "USS Midway Museum"
+   ],
+   "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=USS%20Midway%20Museum",
+   "sources": [
+    "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=USS%20Midway%20Museum",
+    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=USS%20Midway%20Museum"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
     "veteran"
    ],
    "verification": [
@@ -7378,6 +7818,36 @@
     "veteran"
    ],
    "verification": [
+    "military-id",
+    "promo-code"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "breakfast",
+   "id": "auto-vd-village-inn",
+   "name": "Village Inn",
+   "category": "food",
+   "offer": "Free 2-2-2 Breakfast. At participating locations. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Village Inn"
+   ],
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Village%20Inn",
+   "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Village%20Inn",
+    "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Village%20Inn"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
     "see-source"
    ],
    "scope": "nationwide",
@@ -7449,16 +7919,44 @@
    "event_start": "2026-11-11",
    "event_end": "2026-11-11",
    "slot": "anytime",
+   "id": "auto-vd-walk-on-s-sports-bistreaux",
+   "name": "Walk-On's Sports Bistreaux",
+   "category": "food",
+   "offer": "Free Scholarship Burger. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Walk-On's Sports Bistreaux"
+   ],
+   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Walk-On%27s%20Sports%20Bistreaux&text=Walk-On%E2%80%99s%20Sports%20Bistreaux",
+   "sources": [
+    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Walk-On%27s%20Sports%20Bistreaux&text=Walk-On%E2%80%99s%20Sports%20Bistreaux",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Walk-On%27s%20Sports%20Bistreaux&text=Walk-On%E2%80%99s%20Sports%20Bistreaux"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "see-source"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
    "id": "auto-vd-waters-car-wash",
    "name": "Waters Car Wash",
    "category": "services",
-   "offer": "Free Car Washes. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free car wash. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Waters Car Wash"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Waters%20Car%20Wash",
+   "source_url": "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Waters%20Carwash",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Waters%20Car%20Wash",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Waters%20Carwash",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Waters%20Car%20Wash",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Waters%20CarWash"
@@ -7483,13 +7981,12 @@
    "id": "auto-vd-wawa",
    "name": "Wawa",
    "category": "food",
-   "offer": "Free hot coffee. At participating locations. Named on 5 independent lists, 4 of them with this offer. Confirm with your location.",
+   "offer": "Free hot coffee. At participating locations. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Wawa"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Wawa",
+   "source_url": "https://veteransdaydeals.us/free-meals/#:~:text=Wawa",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Wawa",
     "https://veteransdaydeals.us/free-meals/#:~:text=Wawa",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Wawa",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Wawa",
@@ -7515,7 +8012,7 @@
    "id": "auto-vd-wendy-s",
    "name": "Wendy's",
    "category": "food",
-   "offer": "Free Dave's Single. At participating locations. Named on 6 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free Dave's Single. At participating locations. Named on 7 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Wendy's"
    ],
@@ -7524,6 +8021,7 @@
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Wendy%27s&text=Wendy%E2%80%99s",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Wendy%27s&text=Wendy%E2%80%99s"
@@ -7536,7 +8034,7 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
+    "military-id"
    ],
    "scope": "nationwide",
    "last_verified": "2026-11-10",
@@ -7548,17 +8046,19 @@
    "id": "auto-vd-whataburger",
    "name": "Whataburger",
    "category": "food",
-   "offer": "Free Taquito. Named on 3 independent lists. Confirm with your location.",
+   "offer": "Free taquito. In-store only. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Whataburger"
    ],
    "source_url": "https://veteransdaydeals.us/free-meals/#:~:text=Whataburger",
    "sources": [
     "https://veteransdaydeals.us/free-meals/#:~:text=Whataburger",
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Whataburger",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Whataburger",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Whataburger"
    ],
    "redeem_by": "2026-12-30",
+   "family": true,
    "kind": "veterans-day"
   },
   {
@@ -7638,6 +8138,37 @@
     "veteran"
    ],
    "verification": [
+    "govx",
+    "promo-code"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-06",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-wild-roman",
+   "name": "Wild Roman",
+   "category": "retail",
+   "offer": "25% off. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Wild Roman"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Wild%20Roman",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Wild%20Roman",
+    "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Wild%20Roman"
+   ],
+   "kind": "veterans-day",
+   "percent": 25
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
     "military-id"
    ],
    "scope": "nationwide",
@@ -7660,6 +8191,35 @@
     "https://freshcalendars.com/news/veterans-day-free-meals-discounts/#:~:text=Wings%20and%20Rings",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Wings%20and%20Rings",
     "https://www.hotdeals.com/blog/veterans-day-deals/#:~:text=Wings%20and%20Rings"
+   ],
+   "kind": "veterans-day"
+  },
+  {
+   "eligibility": [
+    "active-duty",
+    "veteran"
+   ],
+   "verification": [
+    "proof-of-service"
+   ],
+   "scope": "nationwide",
+   "last_verified": "2026-11-10",
+   "confidence": "community",
+   "auto": true,
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
+   "slot": "anytime",
+   "id": "auto-vd-wings-etc",
+   "name": "Wings Etc",
+   "category": "food",
+   "offer": "Free entr\u00e9e worth up. Dine-in only. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
+   "osm_brand": [
+    "Wings Etc"
+   ],
+   "source_url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Wings%20Etc",
+   "sources": [
+    "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/#:~:text=Wings%20Etc",
+    "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/#:~:text=Wings%20Etc"
    ],
    "kind": "veterans-day"
   },
@@ -7800,13 +8360,12 @@
    "id": "auto-vd-zips-car-wash",
    "name": "ZIPS Car Wash",
    "category": "services",
-   "offer": "Free best wash. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free best wash. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "ZIPS Car Wash"
    ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=ZIPS%20Car%20Wash",
+   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Zips%20Car%20Wash",
    "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=ZIPS%20Car%20Wash",
     "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Zips%20Car%20Wash",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=ZIPS%20Car%20Wash",
     "https://fedratecalc.com/veterans-day-free-meals-2026/#:~:text=ZIPS%20Car%20Wash"
