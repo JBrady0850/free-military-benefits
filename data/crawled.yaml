@@ -650,6 +650,18 @@ entries:
   sources:
   - https://www.harryanddavid.com/h/veteransadvantage
   - https://dealhack.com/blog/military-discounts-guide#:~:text=Harry%20%26%20David
+- id: auto-helix-mattress-helix-mattress
+  name: Helix Mattress Helix Mattress
+  category: home-improvement
+  offer: 25% off with the military discount. Confirmed on the brand's own page; also listed by veteran.com. Confirm current terms and who qualifies before buying.
+  percent: 25
+  percent_up: false
+  verified_by: brand page
+  confidence: official
+  source_url: https://helixsleep.com/pages/military-discount
+  sources:
+  - https://helixsleep.com/pages/military-discount
+  - https://veteran.com/military-discounts/#:~:text=Helix%20Mattress%20Helix%20Mattress
 - id: auto-hulu
   name: Hulu
   category: technology
