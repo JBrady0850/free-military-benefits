@@ -710,9 +710,9 @@ entries:
   percent_up: false
   verified_by: brand page
   confidence: official
-  source_url: https://www.siriusxm.com/offers/military?intcmp=GN_FOOTER_NEW_MoreSiriusXM_ForMilitary
+  source_url: https://www.siriusxm.com/offers/military
   sources:
-  - https://www.siriusxm.com/offers/military?intcmp=GN_FOOTER_NEW_MoreSiriusXM_ForMilitary
+  - https://www.siriusxm.com/offers/military
   - https://dealhack.com/blog/military-discounts-guide#:~:text=SiriusXM%20Radio
 - id: auto-take-5-oil-change
   name: Take 5 Oil Change
