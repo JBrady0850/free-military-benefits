@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-26 20:20 UTC",
- "data_version": "2026-11-26",
+ "generated": "2026-11-27 20:02 UTC",
+ "data_version": "2026-11-27",
  "counts": {
   "hidden": 10,
-  "veterans-day": 275,
+  "veterans-day": 255,
   "travel": 3,
   "free": 13,
   "discount": 6,
   "crawled": 57
  },
- "total": 364,
+ "total": 344,
  "stats": {
   "brand_confirmed": 39,
-  "over_20": 82,
+  "over_20": 78,
   "stale": 0,
   "distinct_sites": 126,
   "source_pages": 44,
   "source_pages_read": 41
  },
  "watch": {
-  "checked": "2026-11-26",
-  "run_utc": "2026-11-26T20:13Z",
+  "checked": "2026-11-27",
+  "run_utc": "2026-11-27T19:59Z",
   "source": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
   "new_names": [],
   "held_single_source": [
@@ -80,55 +80,55 @@
     "url": "https://dealhack.com/blog/military-discounts-guide",
     "kind": "directory",
     "rows": 32,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://hip2save.com/deals/military-discounts/",
     "kind": "directory",
     "rows": 9,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-military-discounts-clothes.html",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/85765/veteran-discounts-available-year-round/",
     "kind": "directory",
     "rows": 33,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.wearethemighty.com/entertainment/our-huge-list-of-year-round-military-freebies-discounts-and-deals/",
     "kind": "directory",
     "rows": 12,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/Oorah-Ka-Ching-Guide-to-Military-Discounts/1114657.html",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://usmilitary.com/top-25-military-discounts/",
     "kind": "directory",
     "rows": null,
-    "last_try": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
     "last_ok": "2026-11-08T20:11Z",
     "carried_from": null
    },
@@ -136,191 +136,191 @@
     "url": "https://militaryfamilies.com/?p=32765",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://barbend.com/?p=218235",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.honestmos.com/resources/veteran-discounts/category/clothing-apparel",
     "kind": "directory",
     "rows": 1,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.sheerid.com/?p=71432",
     "kind": "directory",
     "rows": 13,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/military-discounts/",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://couponfollow.com/research/best-military-discounts",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.operationmilitarykids.org/military-veterans-discounts/",
     "kind": "directory",
     "rows": 3,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://claimraven.com/military-discounts",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://vetunlock.com/blog/year-round-veteran-discounts-2026-complete-guide",
     "kind": "directory",
     "rows": 7,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://guidetobargain.com/guides/military-discounts",
     "kind": "directory",
     "rows": 4,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://savingsgrove.com/blogs/guides/military-discount-list",
     "kind": "directory",
     "rows": 5,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.veteransbenefitskb.com/discounts-deals",
     "kind": "directory",
     "rows": 72,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.dealnews.com/features/discounts/military-discounts/",
     "kind": "directory",
     "rows": 22,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/discounts/best-retail-military-discounts.html",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarybenefit.org/get-educated/military-discounts/",
     "kind": "directory",
     "rows": 0,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://baseneed.com/blog/military-discounts-2026-complete-list",
     "kind": "directory",
     "rows": 2,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://storepolicies.com/discounts-for-soldiers/",
     "kind": "directory",
     "rows": 6,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
     "kind": "veterans-day",
     "rows": 55,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 198,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-free-meals-and-discounts/",
     "kind": "veterans-day",
     "rows": 144,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/",
     "kind": "veterans-day",
     "rows": 120,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/",
     "kind": "veterans-day",
     "rows": 70,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://veteran.com/veterans-day-discounts-sales-deals-free-meals/",
     "kind": "veterans-day",
     "rows": 145,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://freshcalendars.com/news/veterans-day-free-meals-discounts/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
     "last_ok": "2026-11-14T06:24Z",
     "carried_from": null
    },
@@ -328,95 +328,95 @@
     "url": "https://veteransdaydeals.us/free-meals/",
     "kind": "veterans-day",
     "rows": 85,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.dinova.com/dining-guide/veterans-day-guide/",
     "kind": "veterans-day",
     "rows": 8,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://blog.ahrn.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 11,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.militarytoolkit.com/guides/veterans-day-free-meals-discounts-2026",
     "kind": "veterans-day",
     "rows": 15,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://veteransdmv.com/veterans-day-discounts/",
     "kind": "veterans-day",
     "rows": 237,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.combatfitness.co/post/veterans-day",
     "kind": "veterans-day",
     "rows": 32,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/",
     "kind": "veterans-day",
     "rows": 157,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://themilitarywallet.com/veterans-day-retail-discounts/",
     "kind": "veterans-day",
-    "rows": 251,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "rows": 5,
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html",
     "kind": "veterans-day",
     "rows": 40,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://valoannetwork.com/veterans-day-deals-2026/",
     "kind": "veterans-day",
     "rows": 128,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert",
     "kind": "veterans-day",
     "rows": 20,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    },
    {
     "url": "https://www.hotdeals.com/blog/veterans-day-deals/",
     "kind": "veterans-day",
     "rows": null,
-    "last_try": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
     "last_ok": "2026-11-08T20:11Z",
     "carried_from": null
    },
@@ -424,8 +424,8 @@
     "url": "https://fedratecalc.com/veterans-day-free-meals-2026/",
     "kind": "veterans-day",
     "rows": 18,
-    "last_try": "2026-11-26T20:13Z",
-    "last_ok": "2026-11-26T20:13Z",
+    "last_try": "2026-11-27T19:59Z",
+    "last_ok": "2026-11-27T19:59Z",
     "carried_from": null
    }
   ],
@@ -445,7 +445,7 @@
   ],
   "counts": {
    "directory_listed": 57,
-   "veterans_day_listed": 219,
+   "veterans_day_listed": 199,
    "held": 50,
    "sources_read": 41,
    "sources_carried": 0,
@@ -889,7 +889,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -920,7 +920,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -950,7 +950,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -981,7 +981,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1013,7 +1013,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1045,7 +1045,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1073,40 +1073,11 @@
     "veteran"
    ],
    "verification": [
-    "military-id"
-   ],
-   "scope": "locations",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-akron-zoo",
-   "name": "Akron Zoo",
-   "category": "attractions",
-   "offer": "Free entry. Also mentions 50% off; see a source for what it covers. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Akron Zoo"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Akron%20Zoo",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Akron%20Zoo",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Akron%20Zoo"
-   ],
-   "family": true,
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "veteran"
-   ],
-   "verification": [
     "military-id",
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1136,7 +1107,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1166,7 +1137,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1198,7 +1169,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1229,11 +1200,10 @@
     "veteran"
    ],
    "verification": [
-    "proof-of-service",
-    "sheerid"
+    "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1242,7 +1212,7 @@
    "id": "auto-vd-ashley-furniture",
    "name": "Ashley Furniture",
    "category": "home-improvement",
-   "offer": "5% off. Bring proof of service. Named on 4 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "5% off. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Ashley Furniture"
    ],
@@ -1250,40 +1220,10 @@
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Ashley%20Furniture",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Ashley%20Furniture",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Ashley%20Furniture",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Ashley%20Furniture"
    ],
    "kind": "veterans-day",
    "percent": 5
-  },
-  {
-   "eligibility": [
-    "military"
-   ],
-   "verification": [
-    "id.me"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-ashley-stewart",
-   "name": "Ashley Stewart",
-   "category": "retail",
-   "offer": "20% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Ashley Stewart"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Ashley%20Stewart",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Ashley%20Stewart",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Ashley%20Stewart"
-   ],
-   "kind": "veterans-day",
-   "percent": 20
   },
   {
    "eligibility": [
@@ -1295,7 +1235,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -1324,7 +1264,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1333,14 +1273,13 @@
    "id": "auto-vd-auto-bell",
    "name": "Auto Bell",
    "category": "services",
-   "offer": "Free Quality Wash. Named on 5 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free Quality Wash. Named on 4 independent lists. Confirm with your location.",
    "osm_brand": [
     "Auto Bell"
    ],
    "source_url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Auto%20Bell",
    "sources": [
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Auto%20Bell",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Autobell%20Car%20Wash",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Autobell%20Car%20Wash",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Autobell%20Car%20Wash",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Autobell%20Car%20Wash"
@@ -1356,7 +1295,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1386,7 +1325,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1415,7 +1354,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1447,7 +1386,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1470,44 +1409,13 @@
   {
    "eligibility": [
     "active-duty",
-    "guard-reserve",
-    "veteran"
-   ],
-   "verification": [
-    "id.me"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-bassett-furniture",
-   "name": "Bassett Furniture",
-   "category": "home-improvement",
-   "offer": "30% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Bassett Furniture"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Bassett%20Furniture",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Bassett%20Furniture",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Bassett%20Furniture"
-   ],
-   "kind": "veterans-day",
-   "percent": 30
-  },
-  {
-   "eligibility": [
-    "active-duty",
     "veteran"
    ],
    "verification": [
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1538,7 +1446,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1571,7 +1479,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1603,7 +1511,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1637,7 +1545,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1671,7 +1579,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1694,34 +1602,6 @@
   },
   {
    "eligibility": [
-    "veteran"
-   ],
-   "verification": [
-    "military-id"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "coffee",
-   "id": "auto-vd-black-rifle-coffee",
-   "name": "Black Rifle Coffee",
-   "category": "food",
-   "offer": "Free 12 oz drink. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Black Rifle Coffee"
-   ],
-   "source_url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Black%20Rifle%20Coffee",
-   "sources": [
-    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Black%20Rifle%20Coffee",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Black%20Rifle%20Coffee%20Company"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "active-duty",
     "veteran"
    ],
@@ -1729,7 +1609,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1763,7 +1643,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1798,7 +1678,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1828,7 +1708,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1857,7 +1737,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1886,7 +1766,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1914,7 +1794,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -1941,40 +1821,10 @@
     "veteran"
    ],
    "verification": [
-    "promo-code"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-brinyte",
-   "name": "Brinyte",
-   "category": "retail",
-   "offer": "15% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Brinyte"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Brinyte",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Brinyte",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Brinyte"
-   ],
-   "kind": "veterans-day",
-   "percent": 15
-  },
-  {
-   "eligibility": [
-    "active-duty",
-    "veteran"
-   ],
-   "verification": [
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2003,7 +1853,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2034,7 +1884,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2064,7 +1914,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2097,7 +1947,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2130,7 +1980,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2158,7 +2008,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2188,7 +2038,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2224,7 +2074,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2254,7 +2104,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2285,7 +2135,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2318,7 +2168,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2349,7 +2199,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2380,7 +2230,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2412,7 +2262,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2440,7 +2290,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2470,7 +2320,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2501,7 +2351,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2510,7 +2360,7 @@
    "id": "auto-vd-circle-k",
    "name": "Circle K",
    "category": "food",
-   "offer": "Free medium hot or iced coffee. Bring proof of service. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "Free medium hot or iced coffee. Bring proof of service. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "Circle K"
    ],
@@ -2518,7 +2368,6 @@
    "sources": [
     "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/#:~:text=Circle%20K",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Circle%20K",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Circle%20K",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Circle%20K"
    ],
    "kind": "veterans-day"
@@ -2533,7 +2382,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2563,7 +2412,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2593,7 +2442,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2627,7 +2476,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2662,7 +2511,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2691,7 +2540,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2723,7 +2572,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-02",
@@ -2756,7 +2605,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2789,7 +2638,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2819,7 +2668,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2850,7 +2699,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2884,7 +2733,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2912,7 +2761,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2942,7 +2791,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2972,7 +2821,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -2998,39 +2847,10 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-express-wash-concepts",
-   "name": "Express Wash Concepts",
-   "category": "services",
-   "offer": "Free Ceramic 4 Ultra Wash. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Express Wash Concepts"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Express%20Wash%20Concepts",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Express%20Wash%20Concepts",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Express%20Wash%20Concepts"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "active-duty",
-    "veteran"
-   ],
-   "verification": [
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3056,35 +2876,6 @@
   },
   {
    "eligibility": [
-    "guard-reserve",
-    "veteran"
-   ],
-   "verification": [
-    "proof-of-service"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-fast-monkey-auto",
-   "name": "Fast Monkey Auto",
-   "category": "services",
-   "offer": "Free oil change. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Fast Monkey Auto"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fast%20Monkey%20Auto",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fast%20Monkey%20Auto",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Fast%20Monkey%20Auto"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "veteran"
    ],
    "verification": [
@@ -3092,7 +2883,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3121,7 +2912,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3150,7 +2941,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3182,7 +2973,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3214,7 +3005,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -3223,14 +3014,13 @@
    "id": "auto-vd-five-below",
    "name": "Five Below",
    "category": "retail",
-   "offer": "10% off. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "10% off. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Five Below"
    ],
    "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Five%20Below",
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Five%20Below",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Five%20Below",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Five%20Below",
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Five%20Below"
    ],
@@ -3248,7 +3038,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3285,7 +3075,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3308,34 +3098,6 @@
   },
   {
    "eligibility": [
-    "retiree"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-fred-beans-automotive-group",
-   "name": "Fred Beans Automotive Group",
-   "category": "services",
-   "offer": "Free oil change throughout the day. Also mentions 20% off; see a source for what it covers. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Fred Beans Automotive Group"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fred%20Beans%20Automotive%20Group",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Fred%20Beans%20Automotive%20Group",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Fred%20Beans%20Automotive%20Group"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "active-duty",
     "veteran"
    ],
@@ -3344,7 +3106,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3375,7 +3137,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3406,7 +3168,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3435,7 +3197,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3465,7 +3227,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3494,7 +3256,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3517,44 +3279,13 @@
   {
    "eligibility": [
     "active-duty",
-    "spouse",
-    "veteran"
-   ],
-   "verification": [
-    "military-id"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-grease-monkey",
-   "name": "Grease Monkey",
-   "category": "services",
-   "offer": "50% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Grease Monkey"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Grease%20Monkey",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Grease%20Monkey",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Grease%20Monkey"
-   ],
-   "kind": "veterans-day",
-   "percent": 50
-  },
-  {
-   "eligibility": [
-    "active-duty",
     "veteran"
    ],
    "verification": [
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3578,43 +3309,13 @@
   {
    "eligibility": [
     "active-duty",
-    "retiree",
-    "veteran"
-   ],
-   "verification": [
-    "military-id"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-grillsmith",
-   "name": "Grillsmith",
-   "category": "food",
-   "offer": "Veterans Day offer; the lists word the terms differently. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Grillsmith"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Grillsmith",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Grillsmith",
-    "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Grillsmith"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "active-duty",
     "veteran"
    ],
    "verification": [
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3645,7 +3346,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3680,7 +3381,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3713,7 +3414,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3742,7 +3443,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3774,7 +3475,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3804,7 +3505,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3835,7 +3536,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3865,7 +3566,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3900,7 +3601,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3931,7 +3632,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3961,7 +3662,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -3991,7 +3692,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4022,7 +3723,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4052,7 +3753,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4083,7 +3784,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4115,7 +3816,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-10",
@@ -4145,7 +3846,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4174,7 +3875,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4202,7 +3903,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4225,44 +3926,13 @@
   },
   {
    "eligibility": [
-    "active-duty",
-    "retiree",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-jiffy-lube",
-   "name": "Jiffy Lube",
-   "category": "services",
-   "offer": "50% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Jiffy Lube"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Jiffy%20Lube",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Jiffy%20Lube",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Jiffy%20Lube"
-   ],
-   "kind": "veterans-day",
-   "percent": 50
-  },
-  {
-   "eligibility": [
     "veteran"
    ],
    "verification": [
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4292,7 +3962,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4322,7 +3992,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4354,7 +4024,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -4386,7 +4056,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4417,7 +4087,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -4448,7 +4118,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4479,7 +4149,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4511,7 +4181,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4545,7 +4215,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-10-01",
@@ -4573,7 +4243,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4606,7 +4276,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4641,7 +4311,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4675,7 +4345,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4703,7 +4373,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4725,48 +4395,13 @@
   },
   {
    "eligibility": [
-    "active-duty",
-    "guard-reserve",
-    "retiree",
-    "spouse",
-    "veteran"
-   ],
-   "verification": [
-    "military-id",
-    "proof-of-service",
-    "sheerid"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-lululemon",
-   "name": "Lululemon",
-   "category": "retail",
-   "offer": "15% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Lululemon"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Lululemon",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Lululemon",
-    "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=lululemon"
-   ],
-   "kind": "veterans-day",
-   "percent": 15
-  },
-  {
-   "eligibility": [
     "veteran"
    ],
    "verification": [
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4795,7 +4430,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4828,7 +4463,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4852,42 +4487,13 @@
   },
   {
    "eligibility": [
-    "guard-reserve",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-mccormick-automotive-center",
-   "name": "McCormick Automotive Center",
-   "category": "services",
-   "offer": "Free oil change. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "McCormick Automotive Center"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=McCormick%20Automotive%20Center",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=McCormick%20Automotive%20Center",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=McCormick%20Automotive%20Center"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "military"
    ],
    "verification": [
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4916,7 +4522,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4947,7 +4553,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -4977,7 +4583,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5006,7 +4612,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5039,7 +4645,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5071,7 +4677,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5095,35 +4701,6 @@
   {
    "eligibility": [
     "active-duty",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-mojo-family-of-brands",
-   "name": "MOJO Family of Brands",
-   "category": "retail",
-   "offer": "Free car washes. At participating locations. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "MOJO Family of Brands"
-   ],
-   "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=MOJO%20Family%20of%20Brands",
-   "sources": [
-    "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=MOJO%20Family%20of%20Brands",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=MOJO%20Family%20of%20Brands"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "active-duty",
     "guard-reserve",
     "veteran"
    ],
@@ -5131,7 +4708,7 @@
     "see-source"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5161,7 +4738,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5184,43 +4761,13 @@
   {
    "eligibility": [
     "active-duty",
-    "retiree",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-navyfed",
-   "name": "NavyFed",
-   "category": "services",
-   "offer": "Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "NavyFed"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=NavyFed",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=NavyFed",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Navy%20Federal%20Credit%20Union"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "active-duty",
     "veteran"
    ],
    "verification": [
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5250,7 +4797,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5282,28 +4829,26 @@
     "veteran"
    ],
    "verification": [
-    "military-id",
     "proof-of-service"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
-   "event_start": "2026-11-07",
-   "event_end": "2026-11-13",
+   "event_start": "2026-11-11",
+   "event_end": "2026-11-11",
    "slot": "anytime",
    "id": "auto-vd-north-carolina-zoo",
    "name": "North Carolina Zoo",
    "category": "attractions",
-   "offer": "Free admission. Bring proof of service. Named on 3 independent lists. Confirm with your location.",
+   "offer": "Free admission. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "North Carolina Zoo"
    ],
    "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=North%20Carolina%20Zoo",
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=North%20Carolina%20Zoo",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=North%20Carolina%20Zoo",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=North%20Carolina%20Zoo"
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=North%20Carolina%20Zoo"
    ],
    "family": true,
    "kind": "veterans-day"
@@ -5317,7 +4862,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5346,7 +4891,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5374,7 +4919,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5407,7 +4952,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5433,14 +4978,13 @@
   },
   {
    "eligibility": [
-    "active-duty",
     "veteran"
    ],
    "verification": [
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5449,14 +4993,13 @@
    "id": "auto-vd-orthofeet",
    "name": "Orthofeet",
    "category": "retail",
-   "offer": "Up to 30% off. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Up to 30% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Orthofeet"
    ],
    "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Orthofeet",
    "sources": [
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Orthofeet",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Orthofeet",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Orthofeet"
    ],
    "kind": "veterans-day",
@@ -5472,7 +5015,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5504,7 +5047,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5537,7 +5080,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5569,7 +5112,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5602,7 +5145,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5633,7 +5176,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5669,7 +5212,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5699,7 +5242,7 @@
     "proof-of-service"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5728,7 +5271,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-10",
@@ -5758,7 +5301,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5788,7 +5331,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5817,7 +5360,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5849,7 +5392,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -5880,7 +5423,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5903,7 +5446,6 @@
   {
    "eligibility": [
     "active-duty",
-    "retiree",
     "veteran"
    ],
    "verification": [
@@ -5911,7 +5453,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5920,15 +5462,14 @@
    "id": "auto-vd-red-roof",
    "name": "Red Roof",
    "category": "travel",
-   "offer": "10% off. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "10% off. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Red Roof"
    ],
    "source_url": "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Red%20Roof",
    "sources": [
     "https://thekrazycouponlady.com/tips/money/35-veterans-day-freebies-free-oil-change-flu-shot-dinner-dessert#:~:text=Red%20Roof",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Red%20Roof%20Inn",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Red%20Roof%20Inns"
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Red%20Roof%20Inn"
    ],
    "kind": "veterans-day",
    "percent": 10
@@ -5941,7 +5482,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -5971,7 +5512,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6002,7 +5543,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6031,7 +5572,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6060,7 +5601,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6069,14 +5610,13 @@
    "id": "auto-vd-russell-speeders-car-wash",
    "name": "Russell Speeders Car Wash",
    "category": "services",
-   "offer": "Free car wash. At participating locations. Named on 3 independent lists. Confirm with your location.",
+   "offer": "Veterans Day offer; the lists word the terms differently. At participating locations. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Russell Speeders Car Wash"
    ],
    "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Russell%20Speeders%20Car%20Wash",
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Russell%20Speeders%20Car%20Wash",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Russell%20Speeder%27s%20Car%20Wash&text=Russell%20Speeder%E2%80%99s%20Car%20Wash"
    ],
    "kind": "veterans-day"
@@ -6090,7 +5630,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6124,7 +5664,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -6153,7 +5693,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6181,7 +5721,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6211,7 +5751,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6238,7 +5778,6 @@
   {
    "eligibility": [
     "active-duty",
-    "retiree",
     "veteran"
    ],
    "verification": [
@@ -6246,7 +5785,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6255,7 +5794,7 @@
    "id": "auto-vd-scrubadub",
    "name": "ScrubaDub",
    "category": "services",
-   "offer": "Free washes. Bring proof of service. Named on 4 independent lists. Confirm with your location.",
+   "offer": "Free washes. Bring proof of service. Named on 3 independent lists. Confirm with your location.",
    "osm_brand": [
     "ScrubaDub"
    ],
@@ -6263,22 +5802,19 @@
    "sources": [
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=ScrubaDub",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=ScrubaDub",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=ScrubaDub%20and%20ZIPS%20Car%20Wash",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=ScrubaDub%20Car%20Wash"
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=ScrubaDub%20and%20ZIPS%20Car%20Wash"
    ],
    "kind": "veterans-day"
   },
   {
    "eligibility": [
-    "active-duty",
-    "spouse",
     "veteran"
    ],
    "verification": [
-    "military-id"
+    "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6287,17 +5823,15 @@
    "id": "auto-vd-seaworld",
    "name": "SeaWorld",
    "category": "attractions",
-   "offer": "Free tickets. Bring proof of service. Named on 3 independent lists. Confirm with your location.",
+   "offer": "Free tickets. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "SeaWorld"
    ],
    "source_url": "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=SeaWorld",
    "sources": [
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=SeaWorld",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Sea%20World",
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=SeaWorld%20%2F%20Busch%20Gardens"
    ],
-   "redeem_by": "2026-12-31",
    "family": true,
    "kind": "veterans-day"
   },
@@ -6309,7 +5843,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6342,7 +5876,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6379,7 +5913,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6413,7 +5947,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6444,7 +5978,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6466,37 +6000,6 @@
   },
   {
    "eligibility": [
-    "guard-reserve",
-    "retiree",
-    "spouse",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-silver-dollar-city",
-   "name": "Silver Dollar City",
-   "category": "attractions",
-   "offer": "Veterans Day offer; the lists word the terms differently. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Silver Dollar City"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Silver%20Dollar%20City",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Silver%20Dollar%20City",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Silver%20Dollar%20City"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
     "active-duty",
     "retiree",
     "spouse",
@@ -6506,7 +6009,7 @@
     "see-source"
    ],
    "scope": "locations",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6531,14 +6034,13 @@
    "eligibility": [
     "guard-reserve",
     "retiree",
-    "spouse",
     "veteran"
    ],
    "verification": [
-    "promo-code"
+    "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-03",
@@ -6547,14 +6049,13 @@
    "id": "auto-vd-sleep-number",
    "name": "Sleep Number",
    "category": "home-improvement",
-   "offer": "5% off. Named on 4 independent lists, 3 of them with this offer. Confirm with your location.",
+   "offer": "5% off. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Sleep Number"
    ],
    "source_url": "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Sleep%20Number",
    "sources": [
     "https://calegion.org/veterans-day-2026-discounts-and-deals-for-veterans-and-service-members/#:~:text=Sleep%20Number",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Sleep%20Number",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Sleep%20Number",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Sleep%20Number"
    ],
@@ -6570,7 +6071,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6601,7 +6102,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6631,7 +6132,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6666,7 +6167,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-09",
@@ -6699,7 +6200,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6728,7 +6229,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6758,7 +6259,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-05",
@@ -6767,7 +6268,7 @@
    "id": "auto-vd-target",
    "name": "Target",
    "category": "retail",
-   "offer": "20% off. Named on 8 independent lists, 4 of them with this offer. Confirm with your location.",
+   "offer": "20% off. Named on 8 independent lists, 3 of them with this offer. Confirm with your location.",
    "osm_brand": [
     "Target"
    ],
@@ -6796,7 +6297,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6827,7 +6328,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6859,7 +6360,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6889,7 +6390,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6922,7 +6423,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6961,7 +6462,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -6993,7 +6494,7 @@
     "promo-code"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7023,7 +6524,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7032,44 +6533,14 @@
    "id": "auto-vd-tommy-s-express",
    "name": "Tommy's Express",
    "category": "services",
-   "offer": "Free car wash. At participating locations. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free car wash. At participating locations. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Tommy's Express"
    ],
    "source_url": "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Tommy%27s%20Express&text=Tommy%E2%80%99s%20Express",
    "sources": [
     "https://usveteransmagazine.com/usvm/veterans-day-discounts-and-freebies-2026/#:~:text=Tommy%27s%20Express&text=Tommy%E2%80%99s%20Express",
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Tommy%27s%20Express&text=Tommy%E2%80%99s%20Express",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Tommy%27s%20Express%20Car%20Wash&text=Tommy%E2%80%99s%20Express%20Car%20Wash"
-   ],
-   "kind": "veterans-day"
-  },
-  {
-   "eligibility": [
-    "guard-reserve",
-    "veteran"
-   ],
-   "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-tuscan-brands",
-   "name": "Tuscan Brands",
-   "category": "food",
-   "offer": "Free meal. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Tuscan Brands"
-   ],
-   "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Tuscan%20Brands",
-   "sources": [
-    "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Tuscan%20Brands",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Tuscan%20Brands"
+    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Tommy%27s%20Express&text=Tommy%E2%80%99s%20Express"
    ],
    "kind": "veterans-day"
   },
@@ -7082,7 +6553,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7113,7 +6584,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7144,7 +6615,7 @@
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7171,43 +6642,10 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-valvoline",
-   "name": "Valvoline",
-   "category": "services",
-   "offer": "15% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Valvoline"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Valvoline",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Valvoline",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Valvoline%20Instant%20Oil%20Change"
-   ],
-   "redeem_by": "2026-12-05",
-   "kind": "veterans-day",
-   "percent": 15
-  },
-  {
-   "eligibility": [
-    "active-duty",
-    "guard-reserve",
-    "retiree",
-    "veteran"
-   ],
-   "verification": [
     "id.me"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7216,18 +6654,17 @@
    "id": "auto-vd-verizon",
    "name": "Verizon",
    "category": "retail",
-   "offer": "25% off. While supplies last. Bring proof of service. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "15% off. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Verizon"
    ],
    "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Verizon",
    "sources": [
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=Verizon",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Verizon",
     "https://valoannetwork.com/veterans-day-deals-2026/#:~:text=Verizon"
    ],
    "kind": "veterans-day",
-   "percent": 25
+   "percent": 15
   },
   {
    "eligibility": [
@@ -7235,10 +6672,10 @@
     "veteran"
    ],
    "verification": [
-    "store-program"
+    "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7247,14 +6684,13 @@
    "id": "auto-vd-vettix",
    "name": "VetTix",
    "category": "attractions",
-   "offer": "Free tickets. Named on 3 independent lists. Confirm with your location.",
+   "offer": "Free event tickets. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "VetTix"
    ],
    "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=VetTix",
    "sources": [
     "https://veteransdmv.com/veterans-day-discounts/#:~:text=VetTix",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=VetTix",
     "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=VetTix.org"
    ],
    "kind": "veterans-day"
@@ -7267,7 +6703,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7297,7 +6733,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7326,7 +6762,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7357,7 +6793,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7390,7 +6826,7 @@
     "store-program"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7421,7 +6857,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7455,7 +6891,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7487,7 +6923,7 @@
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7513,41 +6949,11 @@
     "veteran"
    ],
    "verification": [
-    "military-id"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-winn-dixie",
-   "name": "Winn-Dixie",
-   "category": "retail",
-   "offer": "11% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Winn-Dixie"
-   ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Winn-Dixie",
-   "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Winn-Dixie",
-    "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=Winn-Dixie"
-   ],
-   "kind": "veterans-day",
-   "percent": 11
-  },
-  {
-   "eligibility": [
-    "active-duty",
-    "veteran"
-   ],
-   "verification": [
     "military-id",
     "proof-of-service"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7572,39 +6978,10 @@
     "veteran"
    ],
    "verification": [
-    "see-source"
-   ],
-   "scope": "nationwide",
-   "last_verified": "2026-11-26",
-   "confidence": "community",
-   "auto": true,
-   "event_start": "2026-11-11",
-   "event_end": "2026-11-11",
-   "slot": "anytime",
-   "id": "auto-vd-wyndham-hotels",
-   "name": "Wyndham Hotels",
-   "category": "travel",
-   "offer": "12% off. Named on 2 independent lists. Confirm with your location.",
-   "osm_brand": [
-    "Wyndham Hotels"
-   ],
-   "source_url": "https://veteransdmv.com/veterans-day-discounts/#:~:text=Wyndham%20Hotels",
-   "sources": [
-    "https://veteransdmv.com/veterans-day-discounts/#:~:text=Wyndham%20Hotels",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Wyndham%20Hotels%20%26%20Resorts"
-   ],
-   "kind": "veterans-day",
-   "percent": 12
-  },
-  {
-   "eligibility": [
-    "veteran"
-   ],
-   "verification": [
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7633,7 +7010,7 @@
     "military-id"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7642,15 +7019,14 @@
    "id": "auto-vd-yogurtland",
    "name": "Yogurtland",
    "category": "food",
-   "offer": "15% off. Bring proof of service. While supplies last. Named on 3 independent lists. Confirm with your location.",
+   "offer": "15% off. Bring proof of service. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "Yogurtland"
    ],
    "source_url": "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Yogurtland",
    "sources": [
     "https://www.military.com/veterans-day/restaurants-veterans-day-military-discounts.html#:~:text=Yogurtland",
-    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Yogurtland",
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Yogurtland"
+    "https://saltyvagabonds.com/veterans-day-freebies-and-deals-for-2024/#:~:text=Yogurtland"
    ],
    "kind": "veterans-day",
    "percent": 15
@@ -7664,7 +7040,7 @@
     "see-source"
    ],
    "scope": "nationwide",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "confidence": "community",
    "auto": true,
    "event_start": "2026-11-11",
@@ -7673,13 +7049,12 @@
    "id": "auto-vd-zips-car-wash",
    "name": "ZIPS Car Wash",
    "category": "services",
-   "offer": "Free best wash. Named on 3 independent lists, 2 of them with this offer. Confirm with your location.",
+   "offer": "Free car wash. Named on 2 independent lists. Confirm with your location.",
    "osm_brand": [
     "ZIPS Car Wash"
    ],
-   "source_url": "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Zips%20Car%20Wash",
+   "source_url": "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=ZIPS%20Car%20Wash",
    "sources": [
-    "https://themilitarywallet.com/veterans-day-retail-discounts/#:~:text=Zips%20Car%20Wash",
     "https://www.military.com/veterans-day/retailers-veterans-day-military-discounts.html#:~:text=ZIPS%20Car%20Wash",
     "https://fedratecalc.com/veterans-day-free-meals-2026/#:~:text=ZIPS%20Car%20Wash"
    ],
@@ -9794,7 +9169,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-1-800-flowers-com",
    "name": "1-800-Flowers.com",
@@ -9819,7 +9194,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-adidas",
    "name": "Adidas",
@@ -9854,7 +9229,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-alpha-industries",
    "name": "Alpha Industries",
@@ -9880,7 +9255,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-alpine-rings",
    "name": "Alpine Rings",
@@ -9907,7 +9282,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-asics",
    "name": "ASICS",
@@ -9938,7 +9313,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-at-t",
    "name": "AT&T",
@@ -9968,7 +9343,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-avis",
    "name": "Avis",
@@ -9994,7 +9369,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-bear-mattress",
    "name": "Bear Mattress",
@@ -10019,7 +9394,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-beard-sorcery",
    "name": "Beard Sorcery",
@@ -10045,7 +9420,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-berklee-online",
    "name": "Berklee Online",
@@ -10070,7 +9445,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-bioionic",
    "name": "Bioionic",
@@ -10095,7 +9470,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-birch",
    "name": "Birch",
@@ -10121,7 +9496,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-brooks-running",
    "name": "Brooks Running",
@@ -10146,7 +9521,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-budget",
    "name": "Budget",
@@ -10172,7 +9547,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-budget-car-rental",
    "name": "Budget Car Rental",
@@ -10197,7 +9572,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-butchart-gardens",
    "name": "Butchart Gardens",
@@ -10222,7 +9597,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-carhartt",
    "name": "Carhartt",
@@ -10247,7 +9622,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-codecademy",
    "name": "Codecademy",
@@ -10272,7 +9647,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-disney",
    "name": "Disney+",
@@ -10298,7 +9673,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-dog-id",
    "name": "DOG iD",
@@ -10323,7 +9698,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-eset",
    "name": "ESET",
@@ -10348,7 +9723,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-florence-marine-x",
    "name": "Florence Marine X",
@@ -10373,7 +9748,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-flying-squirrel-trampoline-park",
    "name": "Flying Squirrel Trampoline Park",
@@ -10398,7 +9773,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-ford-s-theatre",
    "name": "Ford's Theatre",
@@ -10423,7 +9798,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-gelpro",
    "name": "GelPro",
@@ -10451,7 +9826,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-great-wolf-lodge",
    "name": "Great Wolf Lodge",
@@ -10482,7 +9857,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-harry-david",
    "name": "Harry & David",
@@ -10507,7 +9882,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-helix-sleep",
    "name": "Helix Sleep",
@@ -10532,7 +9907,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-hellofresh",
    "name": "HelloFresh",
@@ -10557,7 +9932,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-helly-hansen",
    "name": "Helly Hansen",
@@ -10583,7 +9958,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-helm-audio",
    "name": "HELM Audio",
@@ -10608,7 +9983,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-houston-zoo",
    "name": "Houston Zoo",
@@ -10633,7 +10008,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-hp-hewlett-packard",
    "name": "HP (Hewlett Packard)",
@@ -10659,7 +10034,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-hulu",
    "name": "Hulu",
@@ -10686,7 +10061,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-jungle-island",
    "name": "Jungle Island",
@@ -10711,7 +10086,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-kawaii-stop",
    "name": "Kawaii Stop",
@@ -10736,7 +10111,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-leatherman",
    "name": "Leatherman",
@@ -10763,7 +10138,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-mlb-tv",
    "name": "MLB TV",
@@ -10788,7 +10163,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-mountain-khakis",
    "name": "Mountain Khakis",
@@ -10813,7 +10188,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-new-balance",
    "name": "New Balance",
@@ -10838,7 +10213,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-nutrex",
    "name": "Nutrex",
@@ -10863,7 +10238,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-oakley",
    "name": "Oakley",
@@ -10891,7 +10266,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-oakley-standard-issue",
    "name": "Oakley Standard Issue",
@@ -10916,7 +10291,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-paramount",
    "name": "Paramount+",
@@ -10946,7 +10321,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-pods",
    "name": "PODS",
@@ -10971,7 +10346,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-reebok",
    "name": "Reebok",
@@ -11000,7 +10375,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-roboform",
    "name": "RoboForm",
@@ -11025,7 +10400,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-samsung",
    "name": "Samsung",
@@ -11057,7 +10432,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-siriusxm",
    "name": "SiriusXM",
@@ -11085,7 +10460,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-siriusxm-radio",
    "name": "SiriusXM Radio",
@@ -11110,7 +10485,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-t-mobile",
    "name": "T-Mobile",
@@ -11136,7 +10511,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-take-5-oil-change",
    "name": "Take 5 Oil Change",
@@ -11162,7 +10537,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-tarte-cosmetics",
    "name": "Tarte Cosmetics",
@@ -11187,7 +10562,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-tough-mudder",
    "name": "Tough Mudder",
@@ -11214,7 +10589,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-tri-county-humane-society",
    "name": "Tri-County Humane Society",
@@ -11239,7 +10614,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-untuckit",
    "name": "UNTUCKit",
@@ -11267,7 +10642,7 @@
     "see-source"
    ],
    "scope": "online",
-   "last_verified": "2026-11-26",
+   "last_verified": "2026-11-27",
    "auto": true,
    "id": "auto-yardsigns-com",
    "name": "Yardsigns.com",
